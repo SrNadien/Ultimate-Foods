@@ -1,0 +1,70 @@
+[06feb2026 17:51:04.539] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--mod, ultimatefoods, --all, --output, E:\modsmios\UltimateFoodsMod\src\generated\resources, --existing, E:\modsmios\UltimateFoodsMod\src\main\resources, --launchTarget, forgedatadev, --assetIndex, asset-index, --assetsDir, C:\Users\SrNadien\.gradle\caches\minecraft\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.215, --fml.neoFormVersion, 20240808.144430]
+[06feb2026 17:51:04.565] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.7+8-LTS-245
+[06feb2026 17:51:04.601] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.7 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[06feb2026 17:51:05.226] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatadev
+[06feb2026 17:51:05.889] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/SrNadien/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23142!/ Service=ModLauncher Env=CLIENT
+[06feb2026 17:51:06.883] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.215.jar" [locator: neoforge devenv provider ([E:\modsmios\UltimateFoodsMod\.gradle\repositories\ng_dummy_ng\net\neoforged\neoforge\21.1.215\neoforge-21.1.215.jar])]
+[06feb2026 17:51:06.971] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.215.jar" [locator: neoforge devenv provider ([E:\modsmios\UltimateFoodsMod\.gradle\repositories\ng_dummy_ng\net\neoforged\neoforge\21.1.215\neoforge-21.1.215.jar])]
+[06feb2026 17:51:07.043] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "main" [locator: userdev mods and services, reader: mod manifest]
+[06feb2026 17:51:07.101] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.215.jar" [locator: userdev mods and services, reader: mod manifest]
+[06feb2026 17:51:07.128] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jei-238222-7420587.jar" [locator: userdev mods and services, reader: mod manifest]
+[06feb2026 17:51:07.284] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jade-324717-7428884.jar" [locator: userdev mods and services, reader: mod manifest]
+[06feb2026 17:51:07.307] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jei-1.21.1-neoforge-19.27.0.340.jar" [locator: userdev mods and services, reader: mod manifest]
+[06feb2026 17:51:07.545] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "mixinextras-neoforge-0.5.0.jar" [locator: userdev mods and services, reader: mod manifest]
+[06feb2026 17:51:08.050] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: library:mixinextras.neoforge. Using Mod File: C:\Users\SrNadien\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-neoforge\0.5.0\d734b83ce6542bb70ea31755c1595b88992dbe65\mixinextras-neoforge-0.5.0.jar
+[06feb2026 17:51:08.066] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
+[06feb2026 17:51:08.066] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "net.neoforged.neoforge-coremods-21.1.215.jar" [parent: neoforge-21.1.215.jar, locator: jarinjar, reader: mod manifest]
+[06feb2026 17:51:08.066] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Jade 15.10.4+neoforge (jade)
+		Just Enough Items 19.27.0.340 (jei)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.215 (neoforge)
+		UltimateFoods  1.1.6 (ultimatefoods)
+[06feb2026 17:51:11.869] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatadev' with arguments [--gameDir, ., --assetsDir, C:\Users\SrNadien\.gradle\caches\minecraft\assets, --mod, ultimatefoods, --all, --output, E:\modsmios\UltimateFoodsMod\src\generated\resources, --existing, E:\modsmios\UltimateFoodsMod\src\main\resources, --assetIndex, asset-index]
+[06feb2026 17:51:16.982] [main/INFO] [net.neoforged.neoforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [ultimatefoods]
+[06feb2026 17:51:17.135] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[06feb2026 17:51:53.811] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Inicializando Ultimate Foods Mod...
+[06feb2026 17:51:53.841] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Sonidos registrados
+[06feb2026 17:51:53.891] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Efectos registrados
+[06feb2026 17:51:53.905] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Materiales de armadura registrados
+[06feb2026 17:51:53.925] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Bloques registrados
+[06feb2026 17:51:53.952] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Bloques de mineral registrados
+[06feb2026 17:51:53.954] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Items registrados
+[06feb2026 17:51:53.961] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Armadura registrada
+[06feb2026 17:51:53.984] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Herramientas registradas
+[06feb2026 17:51:53.989] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Tab creativo registrado
+[06feb2026 17:51:53.994] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Ultimate Foods Mod inicializado correctamente!
+[06feb2026 17:51:54.221] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.215, for MC 1.21.1
+[06feb2026 17:51:54.727] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[06feb2026 17:51:54.747] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 14.02 milliseconds
+[06feb2026 17:51:57.294] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/E:/modsmios/UltimateFoodsMod/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/21.1.215/neoforge-21.1.215.jar%23195!/assets/.mcassetsroot' uses unexpected schema
+[06feb2026 17:51:57.294] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/E:/modsmios/UltimateFoodsMod/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/21.1.215/neoforge-21.1.215.jar%23195!/data/.mcassetsroot' uses unexpected schema
+[06feb2026 17:51:57.918] [main/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: === INICIANDO GENERACIÓN DE DATOS ===
+[06feb2026 17:51:57.963] [main/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Provider de recetas registrado
+[06feb2026 17:51:57.977] [main/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Provider de WorldGen registrado
+[06feb2026 17:51:58.020] [main/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Provider de Loot Tables registrado
+[06feb2026 17:51:58.037] [main/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Provider de tags de bloques registrado
+[06feb2026 17:51:58.041] [main/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Provider de tags de items registrado
+[06feb2026 17:51:58.070] [main/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Provider de modelos de bloques registrado
+[06feb2026 17:51:58.088] [main/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Provider de sonidos registrado
+[06feb2026 17:51:58.089] [main/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: === TODOS LOS PROVIDERS REGISTRADOS CORRECTAMENTE ===
+[06feb2026 17:51:58.090] [main/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Ejecuta el comando: gradlew runData
+[06feb2026 17:51:58.793] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[06feb2026 17:52:00.303] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 1513 ms
+[06feb2026 17:52:00.303] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[06feb2026 17:52:00.353] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 41 ms
+[06feb2026 17:52:00.353] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[06feb2026 17:52:00.447] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 94 ms
+[06feb2026 17:52:00.452] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id ultimatefoods
+[06feb2026 17:52:00.620] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id ultimatefoods finished after 169 ms
+[06feb2026 17:52:00.620] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id ultimatefoods
+[06feb2026 17:52:00.806] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id ultimatefoods finished after 191 ms
+[06feb2026 17:52:00.806] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: ultimatefoods
+[06feb2026 17:52:00.992] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: ultimatefoods finished after 175 ms
+[06feb2026 17:52:00.992] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Sound Definitions
+[06feb2026 17:52:01.002] [main/INFO] [net.minecraft.data.DataGenerator/]: Sound Definitions finished after 14 ms
+[06feb2026 17:52:01.002] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 2211 ms
+[06feb2026 17:52:01.064] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 67, old count: 0, new count: 68, removed stale: 0, written: 67

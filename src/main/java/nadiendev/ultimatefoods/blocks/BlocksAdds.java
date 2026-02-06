@@ -1,0 +1,87 @@
+package nadiendev.ultimatefoods.blocks;
+
+import nadiendev.ultimatefoods.UltimateFoodsCore;
+import nadiendev.ultimatefoods.items.ItemsAdds;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.function.Supplier;
+
+/**
+ * Bloqcks Registry
+ * By NadienDev
+ */
+public class BlocksAdds {
+    public static final DeferredRegister<Block> BLOCKS =
+            DeferredRegister.create(BuiltInRegistries.BLOCK, UltimateFoodsCore.MOD_ID);
+
+    // ========== BLOQUES ==========
+
+    public static final DeferredHolder<Block, Block> STEEL_BLOCK = registerBlock(
+            "steel_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5f, 10f)
+                    .sound(SoundType.NETHERITE_BLOCK)
+            )
+    );
+
+     public static final DeferredHolder<Block, Block> SEXY_XD = registerBlock(
+            "sexy_xd",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5f, 10f)
+                    .sound(SoundType.NETHERITE_BLOCK)
+            )
+    );
+    
+    public static final DeferredHolder<Block, Block> NADIENITE_BLOCK = registerBlock(
+            "nadienite_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1f, 10f)
+                    .sound(SoundType.ANCIENT_DEBRIS)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresCorrectToolForDrops()
+            )
+    );
+
+    // ========== MÉTODOS HELPER ==========
+
+    /**
+     * Registra un bloque junto con su BlockItem
+     */
+    private static <T extends Block> DeferredHolder<Block, T> registerBlock(String name, Supplier<T> block) {
+        DeferredHolder<Block, T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+
+    /**
+     * Registra el BlockItem correspondiente a un bloque
+     */
+    private static <T extends Block> void registerBlockItem(String name, DeferredHolder<Block, T> block) {
+        ItemsAdds.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    /**
+     * Registra un bloque simple con propiedades predeterminadas
+     */
+    public static DeferredHolder<Block, Block> registerSimpleBlock(String name, float hardness, float resistance) {
+        return registerBlock(name, () -> new Block(BlockBehaviour.Properties.of()
+                .strength(hardness, resistance)
+                .sound(SoundType.STONE)));
+    }
+
+    /**
+     * Registra el DeferredRegister en el event bus
+     */
+    public static void register(IEventBus eventBus) {
+        BLOCKS.register(eventBus);
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "ultimatefoods:cajita_feliz"
+    },
+    "b": {
+      "item": "ultimatefoods:super_chile"
+    },
+    "c": {
+      "item": "ultimatefoods:chocolatada"
+    },
+    "d": {
+      "item": "minecraft:cake"
+    },
+    "e": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "ab",
+    "cd",
+    "e "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatefoods:super_energy_drink"
+  }
+}

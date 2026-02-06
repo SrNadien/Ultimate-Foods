@@ -1,0 +1,7 @@
+{
+  "parent": "ultimatefoods:custom/doritos",
+  "render_type": "cutout",
+  "textures": {
+    "particle": "ultimatefoods:item/doritos"
+  }
+}

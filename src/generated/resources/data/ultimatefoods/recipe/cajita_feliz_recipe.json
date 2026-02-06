@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:apple"
+    },
+    "b": {
+      "item": "minecraft:baked_potato"
+    },
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "d": {
+      "item": "minecraft:cooked_chicken"
+    }
+  },
+  "pattern": [
+    " a ",
+    "bcd"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatefoods:cajita_feliz"
+  }
+}

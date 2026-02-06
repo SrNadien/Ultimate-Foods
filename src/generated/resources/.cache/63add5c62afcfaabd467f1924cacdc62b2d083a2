@@ -1,0 +1,12 @@
+// 1.21.1	2026-02-06T17:52:01.0337412	Tags for minecraft:item mod id ultimatefoods
+6da0024c2a7da0c15677496be09de688d9a3eea8 data/c/tags/item/ingots/nadienite.json
+ad3187074e86c94f1b567204bdbe6c961dc3649e data/c/tags/item/ingots/steel.json
+913607e4e7771f76f99451c27df8b2e21c75252e data/c/tags/item/ores/nadienite.json
+fa7f1985252b890b4a300ae5d0a6e9f2b998befe data/c/tags/item/storage_blocks/nadienite.json
+4ed77ecf987a0919daa4d1391b8acc18ef8fa5ca data/c/tags/item/storage_blocks/steel.json
+a7f882506235b18b48aeef4cc26106de71a5469a data/minecraft/tags/item/chest_armor.json
+2a8a8ce3beaaf1ffda274129e751ad8f60ea6207 data/minecraft/tags/item/foot_armor.json
+32e434bbe01eaea7d7ec8f4f16b5c70d498cd269 data/minecraft/tags/item/head_armor.json
+3a56954ce779bad5227de6150c773cddee2a3053 data/minecraft/tags/item/leg_armor.json
+f434bf661e8f7dfbfb1d3d9dee8800362d7ad2ed data/minecraft/tags/item/swords.json
+7b29431da444d8a690f9b09b8a806aed749893d2 data/minecraft/tags/item/trimmable_armor.json
