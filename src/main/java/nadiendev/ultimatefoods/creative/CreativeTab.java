@@ -78,6 +78,10 @@ public class CreativeTab {
                         
                         // ========== HERRAMIENTAS DE NADIENITE ==========
                         output.accept(ToolsAdds.NADIENITE_SWORD.get());
+                        output.accept(ToolsAdds.NADIENITE_AXE.get());
+                        output.accept(ToolsAdds.NADIENITE_PICKAXE.get());
+                        output.accept(ToolsAdds.NADIENITE_HOE.get());
+                        output.accept(ToolsAdds.NADIENITE_SHOVEL.get());
                         output.accept(ToolsAdds.CHANCLA.get());
                         
                         // ========== ARMADURA DE NADIENITE ==========

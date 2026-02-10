@@ -44,7 +44,7 @@ public class BlocksAdds {
     public static final DeferredHolder<Block, Block> NADIENITE_BLOCK = registerBlock(
             "nadienite_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1f, 10f)
+                    .strength(5f, 10f)
                     .sound(SoundType.ANCIENT_DEBRIS)
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresCorrectToolForDrops()

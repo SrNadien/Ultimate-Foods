@@ -34,6 +34,7 @@ public class ModBlockTags {
 
         // Custom tag para herramientas de Nadienite
         public static final TagKey<Block> NEEDS_NADIENITE_TOOL = tag("needs_nadienite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_NADIENITE_TOOL = tag("incorrect_for_nadienite_tool");
         
         // Storage Blocks Tags
         public static final TagKey<Block> STORAGE_BLOCKS_NADIENITE = commonTag("storage_blocks/nadienite");
@@ -58,22 +59,32 @@ public class ModBlockTags {
         @Override
         protected void addTags(HolderLookup.Provider provider) {
             
-            // ============================================
+               // ============================================
             // NEEDS_NADIENITE_TOOL - Tag custom del mod
             // Bloques que pueden ser minados con pico de Nadienite
             // ============================================
             this.tag(Blocks.NEEDS_NADIENITE_TOOL)
-                .addTag(Tags.Blocks.NEEDS_NETHERITE_TOOL);  // Incluye todos los bloques que necesitan netherite
-            
+                .addTag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(BlocksAdds.NADIENITE_BLOCK.get())   // Incluye todos los bloques que necesitan netherite
+                .add(NadieniteOreBlock.NADIENITE_ORE.get()) // Nadienite Ore necesita Nadienite Tool
+                .add(NadieniteOreBlock.DEEPSLATE_NADIENITE_ORE.get());
+
             // ============================================
             // NEEDS_NETHERITE_TOOL
-            // SOLO bloques de Nadienite que necesitan pico de netherite o nadienite
+            // Bloques de Nadienite que necesitan pico de netherite (o superior)
             // ============================================
             this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(BlocksAdds.NADIENITE_BLOCK.get())
                 .add(NadieniteOreBlock.NADIENITE_ORE.get())
-                .add(NadieniteOreBlock.DEEPSLATE_NADIENITE_ORE.get())
-                .add(BlocksAdds.NADIENITE_BLOCK.get());
-            
+                .add(NadieniteOreBlock.DEEPSLATE_NADIENITE_ORE.get());
+             // ============================================
+            // INCORRECT_FOR_NADIENITE_TOOL - Tag custom del mod
+            // Bloques que no pueden ser minados con pico de Nadienite (aunque sean de Nadienite) 
+            // =============================================
+            this.tag(Blocks.INCORRECT_FOR_NADIENITE_TOOL);
+
+
+
             // ============================================
             // INCORRECT_FOR tiers inferiores
             // SOLO bloques de Nadienite - Steel y Sexy NO están aquí porque funcionan bien
@@ -126,5 +137,6 @@ public class ModBlockTags {
             this.tag(Blocks.STORAGE_BLOCKS_STEEL)
                 .add(BlocksAdds.STEEL_BLOCK.get());
         }
+        
     }
 }

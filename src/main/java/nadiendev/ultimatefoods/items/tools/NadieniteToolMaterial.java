@@ -20,7 +20,7 @@ public class NadieniteToolMaterial {
      * - Encantabilidad: 25
      */
     public static final Tier NADIENITE = new SimpleTier(
-            ModBlockTags.Blocks.NEEDS_NADIENITE_TOOL,       // Tag custom para bloques que necesitan nadienite
+            ModBlockTags.Blocks.INCORRECT_FOR_NADIENITE_TOOL,       // Tag custom para bloques que necesitan nadienite
             9999,                                            // Durabilidad alta
             20.0F,                                           // Velocidad de minado
             10.0F,                                           // Bonus de daño
