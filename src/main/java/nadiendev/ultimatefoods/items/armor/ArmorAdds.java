@@ -5,6 +5,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.item.component.Unbreakable;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -34,6 +36,7 @@ public class ArmorAdds {
                             .stacksTo(1)
                             .fireResistant()
                             .rarity(Rarity.EPIC)
+                            .component(DataComponents.UNBREAKABLE, new Unbreakable(true))
             )
     );
 
@@ -52,6 +55,7 @@ public class ArmorAdds {
                             .stacksTo(1)
                             .fireResistant()
                             .rarity(Rarity.EPIC)
+                            .component(DataComponents.UNBREAKABLE, new Unbreakable(true))
             )
     );
 
@@ -70,6 +74,7 @@ public class ArmorAdds {
                             .stacksTo(1)
                             .fireResistant()
                             .rarity(Rarity.EPIC)
+                            .component(DataComponents.UNBREAKABLE, new Unbreakable(true))
             )
     );
 
@@ -88,6 +93,7 @@ public class ArmorAdds {
                             .stacksTo(1)
                             .fireResistant()
                             .rarity(Rarity.EPIC)
+                            .component(DataComponents.UNBREAKABLE, new Unbreakable(true))
             )
     );
 
