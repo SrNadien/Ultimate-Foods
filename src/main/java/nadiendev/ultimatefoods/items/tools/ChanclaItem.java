@@ -1,32 +1,55 @@
 package nadiendev.ultimatefoods.items.tools;
 
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.stats.Stats;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
+import net.minecraft.world.level.Level;
+import nadiendev.ultimatefoods.entities.ChanclaEntity;
 
-/**
- * Espada de Nadienite
- * - 105 de daño total
- * - Sin cooldown al atacar
- * - Irrompible
- */
 public class ChanclaItem extends SwordItem {
-    
+
     public ChanclaItem(Tier tier, Properties properties) {
-        // attackDamage: 104 (se suma +1 del juego base = 105 total)
-        // attackSpeed: 100.0F (sin cooldown, ataque instantáneo)
         super(tier, properties.attributes(SwordItem.createAttributes(tier, 200, 100.0F)));
     }
 
     @Override
     public boolean isDamageable(ItemStack stack) {
-        // Hace que el item sea irrompible
         return false;
     }
 
     @Override
     public int getMaxDamage(ItemStack stack) {
-        // Sin daño = irrompible
         return 0;
+    }
+
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+        ItemStack itemstack = player.getItemInHand(hand);
+
+        level.playSound(null, player.getX(), player.getY(), player.getZ(),
+                SoundEvents.TRIDENT_THROW, SoundSource.PLAYERS, 1.0F, 1.0F);
+
+        if (!level.isClientSide) {
+            // Crear el proyectil con una COPIA del item (no el original)
+            ChanclaEntity chancla = new ChanclaEntity(level, player);
+            chancla.setItem(itemstack.copy());
+            chancla.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 2.5F, 1.0F);
+            level.addFreshEntity(chancla);
+
+            // Remover el item del inventario AHORA — regresará cuando vuelva el proyectil
+            if (!player.getAbilities().instabuild) {
+                itemstack.shrink(1);
+            }
+
+            player.awardStat(Stats.ITEM_USED.get(this));
+        }
+
+        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
     }
 }

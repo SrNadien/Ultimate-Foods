@@ -25,7 +25,7 @@
   "item.ultimatefoods.portalmini": "Mini Portal",
   "item.ultimatefoods.radioactive_antimatter": "Radioactive Antimatter",
   "item.ultimatefoods.planos": "Blueprints",
-  "item.ultimatefoods.reactromini": "Mini Reactor",
+  "item.ultimatefoods.reactormini": "Mini Reactor",
   "item.ultimatefoods.super_seed": "Super Seed",
   "item.ultimatefoods.gameboy": "Gameboy",
   "item.ultimatefoods.galactic_globe": "Galactic Globe",
@@ -67,6 +67,27 @@
   "item.ultimatefoods.cacotas.description_0": "How Disgusting",
   "item.ultimatefoods.cacotas.description_1": "-_-",
 
+
+  "item.ultimatefoods.infinity_1_sword": "Infinity-1 Sword",
+  "item.ultimatefoods.infinity_1_pickaxe": "Infinity-1 Pickaxe",
+  "item.ultimatefoods.infinity_1_hoe": "Infinity-1 Hoe",
+  "item.ultimatefoods.infinity_sword_balanced": "Infinity Sword (Balanced)",
+  "tooltip.ultimatefoods.infinity_1_sword.damage": "Damage: 60",
+  "tooltip.ultimatefoods.infinity_1_sword.durability": "Infinite Durability",
+  "tooltip.ultimatefoods.infinity_sword_balanced.title": "Infinity Sword (Balanced)",
+  "tooltip.ultimatefoods.infinity_sword_balanced.damage": "Damage: 400",
+  "tooltip.ultimatefoods.infinity_sword_balanced.durability": "Infinite Durability",
+  "tooltip.ultimatefoods.infinity_1_hoe.durability": "Infinite Durability",
+  "tooltip.ultimatefoods.infinity_1_hoe.farming": "Compatible with Farming Stations",
+  "tooltip.ultimatefoods.infinity_1_pickaxe.multitool": "Multitool: Pickaxe, Axe and Shovel",
+  "tooltip.ultimatefoods.infinity_1_pickaxe.current_mode": "Current mode: %s",
+  "tooltip.ultimatefoods.infinity_1_pickaxe.mode_silk": "Silk Touch",
+  "tooltip.ultimatefoods.infinity_1_pickaxe.mode_fortune": "Fortune III",
+  "tooltip.ultimatefoods.infinity_1_pickaxe.change_mode": "Shift + Right Click to change mode",
+  "tooltip.ultimatefoods.infinity_1_pickaxe.durability": "Infinite Durability",
+
+
+
   "block.ultimatefoods.sexy_xd": "Sexy xD",
   "block.ultimatefoods.nadienite_block": "Block of Nadienite",
   "block.ultimatefoods.steel_block": "Block of Steel",
@@ -90,5 +111,24 @@
   "sound_event.ultimatefoods.quemacizo": "Monster Sound",
   "sound_event.ultimatefoods.rickroll": "Never Gonna Give You Up",
   "sound_event.ultimatefoods.saxofono": "Saxophone Sound",
-  "sound_event.ultimatefoods.the_avengers_theme_song": "The Avengers Theme"
+  "sound_event.ultimatefoods.the_avengers_theme_song": "The Avengers Theme",
+
+
+  "advancements.ultimatefoods.install_mod.title": "Instalaste El Mod",
+  "advancements.ultimatefoods.install_mod.description": "Bienvenido a Ultimate Foods. Ya es tarde para arrepentirse.",
+  "advancements.ultimatefoods.casy_try_hard.title": "Casy Try Hard",
+  "advancements.ultimatefoods.casy_try_hard.description": "Conseguiste la Infinity-1 Sword. ¿Cuánto tiempo te llevó?",
+  "advancements.ultimatefoods.tryhard_balanced.title": "Tryhard Balanced",
+  "advancements.ultimatefoods.tryhard_balanced.description": "Conseguiste la Infinity Sword Balanced. Balanced... sí, claro.",
+  "advancements.ultimatefoods.erapalnene.title": "Era Pal Nene",
+  "advancements.ultimatefoods.erapalnene.description": "Obtuviste una Cajita Feliz. ¿Viene con juguete?",
+  "advancements.ultimatefoods.supercaota.title": "Super Caota",
+  "advancements.ultimatefoods.supercaota.description": "Llevas Super Poop encima. No hace falta comentar nada.",
+  "advancements.ultimatefoods.cacotas.title": "Cacotas",
+  "advancements.ultimatefoods.cacotas.description": "Tienes Poop en el inventario. ¿Por qué?",
+  "advancements.ultimatefoods.eresunviciado.title": "Eres Un Viciado",
+  "advancements.ultimatefoods.eresunviciado.description": "Conseguiste la Galactic Star. Tienes demasiado tiempo libre.",
+  "advancements.ultimatefoods.estabapicantesono.title": "Estaba Picante Sonó",
+  "advancements.ultimatefoods.estabapicantesono.description": "Te comiste el Super Chile. Esperemos que hayas tenido agua cerca."
+
 }

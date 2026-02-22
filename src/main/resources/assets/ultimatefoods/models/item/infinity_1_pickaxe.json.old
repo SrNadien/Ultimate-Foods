@@ -1,0 +1,7 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "ultimatefoods:item/infinitym1pick"
+    }
+}
+

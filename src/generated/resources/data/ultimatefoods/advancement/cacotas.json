@@ -1,0 +1,33 @@
+{
+  "parent": "ultimatefoods:install_mod",
+  "criteria": {
+    "has_poop": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatefoods:poop"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.ultimatefoods.cacotas.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "ultimatefoods:poop"
+    },
+    "title": {
+      "translate": "advancements.ultimatefoods.cacotas.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_poop"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

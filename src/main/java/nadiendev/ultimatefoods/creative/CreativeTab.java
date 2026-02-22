@@ -1,6 +1,7 @@
 package nadiendev.ultimatefoods.creative;
 
 import nadiendev.ultimatefoods.UltimateFoodsCore;
+import nadiendev.ultimatefoods.avaritia.AvaritiaToolsAdds;
 import nadiendev.ultimatefoods.blocks.BlocksAdds;
 import nadiendev.ultimatefoods.blocks.NadieniteOreBlock;
 import nadiendev.ultimatefoods.items.ItemsAdds;
@@ -11,6 +12,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -39,7 +41,7 @@ public class CreativeTab {
                         output.accept(ItemsAdds.BAKED_TORTILLA.get());
                         output.accept(ItemsAdds.TORTILLA.get());
                         output.accept(ItemsAdds.TACO.get());
-                        
+
                         // ========== UTILITIES ==========
                         output.accept(ItemsAdds.GALACTIC_STAR.get());
                         output.accept(ItemsAdds.PATRICIO.get());
@@ -62,20 +64,20 @@ public class CreativeTab {
                         output.accept(ItemsAdds.BRUJULAMALDITA.get());
                         output.accept(ItemsAdds.UNIVERSE_SEARCH.get());
                         output.accept(ItemsAdds.TRANSMISOR.get());
-                        
+
                         // ========== MATERIALES ==========
                         output.accept(ItemsAdds.NADIENITE_INGOT.get());
                         output.accept(ItemsAdds.STEEL_INGOT.get());
-                        
+
                         // ========== BLOQUES ==========
                         output.accept(BlocksAdds.STEEL_BLOCK.get());
                         output.accept(BlocksAdds.SEXY_XD.get());
                         output.accept(BlocksAdds.NADIENITE_BLOCK.get());
-                        
+
                         // ========== MINERALES DE NADIENITE ==========
                         output.accept(NadieniteOreBlock.NADIENITE_ORE.get());
                         output.accept(NadieniteOreBlock.DEEPSLATE_NADIENITE_ORE.get());
-                        
+
                         // ========== HERRAMIENTAS DE NADIENITE ==========
                         output.accept(ToolsAdds.NADIENITE_SWORD.get());
                         output.accept(ToolsAdds.NADIENITE_AXE.get());
@@ -83,12 +85,21 @@ public class CreativeTab {
                         output.accept(ToolsAdds.NADIENITE_HOE.get());
                         output.accept(ToolsAdds.NADIENITE_SHOVEL.get());
                         output.accept(ToolsAdds.CHANCLA.get());
-                        
+
                         // ========== ARMADURA DE NADIENITE ==========
                         output.accept(ArmorAdds.NADIENITE_HELMET.get());
                         output.accept(ArmorAdds.NADIENITE_CHESTPLATE.get());
                         output.accept(ArmorAdds.NADIENITE_LEGGINGS.get());
                         output.accept(ArmorAdds.NADIENITE_BOOTS.get());
+
+                        // ========== AVARITIA - INFINITY TIER ==========
+                        // Solo se agregan al tab si Avaritia está cargado
+                        if (ModList.get().isLoaded("avaritia")) {
+                            output.accept(AvaritiaToolsAdds.INFINITY_1_SWORD.get());
+                            output.accept(AvaritiaToolsAdds.INFINITY_1_PICKAXE.get());
+                            output.accept(AvaritiaToolsAdds.INFINITY_1_HOE.get());
+                            output.accept(AvaritiaToolsAdds.INFINITY_SWORD_BALANCED.get());
+                        }
                     })
                     .build()
             );

@@ -51,7 +51,7 @@ public class ItemsAdds {
                             .effect(() -> new MobEffectInstance(MobEffects.INVISIBILITY, 400, 1), 1.0f)
                             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 800, 2), 1.0f)
                             .build(),
-                    SonidosReproducibles.HAPPY_MEAL_EAT
+                    SonidosReproducibles.ERA_PAL_NENE
             )
     );
 
@@ -244,7 +244,7 @@ public class ItemsAdds {
         )
     );
     
-    //BOB ESPONJA
+    //RADIACTIVE FUEL
     public static final DeferredHolder<Item, Item> RADIOACTIVE_FUEL = ITEMS.register(
         "radioactive_fuel",
        () -> new Item(new Item.Properties()

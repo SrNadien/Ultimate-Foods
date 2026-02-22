@@ -1,0 +1,34 @@
+{
+  "parent": "ultimatefoods:install_mod",
+  "criteria": {
+    "has_galactic_star": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatefoods:galactic_star"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.ultimatefoods.eresunviciado.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "ultimatefoods:galactic_star"
+    },
+    "title": {
+      "translate": "advancements.ultimatefoods.eresunviciado.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_galactic_star"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

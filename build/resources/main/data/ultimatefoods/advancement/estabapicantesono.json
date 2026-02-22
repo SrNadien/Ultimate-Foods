@@ -1,0 +1,31 @@
+{
+  "parent": "ultimatefoods:install_mod",
+  "criteria": {
+    "ate_super_chile": {
+      "conditions": {
+        "item": {
+          "items": "ultimatefoods:super_chile"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.ultimatefoods.estabapicantesono.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "ultimatefoods:super_chile"
+    },
+    "title": {
+      "translate": "advancements.ultimatefoods.estabapicantesono.title"
+    }
+  },
+  "requirements": [
+    [
+      "ate_super_chile"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

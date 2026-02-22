@@ -57,13 +57,13 @@ public class EffectsAdds {
             // cada cuánto se dan los 10 XP.
             // Actualmente: cada 900 ticks = cada 45 segundos
             // ============================================
-            return duration % 900 == 0;
+            return duration % 200 == 0;
         }
 
         @Override
         public boolean applyEffectTick(LivingEntity entity, int amplifier) {
             if (entity instanceof Player player) {
-                player.giveExperienceLevels(10);
+                player.giveExperienceLevels(30);
                 return true;
             }
             return false;

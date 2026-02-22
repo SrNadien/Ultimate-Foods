@@ -1,0 +1,33 @@
+{
+  "parent": "ultimatefoods:install_mod",
+  "criteria": {
+    "has_superpoop": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatefoods:superpoop"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.ultimatefoods.supercaota.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "ultimatefoods:superpoop"
+    },
+    "title": {
+      "translate": "advancements.ultimatefoods.supercaota.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_superpoop"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

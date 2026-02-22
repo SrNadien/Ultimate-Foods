@@ -25,7 +25,7 @@
   "item.ultimatefoods.portalmini": "Portal Mini",
   "item.ultimatefoods.radioactive_antimatter": "Antimateria Radiactiva",
   "item.ultimatefoods.planos": "Planos",
-  "item.ultimatefoods.reactromini": "Reactor Mini",
+  "item.ultimatefoods.reactormini": "Reactor Mini",
   "item.ultimatefoods.super_seed": "Super Semilla",
   "item.ultimatefoods.gameboy": "Gameboy",
   "item.ultimatefoods.galactic_globe": "Globo Galáctico",
@@ -67,6 +67,26 @@
   "item.ultimatefoods.cacotas.description_0": "Qué Asco",
   "item.ultimatefoods.cacotas.description_1": "-_-",
 
+  "item.ultimatefoods.infinity_1_sword": "Espada Infinity-1",
+  "item.ultimatefoods.infinity_1_pickaxe": "Pico Infinity-1",
+  "item.ultimatefoods.infinity_1_hoe": "Azada Infinity-1",
+  "item.ultimatefoods.infinity_sword_balanced": "Espada Infinity (Equilibrada)",
+  "tooltip.ultimatefoods.infinity_1_sword.damage": "Daño: 60",
+  "tooltip.ultimatefoods.infinity_1_sword.durability": "Durabilidad Infinita",
+  "tooltip.ultimatefoods.infinity_sword_balanced.title": "Infinity Sword (Balanced)",
+  "tooltip.ultimatefoods.infinity_sword_balanced.damage": "Daño: 400",
+  "tooltip.ultimatefoods.infinity_sword_balanced.durability": "Durabilidad Infinita",
+  "tooltip.ultimatefoods.infinity_1_hoe.durability": "Durabilidad Infinita",
+  "tooltip.ultimatefoods.infinity_1_hoe.farming": "Compatible con Farming Stations",
+  "tooltip.ultimatefoods.infinity_1_pickaxe.multitool": "Multitool: Pico, Hacha y Pala",
+  "tooltip.ultimatefoods.infinity_1_pickaxe.current_mode": "Modo actual: %s",
+  "tooltip.ultimatefoods.infinity_1_pickaxe.mode_silk": "Silk Touch",
+  "tooltip.ultimatefoods.infinity_1_pickaxe.mode_fortune": "Fortune III",
+  "tooltip.ultimatefoods.infinity_1_pickaxe.change_mode": "Shift + Click Derecho para cambiar modo",
+  "tooltip.ultimatefoods.infinity_1_pickaxe.durability": "Durabilidad Infinita",
+
+
+
   "block.ultimatefoods.sexy_xd": "Sexy xD",
   "block.ultimatefoods.nadienite_block": "Bloque de Nadienite",
   "block.ultimatefoods.steel_block": "Bloque de Acero",
@@ -78,6 +98,8 @@
   "jei.ultimatefoods.super_energy_drink.info": "Te Mamaste UWU",
   "jei.ultimatefoods.doritos.info": "Unos Dorilocos???",
 
+  "tooltip.ultimatefoods.unbreakable": "¡Indestructible!",
+
   "sound_event.ultimatefoods.cajitafeli": "Sonido de Cajita Feliz",
   "sound_event.ultimatefoods.cajitafelizmccaco": "Sonido de Cajita Feliz",
   "sound_event.ultimatefoods.galaxysound": "Sonido Galáctico",
@@ -88,5 +110,24 @@
   "sound_event.ultimatefoods.quemacizo": "Sonido de Monster",
   "sound_event.ultimatefoods.rickroll": "Nunca te Voy a Abandonar",
   "sound_event.ultimatefoods.saxofono": "Sonido de Saxofón",
-  "sound_event.ultimatefoods.the_avengers_theme_song": "Tema de Los Vengadores"
+  "sound_event.ultimatefoods.the_avengers_theme_song": "Tema de Los Vengadores",
+
+
+  "advancements.ultimatefoods.install_mod.title": "Instalaste El Mod",
+  "advancements.ultimatefoods.install_mod.description": "Bienvenido a Ultimate Foods. Ya es tarde para arrepentirse.",
+  "advancements.ultimatefoods.casy_try_hard.title": "Casy Try Hard",
+  "advancements.ultimatefoods.casy_try_hard.description": "Conseguiste la Infinity-1 Sword. ¿Cuánto tiempo te llevó?",
+  "advancements.ultimatefoods.tryhard_balanced.title": "Tryhard Balanced",
+  "advancements.ultimatefoods.tryhard_balanced.description": "Conseguiste la Infinity Sword Balanced. Balanced... sí, claro.",
+  "advancements.ultimatefoods.erapalnene.title": "Era Pal Nene",
+  "advancements.ultimatefoods.erapalnene.description": "Obtuviste una Cajita Feliz. ¿Viene con juguete?",
+  "advancements.ultimatefoods.supercaota.title": "Super Caota",
+  "advancements.ultimatefoods.supercaota.description": "Llevas Super Poop encima. No hace falta comentar nada.",
+  "advancements.ultimatefoods.cacotas.title": "Cacotas",
+  "advancements.ultimatefoods.cacotas.description": "Tienes Poop en el inventario. ¿Por qué?",
+  "advancements.ultimatefoods.eresunviciado.title": "Eres Un Viciado",
+  "advancements.ultimatefoods.eresunviciado.description": "Conseguiste la Galactic Star. Tienes demasiado tiempo libre.",
+  "advancements.ultimatefoods.estabapicantesono.title": "Estaba Picante Sonó",
+  "advancements.ultimatefoods.estabapicantesono.description": "Te comiste el Super Chile. Esperemos que hayas tenido agua cerca."
+
 }

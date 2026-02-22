@@ -1,0 +1,33 @@
+{
+  "type": "avaritia:shaped_table",
+  "key": {
+    "C": {
+      "item": "avaritia:crystal_matrix_ingot"
+    },
+    "I": {
+      "item": "avaritia:crystal_matrix"
+    },
+    "N": {
+      "item": "avaritia:neutron"
+    },
+    "X": {
+      "item": "avaritia:crystal_matrix"
+    }
+  },
+  "pattern": [
+    "    CICIC",
+    "    ICICI",
+    "    IC   ",
+    "     N   ",
+    "     N   ",
+    "    NN   ",
+    "   NN    ",
+    "  NN     ",
+    " X       "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatefoods:infinity_1_hoe"
+  },
+  "tier": 4
+}

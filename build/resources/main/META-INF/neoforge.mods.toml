@@ -4,7 +4,7 @@ license = "MIT"
 
 [[mods]]
 modId = "ultimatefoods"
-version = "1.0"
+version = "1.1.1"
 displayName = "UltimateFoods "
 description = '''Add Exra Foods , Items And More. '''
 authors = "SrNadien"
@@ -36,5 +36,12 @@ side = "BOTH"
 modId = "jade"
 type = "optional"
 versionRange = "7428884"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ultimatefoods]]
+modId = "avaritia"
+type = "optional"
+versionRange = "7445860"
 ordering = "NONE"
 side = "BOTH"

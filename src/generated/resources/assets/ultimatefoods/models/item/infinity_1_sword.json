@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "ultimatefoods:item/infinitym1sword"
+  }
+}

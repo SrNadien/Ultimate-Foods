@@ -14,6 +14,8 @@ import net.neoforged.neoforge.client.event.ModelEvent;
  * Client Configuration
  * By NadienDev
  */
+@SuppressWarnings({"removal", "deprecation"})
+
 @EventBusSubscriber(modid = UltimateFoodsCore.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientSetup {
 

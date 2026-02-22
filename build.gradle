@@ -90,6 +90,10 @@ repositories {
         name 'tterrag maven'
         url "https://maven.tterrag.com/"
     }
+    maven {
+        name 'Re Avaritia Maven'
+        url "https://maven.nova-committee.cn/#/releases"
+    }
     maven { url "https://maven.shedaniel.me" }
 }  
 
@@ -105,6 +109,9 @@ dependencies {
 
     //jade
     implementation "curse.maven:jade-324717:${jade_version}"
+
+    //Avaritia
+    implementation "curse.maven:re-avaritia-623969:${avaritia_version_id}"
 }
 
 tasks.withType(ProcessResources).configureEach {
@@ -120,7 +127,8 @@ tasks.withType(ProcessResources).configureEach {
         mod_authors: mod_authors,
         mod_description: mod_description,
         jade_version: jade_version,
-        jei_version: jei_version
+        jei_version: jei_version,
+        avaritia_version_id: avaritia_version_id,
     ]
     
     inputs.properties replaceProperties

@@ -1,0 +1,33 @@
+{
+  "type": "avaritia:shaped_table",
+  "key": {
+    "C": {
+      "item": "avaritia:crystal_matrix_ingot"
+    },
+    "I": {
+      "item": "avaritia:crystal_matrix"
+    },
+    "N": {
+      "item": "avaritia:neutron"
+    },
+    "X": {
+      "item": "avaritia:crystal_matrix"
+    }
+  },
+  "pattern": [
+    "       II",
+    "      III",
+    "     III ",
+    "    III  ",
+    " C III   ",
+    "  CII    ",
+    "  NC     ",
+    " N  C    ",
+    "X        "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatefoods:infinity_1_sword"
+  },
+  "tier": 4
+}
