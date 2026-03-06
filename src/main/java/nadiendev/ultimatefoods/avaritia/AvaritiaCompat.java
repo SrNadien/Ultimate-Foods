@@ -5,8 +5,7 @@ import net.neoforged.neoforge.common.NeoForge;
 
 /**
  * Compatibilidad con Avaritia
- * Solo registra items y handlers - NO providers de datagen
- * Las recetas de Avaritia deben ir en ModRecipeProvider
+ * By NadienDev
  */
 public class AvaritiaCompat {
 

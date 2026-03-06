@@ -2,6 +2,7 @@ package nadiendev.ultimatefoods.datagen;
 
 import nadiendev.ultimatefoods.UltimateFoodsCore;
 import nadiendev.ultimatefoods.items.ItemsAdds;
+import nadiendev.ultimatefoods.blocks.BlocksAdds;
 
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementHolder;
@@ -32,7 +33,7 @@ public class ModAdvancementProvider implements AdvancementProvider.AdvancementGe
         // ROOT: install_mod
         AdvancementHolder installMod = Advancement.Builder.advancement()
                 .display(
-                        Items.GRASS_BLOCK,
+                        BlocksAdds.NADIENITE_BLOCK.get(),
                         Component.translatable("advancements.ultimatefoods.install_mod.title"),
                         Component.translatable("advancements.ultimatefoods.install_mod.description"),
                         ResourceLocation.parse("minecraft:textures/gui/advancements/backgrounds/adventure.png"),
@@ -87,7 +88,7 @@ public class ModAdvancementProvider implements AdvancementProvider.AdvancementGe
                         InventoryChangeTrigger.TriggerInstance.hasItems(ItemsAdds.CAJITA_FELIZ.get()))
                 .save(saver, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "erapalnene").toString());
 
-        // supercaota — superpoop
+        // supercaota — superpoop (al comerlo)
         Advancement.Builder.advancement()
                 .parent(installMod)
                 .display(
@@ -96,11 +97,11 @@ public class ModAdvancementProvider implements AdvancementProvider.AdvancementGe
                         Component.translatable("advancements.ultimatefoods.supercaota.description"),
                         null, AdvancementType.TASK, true, true, false
                 )
-                .addCriterion("has_superpoop",
-                        InventoryChangeTrigger.TriggerInstance.hasItems(ItemsAdds.SUPERPOOP.get()))
+                .addCriterion("eat_superpoop",
+                        ConsumeItemTrigger.TriggerInstance.usedItem(ItemsAdds.SUPERPOOP.get()))
                 .save(saver, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "supercaota").toString());
 
-        // cacotas — poop
+        // cacotas — poop (al comerlo)
         Advancement.Builder.advancement()
                 .parent(installMod)
                 .display(
@@ -109,8 +110,8 @@ public class ModAdvancementProvider implements AdvancementProvider.AdvancementGe
                         Component.translatable("advancements.ultimatefoods.cacotas.description"),
                         null, AdvancementType.TASK, true, true, false
                 )
-                .addCriterion("has_poop",
-                        InventoryChangeTrigger.TriggerInstance.hasItems(ItemsAdds.POOP.get()))
+                .addCriterion("eat_poop",
+                        ConsumeItemTrigger.TriggerInstance.usedItem(ItemsAdds.POOP.get()))
                 .save(saver, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "cacotas").toString());
 
         // eresunviciado — galactic star
@@ -138,7 +139,5 @@ public class ModAdvancementProvider implements AdvancementProvider.AdvancementGe
                 .addCriterion("ate_super_chile",
                         ConsumeItemTrigger.TriggerInstance.usedItem(ItemsAdds.SUPER_CHILE.get()))
                 .save(saver, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "estabapicantesono").toString());
-
-      
     }
 }

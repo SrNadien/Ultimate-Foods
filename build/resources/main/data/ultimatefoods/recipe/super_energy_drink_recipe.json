@@ -3,25 +3,22 @@
   "category": "misc",
   "key": {
     "a": {
-      "item": "ultimatefoods:cajita_feliz"
+      "item": "minecraft:blaze_powder"
     },
     "b": {
-      "item": "ultimatefoods:super_chile"
+      "item": "minecraft:ghast_tear"
     },
     "c": {
-      "item": "ultimatefoods:chocolatada"
+      "item": "minecraft:magma_cream"
     },
     "d": {
-      "item": "minecraft:cake"
-    },
-    "e": {
-      "item": "minecraft:diamond"
+      "item": "ultimatefoods:monster"
     }
   },
   "pattern": [
-    "ab",
-    "cd",
-    "e "
+    "aba",
+    "cdc",
+    "aba"
   ],
   "result": {
     "count": 1,

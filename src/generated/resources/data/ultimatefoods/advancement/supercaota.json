@@ -1,15 +1,13 @@
 {
   "parent": "ultimatefoods:install_mod",
   "criteria": {
-    "has_superpoop": {
+    "eat_superpoop": {
       "conditions": {
-        "items": [
-          {
-            "items": "ultimatefoods:superpoop"
-          }
-        ]
+        "item": {
+          "items": "ultimatefoods:superpoop"
+        }
       },
-      "trigger": "minecraft:inventory_changed"
+      "trigger": "minecraft:consume_item"
     }
   },
   "display": {
@@ -26,7 +24,7 @@
   },
   "requirements": [
     [
-      "has_superpoop"
+      "eat_superpoop"
     ]
   ],
   "sends_telemetry_event": true

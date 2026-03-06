@@ -18,7 +18,7 @@ public class Infinity1SwordItem extends SwordItem {
 
     public Infinity1SwordItem(Tier tier, Properties properties) {
         // 59 + 1 base = 60 total
-        super(tier, properties.attributes(SwordItem.createAttributes(tier, 59, -2.4F)));
+        super(tier, properties.attributes(SwordItem.createAttributes(tier, -1, -2.4F)));
     }
 
     @Override
@@ -33,8 +33,8 @@ public class Infinity1SwordItem extends SwordItem {
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(Component.literal("Daño: 60").withStyle(ChatFormatting.RED));
-        tooltip.add(Component.literal("Durabilidad Infinita").withStyle(ChatFormatting.GREEN));
+       tooltip.add(Component.translatable("tooltip.ultimatefoods.infinity1sword.damage").withStyle(ChatFormatting.RED));
+tooltip.add(Component.translatable("tooltip.ultimatefoods.infinity1sword.durability").withStyle(ChatFormatting.GREEN));
         
         super.appendHoverText(stack, context, tooltip, flag);
     }

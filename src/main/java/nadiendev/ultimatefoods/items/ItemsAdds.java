@@ -3,12 +3,12 @@ package nadiendev.ultimatefoods.items;
 import nadiendev.ultimatefoods.UltimateFoodsCore;
 import nadiendev.ultimatefoods.sounds.SonidosReproducibles;
 import nadiendev.ultimatefoods.effects.EffectsAdds;
+import nadiendev.ultimatefoods.fluidos_xd.FluidsRegistry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 import net.minecraft.sounds.SoundEvent;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -92,7 +92,7 @@ public class ItemsAdds {
                         .effect(() -> new MobEffectInstance(EffectsAdds.QUE_GUARRO, 6000, 0), 1.0f)
                         .build(),
                 SonidosReproducibles.POOP_EAT,
-                6000 // Duración en ticks (5 minutos)
+                6000
         )
     );
     
@@ -124,7 +124,7 @@ public class ItemsAdds {
     );
 
     // tortilla cruda
-       public static final DeferredHolder<Item, Item> BAKED_TORTILLA = ITEMS.register(
+    public static final DeferredHolder<Item, Item> BAKED_TORTILLA = ITEMS.register(
         "baked_tortilla",
         () -> new Item(new Item.Properties()
                 .stacksTo(64)
@@ -137,8 +137,8 @@ public class ItemsAdds {
         )
     );
 
-    //tortilla cocinada
-     public static final DeferredHolder<Item, Item> TORTILLA = ITEMS.register(
+    // tortilla cocinada
+    public static final DeferredHolder<Item, Item> TORTILLA = ITEMS.register(
         "tortilla",
         () -> new Item(new Item.Properties()
                 .stacksTo(64)
@@ -151,24 +151,21 @@ public class ItemsAdds {
         )
     );
 
-
-     //taco 
-      public static final DeferredHolder<Item, Item> TACO = registerCustomFood(
-         "taco", //nombre
-              20, //nutricion 30
-              8f, //saturacion
-              64, //stack
-              Rarity.COMMON, //rareza
-              createFoodProperties(20, 8f) // propiedades comida
-            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 12000, 10), 1.0f) //efecto
+    // taco 
+    public static final DeferredHolder<Item, Item> TACO = registerCustomFood(
+         "taco",
+              20,
+              8f,
+              64,
+              Rarity.COMMON,
+              createFoodProperties(20, 8f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 12000, 10), 1.0f)
             .build(),
-            SonidosReproducibles.RICKROLL //smusica reproducible
-      );
-
-
+            SonidosReproducibles.RICKROLL
+    );
 
     // SUPER CHILE 
-     public static final DeferredHolder<Item, Item> SUPER_CHILE = ITEMS.register(
+    public static final DeferredHolder<Item, Item> SUPER_CHILE = ITEMS.register(
          "super_chile",
              () -> new SuperChileItem(new Item.Properties()
             .stacksTo(64)
@@ -182,7 +179,7 @@ public class ItemsAdds {
             )
          );
 
- //      ===============================>[Normal Item Add]<===============================
+//      ===============================>[Normal Item Add]<===============================
 
     // NADIENITE INGOT
     public static final DeferredHolder<Item, Item> NADIENITE_INGOT = ITEMS.register(
@@ -194,8 +191,8 @@ public class ItemsAdds {
         )
     );
 
-     //steel ingot
-     public static final DeferredHolder<Item, Item> STEEL_INGOT = ITEMS.register(
+    // steel ingot
+    public static final DeferredHolder<Item, Item> STEEL_INGOT = ITEMS.register(
         "steel_ingot",
         () -> new Item(new Item.Properties()
                 .stacksTo(64)
@@ -204,8 +201,8 @@ public class ItemsAdds {
         )
     );
 
-     //galaxy star
-     public static final DeferredHolder<Item, Item> GALACTIC_STAR = ITEMS.register(
+    // galaxy star
+    public static final DeferredHolder<Item, Item> GALACTIC_STAR = ITEMS.register(
         "galactic_star",
         () -> new Item(new Item.Properties()
                 .stacksTo(64)
@@ -214,7 +211,7 @@ public class ItemsAdds {
         )
     );
 
-    //PATRICIO ESTRELLA
+    // PATRICIO ESTRELLA
     public static final DeferredHolder<Item, Item> PATRICIO = ITEMS.register(
         "patricio",
         () -> new Item(new Item.Properties()
@@ -224,7 +221,7 @@ public class ItemsAdds {
         )
     );
 
-    //BOB ESPONJA
+    // BOB ESPONJA
     public static final DeferredHolder<Item, Item> BOB_ESPONJA = ITEMS.register(
         "bob_esponja",
         () -> new Item(new Item.Properties()
@@ -233,8 +230,8 @@ public class ItemsAdds {
                 .rarity(Rarity.COMMON)
         )
     );
-     
-    //SEMILLA
+
+    // SEMILLA
     public static final DeferredHolder<Item, Item> SEMILLA = ITEMS.register(
         "semilla",
         () -> new Item(new Item.Properties()
@@ -244,7 +241,7 @@ public class ItemsAdds {
         )
     );
     
-    //RADIACTIVE FUEL
+    // RADIACTIVE FUEL
     public static final DeferredHolder<Item, Item> RADIOACTIVE_FUEL = ITEMS.register(
         "radioactive_fuel",
        () -> new Item(new Item.Properties()
@@ -254,7 +251,7 @@ public class ItemsAdds {
         )
     );
     
-    //portalmini
+    // portalmini
     public static final DeferredHolder<Item, Item> PORTALMINI = ITEMS.register(
         "portalmini",
         () -> new Item(new Item.Properties()
@@ -264,7 +261,7 @@ public class ItemsAdds {
         )
     );
 
-    //radioactive antimatter
+    // radioactive antimatter
     public static final DeferredHolder<Item, Item> RADIOACTIVE_ANTIMATTER = ITEMS.register(
         "radioactive_antimatter",
         () -> new Item(new Item.Properties()
@@ -274,7 +271,7 @@ public class ItemsAdds {
         )
     );
 
-   //PLANOS
+    // PLANOS
     public static final DeferredHolder<Item, Item> PLANOS = ITEMS.register(
         "planos",
        () -> new Item(new Item.Properties()
@@ -284,8 +281,8 @@ public class ItemsAdds {
         )
     );
 
-    //REACTOR MINI
-     public static final DeferredHolder<Item, Item> REACTORMINI = ITEMS.register(
+    // REACTOR MINI
+    public static final DeferredHolder<Item, Item> REACTORMINI = ITEMS.register(
         "reactormini",
         () -> new Item(new Item.Properties()
                 .stacksTo(64)
@@ -294,8 +291,8 @@ public class ItemsAdds {
         )
     );
 
-    //SUPER SEED
-     public static final DeferredHolder<Item, Item> SUPER_SEED = ITEMS.register(
+    // SUPER SEED
+    public static final DeferredHolder<Item, Item> SUPER_SEED = ITEMS.register(
         "super_seed",
        () -> new Item(new Item.Properties()
                 .stacksTo(64)
@@ -304,178 +301,174 @@ public class ItemsAdds {
         )
     );
 
-     //GAMEBOY
-     public static final DeferredHolder<Item, Item> GAMEBOY = ITEMS.register(
-          "gameboy",
-           () -> new Item(new Item.Properties()
+    // GAMEBOY
+    public static final DeferredHolder<Item, Item> GAMEBOY = ITEMS.register(
+         "gameboy",
+          () -> new Item(new Item.Properties()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
-     );
+    );
 
-     //GALACTIC GLOBE
-     public static final DeferredHolder<Item, Item> GALACTIC_GLOBE = ITEMS.register(
-          "galactic_globe",
-           () -> new Item(new Item.Properties()
+    // GALACTIC GLOBE
+    public static final DeferredHolder<Item, Item> GALACTIC_GLOBE = ITEMS.register(
+         "galactic_globe",
+          () -> new Item(new Item.Properties()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
-     );
+    );
 
-     //DRAGON SOUL
-     public static final DeferredHolder<Item, Item> DRAGONSOUL = ITEMS.register(
-          "dragonsoul",
-           () -> new Item(new Item.Properties()
+    // DRAGON SOUL
+    public static final DeferredHolder<Item, Item> DRAGONSOUL = ITEMS.register(
+         "dragonsoul",
+          () -> new Item(new Item.Properties()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
-     ); 
+    ); 
 
-     //doll
-     public static final DeferredHolder<Item, Item> DOLL = ITEMS.register(
-          "doll",
-           () -> new Item(new Item.Properties()
+    // doll
+    public static final DeferredHolder<Item, Item> DOLL = ITEMS.register(
+         "doll",
+          () -> new Item(new Item.Properties()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
-     );
+    );
 
-     //CATALIZADOR
-     public static final DeferredHolder<Item, Item> CATALIZADOR = ITEMS.register(
-          "catalizador",
-           () -> new Item(new Item.Properties()
+    // CATALIZADOR
+    public static final DeferredHolder<Item, Item> CATALIZADOR = ITEMS.register(
+         "catalizador",
+          () -> new Item(new Item.Properties()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
-     );
+    );
 
-     //CALAVERA
-      public static final DeferredHolder<Item, Item> CALAVERA = ITEMS.register(
-          "calavera",
-           () -> new Item(new Item.Properties()
+    // CALAVERA
+    public static final DeferredHolder<Item, Item> CALAVERA = ITEMS.register(
+         "calavera",
+          () -> new Item(new Item.Properties()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
-     );
+    );
 
-     //AGUJERO NEGRO
-      public static final DeferredHolder<Item, Item> AGUJERONEGRO = ITEMS.register(
-          "agujeronegro",
-           () -> new Item(new Item.Properties()
+    // AGUJERO NEGRO
+    public static final DeferredHolder<Item, Item> AGUJERONEGRO = ITEMS.register(
+         "agujeronegro",
+          () -> new Item(new Item.Properties()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
-     );
+    );
 
-     //ABSOLUTE REACTION PLATING
-      public static final DeferredHolder<Item, Item> ABSOLUTE_REACTION_PLATING = ITEMS.register(
-          "absolute_reaction_plating",
-           () -> new Item(new Item.Properties()
+    // ABSOLUTE REACTION PLATING
+    public static final DeferredHolder<Item, Item> ABSOLUTE_REACTION_PLATING = ITEMS.register(
+         "absolute_reaction_plating",
+          () -> new Item(new Item.Properties()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
-     );
+    );
 
-     //brujula maldita
-      public static final DeferredHolder<Item, Item> BRUJULAMALDITA = ITEMS.register(
-          "brujulamaldita",
-           () -> new Item(new Item.Properties()
+    // brujula maldita
+    public static final DeferredHolder<Item, Item> BRUJULAMALDITA = ITEMS.register(
+         "brujulamaldita",
+          () -> new Item(new Item.Properties()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
-     );
+    );
     
-    //BUSCADOR DEL UNIVERSO
-     public static final DeferredHolder<Item, Item> UNIVERSE_SEARCH = ITEMS.register(
-          "universe_search",
-           () -> new Item(new Item.Properties()
+    // BUSCADOR DEL UNIVERSO
+    public static final DeferredHolder<Item, Item> UNIVERSE_SEARCH = ITEMS.register(
+         "universe_search",
+          () -> new Item(new Item.Properties()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
-     );
+    );
 
-     //TRANSMISOR
-     public static final DeferredHolder<Item, Item> TRANSMISOR = ITEMS.register(
-          "transmisor",
-           () -> new Item(new Item.Properties()
+    // TRANSMISOR
+    public static final DeferredHolder<Item, Item> TRANSMISOR = ITEMS.register(
+         "transmisor",
+          () -> new Item(new Item.Properties()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
-     );
+    );
 
+//      ===============================>[Music Discs]<===============================
 
+    // DISC MCCACAO
+public static final DeferredHolder<Item, Item> DISC_MCCACAO = ITEMS.register(
+    "disc_mccacao",
+    () -> new Item(new Item.Properties()
+            .jukeboxPlayable(SonidosReproducibles.DISC_MCCACAO_KEY)
+            .stacksTo(1)
+            .rarity(Rarity.RARE))
+);
 
+// DISC AVENGERS
+public static final DeferredHolder<Item, Item> DISC_AVENGERS = ITEMS.register(
+    "disc_avengers",
+    () -> new Item(new Item.Properties()
+            .jukeboxPlayable(SonidosReproducibles.DISC_AVENGERS_KEY)
+            .stacksTo(1)
+            .rarity(Rarity.RARE))
+);
 
+//      ===============================>[Fluid Buckets]<===============================
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // NADIENITE FLUID BUCKET
+    public static final DeferredHolder<Item, BucketItem> NADIENITE_FLUID_BUCKET = ITEMS.register(
+        "nadienite_fluid_bucket",
+        () -> new BucketItem(
+                FluidsRegistry.NADIENITE_FLUID_SOURCE.get(),
+                new Item.Properties()
+                        .craftRemainder(Items.BUCKET)
+                        .stacksTo(1)
+        )
+    );
 
     // ========== MÉTODOS HELPER ==========
 
-    /**
-     * Crea propiedades de comida básicas
-     */
     private static FoodProperties.Builder createFoodProperties(int nutrition, float saturation) {
         return new FoodProperties.Builder()
                 .nutrition(nutrition)
                 .saturationModifier(saturation);
     }
 
-    /**
-     * Registra un ítem de comida con sonido personalizado
-     */
     private static DeferredHolder<Item, Item> registerFoodItem(String name, Supplier<Item> item) {
         return ITEMS.register(name, item);
     }
 
-    /**
-     * Registra un ítem básico sin propiedades especiales
-     */
     public static DeferredHolder<Item, Item> registerItem(String name) {
         return ITEMS.register(name, () -> new Item(new Item.Properties()));
     }
 
-    /**
-     * Registra un ítem de comida simple sin sonido personalizado
-     */
     public static DeferredHolder<Item, Item> registerSimpleFood(String name, int nutrition, float saturation) {
         return ITEMS.register(name, () -> new Item(new Item.Properties()
                 .food(createFoodProperties(nutrition, saturation).build())));
     }
-    
-    
-/**
- * Registra un ítem de comida con efectos, sonido personalizado y propiedades completas
- */
-public static DeferredHolder<Item, Item> registerCustomFood(String name, int nutrition, float saturation, int stackSize, Rarity rarity, FoodProperties foodProperties, DeferredHolder<SoundEvent, SoundEvent> sound) {
-    return ITEMS.register(name, () -> new CustomFoodItem(foodProperties, sound));
-}
 
-    /**
-     * Registra el DeferredRegister en el event bus
-     */
+    public static DeferredHolder<Item, Item> registerCustomFood(String name, int nutrition, float saturation, int stackSize, Rarity rarity, FoodProperties foodProperties, DeferredHolder<SoundEvent, SoundEvent> sound) {
+        return ITEMS.register(name, () -> new CustomFoodItem(foodProperties, sound));
+    }
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -64,6 +64,8 @@ public class CreativeTab {
                         output.accept(ItemsAdds.BRUJULAMALDITA.get());
                         output.accept(ItemsAdds.UNIVERSE_SEARCH.get());
                         output.accept(ItemsAdds.TRANSMISOR.get());
+                        output.accept(ItemsAdds.DISC_MCCACAO.get());
+                        output.accept(ItemsAdds.DISC_AVENGERS.get());
 
                         // ========== MATERIALES ==========
                         output.accept(ItemsAdds.NADIENITE_INGOT.get());
@@ -73,6 +75,7 @@ public class CreativeTab {
                         output.accept(BlocksAdds.STEEL_BLOCK.get());
                         output.accept(BlocksAdds.SEXY_XD.get());
                         output.accept(BlocksAdds.NADIENITE_BLOCK.get());
+                        output.accept(BlocksAdds.NETHER_STAR_BLOCK.get());
 
                         // ========== MINERALES DE NADIENITE ==========
                         output.accept(NadieniteOreBlock.NADIENITE_ORE.get());
@@ -100,6 +103,9 @@ public class CreativeTab {
                             output.accept(AvaritiaToolsAdds.INFINITY_1_HOE.get());
                             output.accept(AvaritiaToolsAdds.INFINITY_SWORD_BALANCED.get());
                         }
+
+                        //fluid buckets
+                        output.accept(ItemsAdds.NADIENITE_FLUID_BUCKET.get());
                     })
                     .build()
             );

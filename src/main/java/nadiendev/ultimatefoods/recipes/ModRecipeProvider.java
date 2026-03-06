@@ -123,11 +123,45 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_golden_apple", has(Items.GOLDEN_APPLE))
                 .save(recipeOutput, rl("poop_recipe"));
 
+        // MONSTER — bebida energética
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.MONSTER.get(), 1)
+                .pattern(" a ").pattern("bcd").pattern(" a ")
+                .define('a', Items.SUGAR)
+                .define('b', Items.BLAZE_POWDER)
+                .define('c', Items.GLASS_BOTTLE)
+                .define('d', Items.MELON_SLICE)
+                .unlockedBy("has_blaze_powder", has(Items.BLAZE_POWDER))
+                .save(recipeOutput, rl("monster_recipe"));
+
+        // SUPER ENERGY DRINK — bebida con múltiples efectos
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.SUPER_ENERGY_DRINK.get(), 1)
+                .pattern("aba").pattern("cdc").pattern("aba")
+                .define('a', Items.BLAZE_POWDER)
+                .define('b', Items.GHAST_TEAR)
+                .define('c', Items.MAGMA_CREAM)
+                .define('d', ItemsAdds.MONSTER.get())
+                .unlockedBy("has_monster", has(ItemsAdds.MONSTER.get()))
+                .save(recipeOutput, rl("super_energy_drink_recipe"));
+
+        // SUPER POOP — poop rodeada de trigo
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.SUPERPOOP.get(), 1)
+                .pattern("aaa").pattern("aba").pattern("aaa")
+                .define('a', Items.WHEAT)
+                .define('b', ItemsAdds.POOP.get())
+                .unlockedBy("has_poop", has(ItemsAdds.POOP.get()))
+                .save(recipeOutput, rl("superpoop_recipe"));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlocksAdds.NADIENITE_BLOCK.get(), 1)
                 .pattern("aaa").pattern("aaa").pattern("aaa")
                 .define('a', ItemsAdds.NADIENITE_INGOT.get())
                 .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
                 .save(recipeOutput, rl("nadienite_block_recipe"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlocksAdds.NETHER_STAR_BLOCK.get(), 1)
+                .pattern("aaa").pattern("aaa").pattern("aaa")
+                .define('a', Items.NETHER_STAR)
+                .unlockedBy("has_nether_star", has(Items.NETHER_STAR))
+                .save(recipeOutput, rl("nether_star_block"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ArmorAdds.NADIENITE_HELMET.get(), 1)
                 .pattern("NNN").pattern("N N")
@@ -166,13 +200,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('C', Items.NETHER_STAR)
                 .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
                 .save(recipeOutput, rl("chancleta"));
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.SUPER_ENERGY_DRINK.get(), 1)
-                .pattern("ab").pattern("cd").pattern("e ")
-                .define('a', ItemsAdds.CAJITA_FELIZ.get()).define('b', ItemsAdds.SUPER_CHILE.get())
-                .define('c', ItemsAdds.CHOCOLATADA.get()).define('d', Items.CAKE).define('e', Items.DIAMOND)
-                .unlockedBy("has_cajita_feliz", has(ItemsAdds.CAJITA_FELIZ.get()))
-                .save(recipeOutput, rl("super_energy_drink_recipe"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.TACO.get(), 1)
                 .pattern("aaa").pattern("bcd").pattern("aaa")

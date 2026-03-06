@@ -9,7 +9,7 @@ displayName = "${mod_named}"
 description = '''${mod_description}'''
 authors = "${mod_authors}"
 displayURL = "https://github.com/nadiendev/ultimatefoods"
-#logoFile = "logo.png"
+logoFile = "logo.png"
 
 [[dependencies.${mod_id}]]
 modId = "neoforge"

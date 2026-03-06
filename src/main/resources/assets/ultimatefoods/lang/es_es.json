@@ -71,6 +71,11 @@
   "item.ultimatefoods.infinity_1_pickaxe": "Pico Infinity-1",
   "item.ultimatefoods.infinity_1_hoe": "Azada Infinity-1",
   "item.ultimatefoods.infinity_sword_balanced": "Espada Infinity (Equilibrada)",
+
+  "item.ultimatefoods.disc_mccacao": "Disco de Música - La cajita Feliz",
+  "item.ultimatefoods.disc_avengers": "Disco de Música - Vengadores",
+  "item.ultimatefoods.nadienite_fluid_bucket": "Cubo de Fluido Nadienite",
+
   "tooltip.ultimatefoods.infinity_1_sword.damage": "Daño: 60",
   "tooltip.ultimatefoods.infinity_1_sword.durability": "Durabilidad Infinita",
   "tooltip.ultimatefoods.infinity_sword_balanced.title": "Infinity Sword (Balanced)",
@@ -84,14 +89,17 @@
   "tooltip.ultimatefoods.infinity_1_pickaxe.mode_fortune": "Fortune III",
   "tooltip.ultimatefoods.infinity_1_pickaxe.change_mode": "Shift + Click Derecho para cambiar modo",
   "tooltip.ultimatefoods.infinity_1_pickaxe.durability": "Durabilidad Infinita",
-
-
+  "tooltip.ultimatefoods.infinity1sword.damage": "60 de daño",
+  "tooltip.ultimatefoods.infinity1sword.durability": "Durabilidad Infinita",
 
   "block.ultimatefoods.sexy_xd": "Sexy xD",
   "block.ultimatefoods.nadienite_block": "Bloque de Nadienite",
   "block.ultimatefoods.steel_block": "Bloque de Acero",
   "block.ultimatefoods.nadienite_ore": "Mena de Nadienite",
   "block.ultimatefoods.deepslate_nadienite_ore": "Mena de Nadienite de Pizarra Profunda",
+  "block.ultimatefoods.nadienite_fluid": "Fluido Nadienite",
+
+  "fluid.ultimatefoods.nadienite_fluid": "Fluido Nadienite",
 
   "jei.ultimatefoods.monster.info": "Cuidado Tete Exceso de Cafeína",
   "jei.ultimatefoods.cajita_feliz.info": "Pensé Que Era Pal Nene",
@@ -112,6 +120,8 @@
   "sound_event.ultimatefoods.saxofono": "Sonido de Saxofón",
   "sound_event.ultimatefoods.the_avengers_theme_song": "Tema de Los Vengadores",
 
+  "jukebox_song.ultimatefoods.disc_mccaco": "McCaco - Cajita Feliz",
+  "jukebox_song.ultimatefoods.disc_avengers": "Tema de Los Vengadores",
 
   "advancements.ultimatefoods.install_mod.title": "Instalaste El Mod",
   "advancements.ultimatefoods.install_mod.description": "Bienvenido a Ultimate Foods. Ya es tarde para arrepentirse.",
@@ -129,5 +139,4 @@
   "advancements.ultimatefoods.eresunviciado.description": "Conseguiste la Galactic Star. Tienes demasiado tiempo libre.",
   "advancements.ultimatefoods.estabapicantesono.title": "Estaba Picante Sonó",
   "advancements.ultimatefoods.estabapicantesono.description": "Te comiste el Super Chile. Esperemos que hayas tenido agua cerca."
-
 }

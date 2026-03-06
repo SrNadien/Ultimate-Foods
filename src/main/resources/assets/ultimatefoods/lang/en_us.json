@@ -67,11 +67,15 @@
   "item.ultimatefoods.cacotas.description_0": "How Disgusting",
   "item.ultimatefoods.cacotas.description_1": "-_-",
 
-
   "item.ultimatefoods.infinity_1_sword": "Infinity-1 Sword",
   "item.ultimatefoods.infinity_1_pickaxe": "Infinity-1 Pickaxe",
   "item.ultimatefoods.infinity_1_hoe": "Infinity-1 Hoe",
   "item.ultimatefoods.infinity_sword_balanced": "Infinity Sword (Balanced)",
+
+  "item.ultimatefoods.disc_mccacao": "Music Disc - McCacao",
+  "item.ultimatefoods.disc_avengers": "Music Disc - Avengers",
+  "item.ultimatefoods.nadienite_fluid_bucket": "Nadienite Fluid Bucket",
+
   "tooltip.ultimatefoods.infinity_1_sword.damage": "Damage: 60",
   "tooltip.ultimatefoods.infinity_1_sword.durability": "Infinite Durability",
   "tooltip.ultimatefoods.infinity_sword_balanced.title": "Infinity Sword (Balanced)",
@@ -85,24 +89,27 @@
   "tooltip.ultimatefoods.infinity_1_pickaxe.mode_fortune": "Fortune III",
   "tooltip.ultimatefoods.infinity_1_pickaxe.change_mode": "Shift + Right Click to change mode",
   "tooltip.ultimatefoods.infinity_1_pickaxe.durability": "Infinite Durability",
-
-
+  "tooltip.ultimatefoods.infinity1sword.damage": "60 Damage Attack",
+  "tooltip.ultimatefoods.infinity1sword.durability": "Infinite Durability",
 
   "block.ultimatefoods.sexy_xd": "Sexy xD",
   "block.ultimatefoods.nadienite_block": "Block of Nadienite",
   "block.ultimatefoods.steel_block": "Block of Steel",
   "block.ultimatefoods.nadienite_ore": "Nadienite Ore",
   "block.ultimatefoods.deepslate_nadienite_ore": "Deepslate Nadienite Ore",
+  "block.ultimatefoods.nadienite_fluid": "Nadienite Fluid",
+
+  "fluid.ultimatefoods.nadienite_fluid": "Nadienite Fluid",
 
   "jei.ultimatefoods.monster.info": "Beware Caffeine Overdose",
   "jei.ultimatefoods.cajita_feliz.info": "I Thought It Was For The Kid",
   "jei.ultimatefoods.super_energy_drink.info": "You Went Too Far UWU",
   "jei.ultimatefoods.doritos.info": "Some Dorilocos???",
 
-  "tooltip.ultimatefoods.unbreakable": "¡Unbreakable!",
+  "tooltip.ultimatefoods.unbreakable": "Unbreakable!",
 
-  "sound_event.ultimatefoods.cajitafeli": "Happy Meal Sound",
-  "sound_event.ultimatefoods.cajitafelizmccaco": "Happy Meal Sound",
+  "sound_event.ultimatefoods.cajitafeli": "The Happy Meal",
+  "sound_event.ultimatefoods.cajitafelizmccaco": "The Happy Meal",
   "sound_event.ultimatefoods.galaxysound": "Galactic Sound",
   "sound_event.ultimatefoods.luzverdeluzrojamakdonald": "Red Light Green Light",
   "sound_event.ultimatefoods.me_compre_una_cajita_feliz": "I Bought a Happy Meal",
@@ -113,6 +120,8 @@
   "sound_event.ultimatefoods.saxofono": "Saxophone Sound",
   "sound_event.ultimatefoods.the_avengers_theme_song": "The Avengers Theme",
 
+  "jukebox_song.ultimatefoods.disc_mccaco": "McCaco - Happy Meal",
+  "jukebox_song.ultimatefoods.disc_avengers": "The Avengers Theme",
 
   "advancements.ultimatefoods.install_mod.title": "Instalaste El Mod",
   "advancements.ultimatefoods.install_mod.description": "Bienvenido a Ultimate Foods. Ya es tarde para arrepentirse.",
@@ -130,5 +139,4 @@
   "advancements.ultimatefoods.eresunviciado.description": "Conseguiste la Galactic Star. Tienes demasiado tiempo libre.",
   "advancements.ultimatefoods.estabapicantesono.title": "Estaba Picante Sonó",
   "advancements.ultimatefoods.estabapicantesono.description": "Te comiste el Super Chile. Esperemos que hayas tenido agua cerca."
-
 }

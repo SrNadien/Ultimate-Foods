@@ -11,7 +11,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "minecraft:grass_block"
+      "id": "ultimatefoods:nadienite_block"
     },
     "title": {
       "translate": "advancements.ultimatefoods.install_mod.title"

@@ -51,6 +51,16 @@ public class BlocksAdds {
             )
     );
 
+    public static final DeferredHolder<Block, Block> NETHER_STAR_BLOCK = registerBlock(
+            "nether_star_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5f, 10f)
+                    .sound(SoundType.ANCIENT_DEBRIS)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresCorrectToolForDrops()
+            )
+    );
+
     // ========== MÉTODOS HELPER ==========
 
     /**

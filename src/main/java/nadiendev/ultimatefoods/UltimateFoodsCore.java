@@ -6,8 +6,10 @@ import nadiendev.ultimatefoods.blocks.BlocksAdds;
 import nadiendev.ultimatefoods.blocks.NadieniteOreBlock;
 import nadiendev.ultimatefoods.creative.CreativeTab;
 import nadiendev.ultimatefoods.datagen.ModAdvancementProvider;
+import nadiendev.ultimatefoods.datagen.ModJukeboxSongProvider;
 import nadiendev.ultimatefoods.datagen.ModLootTableProvider;
 import nadiendev.ultimatefoods.effects.EffectsAdds;
+import nadiendev.ultimatefoods.fluidos_xd.FluidsRegistry;
 import nadiendev.ultimatefoods.items.ItemsAdds;
 import nadiendev.ultimatefoods.items.armor.ArmorAdds;
 import nadiendev.ultimatefoods.items.armor.NadieniteArmorMaterial;
@@ -23,12 +25,15 @@ import nadiendev.ultimatefoods.datagen.ModWorldGenProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.data.AdvancementProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import org.slf4j.Logger;
 
@@ -51,6 +56,11 @@ public class UltimateFoodsCore {
         ItemsAdds.register(modEventBus);
         ArmorAdds.register(modEventBus);
         ToolsAdds.register(modEventBus);
+
+        // Fluidos
+        FluidsRegistry.FLUID_TYPES.register(modEventBus);
+        FluidsRegistry.FLUIDS.register(modEventBus);
+        FluidsRegistry.FLUID_BLOCKS.register(modEventBus);
 
         if (ModList.get().isLoaded("avaritia")) {
             ModDataComponents.register(modEventBus);
@@ -76,7 +86,17 @@ public class UltimateFoodsCore {
         DataGenerator generator = event.getGenerator();
         PackOutput output = generator.getPackOutput();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
-        net.neoforged.neoforge.common.data.ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+
+        // Registrar texturas del fluido para que ExistingFileHelper las reconozca
+        existingFileHelper.trackGenerated(
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "block/nadienite_fluid"),
+            PackType.CLIENT_RESOURCES, ".png", "textures"
+        );
+        existingFileHelper.trackGenerated(
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "block/nadienite_flow"),
+            PackType.CLIENT_RESOURCES, ".png", "textures"
+        );
 
         LOGGER.info("=== INICIANDO GENERACIÓN DE DATOS ===");
 
@@ -86,6 +106,7 @@ public class UltimateFoodsCore {
         generator.addProvider(event.includeServer(),
                 new AdvancementProvider(output, lookupProvider, existingFileHelper,
                         List.of(new ModAdvancementProvider())));
+        generator.addProvider(event.includeServer(), new ModJukeboxSongProvider(output, lookupProvider));
 
         ModBlockTags.Provider blockTagsProvider = generator.addProvider(
                 event.includeServer(),
