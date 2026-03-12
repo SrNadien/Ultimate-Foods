@@ -1,8 +1,0 @@
-{
-  "parent": "ultimatefoods:custom/cajita_feliz",
-  "render_type": "cutout",
-  "textures": {
-    "0": "ultimatefoods:block/cajita_feliz",
-    "particle": "ultimatefoods:item/cajita_feliz"
-  }
-}

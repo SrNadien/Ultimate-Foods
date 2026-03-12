@@ -1,7 +1,0 @@
-{
-  "parent": "ultimatefoods:custom/monster",
-  "render_type": "cutout",
-  "textures": {
-    "particle": "ultimatefoods:item/monster"
-  }
-}

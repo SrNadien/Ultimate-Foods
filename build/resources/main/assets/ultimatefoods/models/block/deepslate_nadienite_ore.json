@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "ultimatefoods:block/deepslate_nadienite_ore"
-  }
-}

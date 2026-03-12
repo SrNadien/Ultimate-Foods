@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Specification-Title: UltimateFoods 
-Specification-Vendor: SrNadien
-Specification-Version: 1
-Implementation-Title: UltimateFoodsMod
-Implementation-Version: 1.21.1-1.0-Release-NeoForge
-Implementation-Vendor: SrNadien
-Implementation-Timestamp: 2026-02-06T18:08:51-0300
-
