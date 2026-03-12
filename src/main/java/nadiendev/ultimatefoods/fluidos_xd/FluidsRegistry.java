@@ -29,7 +29,7 @@ public class FluidsRegistry {
             DeferredRegister.create(BuiltInRegistries.BLOCK, UltimateFoodsCore.MOD_ID);
 
     // ── Nadienite Fluid ───────────────────────────────────────────────────────
-
+    @SuppressWarnings({"deprecation", "removal"})
     public static final Supplier<FluidType> NADIENITE_FLUID_TYPE = FLUID_TYPES.register("nadienite_fluid",
             () -> new FluidType(FluidType.Properties.create()
                     .density(1000)

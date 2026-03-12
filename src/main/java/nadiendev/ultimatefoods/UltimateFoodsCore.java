@@ -5,9 +5,13 @@ import nadiendev.ultimatefoods.avaritia.ModDataComponents;
 import nadiendev.ultimatefoods.blocks.BlocksAdds;
 import nadiendev.ultimatefoods.blocks.NadieniteOreBlock;
 import nadiendev.ultimatefoods.creative.CreativeTab;
+import nadiendev.ultimatefoods.datagen.BlockModelProvider;
+import nadiendev.ultimatefoods.datagen.ItemsModelProvider;
 import nadiendev.ultimatefoods.datagen.ModAdvancementProvider;
 import nadiendev.ultimatefoods.datagen.ModJukeboxSongProvider;
 import nadiendev.ultimatefoods.datagen.ModLootTableProvider;
+import nadiendev.ultimatefoods.datagen.ModSoundProvider;
+import nadiendev.ultimatefoods.datagen.ModWorldGenProvider;
 import nadiendev.ultimatefoods.effects.EffectsAdds;
 import nadiendev.ultimatefoods.fluidos_xd.FluidsRegistry;
 import nadiendev.ultimatefoods.items.ItemsAdds;
@@ -18,10 +22,6 @@ import nadiendev.ultimatefoods.recipes.ModRecipeProvider;
 import nadiendev.ultimatefoods.sounds.SonidosReproducibles;
 import nadiendev.ultimatefoods.tags.ModBlockTags;
 import nadiendev.ultimatefoods.tags.ModItemTags;
-import nadiendev.ultimatefoods.datagen.BlockModelProvider;
-import nadiendev.ultimatefoods.datagen.ItemsModelProvider;
-import nadiendev.ultimatefoods.datagen.ModSoundProvider;
-import nadiendev.ultimatefoods.datagen.ModWorldGenProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -88,7 +88,6 @@ public class UltimateFoodsCore {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
-        // Registrar texturas del fluido para que ExistingFileHelper las reconozca
         existingFileHelper.trackGenerated(
             ResourceLocation.fromNamespaceAndPath(MOD_ID, "block/nadienite_fluid"),
             PackType.CLIENT_RESOURCES, ".png", "textures"

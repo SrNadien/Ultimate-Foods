@@ -59,8 +59,8 @@ public class ModBlockTags {
         @Override
         protected void addTags(HolderLookup.Provider provider) {
             
-               // ============================================
-            // NEEDS_NADIENITE_TOOL - Tag custom del mod
+              // ============================================
+             // NEEDS_NADIENITE_TOOL - Tag custom del mod
             // Bloques que pueden ser minados con pico de Nadienite
             // ============================================
             this.tag(Blocks.NEEDS_NADIENITE_TOOL)
