@@ -46,6 +46,21 @@ public class ModItemTags {
         // Ores Tags
         public static final TagKey<Item> ORES_NADIENITE = commonTag("ores/nadienite");
 
+        // Enchantment Tags - AutoSmelt (por separado para compatibilidad con datapacks)
+        public static final TagKey<Item> AUTOSMELT_ENCHANTABLE_MINING   = tag("enchantable/autosmelt_mining");
+        public static final TagKey<Item> AUTOSMELT_ENCHANTABLE_AXE      = tag("enchantable/autosmelt_axe");
+        public static final TagKey<Item> AUTOSMELT_ENCHANTABLE_ALL      = tag("enchantable/autosmelt_all");
+        public static final TagKey<Item> AUTOSMELT_ENCHANTABLE_AXES     = tag("enchantable/autosmelt_axes");
+        public static final TagKey<Item> AUTOSMELT_ENCHANTABLE_SHOVELS  = tag("enchantable/autosmelt_shovels");
+        public static final TagKey<Item> AUTOSMELT_ENCHANTABLE_PICKAXES = tag("enchantable/autosmelt_pickaxes");
+        public static final TagKey<Item> AUTOSMELT_ENCHANTABLE          = tag("enchantable/autosmelt");
+
+        // Enchantment Tags - XPBoost (por separado para compatibilidad con datapacks)
+        public static final TagKey<Item> XPBOOST_ENCHANTABLE_SWORD      = tag("enchantable/xpboost_sword");
+        public static final TagKey<Item> XPBOOST_ENCHANTABLE_SWORDS     = tag("enchantable/xpboost_swords");
+        public static final TagKey<Item> XPBOOST_ENCHANTABLE_AXES       = tag("enchantable/xpboost_axes");
+        public static final TagKey<Item> XPBOOST_ENCHANTABLE            = tag("enchantable/xpboost");
+
         private static TagKey<Item> commonTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
         }
@@ -99,7 +114,41 @@ public class ModItemTags {
             this.tag(ItemTags.SWORDS)
                 .add(ToolsAdds.NADIENITE_SWORD.get());
 
+            // ========== ENCANTAMIENTOS ==========
 
+            // AutoSmelt - cada tag de vanilla por separado para compatibilidad con datapacks
+            this.tag(Items.AUTOSMELT_ENCHANTABLE_MINING)   .addTag(ItemTags.MINING_ENCHANTABLE);
+            this.tag(Items.AUTOSMELT_ENCHANTABLE_AXE)      .addTag(ItemTags.AXES);
+            // AUTOSMELT_ENCHANTABLE_ALL eliminado: ItemTags.ENCHANTABLE no existe en 1.21
+            this.tag(Items.AUTOSMELT_ENCHANTABLE_AXES)     .addTag(ItemTags.AXES);
+            this.tag(Items.AUTOSMELT_ENCHANTABLE_SHOVELS)  .addTag(ItemTags.SHOVELS);
+            this.tag(Items.AUTOSMELT_ENCHANTABLE_PICKAXES) .addTag(ItemTags.PICKAXES);
+            // Tag principal que agrupa todos los anteriores
+            this.tag(Items.AUTOSMELT_ENCHANTABLE)
+                .addTag(Items.AUTOSMELT_ENCHANTABLE_MINING)
+                .addTag(Items.AUTOSMELT_ENCHANTABLE_AXE)
+                                .addTag(Items.AUTOSMELT_ENCHANTABLE_AXES)
+                .addTag(Items.AUTOSMELT_ENCHANTABLE_SHOVELS)
+                .addTag(Items.AUTOSMELT_ENCHANTABLE_PICKAXES);
+
+            // XPBoost - cada tag de vanilla por separado para compatibilidad con datapacks
+            this.tag(Items.XPBOOST_ENCHANTABLE_SWORD)  .addTag(ItemTags.SWORD_ENCHANTABLE);
+            this.tag(Items.XPBOOST_ENCHANTABLE_SWORDS) .addTag(ItemTags.SWORDS);
+            this.tag(Items.XPBOOST_ENCHANTABLE_AXES)   .addTag(ItemTags.AXES);
+            this.tag(Items.XPBOOST_ENCHANTABLE_AXES)   .add(ToolsAdds.NADIENITE_SWORD.get());
+            this.tag(Items.XPBOOST_ENCHANTABLE_AXES)   .add(ToolsAdds.NADIENITE_AXE.get());
+            // Tag principal que agrupa todos los anteriores
+            this.tag(Items.XPBOOST_ENCHANTABLE)
+                .addTag(Items.XPBOOST_ENCHANTABLE_SWORD)
+                .addTag(Items.XPBOOST_ENCHANTABLE_SWORDS)
+                .addTag(Items.XPBOOST_ENCHANTABLE_AXES);
+            // Tag: pickaxes - Picos
+            this.tag(ItemTags.PICKAXES)
+                .add(ToolsAdds.NADIENITE_PICKAXE.get());
+
+            // Tag: axes - Hachas
+            this.tag(ItemTags.AXES)
+                .add(ToolsAdds.NADIENITE_AXE.get());
 
             // ========== ARMADURA - TAGS DE MINECRAFT ==========
 

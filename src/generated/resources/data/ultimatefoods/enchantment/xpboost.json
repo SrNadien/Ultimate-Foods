@@ -17,6 +17,6 @@
     "mainhand",
     "offhand"
   ],
-  "supported_items": "#minecraft:enchantable/weapon",
+  "supported_items": "#ultimatefoods:enchantable/xpboost",
   "weight": 5
 }

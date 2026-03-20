@@ -1,12 +1,24 @@
-// 1.21.1	2026-02-06T17:52:01.0337412	Tags for minecraft:item mod id ultimatefoods
+// 1.21.1	2026-03-19T22:50:18.4664301	Tags for minecraft:item mod id ultimatefoods
 6da0024c2a7da0c15677496be09de688d9a3eea8 data/c/tags/item/ingots/nadienite.json
 ad3187074e86c94f1b567204bdbe6c961dc3649e data/c/tags/item/ingots/steel.json
 913607e4e7771f76f99451c27df8b2e21c75252e data/c/tags/item/ores/nadienite.json
 fa7f1985252b890b4a300ae5d0a6e9f2b998befe data/c/tags/item/storage_blocks/nadienite.json
 4ed77ecf987a0919daa4d1391b8acc18ef8fa5ca data/c/tags/item/storage_blocks/steel.json
+d366c2854c56a3f2acce3056a42d6641e87d87c4 data/minecraft/tags/item/axes.json
 a7f882506235b18b48aeef4cc26106de71a5469a data/minecraft/tags/item/chest_armor.json
 2a8a8ce3beaaf1ffda274129e751ad8f60ea6207 data/minecraft/tags/item/foot_armor.json
 32e434bbe01eaea7d7ec8f4f16b5c70d498cd269 data/minecraft/tags/item/head_armor.json
 3a56954ce779bad5227de6150c773cddee2a3053 data/minecraft/tags/item/leg_armor.json
+9e1a14231ce38e78fb7617b3469e6a87e863c765 data/minecraft/tags/item/pickaxes.json
 f434bf661e8f7dfbfb1d3d9dee8800362d7ad2ed data/minecraft/tags/item/swords.json
 7b29431da444d8a690f9b09b8a806aed749893d2 data/minecraft/tags/item/trimmable_armor.json
+4b45e18ede069f36448fd1df96baf24a3a05a16a data/ultimatefoods/tags/item/enchantable/autosmelt.json
+ba9125aa546790a0582445879c658b228dbb763c data/ultimatefoods/tags/item/enchantable/autosmelt_axe.json
+ba9125aa546790a0582445879c658b228dbb763c data/ultimatefoods/tags/item/enchantable/autosmelt_axes.json
+8bcf66bd169d7d5eb80222910965cc71df60ac8e data/ultimatefoods/tags/item/enchantable/autosmelt_mining.json
+bdb4053d28def340c591bb6cd77b677cfe510db6 data/ultimatefoods/tags/item/enchantable/autosmelt_pickaxes.json
+5e7c760621586934c47d721d06be94fdb2693f4e data/ultimatefoods/tags/item/enchantable/autosmelt_shovels.json
+1613ee1f08b50ddcc4b20445f2970c844e9ecd56 data/ultimatefoods/tags/item/enchantable/xpboost.json
+33d2475a67a21ad2a5c7d510cb564300daf48f21 data/ultimatefoods/tags/item/enchantable/xpboost_axes.json
+6c13071b28cffd16efe3749222d1cff2c381dec7 data/ultimatefoods/tags/item/enchantable/xpboost_sword.json
+e6756cdd6fb03cf772eba210ae3f93335e83dcd6 data/ultimatefoods/tags/item/enchantable/xpboost_swords.json

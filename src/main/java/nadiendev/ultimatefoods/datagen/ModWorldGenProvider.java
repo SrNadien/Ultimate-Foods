@@ -3,6 +3,7 @@ package nadiendev.ultimatefoods.datagen;
 import nadiendev.ultimatefoods.UltimateFoodsCore;
 import nadiendev.ultimatefoods.enchant.ModEnchantments;
 import nadiendev.ultimatefoods.worldgen.NadieniteOreGeneration;
+import nadiendev.ultimatefoods.tags.ModItemTags;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.HolderSet;
@@ -41,10 +42,11 @@ public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
 
         // ── AutoSmelt ──────────────────────────────────────────────────────────────
         // RARE (weight 2) | nivel 1 | min 15 | max 60 | MAINHAND | excl. Silk Touch
+        // Acepta: picos, palas y hachas de cualquier mod (via ultimatefoods:enchantable/autosmelt)
         context.register(ModEnchantments.AUTOSMELT, new Enchantment(
                 Component.translatable("enchantment.ultimatefoods.autosmelt"),
                 new Enchantment.EnchantmentDefinition(
-                        items.getOrThrow(ItemTags.MINING_ENCHANTABLE),
+                        items.getOrThrow(ModItemTags.Items.AUTOSMELT_ENCHANTABLE),
                         Optional.empty(),
                         2,
                         1,
@@ -59,10 +61,11 @@ public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
 
         // ── XPBoost ────────────────────────────────────────────────────────────────
         // UNCOMMON (weight 5) | nivel 3 | min 10+10/lvl | max 40+10/lvl | MAINHAND+OFFHAND | excl. Silk Touch
+        // Acepta: espadas de cualquier mod (via ultimatefoods:enchantable/xpboost)
         context.register(ModEnchantments.XPBOOST, new Enchantment(
                 Component.translatable("enchantment.ultimatefoods.xpboost"),
                 new Enchantment.EnchantmentDefinition(
-                        items.getOrThrow(ItemTags.WEAPON_ENCHANTABLE),
+                        items.getOrThrow(ModItemTags.Items.XPBOOST_ENCHANTABLE),
                         Optional.empty(),
                         5,
                         3,

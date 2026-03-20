@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#ultimatefoods:enchantable/autosmelt_mining",
+    "#ultimatefoods:enchantable/autosmelt_axe",
+    "#ultimatefoods:enchantable/autosmelt_axes",
+    "#ultimatefoods:enchantable/autosmelt_shovels",
+    "#ultimatefoods:enchantable/autosmelt_pickaxes"
+  ]
+}
