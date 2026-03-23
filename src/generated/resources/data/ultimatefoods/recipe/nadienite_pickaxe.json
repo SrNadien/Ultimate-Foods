@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "N": {
+      "item": "ultimatefoods:nadienite_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "NNN",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatefoods:nadienite_pickaxe"
+  }
+}

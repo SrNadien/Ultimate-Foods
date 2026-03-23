@@ -192,6 +192,47 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('N', ItemsAdds.NADIENITE_INGOT.get()).define('S', Items.STICK)
                 .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
                 .save(recipeOutput, rl("nadienite_sword"));
+        
+        // NADIENITE PICKAXE (Hacha)
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_PICKAXE.get(), 1)
+        .pattern("NNN")
+        .pattern(" S ")
+        .pattern(" S ")
+        .define('N', ItemsAdds.NADIENITE_INGOT.get())
+        .define('S', Items.STICK)
+        .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
+        .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "nadienite_pickaxe"));
+
+// NADIENITE AXE (Hacha)
+ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_AXE.get(), 1)
+        .pattern("NN ")
+        .pattern("NS ")
+        .pattern(" S ")
+        .define('N', ItemsAdds.NADIENITE_INGOT.get())
+        .define('S', Items.STICK)
+        .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
+        .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "nadienite_axe"));
+
+// NADIENITE SHOVEL (Pala)
+ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_SHOVEL.get(), 1)
+        .pattern(" N ")
+        .pattern(" S ")
+        .pattern(" S ")
+        .define('N', ItemsAdds.NADIENITE_INGOT.get())
+        .define('S', Items.STICK)
+        .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
+        .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "nadienite_shovel"));
+
+// NADIENITE HOE (Azada)
+ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_HOE.get(), 1)
+        .pattern("NN ")
+        .pattern(" S ")
+        .pattern(" S ")
+        .define('N', ItemsAdds.NADIENITE_INGOT.get())
+        .define('S', Items.STICK)
+        .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
+        .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "nadienite_hoe"));
+        
 
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ToolsAdds.CHANCLA.get(), 1)
                 .pattern(" C ").pattern(" N ").pattern(" S ")
