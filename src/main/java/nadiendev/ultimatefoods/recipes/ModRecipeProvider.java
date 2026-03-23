@@ -193,7 +193,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
                 .save(recipeOutput, rl("nadienite_sword"));
         
-        // NADIENITE PICKAXE (Hacha)
+        // NADIENITE PICKAXE (Pico)
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_PICKAXE.get(), 1)
         .pattern("NNN")
         .pattern(" S ")
