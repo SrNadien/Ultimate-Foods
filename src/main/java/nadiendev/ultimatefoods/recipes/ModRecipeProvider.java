@@ -193,7 +193,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
                 .save(recipeOutput, rl("nadienite_sword"));
         
-        // NADIENITE PICKAXE (Pico)
+        // NADIENITE PICKAXE (Hacha)
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_PICKAXE.get(), 1)
         .pattern("NNN")
         .pattern(" S ")
@@ -272,6 +272,12 @@ ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_HOE.get(), 
                 .define('a', ItemsAdds.STEEL_INGOT.get())
                 .unlockedBy("has_steel_ingot", has(ItemsAdds.STEEL_INGOT.get()))
                 .save(recipeOutput, rl("bloque_de_acero"));
+        
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.NADIENITE_INGOT.get(), 9)
+                .pattern("   ").pattern(" a ").pattern("   ")
+                .define('a', BlocksAdds.NADIENITE_BLOCK.get())
+                .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
+                .save(recipeOutput, rl("ligote_de_nadienite_desde_bloque"));
 
         // ==========================================
         // RECETAS AVARITIA — EXTREME CRAFTING TABLE
