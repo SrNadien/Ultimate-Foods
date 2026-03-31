@@ -1,9 +1,7 @@
 {
   "itemGroup.ultimatefoods": "Ultimate Foods",
-
   "effect.ultimatefoods.que_guarro": "Qué Guarro",
   "effect.ultimatefoods.flying": "Vuelo",
-  
   "item.ultimatefoods.monster": "Monster",
   "item.ultimatefoods.cajita_feliz": "Cajita Feliz",
   "item.ultimatefoods.super_energy_drink": "Bebida Energética Super",
@@ -12,6 +10,11 @@
   "item.ultimatefoods.superpoop": "Super Caca",
   "item.ultimatefoods.super_chile": "Super Chile",
   "item.ultimatefoods.chocolatada": "Chocolatada",
+  "item.ultimatefoods.raw_hamburger_meat": "Carne de Hamburguesa Cruda",
+  "item.ultimatefoods.cooked_hamburger_meat": "Carne de Hamburguesa Cocinada",
+  "item.ultimatefoods.burger": "Hamburguesa",
+  "item.ultimatefoods.netherite_dagger": "Daga de Netherite",
+  "item.ultimatefoods.nadienite_nugget": "Pepita de Nadienite",
   "item.ultimatefoods.nadienite_ingot": "Lingote de Nadienite",
   "item.ultimatefoods.bob_esponja": "Bob Esponja",
   "item.ultimatefoods.patricio": "Patricio",
@@ -39,18 +42,15 @@
   "item.ultimatefoods.universe_search": "Buscador del Universo",
   "item.ultimatefoods.transmisor": "Transmisor",
   "item.ultimatefoods.chancla": "Chancleta",
-
   "item.ultimatefoods.nadienite_sword": "Espada de Nadienite",
   "item.ultimatefoods.nadienite_axe": "Hacha de Nadienite",
   "item.ultimatefoods.nadienite_pickaxe": "Pico de Nadienite",
   "item.ultimatefoods.nadienite_shovel": "Pala de Nadienite",
   "item.ultimatefoods.nadienite_hoe": "Azada de Nadienite",
-
   "item.ultimatefoods.nadienite_helmet": "Casco de Nadienite",
   "item.ultimatefoods.nadienite_chestplate": "Pechera de Nadienite",
   "item.ultimatefoods.nadienite_leggings": "Pantalones de Nadienite",
   "item.ultimatefoods.nadienite_boots": "Botas de Nadienite",
-
   "item.ultimatefoods.super_chile.description_0": "Oh No Me Fumé",
   "item.ultimatefoods.super_chile.description_1": "xD",
   "item.ultimatefoods.super_chile.description_2": "Troe Esto Es Legal",
@@ -66,16 +66,13 @@
   "item.ultimatefoods.super_chile.description_12": "Troe Esto Es Legal",
   "item.ultimatefoods.cacotas.description_0": "Qué Asco",
   "item.ultimatefoods.cacotas.description_1": "-_-",
-
   "item.ultimatefoods.infinity_1_sword": "Espada Infinity-1",
   "item.ultimatefoods.infinity_1_pickaxe": "Pico Infinity-1",
   "item.ultimatefoods.infinity_1_hoe": "Azada Infinity-1",
   "item.ultimatefoods.infinity_sword_balanced": "Espada Infinity (Equilibrada)",
-
   "item.ultimatefoods.disc_mccacao": "Disco de Música - La cajita Feliz",
   "item.ultimatefoods.disc_avengers": "Disco de Música - Vengadores",
   "item.ultimatefoods.nadienite_fluid_bucket": "Cubo de Fluido Nadienite",
-
   "tooltip.ultimatefoods.infinity_1_sword.damage": "Daño: 60",
   "tooltip.ultimatefoods.infinity_1_sword.durability": "Durabilidad Infinita",
   "tooltip.ultimatefoods.infinity_sword_balanced.title": "Infinity Sword (Balanced)",
@@ -91,23 +88,18 @@
   "tooltip.ultimatefoods.infinity_1_pickaxe.durability": "Durabilidad Infinita",
   "tooltip.ultimatefoods.infinity1sword.damage": "60 de daño",
   "tooltip.ultimatefoods.infinity1sword.durability": "Durabilidad Infinita",
-
   "block.ultimatefoods.sexy_xd": "Sexy xD",
   "block.ultimatefoods.nadienite_block": "Bloque de Nadienite",
   "block.ultimatefoods.steel_block": "Bloque de Acero",
   "block.ultimatefoods.nadienite_ore": "Mena de Nadienite",
   "block.ultimatefoods.deepslate_nadienite_ore": "Mena de Nadienite de Pizarra Profunda",
   "block.ultimatefoods.nadienite_fluid": "Fluido Nadienite",
-
   "fluid.ultimatefoods.nadienite_fluid": "Fluido Nadienite",
-
   "jei.ultimatefoods.monster.info": "Cuidado Tete Exceso de Cafeína",
   "jei.ultimatefoods.cajita_feliz.info": "Pensé Que Era Pal Nene",
   "jei.ultimatefoods.super_energy_drink.info": "Te Mamaste UWU",
   "jei.ultimatefoods.doritos.info": "Unos Dorilocos???",
-
   "tooltip.ultimatefoods.unbreakable": "¡Indestructible!",
-
   "sound_event.ultimatefoods.cajitafeli": "Sonido de Cajita Feliz",
   "sound_event.ultimatefoods.cajitafelizmccaco": "Sonido de Cajita Feliz",
   "sound_event.ultimatefoods.galaxysound": "Sonido Galáctico",
@@ -119,13 +111,10 @@
   "sound_event.ultimatefoods.rickroll": "Nunca te Voy a Abandonar",
   "sound_event.ultimatefoods.saxofono": "Sonido de Saxofón",
   "sound_event.ultimatefoods.the_avengers_theme_song": "Tema de Los Vengadores",
-
   "jukebox_song.ultimatefoods.disc_mccaco": "McCaco - Cajita Feliz",
   "jukebox_song.ultimatefoods.disc_avengers": "Tema de Los Vengadores",
-
   "enchantment.ultimatefoods.autosmelt": "Auto Cocinado",
   "enchantment.ultimatefoods.xpboost": "Boost De Experiencia",
-
   "advancements.ultimatefoods.install_mod.title": "Instalaste El Mod",
   "advancements.ultimatefoods.install_mod.description": "Bienvenido a Ultimate Foods. Ya es tarde para arrepentirse.",
   "advancements.ultimatefoods.casy_try_hard.title": "Casy Try Hard",
