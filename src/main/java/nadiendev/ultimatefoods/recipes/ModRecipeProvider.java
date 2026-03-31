@@ -11,6 +11,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -68,6 +69,13 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_netherite_ingot", has(Items.NETHERITE_INGOT))
                 .save(recipeOutput, rl("nadienite_ingot_furnace_alt"));
 
+       
+        SimpleCookingRecipeBuilder.smelting(
+                Ingredient.of(ItemsAdds.RAW_HAMBURGUER_MEAT.get()),
+                RecipeCategory.FOOD, ItemsAdds.COOKED_HAMBURGUER_MEAT.get(), 0.35f, 200)
+                .unlockedBy("has_raw_hamburguer_meat", has(ItemsAdds.RAW_HAMBURGUER_MEAT.get()))
+                .save(recipeOutput, rl("cooked_hamburguer_meat_furnace"));
+
         // ==========================================
         // ALTO HORNO
         // ==========================================
@@ -92,6 +100,13 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_baked_tortilla", has(ItemsAdds.BAKED_TORTILLA.get()))
                 .save(recipeOutput, rl("tortilla_cruda_ahumador"));
 
+       
+        SimpleCookingRecipeBuilder.smoking(
+                Ingredient.of(ItemsAdds.RAW_HAMBURGUER_MEAT.get()),
+                RecipeCategory.FOOD, ItemsAdds.COOKED_HAMBURGUER_MEAT.get(), 0.35f, 100)
+                .unlockedBy("has_patty_raw", has(ItemsAdds.RAW_HAMBURGUER_MEAT.get()))
+                .save(recipeOutput, rl("cooked_hamburguer_meat_smoker"));
+
         // ==========================================
         // HOGUERA
         // ==========================================
@@ -101,9 +116,52 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_baked_tortilla", has(ItemsAdds.BAKED_TORTILLA.get()))
                 .save(recipeOutput, rl("tortilla_cruda_hoguera"));
 
+        
+        SimpleCookingRecipeBuilder.campfireCooking(
+                Ingredient.of(ItemsAdds.RAW_HAMBURGUER_MEAT.get()),
+                RecipeCategory.FOOD, ItemsAdds.COOKED_HAMBURGUER_MEAT.get(), 0.35f, 600)
+                .unlockedBy("has_patty_raw", has(ItemsAdds.RAW_HAMBURGUER_MEAT.get()))
+                .save(recipeOutput, rl("cooked_hamburguer_meat_campfire"));
+
         // ==========================================
         // CRAFTEO NORMAL
         // ==========================================
+
+        // CARNE DE HAMBURGUESA CRUDA
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.RAW_HAMBURGUER_MEAT.get(), 1)
+                .pattern(" O ")
+                .pattern("PKV")
+                .pattern(" O ")
+                .define('P', Items.PORKCHOP)
+                .define('O', Items.MUTTON)
+                .define('K', ItemsAdds.NETHERITE_DAGGER.get())
+                .define('V', Items.BEEF)
+                .unlockedBy("has_beef", has(Items.BEEF))
+                .save(recipeOutput, rl("patty_raw_recipe"));
+
+         //daga de netherite
+          ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ItemsAdds.NETHERITE_DAGGER.get(), 1)
+                .pattern("   ")
+                .pattern(" K ")
+                .pattern(" O ")
+                .define('K', Items.NETHERITE_INGOT)
+                .define('O', Items.STICK)
+                .unlockedBy("has_stick", has(Items.STICK))
+                .save(recipeOutput, rl("daga_netherita"));
+
+
+        // HAMBURGUESA
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.BURGER.get(), 1)
+                .pattern(" B ")
+                .pattern("CMG")
+                .pattern(" B ")
+                .define('B', Items.BREAD)
+                .define('C', Items.GOLDEN_CARROT)
+                .define('M', ItemsAdds.COOKED_HAMBURGUER_MEAT.get())
+                .define('G', Items.GLISTERING_MELON_SLICE)
+                .unlockedBy("has_patty_cooked", has(ItemsAdds.COOKED_HAMBURGUER_MEAT.get()))
+                .save(recipeOutput, rl("hamburguesa_recipe"));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.DORITOS.get(), 1)
                 .pattern("aba").pattern("bcb").pattern("aba")
                 .define('a', Items.WHEAT).define('b', Items.BAKED_POTATO).define('c', Items.BUCKET)
@@ -193,7 +251,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
                 .save(recipeOutput, rl("nadienite_sword"));
         
-        // NADIENITE PICKAXE (Hacha)
+        // NADIENITE PICKAXE
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_PICKAXE.get(), 1)
         .pattern("NNN")
         .pattern(" S ")
@@ -203,36 +261,35 @@ public class ModRecipeProvider extends RecipeProvider {
         .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
         .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "nadienite_pickaxe"));
 
-// NADIENITE AXE (Hacha)
-ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_AXE.get(), 1)
-        .pattern("NN ")
-        .pattern("NS ")
-        .pattern(" S ")
-        .define('N', ItemsAdds.NADIENITE_INGOT.get())
-        .define('S', Items.STICK)
-        .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
-        .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "nadienite_axe"));
+        // NADIENITE AXE
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_AXE.get(), 1)
+                .pattern("NN ")
+                .pattern("NS ")
+                .pattern(" S ")
+                .define('N', ItemsAdds.NADIENITE_INGOT.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "nadienite_axe"));
 
-// NADIENITE SHOVEL (Pala)
-ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_SHOVEL.get(), 1)
-        .pattern(" N ")
-        .pattern(" S ")
-        .pattern(" S ")
-        .define('N', ItemsAdds.NADIENITE_INGOT.get())
-        .define('S', Items.STICK)
-        .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
-        .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "nadienite_shovel"));
+        // NADIENITE SHOVEL
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_SHOVEL.get(), 1)
+                .pattern(" N ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('N', ItemsAdds.NADIENITE_INGOT.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "nadienite_shovel"));
 
-// NADIENITE HOE (Azada)
-ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_HOE.get(), 1)
-        .pattern("NN ")
-        .pattern(" S ")
-        .pattern(" S ")
-        .define('N', ItemsAdds.NADIENITE_INGOT.get())
-        .define('S', Items.STICK)
-        .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
-        .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "nadienite_hoe"));
-        
+        // NADIENITE HOE
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_HOE.get(), 1)
+                .pattern("NN ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('N', ItemsAdds.NADIENITE_INGOT.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "nadienite_hoe"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ToolsAdds.CHANCLA.get(), 1)
                 .pattern(" C ").pattern(" N ").pattern(" S ")
@@ -279,15 +336,24 @@ ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_HOE.get(), 
                 .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
                 .save(recipeOutput, rl("ligote_de_nadienite_desde_bloque"));
 
+
+        // NADIENITE NUGGET 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ItemsAdds.NADIENITE_NUGGET.get(), 9)
+                .requires(ItemsAdds.NADIENITE_INGOT.get())
+                .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
+                .save(recipeOutput, rl("nadienite_nugget_from_ingot"));
+
+                 ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemsAdds.NADIENITE_INGOT.get(), 1)
+                .pattern("aaa").pattern("aaa").pattern("aaa")
+                .define('a', ItemsAdds.NADIENITE_NUGGET.get())
+                .unlockedBy("has_nadienite_nugget", has(ItemsAdds.NADIENITE_NUGGET.get()))
+                .save(recipeOutput, rl("nadienite_ingot_from_nuggets"));
         // ==========================================
         // RECETAS AVARITIA — EXTREME CRAFTING TABLE
-        // tier 4 = Extreme Crafting Table (9x9)
-        // Usamos ModShapedRecipeBuilder.shaped(category, ItemLike, tier)
         // ==========================================
         if (ModList.get().isLoaded("avaritia")
                 && BuiltInRegistries.ITEM.containsKey(ResourceLocation.fromNamespaceAndPath("ultimatefoods", "infinity_1_sword"))) {
 
-            // ESPADA INFINITY-1
             ModShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, AvaritiaToolsAdds.INFINITY_1_SWORD.get(), 4)
                     .pattern("       II")
                     .pattern("      III")
@@ -305,7 +371,6 @@ ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_HOE.get(), 
                     .unlockedBy("has_item", has(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("avaritia", "crystal_matrix_ingot"))))
                     .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "avaritiacompat/infinity_1_sword"));
 
-            // ESPADA INFINITY BALANCED
             ModShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, AvaritiaToolsAdds.INFINITY_SWORD_BALANCED.get(), 4)
                     .pattern("       II")
                     .pattern("      III")
@@ -323,7 +388,6 @@ ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_HOE.get(), 
                     .unlockedBy("has_item", has(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("avaritia", "infinity_ingot"))))
                     .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "avaritiacompat/infinity_sword_balanced"));
 
-            // PICO INFINITY-1
             ModShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, AvaritiaToolsAdds.INFINITY_1_PICKAXE.get(), 4)
                     .pattern("CICICICIC")
                     .pattern(" CICICIC ")
@@ -341,7 +405,6 @@ ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ToolsAdds.NADIENITE_HOE.get(), 
                     .unlockedBy("has_item", has(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("avaritia", "crystal_matrix_ingot"))))
                     .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "avaritiacompat/infinity_1_pickaxe"));
 
-            // AZADA INFINITY-1
             ModShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, AvaritiaToolsAdds.INFINITY_1_HOE.get(), 4)
                     .pattern("    CICIC")
                     .pattern("    ICICI")

@@ -9,6 +9,7 @@ import nadiendev.ultimatefoods.datagen.BlockModelProvider;
 import nadiendev.ultimatefoods.datagen.ItemsModelProvider;
 import nadiendev.ultimatefoods.datagen.ModAdvancementProvider;
 import nadiendev.ultimatefoods.datagen.ModJukeboxSongProvider;
+import nadiendev.ultimatefoods.datagen.ModLootModifierProvider;
 import nadiendev.ultimatefoods.datagen.ModLootTableProvider;
 import nadiendev.ultimatefoods.datagen.ModSoundProvider;
 import nadiendev.ultimatefoods.datagen.ModWorldGenProvider;
@@ -18,6 +19,7 @@ import nadiendev.ultimatefoods.items.ItemsAdds;
 import nadiendev.ultimatefoods.items.armor.ArmorAdds;
 import nadiendev.ultimatefoods.items.armor.NadieniteArmorMaterial;
 import nadiendev.ultimatefoods.items.tools.ToolsAdds;
+import nadiendev.ultimatefoods.loot.LootModifiersRegister;
 import nadiendev.ultimatefoods.recipes.ModRecipeProvider;
 import nadiendev.ultimatefoods.sounds.SonidosReproducibles;
 import nadiendev.ultimatefoods.tags.ModBlockTags;
@@ -61,6 +63,9 @@ public class UltimateFoodsCore {
         FluidsRegistry.FLUID_TYPES.register(modEventBus);
         FluidsRegistry.FLUIDS.register(modEventBus);
         FluidsRegistry.FLUID_BLOCKS.register(modEventBus);
+
+        // Global Loot Modifiers (codecs)
+        LootModifiersRegister.register(modEventBus);
 
         if (ModList.get().isLoaded("avaritia")) {
             ModDataComponents.register(modEventBus);
@@ -106,6 +111,9 @@ public class UltimateFoodsCore {
                 new AdvancementProvider(output, lookupProvider, existingFileHelper,
                         List.of(new ModAdvancementProvider())));
         generator.addProvider(event.includeServer(), new ModJukeboxSongProvider(output, lookupProvider));
+
+        // Global Loot Modifiers — genera los JSON en neoforge/loot_modifiers/
+        generator.addProvider(event.includeServer(), new ModLootModifierProvider(output, lookupProvider));
 
         ModBlockTags.Provider blockTagsProvider = generator.addProvider(
                 event.includeServer(),

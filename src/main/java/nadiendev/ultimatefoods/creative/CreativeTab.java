@@ -42,6 +42,11 @@ public class CreativeTab {
                         output.accept(ItemsAdds.TORTILLA.get());
                         output.accept(ItemsAdds.TACO.get());
 
+                        // Hamburguesa y sus componentes
+                        output.accept(ItemsAdds.RAW_HAMBURGUER_MEAT.get());
+                        output.accept(ItemsAdds.COOKED_HAMBURGUER_MEAT.get());
+                        output.accept(ItemsAdds.BURGER.get());
+
                         // ========== UTILITIES ==========
                         output.accept(ItemsAdds.GALACTIC_STAR.get());
                         output.accept(ItemsAdds.PATRICIO.get());
@@ -69,7 +74,11 @@ public class CreativeTab {
 
                         // ========== MATERIALES ==========
                         output.accept(ItemsAdds.NADIENITE_INGOT.get());
+                        output.accept(ItemsAdds.NADIENITE_NUGGET.get());
                         output.accept(ItemsAdds.STEEL_INGOT.get());
+
+                        // ========== HERRAMIENTAS ESPECIALES ==========
+                        output.accept(ItemsAdds.NETHERITE_DAGGER.get());
 
                         // ========== BLOQUES ==========
                         output.accept(BlocksAdds.STEEL_BLOCK.get());
@@ -96,7 +105,6 @@ public class CreativeTab {
                         output.accept(ArmorAdds.NADIENITE_BOOTS.get());
 
                         // ========== AVARITIA - INFINITY TIER ==========
-                        // Solo se agregan al tab si Avaritia está cargado
                         if (ModList.get().isLoaded("avaritia")) {
                             output.accept(AvaritiaToolsAdds.INFINITY_1_SWORD.get());
                             output.accept(AvaritiaToolsAdds.INFINITY_1_PICKAXE.get());

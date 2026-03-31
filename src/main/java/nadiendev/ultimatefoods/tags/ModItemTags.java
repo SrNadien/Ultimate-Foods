@@ -2,6 +2,7 @@ package nadiendev.ultimatefoods.tags;
 
 import nadiendev.ultimatefoods.UltimateFoodsCore;
 import nadiendev.ultimatefoods.blocks.BlocksAdds;
+import nadiendev.ultimatefoods.avaritia.AvaritiaToolsAdds; 
 import nadiendev.ultimatefoods.blocks.NadieniteOreBlock;
 import nadiendev.ultimatefoods.items.ItemsAdds;
 import nadiendev.ultimatefoods.items.armor.ArmorAdds;
@@ -127,24 +128,32 @@ public class ModItemTags {
             this.tag(Items.AUTOSMELT_ENCHANTABLE)
                 .addTag(Items.AUTOSMELT_ENCHANTABLE_MINING)
                 .addTag(Items.AUTOSMELT_ENCHANTABLE_AXE)
-                                .addTag(Items.AUTOSMELT_ENCHANTABLE_AXES)
+                .addTag(Items.AUTOSMELT_ENCHANTABLE_AXES)
                 .addTag(Items.AUTOSMELT_ENCHANTABLE_SHOVELS)
                 .addTag(Items.AUTOSMELT_ENCHANTABLE_PICKAXES);
 
-            // XPBoost - cada tag de vanilla por separado para compatibilidad con datapacks
-            this.tag(Items.XPBOOST_ENCHANTABLE_SWORD)  .addTag(ItemTags.SWORD_ENCHANTABLE);
-            this.tag(Items.XPBOOST_ENCHANTABLE_SWORDS) .addTag(ItemTags.SWORDS);
-            this.tag(Items.XPBOOST_ENCHANTABLE_AXES)   .addTag(ItemTags.AXES);
-            this.tag(Items.XPBOOST_ENCHANTABLE_AXES)   .add(ToolsAdds.NADIENITE_SWORD.get());
-            this.tag(Items.XPBOOST_ENCHANTABLE_AXES)   .add(ToolsAdds.NADIENITE_AXE.get());
-            // Tag principal que agrupa todos los anteriores
+            // XPBoost 
+            this.tag(Items.XPBOOST_ENCHANTABLE_SWORD)
+                .addTag(ItemTags.SWORD_ENCHANTABLE);
+            this.tag(Items.XPBOOST_ENCHANTABLE_SWORDS)
+                .addTag(ItemTags.SWORDS);
+            this.tag(Items.XPBOOST_ENCHANTABLE_AXES)
+                .addTag(ItemTags.AXES)
+                .add(ToolsAdds.NADIENITE_SWORD.get())
+                .add(ToolsAdds.NADIENITE_AXE.get())
+                .add(AvaritiaToolsAdds.INFINITY_1_PICKAXE.get())
+                .add(AvaritiaToolsAdds.INFINITY_1_HOE.get());
+
+            // Tag principal 
             this.tag(Items.XPBOOST_ENCHANTABLE)
                 .addTag(Items.XPBOOST_ENCHANTABLE_SWORD)
                 .addTag(Items.XPBOOST_ENCHANTABLE_SWORDS)
                 .addTag(Items.XPBOOST_ENCHANTABLE_AXES);
             // Tag: pickaxes - Picos
             this.tag(ItemTags.PICKAXES)
-                .add(ToolsAdds.NADIENITE_PICKAXE.get());
+                .add(ToolsAdds.NADIENITE_PICKAXE.get())
+                .add(AvaritiaToolsAdds.INFINITY_1_PICKAXE.get())
+                .add(AvaritiaToolsAdds.INFINITY_1_HOE.get());
 
             // Tag: axes - Hachas
             this.tag(ItemTags.AXES)

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ultimatefoods:item/nadienite_nugget"
+  }
+}

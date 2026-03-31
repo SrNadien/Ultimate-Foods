@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ultimatefoods:item/raw_hamburger_meat"
+  }
+}

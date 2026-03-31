@@ -179,6 +179,49 @@ public class ItemsAdds {
             )
          );
 
+    // CARNE DE HAMBURGUESA CRUDA
+    public static final DeferredHolder<Item, Item> RAW_HAMBURGUER_MEAT = ITEMS.register(
+        "raw_hamburger_meat",
+        () -> new Item(new Item.Properties()
+                .stacksTo(64)
+                .rarity(Rarity.COMMON)
+                .food(new FoodProperties.Builder()
+                        .nutrition(2)
+                        .saturationModifier(0.1f)
+                        .build()
+                )
+        )
+    );
+
+    // CARNE DE HAMBURGUESA COCINADA
+    public static final DeferredHolder<Item, Item> COOKED_HAMBURGUER_MEAT = ITEMS.register(
+        "cooked_hamburger_meat",
+        () -> new Item(new Item.Properties()
+                .stacksTo(64)
+                .rarity(Rarity.COMMON)
+                .food(new FoodProperties.Builder()
+                        .nutrition(6)
+                        .saturationModifier(0.8f)
+                        .build()
+                )
+        )
+    );
+
+    // HAMBURGUESA
+    public static final DeferredHolder<Item, Item> BURGER = ITEMS.register(
+        "burger",
+        () -> new Item(new Item.Properties()
+                .stacksTo(64)
+                .rarity(Rarity.EPIC)
+                .food(new FoodProperties.Builder()
+                        .nutrition(6)
+                        .saturationModifier(1.2f)
+                        .effect(() -> new MobEffectInstance(MobEffects.HEAL, 1, 5), 1.0f)
+                        .build()
+                )
+        )
+    );
+
 //      ===============================>[Normal Item Add]<===============================
 
     // NADIENITE INGOT
@@ -240,18 +283,18 @@ public class ItemsAdds {
                 .rarity(Rarity.COMMON)
         )
     );
-    
-    // RADIACTIVE FUEL
+
+    // RADIOACTIVE FUEL
     public static final DeferredHolder<Item, Item> RADIOACTIVE_FUEL = ITEMS.register(
         "radioactive_fuel",
-       () -> new Item(new Item.Properties()
+        () -> new Item(new Item.Properties()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
-    
-    // portalmini
+
+    // PORTAL MINI
     public static final DeferredHolder<Item, Item> PORTALMINI = ITEMS.register(
         "portalmini",
         () -> new Item(new Item.Properties()
@@ -408,6 +451,26 @@ public class ItemsAdds {
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
+        )
+    );
+
+    // NADIENITE NUGGET
+    public static final DeferredHolder<Item, Item> NADIENITE_NUGGET = ITEMS.register(
+         "nadienite_nugget",
+          () -> new Item(new Item.Properties()
+                .stacksTo(64)
+                .fireResistant()
+                .rarity(Rarity.COMMON)
+        )
+    );
+
+    // ========== NETHERITE DAGGER==========
+    public static final DeferredHolder<Item, Item> NETHERITE_DAGGER = ITEMS.register(
+        "netherite_dagger",
+        () -> new Item(new Item.Properties()
+                .stacksTo(1)
+                .fireResistant()
+                .rarity(Rarity.EPIC)
         )
     );
 

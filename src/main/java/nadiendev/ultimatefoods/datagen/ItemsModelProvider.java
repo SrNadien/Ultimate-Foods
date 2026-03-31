@@ -48,5 +48,19 @@ public class ItemsModelProvider extends ItemModelProvider {
                     ResourceLocation.withDefaultNamespace("item/handheld")
             ).texture("layer0", ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "item/infinitym1hoe"));
         }
+
+        // ========== HAMBURGUESA Y COMPONENTES ==========
+        basicItem(nadiendev.ultimatefoods.items.ItemsAdds.RAW_HAMBURGUER_MEAT.get());
+        basicItem(nadiendev.ultimatefoods.items.ItemsAdds.COOKED_HAMBURGUER_MEAT.get());
+        basicItem(nadiendev.ultimatefoods.items.ItemsAdds.BURGER.get());
+
+        // ========== DAGA DE NETHERITE ==========
+        withExistingParent(
+                nadiendev.ultimatefoods.items.ItemsAdds.NETHERITE_DAGGER.getId().getPath(),
+                ResourceLocation.withDefaultNamespace("item/handheld")
+        ).texture("layer0", ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "item/netherite_dagger"));
+
+        // ========== NADIENITE NUGGET ==========
+        basicItem(nadiendev.ultimatefoods.items.ItemsAdds.NADIENITE_NUGGET.get());
     }
 }

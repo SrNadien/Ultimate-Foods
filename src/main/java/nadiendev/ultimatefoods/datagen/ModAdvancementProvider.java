@@ -139,5 +139,18 @@ public class ModAdvancementProvider implements AdvancementProvider.AdvancementGe
                 .addCriterion("ate_super_chile",
                         ConsumeItemTrigger.TriggerInstance.usedItem(ItemsAdds.SUPER_CHILE.get()))
                 .save(saver, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "estabapicantesono").toString());
+
+        // hamburguesa_gourmet
+        Advancement.Builder.advancement()
+                .parent(installMod)
+                .display(
+                        ItemsAdds.BURGER.get(),
+                        Component.translatable("advancements.ultimatefoods.hamburguesa_gourmet.title"),
+                        Component.translatable("advancements.ultimatefoods.hamburguesa_gourmet.description"),
+                        null, AdvancementType.TASK, true, true, false
+                )
+                .addCriterion("eat_burger",
+                        ConsumeItemTrigger.TriggerInstance.usedItem(ItemsAdds.BURGER.get()))
+                .save(saver, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "hamburguesa_gourmet").toString());
     }
 }

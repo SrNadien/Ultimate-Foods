@@ -1,0 +1,31 @@
+{
+  "parent": "ultimatefoods:install_mod",
+  "criteria": {
+    "eat_burger": {
+      "conditions": {
+        "item": {
+          "items": "ultimatefoods:burger"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.ultimatefoods.hamburguesa_gourmet.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "ultimatefoods:burger"
+    },
+    "title": {
+      "translate": "advancements.ultimatefoods.hamburguesa_gourmet.title"
+    }
+  },
+  "requirements": [
+    [
+      "eat_burger"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

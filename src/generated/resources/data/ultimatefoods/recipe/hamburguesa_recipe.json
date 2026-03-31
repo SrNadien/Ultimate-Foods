@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bread"
+    },
+    "C": {
+      "item": "minecraft:golden_carrot"
+    },
+    "G": {
+      "item": "minecraft:glistering_melon_slice"
+    },
+    "M": {
+      "item": "ultimatefoods:cooked_hamburger_meat"
+    }
+  },
+  "pattern": [
+    " B ",
+    "CMG",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatefoods:burger"
+  }
+}
