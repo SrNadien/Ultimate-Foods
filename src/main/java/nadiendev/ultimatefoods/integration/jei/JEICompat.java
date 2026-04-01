@@ -5,10 +5,14 @@ import nadiendev.ultimatefoods.items.ItemsAdds;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.VanillaTypes;
+import mezz.jei.api.helpers.IGuiHelper;
+import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
+
+import java.util.List;
 
 /**
  * JEICompat
@@ -21,12 +25,26 @@ public class JEICompat implements IModPlugin {
     public ResourceLocation getPluginUid() {
         return ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "jei_plugin");
     }
-     
-       // Agregar información descriptiva para los ítems en JEI
+
+    // Registrar la categoría visual de la Netherite Dagger
+    @Override
+    public void registerCategories(IRecipeCategoryRegistration registration) {
+        IGuiHelper guiHelper = registration.getJeiHelpers().getGuiHelper();
+        registration.addRecipeCategories(new NetheriteDaggerCategory(guiHelper));
+    }
+
+    // Registrar las recetas de cada categoría + info descriptiva
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
- 
-        
+
+        // ── Categoría visual: Netherite Dagger Ritual ──
+        registration.addRecipes(
+                NetheriteDaggerCategory.RECIPE_TYPE,
+                List.of(NetheriteDaggerRecipe.INSTANCE)
+        );
+
+        // ── Info descriptiva ──
+
         // Monster
         registration.addIngredientInfo(
                 new ItemStack(ItemsAdds.MONSTER.get()),
@@ -55,5 +73,11 @@ public class JEICompat implements IModPlugin {
                 Component.translatable("jei.ultimatefoods.doritos.info")
         );
 
+        // Netherite Dagger — texto de apoyo además de la vista visual
+        registration.addIngredientInfo(
+                new ItemStack(ItemsAdds.NETHERITE_DAGGER.get()),
+                VanillaTypes.ITEM_STACK,
+                Component.translatable("jei.ultimatefoods.netherite_dagger.info")
+        );
     }
 }

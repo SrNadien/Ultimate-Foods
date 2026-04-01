@@ -139,15 +139,15 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_beef", has(Items.BEEF))
                 .save(recipeOutput, rl("patty_raw_recipe"));
 
-         //daga de netherite
-          ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ItemsAdds.NETHERITE_DAGGER.get(), 1)
-                .pattern("   ")
-                .pattern(" K ")
-                .pattern(" O ")
-                .define('K', Items.NETHERITE_INGOT)
-                .define('O', Items.STICK)
-                .unlockedBy("has_stick", has(Items.STICK))
-                .save(recipeOutput, rl("daga_netherita"));
+         //daga de netherite (desactivada ahora se crea co el ritual)
+        //   ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ItemsAdds.NETHERITE_DAGGER.get(), 1)
+        //         .pattern("   ")
+        //         .pattern(" K ")
+        //         .pattern(" O ")
+        //         .define('K', Items.NETHERITE_INGOT)
+        //         .define('O', Items.STICK)
+        //         .unlockedBy("has_stick", has(Items.STICK))
+        //         .save(recipeOutput, rl("daga_netherita"));
 
 
         // HAMBURGUESA
@@ -220,6 +220,11 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('a', Items.NETHER_STAR)
                 .unlockedBy("has_nether_star", has(Items.NETHER_STAR))
                 .save(recipeOutput, rl("nether_star_block"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.NETHER_STAR, 9)
+               .requires(BlocksAdds.NETHER_STAR_BLOCK.get())
+               .unlockedBy("has_nether_star_block", has(BlocksAdds.NETHER_STAR_BLOCK.get()))
+               .save(recipeOutput, rl("nether_star_from_block"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ArmorAdds.NADIENITE_HELMET.get(), 1)
                 .pattern("NNN").pattern("N N")

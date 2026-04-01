@@ -1,0 +1,280 @@
+[31mar2026 20:39:12.162] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.215, --assetIndex, asset-index, --assetsDir, C:\Users\SrNadien\.gradle\caches\minecraft\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.215, --fml.neoFormVersion, 20240808.144430]
+[31mar2026 20:39:12.177] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.7+8-LTS-245
+[31mar2026 20:39:12.196] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.7 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[31mar2026 20:39:12.947] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[31mar2026 20:39:13.681] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[31mar2026 20:39:14.988] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[31mar2026 20:39:15.504] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/SrNadien/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23142!/ Service=ModLauncher Env=CLIENT
+[31mar2026 20:39:16.416] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.215.jar" [locator: neoforge devenv provider ([C:\Users\SrNadien\Documents\Ultimate-Foods\.gradle\repositories\ng_dummy_ng\net\neoforged\neoforge\21.1.215\neoforge-21.1.215.jar])]
+[31mar2026 20:39:16.506] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.215.jar" [locator: neoforge devenv provider ([C:\Users\SrNadien\Documents\Ultimate-Foods\.gradle\repositories\ng_dummy_ng\net\neoforged\neoforge\21.1.215\neoforge-21.1.215.jar])]
+[31mar2026 20:39:16.568] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "main" [locator: userdev mods and services, reader: mod manifest]
+[31mar2026 20:39:16.609] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.215.jar" [locator: userdev mods and services, reader: mod manifest]
+[31mar2026 20:39:16.654] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jade-324717-7428884.jar" [locator: userdev mods and services, reader: mod manifest]
+[31mar2026 20:39:16.696] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "re-avaritia-623969-7445860.jar" [locator: userdev mods and services, reader: mod manifest]
+[31mar2026 20:39:16.725] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jei-1.21.1-neoforge-19.27.0.340.jar" [locator: userdev mods and services, reader: mod manifest]
+[31mar2026 20:39:16.744] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "appleskin-neoforge-mc1.21-3.0.8.jar" [locator: userdev mods and services, reader: mod manifest]
+[31mar2026 20:39:17.123] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "mixinextras-neoforge-0.5.0.jar" [locator: userdev mods and services, reader: mod manifest]
+[31mar2026 20:39:17.729] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: library:mixinextras.neoforge. Using Mod File: C:\Users\SrNadien\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-neoforge\0.5.0\d734b83ce6542bb70ea31755c1595b88992dbe65\mixinextras-neoforge-0.5.0.jar
+[31mar2026 20:39:17.729] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
+[31mar2026 20:39:17.729] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "net.neoforged.neoforge-coremods-21.1.215.jar" [parent: neoforge-21.1.215.jar, locator: jarinjar, reader: mod manifest]
+[31mar2026 20:39:17.729] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		AppleSkin 3.0.8+mc1.21 (appleskin)
+		Jade 15.10.4+neoforge (jade)
+		Just Enough Items 19.27.0.340 (jei)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.215 (neoforge)
+		Re-Avaritia 1.3.9.4 (avaritia)
+		UltimateFoods  2.0.7 (ultimatefoods)
+[31mar2026 20:39:19.755] [main/INFO] [mixin/]: Compatibility level set to JAVA_20
+[31mar2026 20:39:19.798] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.215, --gameDir, ., --assetsDir, C:\Users\SrNadien\.gradle\caches\minecraft\assets, --assetIndex, asset-index]
+[31mar2026 20:39:20.035] [main/WARN] [mixin/]: Reference map 'avaritia.refmap.json' for avaritia.mixins.json could not be read. If this is a development environment you can ignore this message
+[31mar2026 20:39:25.641] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: GeForce GT 520/PCIe/SSE2 GL version 4.6.0 NVIDIA 388.13, NVIDIA Corporation
+[31mar2026 20:39:33.053] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 5511 milliseconds
+[31mar2026 20:39:33.811] [pool-5-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[31mar2026 20:39:56.045] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[31mar2026 20:39:56.061] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[31mar2026 20:39:56.061] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[31mar2026 20:39:56.076] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[31mar2026 20:39:56.092] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[31mar2026 20:39:56.714] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/SrNadien/Documents/Ultimate-Foods/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/21.1.215/neoforge-21.1.215.jar%23195!/assets/.mcassetsroot' uses unexpected schema
+[31mar2026 20:39:56.715] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/SrNadien/Documents/Ultimate-Foods/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/21.1.215/neoforge-21.1.215.jar%23195!/data/.mcassetsroot' uses unexpected schema
+[31mar2026 20:39:56.820] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[31mar2026 20:39:56.876] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[31mar2026 20:39:57.298] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[31mar2026 20:39:58.667] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Inicializando Ultimate Foods Mod...
+[31mar2026 20:39:58.934] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Avaritia detectado — items y data components registrados
+[31mar2026 20:39:58.981] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Ultimate Foods Mod inicializado correctamente!
+[31mar2026 20:39:59.331] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.215, for MC 1.21.1
+[31mar2026 20:39:59.790] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[31mar2026 20:39:59.817] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 25.07 milliseconds
+[31mar2026 20:40:03.588] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
+[31mar2026 20:40:04.951] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/ultimatefoods, mod/avaritia, mod/jade, mod/appleskin, mod/neoforge, mod/jei
+[31mar2026 20:40:04.990] [Worker-Main-1/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Configuración común de Ultimate Foods
+[31mar2026 20:40:06.001] [Worker-Main-1/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[31mar2026 20:40:07.020] [Worker-Main-1/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[31mar2026 20:40:12.912] [Worker-Main-1/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture ultimatefoods:item/monster with size 100x100 limits mip level from 4 to 2
+[31mar2026 20:40:12.913] [Worker-Main-1/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture ultimatefoods:item/portalmini with size 150x150 limits mip level from 2 to 1
+[31mar2026 20:40:18.214] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Start loading plugin from nadiendev.ultimatefoods.integration.jade.JadeCompat
+[31mar2026 20:40:18.255] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Bootstrapped plugin from nadiendev.ultimatefoods.integration.jade.JadeCompat in 36.12 ms
+[31mar2026 20:40:18.264] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Loaded plugin from nadiendev.ultimatefoods.integration.jade.JadeCompat in 44.45 ms
+[31mar2026 20:40:18.264] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Start loading plugin from committee.nova.mods.avaritia.init.compat.JadeCompat
+[31mar2026 20:40:18.269] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Bootstrapped plugin from committee.nova.mods.avaritia.init.compat.JadeCompat in 3.703 ms
+[31mar2026 20:40:18.271] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Loaded plugin from committee.nova.mods.avaritia.init.compat.JadeCompat in 4.684 ms
+[31mar2026 20:40:18.271] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.vanilla.VanillaPlugin
+[31mar2026 20:40:18.377] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Bootstrapped plugin from snownee.jade.addon.vanilla.VanillaPlugin in 103.0 ms
+[31mar2026 20:40:18.389] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Loaded plugin from snownee.jade.addon.vanilla.VanillaPlugin in 115.1 ms
+[31mar2026 20:40:18.389] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.universal.UniversalPlugin
+[31mar2026 20:40:18.448] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Bootstrapped plugin from snownee.jade.addon.universal.UniversalPlugin in 55.37 ms
+[31mar2026 20:40:18.449] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Loaded plugin from snownee.jade.addon.universal.UniversalPlugin in 56.84 ms
+[31mar2026 20:40:18.449] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.debug.DebugPlugin
+[31mar2026 20:40:18.457] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Bootstrapped plugin from snownee.jade.addon.debug.DebugPlugin in 4.675 ms
+[31mar2026 20:40:18.457] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Loaded plugin from snownee.jade.addon.debug.DebugPlugin in 5.389 ms
+[31mar2026 20:40:18.458] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.core.CorePlugin
+[31mar2026 20:40:18.468] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Bootstrapped plugin from snownee.jade.addon.core.CorePlugin in 8.698 ms
+[31mar2026 20:40:18.469] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Loaded plugin from snownee.jade.addon.core.CorePlugin in 9.529 ms
+[31mar2026 20:40:18.469] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.access.AccessibilityPlugin
+[31mar2026 20:40:18.499] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Bootstrapped plugin from snownee.jade.addon.access.AccessibilityPlugin in 27.73 ms
+[31mar2026 20:40:18.500] [Worker-Main-1/INFO] [snownee.jade.Jade/]: Loaded plugin from snownee.jade.addon.access.AccessibilityPlugin in 28.43 ms
+[31mar2026 20:40:19.237] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[31mar2026 20:40:19.238] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[31mar2026 20:40:19.808] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Altavoces (VIA HD Audio)
+[31mar2026 20:40:19.810] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[31mar2026 20:40:20.033] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 4096x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[31mar2026 20:40:20.167] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[31mar2026 20:40:20.169] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[31mar2026 20:40:20.174] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[31mar2026 20:40:20.176] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[31mar2026 20:40:20.209] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[31mar2026 20:40:20.213] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[31mar2026 20:40:20.215] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[31mar2026 20:40:20.218] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[31mar2026 20:40:20.457] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[31mar2026 20:40:20.464] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[31mar2026 20:40:20.465] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[31mar2026 20:40:20.466] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[31mar2026 20:40:20.466] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[31mar2026 20:40:20.732] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[31mar2026 20:40:21.063] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[31mar2026 20:40:21.064] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[31mar2026 20:43:37.816] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Captura de pantalla guardada como 2026-03-31_20.43.37.png
+[31mar2026 20:43:43.773] [Render thread/WARN] [net.neoforged.neoforge.common.CommonHooks/WP]: The following mods have version differences that were not resolved:
+ultimatefoods (version 2.0.6 -> 2.0.7)
+Things may not work well.
+[31mar2026 20:43:48.342] [Render thread/INFO] [committee.nova.mods.avaritia.api.Lib/]: Avaritia: Loading recipes...
+[31mar2026 20:43:48.463] [Render thread/INFO] [committee.nova.mods.avaritia.Const/]: Singularity: Regenerated 15 recipes
+[31mar2026 20:43:48.465] [Render thread/INFO] [committee.nova.mods.avaritia.api.Lib/]: Avaritia: Registered 15 recipes in 121 ms
+[31mar2026 20:43:49.171] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1474 recipes
+[31mar2026 20:43:50.311] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1570 advancements
+[31mar2026 20:43:50.406] [Render thread/WARN] [net.minecraft.core.MappedRegistry/]: Not all defined tags for registry ResourceKey[minecraft:root / minecraft:block] are present in data pack: avaritia:needs_blaze_tool, avaritia:needs_crystal_tool, avaritia:needs_infinity_tool
+[31mar2026 20:43:52.194] [Render thread/INFO] [snownee.jade.Jade/]: LootTableMineableCollector took 21.43 ms
+[31mar2026 20:43:52.497] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[31mar2026 20:43:52.498] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[31mar2026 20:43:53.626] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[31mar2026 20:43:55.193] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0 %
+[31mar2026 20:43:55.197] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0 %
+[31mar2026 20:43:55.213] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0 %
+[31mar2026 20:43:55.502] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0 %
+[31mar2026 20:43:55.744] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[31mar2026 20:43:55.746] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 1833 ms
+[31mar2026 20:43:57.813] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[31mar2026 20:43:57.818] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[31mar2026 20:43:57.928] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2114ms or 42 ticks behind
+[31mar2026 20:44:07.724] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:8810efdd] logged in with entity id 7 at (5.942492472292676, -60.0, -7.5508116339618505)
+[31mar2026 20:44:08.714] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev se ha unido a la partida
+[31mar2026 20:44:11.443] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:steel_singularity
+[31mar2026 20:44:11.472] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:emerald_singularity
+[31mar2026 20:44:11.473] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:iron_singularity
+[31mar2026 20:44:11.475] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:glowstone_singularity
+[31mar2026 20:44:11.476] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:coal_singularity
+[31mar2026 20:44:11.488] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:lapis_lazuli_singularity
+[31mar2026 20:44:11.489] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:obsidian_singularity
+[31mar2026 20:44:11.492] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:diamond_singularity
+[31mar2026 20:44:11.492] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:copper_singularity
+[31mar2026 20:44:11.493] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:redstone_singularity
+[31mar2026 20:44:11.503] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:blue_ice_singularity
+[31mar2026 20:44:11.503] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:netherite_singularity
+[31mar2026 20:44:11.504] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:amethyst_shard_singularity
+[31mar2026 20:44:11.506] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:gold_singularity
+[31mar2026 20:44:11.508] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:compressor_recipe/avaritia:quartz_singularity
+[31mar2026 20:44:12.637] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:cosmic_meatballs
+[31mar2026 20:44:12.638] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:infinity_ingot
+[31mar2026 20:44:12.639] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:end_crafting_table
+[31mar2026 20:44:12.640] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/minecraft:budding_amethyst
+[31mar2026 20:44:12.641] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/minecraft:crying_obsidian
+[31mar2026 20:44:12.653] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:star_fuel_alternate
+[31mar2026 20:44:12.655] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:infinity_catalyst_eternal
+[31mar2026 20:44:12.668] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/minecraft:end_portal_frame
+[31mar2026 20:44:12.671] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/minecraft:reinforced_deepslate
+[31mar2026 20:44:12.688] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:eternal_singularity
+[31mar2026 20:44:12.689] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:refined_coal
+[31mar2026 20:44:12.689] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:full_matter_cluster
+[31mar2026 20:44:12.690] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:ancient_debris_eight
+[31mar2026 20:44:12.690] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:nether_crafting_table
+[31mar2026 20:44:12.691] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/minecraft:soul_sand
+[31mar2026 20:44:12.691] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:netherite_ingot_too
+[31mar2026 20:44:12.692] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/minecraft:spore_blossom
+[31mar2026 20:44:12.692] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/minecraft:heart_of_the_sea
+[31mar2026 20:44:12.703] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:upgrade_smithing_template_too
+[31mar2026 20:44:12.706] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:infinity_catalyst
+[31mar2026 20:44:12.707] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:extreme_smithing_table
+[31mar2026 20:44:12.708] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:crystal_matrix_ingot
+[31mar2026 20:44:12.709] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/minecraft:echo_shard
+[31mar2026 20:44:12.740] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:infinity_shield
+[31mar2026 20:44:12.741] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:ultimate_stew
+[31mar2026 20:44:12.742] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:crafting_table_recipe/avaritia:extreme_crafting_table
+[31mar2026 20:44:12.754] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:extreme_smithing_recipe/avaritia:infinity_clock
+[31mar2026 20:44:12.756] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:extreme_smithing_recipe/avaritia:infinity_totem
+[31mar2026 20:44:12.756] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:extreme_smithing_recipe/avaritia:infinity_bucket
+[31mar2026 20:44:12.757] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:extreme_smithing_recipe/avaritia:infinity_elytra
+[31mar2026 20:44:12.757] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:extreme_smithing_recipe/avaritia:neutron_horse_armor
+[31mar2026 20:44:12.758] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:extreme_smithing_recipe/avaritia:endless_cake
+[31mar2026 20:44:12.758] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: avaritia:extreme_smithing_recipe/avaritia:extreme_anvil
+[31mar2026 20:44:12.956] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
+[31mar2026 20:44:13.018] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
+[31mar2026 20:44:13.157] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering item subtypes: jei:minecraft took 138.0 milliseconds
+[31mar2026 20:44:13.318] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering item subtypes: avaritia:jei_plugin took 15.76 milliseconds
+[31mar2026 20:44:13.334] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 305.6 milliseconds
+[31mar2026 20:44:13.337] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
+[31mar2026 20:44:13.355] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering fluid subtypes: jei:debug took 13.73 milliseconds
+[31mar2026 20:44:13.358] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 20.57 milliseconds
+[31mar2026 20:44:13.388] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
+[31mar2026 20:44:18.557] [pool-12-thread-1/ERROR] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft is running and has taken 5.168 seconds so far
+[31mar2026 20:44:23.519] [pool-12-thread-1/ERROR] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft is running and has taken 10.13 seconds so far
+[31mar2026 20:44:23.656] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 10742ms or 214 ticks behind
+[31mar2026 20:44:24.248] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 10.86 seconds
+[31mar2026 20:44:24.250] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 10.86 seconds
+[31mar2026 20:44:24.250] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
+[31mar2026 20:44:24.266] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 14.79 milliseconds
+[31mar2026 20:44:24.268] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
+[31mar2026 20:44:24.288] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering search ingredient aliases: jei:debug took 17.09 milliseconds
+[31mar2026 20:44:24.289] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 20.74 milliseconds
+[31mar2026 20:44:25.605] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info...
+[31mar2026 20:44:25.635] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info took 5.080 milliseconds
+[31mar2026 20:44:26.415] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
+[31mar2026 20:44:26.899] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 484.0 milliseconds
+[31mar2026 20:44:26.917] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: ultimatefoods:jei_plugin took 16.40 milliseconds
+[31mar2026 20:44:26.937] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: avaritia:jei_plugin took 18.71 milliseconds
+[31mar2026 20:44:27.273] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:internal took 326.9 milliseconds
+[31mar2026 20:44:27.274] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 859.2 milliseconds
+[31mar2026 20:44:27.277] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
+[31mar2026 20:44:27.291] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 13.05 milliseconds
+[31mar2026 20:44:27.292] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
+[31mar2026 20:44:27.297] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 3.951 milliseconds
+[31mar2026 20:44:27.298] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
+[31mar2026 20:44:27.428] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 128.5 milliseconds
+[31mar2026 20:44:27.454] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
+[31mar2026 20:44:27.469] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 14.01 milliseconds
+[31mar2026 20:44:27.471] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
+[31mar2026 20:44:30.582] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 3.104 seconds
+[31mar2026 20:44:30.681] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: ultimatefoods:jei_plugin took 98.84 milliseconds
+[31mar2026 20:44:30.714] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: avaritia:jei_plugin took 32.64 milliseconds
+[31mar2026 20:44:30.729] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:debug took 13.70 milliseconds
+[31mar2026 20:44:31.331] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 600.9 milliseconds
+[31mar2026 20:44:31.332] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 3.856 seconds
+[31mar2026 20:44:31.346] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
+[31mar2026 20:44:31.355] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 8.327 milliseconds
+[31mar2026 20:44:31.363] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
+[31mar2026 20:44:31.460] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
+[31mar2026 20:44:31.479] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering gui handlers: jei:minecraft took 18.11 milliseconds
+[31mar2026 20:44:31.515] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering gui handlers: jei:internal took 12.40 milliseconds
+[31mar2026 20:44:31.516] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 55.33 milliseconds
+[31mar2026 20:44:31.528] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
+[31mar2026 20:44:31.535] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
+[31mar2026 20:44:31.536] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
+[31mar2026 20:44:31.914] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 269.0 milliseconds
+[31mar2026 20:44:31.997] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
+[31mar2026 20:44:32.115] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 1851 ingredients
+[31mar2026 20:44:34.802] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 1851 ingredients
+[31mar2026 20:44:34.805] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 2.807 seconds
+[31mar2026 20:44:35.315] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 3.785 seconds
+[31mar2026 20:44:35.317] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 3.789 seconds
+[31mar2026 20:44:35.318] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 3.955 seconds
+[31mar2026 20:44:35.319] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
+[31mar2026 20:44:35.349] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Sending Runtime: jei:internal took 26.41 milliseconds
+[31mar2026 20:44:35.350] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 29.91 milliseconds
+[31mar2026 20:44:35.350] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 22.39 seconds
+[31mar2026 20:44:35.565] [Render thread/INFO] [snownee.jade.Jade/]: Received config from the server: 
+[31mar2026 20:44:35.577] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 12 advancements
+[31mar2026 20:44:40.585] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[31mar2026 20:44:40.659] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[31mar2026 20:44:40.868] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[31mar2026 20:44:40.877] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[31mar2026 20:44:40.948] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2334ms or 46 ticks behind
+[31mar2026 20:45:02.569] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Captura de pantalla guardada como 2026-03-31_20.45.02.png
+[31mar2026 20:45:13.010] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Captura de pantalla guardada como 2026-03-31_20.45.12.png
+[31mar2026 20:45:37.081] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[31mar2026 20:45:37.100] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[31mar2026 20:45:37.130] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[31mar2026 20:45:37.130] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[31mar2026 20:45:54.795] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Captura de pantalla guardada como 2026-03-31_20.45.54.png
+[31mar2026 20:45:58.471] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Captura de pantalla guardada como 2026-03-31_20.45.58.png
+[31mar2026 20:46:00.406] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Captura de pantalla guardada como 2026-03-31_20.46.00.png
+[31mar2026 20:46:16.275] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Captura de pantalla guardada como 2026-03-31_20.46.16.png
+[31mar2026 20:46:20.581] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Captura de pantalla guardada como 2026-03-31_20.46.20.png
+[31mar2026 20:47:54.741] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2028ms or 40 ticks behind
+[31mar2026 20:51:08.786] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2223ms or 44 ticks behind
+[31mar2026 20:52:13.684] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 13 advancements
+[31mar2026 20:52:36.435] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Captura de pantalla guardada como 2026-03-31_20.52.36.png
+[31mar2026 20:56:12.300] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2286ms or 45 ticks behind
+[31mar2026 20:57:24.840] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2776ms or 55 ticks behind
+[31mar2026 20:58:32.522] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[31mar2026 20:58:32.550] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[31mar2026 20:58:32.550] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[31mar2026 20:58:32.552] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[31mar2026 20:58:32.563] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 11.49 milliseconds
+[31mar2026 20:58:32.607] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Desconectado
+[31mar2026 20:58:32.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev ha abandonado la partida
+[31mar2026 20:58:32.709] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[31mar2026 20:58:32.886] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[31mar2026 20:58:32.888] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[31mar2026 20:58:32.888] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[31mar2026 20:58:33.973] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[31mar2026 20:58:34.071] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[31mar2026 20:58:34.086] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[31mar2026 20:58:34.195] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[31mar2026 20:58:34.195] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[31mar2026 20:58:34.195] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[31mar2026 20:58:34.195] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved

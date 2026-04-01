@@ -1,0 +1,33 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-03-31 19:40:33 -0300"
+    },
+    "done": true
+  },
+  "ultimatefoods:install_mod": {
+    "criteria": {
+      "tick": "2026-03-31 19:40:33 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-03-31 19:40:34 -0300"
+    },
+    "done": false
+  },
+  "minecraft:recipes/misc/netherite_ingot_from_netherite_block": {
+    "criteria": {
+      "has_netherite_block": "2026-03-31 19:41:56 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-03-31 20:52:13 -0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}

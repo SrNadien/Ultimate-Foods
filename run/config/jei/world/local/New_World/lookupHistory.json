@@ -1,0 +1,8 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"ultimatefoods:netherite_dagger"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ultimatefoods:nether_star_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ultimatefoods:nadienite_nugget"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ultimatefoods:nadienite_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ultimatefoods:nadienite_block"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

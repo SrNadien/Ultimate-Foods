@@ -1,0 +1,67 @@
+[31mar2026 21:00:54.272] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--mod, ultimatefoods, --all, --output, C:\Users\SrNadien\Documents\Ultimate-Foods\src\generated\resources, --existing, C:\Users\SrNadien\Documents\Ultimate-Foods\src\main\resources, --launchTarget, forgedatadev, --assetIndex, asset-index, --assetsDir, C:\Users\SrNadien\.gradle\caches\minecraft\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.215, --fml.neoFormVersion, 20240808.144430]
+[31mar2026 21:00:54.303] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.7+8-LTS-245
+[31mar2026 21:00:54.303] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.7 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[31mar2026 21:00:54.832] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatadev
+[31mar2026 21:00:55.511] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/SrNadien/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23142!/ Service=ModLauncher Env=CLIENT
+[31mar2026 21:00:56.495] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.215.jar" [locator: neoforge devenv provider ([C:\Users\SrNadien\Documents\Ultimate-Foods\.gradle\repositories\ng_dummy_ng\net\neoforged\neoforge\21.1.215\neoforge-21.1.215.jar])]
+[31mar2026 21:00:56.635] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.215.jar" [locator: neoforge devenv provider ([C:\Users\SrNadien\Documents\Ultimate-Foods\.gradle\repositories\ng_dummy_ng\net\neoforged\neoforge\21.1.215\neoforge-21.1.215.jar])]
+[31mar2026 21:00:56.737] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "main" [locator: userdev mods and services, reader: mod manifest]
+[31mar2026 21:00:56.810] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.215.jar" [locator: userdev mods and services, reader: mod manifest]
+[31mar2026 21:00:56.862] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jade-324717-7428884.jar" [locator: userdev mods and services, reader: mod manifest]
+[31mar2026 21:00:56.909] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "re-avaritia-623969-7445860.jar" [locator: userdev mods and services, reader: mod manifest]
+[31mar2026 21:00:56.954] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jei-1.21.1-neoforge-19.27.0.340.jar" [locator: userdev mods and services, reader: mod manifest]
+[31mar2026 21:00:56.972] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "appleskin-neoforge-mc1.21-3.0.8.jar" [locator: userdev mods and services, reader: mod manifest]
+[31mar2026 21:00:57.273] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "mixinextras-neoforge-0.5.0.jar" [locator: userdev mods and services, reader: mod manifest]
+[31mar2026 21:00:57.758] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: library:mixinextras.neoforge. Using Mod File: C:\Users\SrNadien\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-neoforge\0.5.0\d734b83ce6542bb70ea31755c1595b88992dbe65\mixinextras-neoforge-0.5.0.jar
+[31mar2026 21:00:57.774] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
+[31mar2026 21:00:57.774] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "net.neoforged.neoforge-coremods-21.1.215.jar" [parent: neoforge-21.1.215.jar, locator: jarinjar, reader: mod manifest]
+[31mar2026 21:00:57.774] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		AppleSkin 3.0.8+mc1.21 (appleskin)
+		Jade 15.10.4+neoforge (jade)
+		Just Enough Items 19.27.0.340 (jei)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.215 (neoforge)
+		Re-Avaritia 1.3.9.4 (avaritia)
+		UltimateFoods  2.0.7 (ultimatefoods)
+[31mar2026 21:01:02.974] [main/INFO] [mixin/]: Compatibility level set to JAVA_20
+[31mar2026 21:01:03.031] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatadev' with arguments [--gameDir, ., --assetsDir, C:\Users\SrNadien\.gradle\caches\minecraft\assets, --mod, ultimatefoods, --all, --output, C:\Users\SrNadien\Documents\Ultimate-Foods\src\generated\resources, --existing, C:\Users\SrNadien\Documents\Ultimate-Foods\src\main\resources, --assetIndex, asset-index]
+[31mar2026 21:01:04.286] [main/WARN] [mixin/]: Reference map 'avaritia.refmap.json' for avaritia.mixins.json could not be read. If this is a development environment you can ignore this message
+[31mar2026 21:01:14.323] [main/INFO] [net.neoforged.neoforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [ultimatefoods]
+[31mar2026 21:01:14.638] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[31mar2026 21:01:55.030] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Inicializando Ultimate Foods Mod...
+[31mar2026 21:01:55.214] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Avaritia detectado — items y data components registrados
+[31mar2026 21:01:55.267] [modloading-worker-0/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: Ultimate Foods Mod inicializado correctamente!
+[31mar2026 21:01:55.855] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.215, for MC 1.21.1
+[31mar2026 21:01:57.513] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[31mar2026 21:01:57.540] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 23.97 milliseconds
+[31mar2026 21:01:58.910] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/SrNadien/Documents/Ultimate-Foods/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/21.1.215/neoforge-21.1.215.jar%23195!/assets/.mcassetsroot' uses unexpected schema
+[31mar2026 21:01:58.910] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/SrNadien/Documents/Ultimate-Foods/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/21.1.215/neoforge-21.1.215.jar%23195!/data/.mcassetsroot' uses unexpected schema
+[31mar2026 21:01:59.995] [main/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: === INICIANDO GENERACIÓN DE DATOS ===
+[31mar2026 21:02:01.053] [main/INFO] [nadiendev.ultimatefoods.UltimateFoodsCore/]: === TODOS LOS PROVIDERS REGISTRADOS CORRECTAMENTE ===
+[31mar2026 21:02:01.678] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[31mar2026 21:02:03.694] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 2024 ms
+[31mar2026 21:02:03.694] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[31mar2026 21:02:03.778] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 69 ms
+[31mar2026 21:02:03.779] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[31mar2026 21:02:03.992] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 211 ms
+[31mar2026 21:02:03.994] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Advancements
+[31mar2026 21:02:04.073] [main/INFO] [net.minecraft.data.DataGenerator/]: Advancements finished after 78 ms
+[31mar2026 21:02:04.074] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: UltimateFoods JukeboxSongs
+[31mar2026 21:02:04.084] [main/INFO] [net.minecraft.data.DataGenerator/]: UltimateFoods JukeboxSongs finished after 9 ms
+[31mar2026 21:02:04.086] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : ultimatefoods
+[31mar2026 21:02:04.097] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : ultimatefoods finished after 10 ms
+[31mar2026 21:02:04.098] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id ultimatefoods
+[31mar2026 21:02:04.139] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id ultimatefoods finished after 39 ms
+[31mar2026 21:02:04.139] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id ultimatefoods
+[31mar2026 21:02:04.290] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id ultimatefoods finished after 151 ms
+[31mar2026 21:02:04.291] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: ultimatefoods
+[31mar2026 21:02:04.500] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: ultimatefoods finished after 206 ms
+[31mar2026 21:02:04.501] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: ultimatefoods
+[31mar2026 21:02:04.532] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: ultimatefoods finished after 39 ms
+[31mar2026 21:02:04.532] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Sound Definitions
+[31mar2026 21:02:04.563] [main/INFO] [net.minecraft.data.DataGenerator/]: Sound Definitions finished after 32 ms
+[31mar2026 21:02:04.563] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 2897 ms
+[31mar2026 21:02:04.795] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 135, old count: 0, new count: 136, removed stale: 0, written: 135
