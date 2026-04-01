@@ -22,6 +22,9 @@ public class NadieniteChestLootModifier extends LootModifier {
     public static final MapCodec<NadieniteChestLootModifier> CODEC = RecordCodecBuilder.mapCodec(inst ->
             codecStart(inst).apply(inst, NadieniteChestLootModifier::new));
 
+   
+    private static final ThreadLocal<Boolean> IS_APPLYING = ThreadLocal.withInitial(() -> false);
+
     private static final ResourceLocation[] DUNGEON_TABLES = {
         ResourceLocation.parse("minecraft:chests/simple_dungeon"),
         ResourceLocation.parse("minecraft:chests/stronghold_corridor"),
@@ -52,6 +55,8 @@ public class NadieniteChestLootModifier extends LootModifier {
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
+        if (IS_APPLYING.get()) return generatedLoot;
+
         ResourceLocation tableId = context.getQueriedLootTableId();
 
         ResourceLocation bonusTable = null;
@@ -74,7 +79,12 @@ public class NadieniteChestLootModifier extends LootModifier {
                 .reloadableRegistries()
                 .getLootTable(bonusKey);
 
-        lootTable.getRandomItems(context, generatedLoot::add);
+        IS_APPLYING.set(true);
+        try {
+            lootTable.getRandomItems(context, generatedLoot::add);
+        } finally {
+            IS_APPLYING.set(false); 
+        }
 
         return generatedLoot;
     }
