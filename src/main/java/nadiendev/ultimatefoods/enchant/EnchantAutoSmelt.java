@@ -12,18 +12,11 @@ import net.minecraft.world.item.enchantment.Enchantments;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-/**
- * AutoSmelt.
- *By NadienDev
- */
 public class EnchantAutoSmelt {
 
     public static final DeferredRegister<Enchantment> ENCHANTMENTS =
             DeferredRegister.create(Registries.ENCHANTMENT, UltimateFoodsCore.MOD_ID);
 
-    /**
-     * ResourceKey para referencias en código (efectos, predicados, loot tables, etc.)
-     */
     public static final ResourceKey<Enchantment> AUTOSMELT =
             ResourceKey.create(Registries.ENCHANTMENT,
                     ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "autosmelt"));

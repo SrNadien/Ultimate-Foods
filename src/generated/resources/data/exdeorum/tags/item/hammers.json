@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "ultimatefoods:steel_hammer",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:mushashite_hammer",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:joanfoite_hammer",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:nadienite_hammer",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:allthemodium_hammer",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:vibranium_hammer",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:unobtainium_hammer",
+      "required": false
+    }
+  ]
+}

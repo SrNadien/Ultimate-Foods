@@ -2,17 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
+    "C": {
+      "item": "ultimatefoods:corazon_de_la_elite"
+    },
     "N": {
       "item": "ultimatefoods:nadienite_ingot"
     },
-    "S": {
-      "item": "minecraft:stick"
+    "P": {
+      "item": "ultimatefoods:joanfoite_pickaxe"
     }
   },
   "pattern": [
-    "NNN",
-    " S ",
-    " S "
+    " N ",
+    "NPN",
+    " C "
   ],
   "result": {
     "count": 1,

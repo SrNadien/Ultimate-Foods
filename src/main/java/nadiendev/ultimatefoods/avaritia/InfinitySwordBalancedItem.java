@@ -9,16 +9,10 @@ import net.minecraft.world.item.TooltipFlag;
 
 import java.util.List;
 
-/**
- * Infinity Sword (Balanced)
- * - 400 de daño de ataque
- * - Durabilidad infinita
- * - Versión balanceada (no hace /kill)
- */
 public class InfinitySwordBalancedItem extends SwordItem {
 
     public InfinitySwordBalancedItem(Tier tier, Properties properties) {
-        // 399 + 1 base = 400 total
+
         super(tier, properties.attributes(SwordItem.createAttributes(tier, 399, -2.4F)));
     }
 
@@ -37,7 +31,7 @@ public class InfinitySwordBalancedItem extends SwordItem {
         tooltip.add(Component.translatable("tooltip.ultimatefoods.infinity_sword_balanced.title").withStyle(ChatFormatting.LIGHT_PURPLE));
         tooltip.add(Component.translatable("tooltip.ultimatefoods.infinity_sword_balanced.damage").withStyle(ChatFormatting.DARK_RED));
         tooltip.add(Component.translatable("tooltip.ultimatefoods.infinity_sword_balanced.durability").withStyle(ChatFormatting.GREEN));
-        
+
         super.appendHoverText(stack, context, tooltip, flag);
     }
 }

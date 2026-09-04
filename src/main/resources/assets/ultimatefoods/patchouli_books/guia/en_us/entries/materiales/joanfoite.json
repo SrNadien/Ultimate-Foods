@@ -1,0 +1,12 @@
+{
+  "name": "Joanfoite",
+  "icon": "ultimatefoods:joanfoite_ingot",
+  "category": "ultimatefoods:materiales",
+  "sortnum": 1,
+  "pages": [
+    { "type": "patchouli:text", "text": "The second tier material, purple. Its ore is much rarer than Mushashite and only spawns between Y -64 and Y 16, in veins of up to 6 blocks." },
+    { "type": "patchouli:text", "text": "It works like the rest: the ore drops Raw Joanfoite with Fortune applied, and the raw form smelts into an ingot." },
+    { "type": "patchouli:crafting", "recipe": "ultimatefoods:joanfoite_block_recipe" },
+    { "type": "patchouli:crafting", "recipe": "ultimatefoods:joanfoite_ingot_from_nuggets" }
+  ]
+}

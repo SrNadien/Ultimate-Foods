@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "ultimatefoods:config",
+      "option": "allTheCompressed"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "ultimatefoods:mushashite_block_2x"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "ultimatefoods:mushashite_block_1x"
+  }
+}

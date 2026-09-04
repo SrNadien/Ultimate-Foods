@@ -9,11 +9,6 @@ import net.minecraft.world.item.TooltipFlag;
 
 import java.util.List;
 
-/**
- * Infinity-1 Hoe
- * - Durabilidad infinita
- * - Funciona en farming stations
- */
 public class Infinity1HoeItem extends HoeItem {
 
     public Infinity1HoeItem(Tier tier, Properties properties) {
@@ -34,7 +29,7 @@ public class Infinity1HoeItem extends HoeItem {
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
         tooltip.add(Component.translatable("tooltip.ultimatefoods.infinity_1_hoe.durability").withStyle(ChatFormatting.GREEN));
         tooltip.add(Component.translatable("tooltip.ultimatefoods.infinity_1_hoe.farming").withStyle(ChatFormatting.AQUA));
-        
+
         super.appendHoverText(stack, context, tooltip, flag);
     }
 }

@@ -13,10 +13,6 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 
 import java.util.List;
 
-/**
- * PoopItem
- * By NadienDev
- */
 public class PoopItem extends Item {
     private final DeferredHolder<SoundEvent, SoundEvent> customSound;
     private final int effectDuration;
@@ -29,7 +25,7 @@ public class PoopItem extends Item {
 
     @Override
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
-        // Reproducir el sonido personalizado
+
         if (!level.isClientSide() && customSound != null) {
             level.playSound(
                 null,
@@ -58,7 +54,7 @@ public class PoopItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-        
+
         tooltipComponents.add(Component.translatable("item.ultimatefoods.cacotas.description_0"));
         tooltipComponents.add(Component.translatable("item.ultimatefoods.cacotas.description_1"));
     }

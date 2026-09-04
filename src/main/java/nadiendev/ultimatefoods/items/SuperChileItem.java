@@ -7,12 +7,8 @@ import net.minecraft.world.item.TooltipFlag;
 
 import java.util.List;
 
-/**
- * Ported SuperChileItem
- * By NadienDev
- */
 public class SuperChileItem extends Item {
-    
+
     public SuperChileItem(Properties properties) {
         super(properties);
     }
@@ -20,8 +16,7 @@ public class SuperChileItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-        
-        // Agregar las 13 líneas de descripción
+
         tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_0"));
         tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_1"));
         tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_2"));

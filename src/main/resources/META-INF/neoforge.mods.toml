@@ -52,3 +52,23 @@ type = "required"
 versionRange = "${appleskin_version}"
 ordering = "NONE"
 side = "BOTH"
+[[dependencies.${mod_id}]]
+modId = "geckolib"
+type = "required"
+versionRange = "[${geckolib_version},)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "patchouli"
+type = "required"
+versionRange = "[0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "exdeorum"
+type = "optional"
+versionRange = "[0,)"
+ordering = "NONE"
+side = "BOTH"

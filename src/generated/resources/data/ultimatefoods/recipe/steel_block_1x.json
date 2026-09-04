@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "ultimatefoods:config",
+      "option": "allTheCompressed"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "a": {
+      "item": "ultimatefoods:steel_block"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatefoods:steel_block_1x"
+  }
+}

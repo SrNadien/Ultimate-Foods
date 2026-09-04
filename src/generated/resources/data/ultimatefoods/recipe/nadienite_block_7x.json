@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "ultimatefoods:config",
+      "option": "allTheCompressed"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "a": {
+      "item": "ultimatefoods:nadienite_block_6x"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatefoods:nadienite_block_7x"
+  }
+}

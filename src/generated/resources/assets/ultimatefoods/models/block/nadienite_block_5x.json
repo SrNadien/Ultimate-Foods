@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ultimatefoods:block/nadienite_block_5x"
+  }
+}

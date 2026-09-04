@@ -1,5 +1,7 @@
 package nadiendev.ultimatefoods.enchant;
 
+import nadiendev.ultimatefoods.registry.ModEnchantments;
+
 import nadiendev.ultimatefoods.UltimateFoodsCore;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerLevel;

@@ -4,7 +4,7 @@
   "cookingtime": 100,
   "experience": 1.0,
   "ingredient": {
-    "item": "ultimatefoods:nadienite_ore"
+    "item": "ultimatefoods:raw_nadienite"
   },
   "result": {
     "count": 1,

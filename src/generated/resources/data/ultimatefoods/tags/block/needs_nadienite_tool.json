@@ -1,8 +1,14 @@
 {
   "values": [
     "#neoforge:needs_netherite_tool",
-    "ultimatefoods:nadienite_block",
+    "ultimatefoods:mushashite_ore",
+    "ultimatefoods:deepslate_mushashite_ore",
+    "ultimatefoods:joanfoite_ore",
+    "ultimatefoods:deepslate_joanfoite_ore",
     "ultimatefoods:nadienite_ore",
-    "ultimatefoods:deepslate_nadienite_ore"
+    "ultimatefoods:deepslate_nadienite_ore",
+    "ultimatefoods:mushashite_block",
+    "ultimatefoods:joanfoite_block",
+    "ultimatefoods:nadienite_block"
   ]
 }

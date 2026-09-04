@@ -5,7 +5,7 @@ plugins {
     id 'net.neoforged.gradle.userdev' version '7.0.171'
 }
 
-version =minecraft_version + "-" + mod_version + "-" + entorno + "-" + tag_lanzador
+version =minecraft_version + "-" + mod_version + "-" + tag_lanzador
 group = mod_group_id
 
 base {
@@ -30,6 +30,8 @@ runs {
 
     client {
         systemProperty 'forge.enabledGameTestNamespaces', mod_id
+        programArgument '--quickPlaySingleplayer'
+        programArgument 'New World'
     }
 
     server {
@@ -65,6 +67,10 @@ repositories {
     }
     maven {
         url = "https://maven.blamejared.com"
+    }
+    maven {
+        name = 'GeckoLib'
+        url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
     }
     maven {
         url = "https://maven.theillusivec4.top/"
@@ -109,17 +115,26 @@ dependencies {
     compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
     compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
     runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
-    // implementation "curse.maven:jei-238222:${jeii_version}"
 
     //jade
     implementation "curse.maven:jade-324717:${jade_version}"
 
     //Avaritia
-    implementation "curse.maven:re-avaritia-623969:${avaritia_version_id}"
+    // implementation "curse.maven:re-avaritia-623969:${avaritia_version_id}"
+
+    //GeckoLib
+    implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
 
     //Apple Skin
     compileOnly "squeek.appleskin:appleskin-neoforge:mc${mc}-${appleskin_version}:api"
     runtimeOnly "squeek.appleskin:appleskin-neoforge:mc${mc}-${appleskin_version}"
+
+    //Patchouli
+    implementation "vazkii.patchouli:Patchouli:${patchouli_version}"
+
+    // Ex Deorum y AllTheModium van como jars en run/mods, no aca:
+    // Ex Deorum corre su propio datagen y necesita ModKit, que no publica esas clases,
+    // asi que en el classpath del datagen rompe runData.
 }
 
 tasks.withType(ProcessResources).configureEach {
@@ -138,6 +153,8 @@ tasks.withType(ProcessResources).configureEach {
         jei_version: jei_version,
         avaritia_version_id: avaritia_version_id,
         appleskin_version: appleskin_version,
+        patchouli_version: patchouli_version,
+        geckolib_version: geckolib_version,
     ]
     
     inputs.properties replaceProperties

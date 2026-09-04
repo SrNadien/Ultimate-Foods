@@ -1,0 +1,12 @@
+{
+  "name": "Shovel",
+  "icon": "ultimatefoods:nadienite_shovel",
+  "category": "ultimatefoods:equipo",
+  "sortnum": 7,
+  "pages": [
+    { "type": "patchouli:text", "text": "Carries permanent Efficiency, without Fortune. Unbreakable like the rest of the set." },
+    { "type": "patchouli:text", "text": "The $(b)Mushashite$() one is forged from scratch with its ingot, sticks and the Heart Of The Fallen.$(br2)The $(b)Joanfoite$() and $(b)Nadienite$() ones are upgraded from the previous tier, placing it in the center." },
+    { "type": "patchouli:crafting", "recipe": "ultimatefoods:mushashite_shovel", "recipe2": "ultimatefoods:joanfoite_shovel" },
+    { "type": "patchouli:crafting", "recipe": "ultimatefoods:nadienite_shovel" }
+  ]
+}

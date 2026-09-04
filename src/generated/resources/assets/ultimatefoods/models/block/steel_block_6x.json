@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ultimatefoods:block/steel_block_6x"
+  }
+}

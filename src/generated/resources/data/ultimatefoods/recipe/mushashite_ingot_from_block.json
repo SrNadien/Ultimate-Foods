@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ultimatefoods:mushashite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "ultimatefoods:mushashite_ingot"
+  }
+}

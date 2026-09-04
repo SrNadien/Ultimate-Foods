@@ -1,8 +1,16 @@
 {
   "values": [
-    "ultimatefoods:nadienite_helmet",
-    "ultimatefoods:nadienite_chestplate",
-    "ultimatefoods:nadienite_leggings",
-    "ultimatefoods:nadienite_boots"
+    "ultimatefoods:mushashite_gorro",
+    "ultimatefoods:mushashite_remera",
+    "ultimatefoods:mushashite_gayumbos",
+    "ultimatefoods:mushashite_medias",
+    "ultimatefoods:joanfoite_gorro",
+    "ultimatefoods:joanfoite_remera",
+    "ultimatefoods:joanfoite_gayumbos",
+    "ultimatefoods:joanfoite_medias",
+    "ultimatefoods:nadienite_gorro",
+    "ultimatefoods:nadienite_remera",
+    "ultimatefoods:nadienite_gayumbos",
+    "ultimatefoods:nadienite_medias"
   ]
 }

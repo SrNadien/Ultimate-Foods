@@ -1,0 +1,8 @@
+{
+  "name": "book.ultimatefoods.guia",
+  "landing_text": "book.ultimatefoods.guia.landing",
+  "version": 1,
+  "model": "ultimatefoods:guia",
+  "creative_tab": "ultimatefoods:ultimate_foods_tab",
+  "use_resource_pack": true
+}

@@ -2,13 +2,8 @@ package nadiendev.ultimatefoods.integration.jei;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import nadiendev.ultimatefoods.items.ItemsAdds;
+import nadiendev.ultimatefoods.registry.ItemsAdds;
 
-/**
- * Representa la "receta" de la Netherite Dagger para mostrar en JEI.
- * Input:  Espada de Netherite + Bloque de Netherite (clic derecho)
- * Output: Netherite Dagger.
- */
 public class NetheriteDaggerRecipe {
 
     public static final NetheriteDaggerRecipe INSTANCE = new NetheriteDaggerRecipe();

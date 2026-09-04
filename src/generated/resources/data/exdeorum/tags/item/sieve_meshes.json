@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "ultimatefoods:steel_mesh",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:mushashite_mesh",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:joanfoite_mesh",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:nadienite_mesh",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:allthemodium_mesh",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:vibranium_mesh",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:unobtainium_mesh",
+      "required": false
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 package nadiendev.ultimatefoods.avaritia;
 
+import nadiendev.ultimatefoods.registry.ModDataComponents;
+
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;

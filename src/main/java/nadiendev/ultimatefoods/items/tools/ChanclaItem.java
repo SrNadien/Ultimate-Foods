@@ -36,13 +36,12 @@ public class ChanclaItem extends SwordItem {
                 SoundEvents.TRIDENT_THROW, SoundSource.PLAYERS, 1.0F, 1.0F);
 
         if (!level.isClientSide) {
-            // Crear el proyectil con una COPIA del item (no el original)
+
             ChanclaEntity chancla = new ChanclaEntity(level, player);
             chancla.setItem(itemstack.copy());
             chancla.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 2.5F, 1.0F);
             level.addFreshEntity(chancla);
 
-            // Remover el item del inventario AHORA — regresará cuando vuelva el proyectil
             if (!player.getAbilities().instabuild) {
                 itemstack.shrink(1);
             }

@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "ultimatefoods:config",
+      "option": "allTheCompressed"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "a": {
+      "item": "ultimatefoods:ender_pearl_block_3x"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatefoods:ender_pearl_block_4x"
+  }
+}

@@ -1,6 +1,8 @@
 package nadiendev.ultimatefoods.entities;
 
-import nadiendev.ultimatefoods.items.tools.ToolsAdds;
+import nadiendev.ultimatefoods.registry.ModEntities;
+
+import nadiendev.ultimatefoods.registry.ToolsAdds;
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.damagesource.DamageSource;
@@ -37,12 +39,11 @@ public class ChanclaEntity extends ThrowableItemProjectile {
 
     @Override
     public void tick() {
-        // NO llamar a super.tick() cuando está returning para evitar
-        // que la física del proyectil interfiera con el movimiento de retorno
+
         if (!returning) {
             super.tick();
         } else {
-            // Lógica de movimiento manual cuando regresa
+
             baseTick();
         }
 
@@ -68,11 +69,9 @@ public class ChanclaEntity extends ThrowableItemProjectile {
                     return;
                 }
 
-                // Velocidad creciente conforme pasa el tiempo
                 double speed = Math.min(0.8 + (ticksAlive * 0.005), 3.0);
                 setDeltaMovement(toOwner.normalize().scale(speed));
 
-                // Mover la entidad manualmente
                 setPos(position().add(getDeltaMovement()));
 
             } else {
@@ -80,7 +79,6 @@ public class ChanclaEntity extends ThrowableItemProjectile {
             }
         }
 
-        // Partículas solo en cliente
         if (level().isClientSide) {
             level().addParticle(
                     new ItemParticleOption(ParticleTypes.ITEM, getItem()),
@@ -92,7 +90,7 @@ public class ChanclaEntity extends ThrowableItemProjectile {
 
     @Override
     protected void onHitEntity(EntityHitResult result) {
-        // Ignorar si ya está regresando
+
         if (returning) return;
 
         Entity target = result.getEntity();
@@ -108,14 +106,12 @@ public class ChanclaEntity extends ThrowableItemProjectile {
             target.hurt(source, 200.0F);
         }
 
-        // Activar retorno SIEMPRE al golpear (servidor y cliente para sincronía)
         returning = true;
     }
 
     @Override
     protected void onHitBlock(BlockHitResult result) {
-        // NO llamar a super.onHitBlock() — eso descartaría la entidad
-        // Solo activar el retorno
+
         returning = true;
     }
 

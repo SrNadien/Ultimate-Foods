@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "ultimatefoods:compressed_steel_hammer",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:compressed_mushashite_hammer",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:compressed_joanfoite_hammer",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:compressed_nadienite_hammer",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:compressed_allthemodium_hammer",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:compressed_vibranium_hammer",
+      "required": false
+    },
+    {
+      "id": "ultimatefoods:compressed_unobtainium_hammer",
+      "required": false
+    }
+  ]
+}

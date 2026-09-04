@@ -11,7 +11,7 @@ import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import nadiendev.ultimatefoods.UltimateFoodsCore;
-import nadiendev.ultimatefoods.items.ItemsAdds;
+import nadiendev.ultimatefoods.registry.ItemsAdds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
@@ -34,7 +34,7 @@ public class NetheriteDaggerCategory implements IRecipeCategory<NetheriteDaggerR
     private final IDrawable icon;
 
     public NetheriteDaggerCategory(IGuiHelper guiHelper) {
-        // Fondo de 160x75 para que las dos líneas de hint quepan bien
+
         this.background = guiHelper.createBlankDrawable(160, 75);
         this.icon = guiHelper.createDrawableItemStack(new ItemStack(ItemsAdds.NETHERITE_DAGGER.get()));
     }
@@ -76,13 +76,10 @@ public class NetheriteDaggerCategory implements IRecipeCategory<NetheriteDaggerR
     public void draw(NetheriteDaggerRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
         Font font = Minecraft.getInstance().font;
 
-        // "+" entre espada y bloque
         guiGraphics.drawString(font, "+", SLOT_SWORD_X + 20, SLOT_SWORD_Y + 5, 0x404040, false);
 
-        // "→" entre bloque y output
         guiGraphics.drawString(font, "\u2192", SLOT_BLOCK_X + 20, SLOT_BLOCK_Y + 5, 0x404040, false);
 
-        // Hint en dos líneas para que no se salga del recuadro
         guiGraphics.drawString(font,
                 Component.translatable("jei.ultimatefoods.netherite_dagger.hint1").getVisualOrderText(),
                 5, 42, 0x666666, false);
