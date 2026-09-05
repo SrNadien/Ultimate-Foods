@@ -10,12 +10,8 @@
     }
   ],
   "type": "exdeorum:compressed_sieve",
-  "ingredient": {
-    "tag": "exdeorum:compressed/crushed_deepslate"
-  },
-  "mesh": {
-    "item": "ultimatefoods:steel_mesh"
-  },
+  "ingredient": "#exdeorum:compressed/crushed_deepslate",
+  "mesh": "ultimatefoods:steel_mesh",
   "result": {
     "count": 1,
     "id": "minecraft:diamond"

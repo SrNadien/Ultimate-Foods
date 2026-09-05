@@ -6,10 +6,9 @@ import nadiendev.ultimatefoods.items.armor.WizardHatItem;
 import nadiendev.ultimatefoods.UltimateFoodsCore;
 import nadiendev.ultimatefoods.items.ModTier;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.component.Unbreakable;
+import net.minecraft.util.Unit;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -18,42 +17,43 @@ import java.util.List;
 
 public class ArmorAdds {
 
-    public static final DeferredRegister<Item> ARMOR_ITEMS =
-            DeferredRegister.create(BuiltInRegistries.ITEM, UltimateFoodsCore.MOD_ID);
+    public static final DeferredRegister.Items ARMOR_ITEMS =
+            DeferredRegister.createItems(UltimateFoodsCore.MOD_ID);
 
     public static final DeferredHolder<Item, Item> MUSHASHITE_GORRO =
-            piece(ModTier.MUSHASHITE, ArmorItem.Type.HELMET, "gorro");
+            piece(ModTier.MUSHASHITE, ArmorType.HELMET, "gorro");
     public static final DeferredHolder<Item, Item> MUSHASHITE_REMERA =
-            piece(ModTier.MUSHASHITE, ArmorItem.Type.CHESTPLATE, "remera");
+            piece(ModTier.MUSHASHITE, ArmorType.CHESTPLATE, "remera");
     public static final DeferredHolder<Item, Item> MUSHASHITE_GAYUMBOS =
-            piece(ModTier.MUSHASHITE, ArmorItem.Type.LEGGINGS, "gayumbos");
+            piece(ModTier.MUSHASHITE, ArmorType.LEGGINGS, "gayumbos");
     public static final DeferredHolder<Item, Item> MUSHASHITE_MEDIAS =
-            piece(ModTier.MUSHASHITE, ArmorItem.Type.BOOTS, "medias");
+            piece(ModTier.MUSHASHITE, ArmorType.BOOTS, "medias");
 
     public static final DeferredHolder<Item, Item> JOANFOITE_GORRO =
-            piece(ModTier.JOANFOITE, ArmorItem.Type.HELMET, "gorro");
+            piece(ModTier.JOANFOITE, ArmorType.HELMET, "gorro");
     public static final DeferredHolder<Item, Item> JOANFOITE_REMERA =
-            piece(ModTier.JOANFOITE, ArmorItem.Type.CHESTPLATE, "remera");
+            piece(ModTier.JOANFOITE, ArmorType.CHESTPLATE, "remera");
     public static final DeferredHolder<Item, Item> JOANFOITE_GAYUMBOS =
-            piece(ModTier.JOANFOITE, ArmorItem.Type.LEGGINGS, "gayumbos");
+            piece(ModTier.JOANFOITE, ArmorType.LEGGINGS, "gayumbos");
     public static final DeferredHolder<Item, Item> JOANFOITE_MEDIAS =
-            piece(ModTier.JOANFOITE, ArmorItem.Type.BOOTS, "medias");
+            piece(ModTier.JOANFOITE, ArmorType.BOOTS, "medias");
 
     public static final DeferredHolder<Item, Item> NADIENITE_GORRO =
-            piece(ModTier.NADIENITE, ArmorItem.Type.HELMET, "gorro");
+            piece(ModTier.NADIENITE, ArmorType.HELMET, "gorro");
     public static final DeferredHolder<Item, Item> NADIENITE_REMERA =
-            piece(ModTier.NADIENITE, ArmorItem.Type.CHESTPLATE, "remera");
+            piece(ModTier.NADIENITE, ArmorType.CHESTPLATE, "remera");
     public static final DeferredHolder<Item, Item> NADIENITE_GAYUMBOS =
-            piece(ModTier.NADIENITE, ArmorItem.Type.LEGGINGS, "gayumbos");
+            piece(ModTier.NADIENITE, ArmorType.LEGGINGS, "gayumbos");
     public static final DeferredHolder<Item, Item> NADIENITE_MEDIAS =
-            piece(ModTier.NADIENITE, ArmorItem.Type.BOOTS, "medias");
+            piece(ModTier.NADIENITE, ArmorType.BOOTS, "medias");
 
-    private static DeferredHolder<Item, Item> piece(ModTier tier, ArmorItem.Type type, String suffix) {
-        return ARMOR_ITEMS.register(
+    private static DeferredHolder<Item, Item> piece(ModTier tier, ArmorType type, String suffix) {
+        return ARMOR_ITEMS.registerItem(
                 tier.id() + "_" + suffix,
-                () -> type == ArmorItem.Type.HELMET
-                        ? new WizardHatItem(tier, properties(tier))
-                        : new TieredArmorItem(tier, type, properties(tier))
+                props -> type == ArmorType.HELMET
+                        ? new WizardHatItem(tier, props)
+                        : new TieredArmorItem(tier, type, props),
+                () -> properties(tier)
         );
     }
 
@@ -62,7 +62,7 @@ public class ArmorAdds {
                 .stacksTo(1)
                 .fireResistant()
                 .rarity(tier.rarity())
-                .component(DataComponents.UNBREAKABLE, new Unbreakable(true));
+                .component(DataComponents.UNBREAKABLE, Unit.INSTANCE);
     }
 
     public static List<DeferredHolder<Item, Item>> piecesOf(ModTier tier) {

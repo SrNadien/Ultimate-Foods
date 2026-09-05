@@ -20,9 +20,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "#": {
-      "item": "ultimatefoods:vibranium_hammer"
-    }
+    "#": "ultimatefoods:vibranium_hammer"
   },
   "pattern": [
     "###",
@@ -30,7 +28,6 @@
     "###"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:compressed_vibranium_hammer"
   }
 }

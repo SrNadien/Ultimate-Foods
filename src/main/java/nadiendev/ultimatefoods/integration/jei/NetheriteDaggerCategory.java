@@ -14,7 +14,7 @@ import nadiendev.ultimatefoods.UltimateFoodsCore;
 import nadiendev.ultimatefoods.registry.ItemsAdds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 
@@ -30,12 +30,12 @@ public class NetheriteDaggerCategory implements IRecipeCategory<NetheriteDaggerR
     private static final int SLOT_OUTPUT_X = 110;
     private static final int SLOT_OUTPUT_Y = 15;
 
-    private final IDrawable background;
+    private static final int WIDTH = 160;
+    private static final int HEIGHT = 75;
+
     private final IDrawable icon;
 
     public NetheriteDaggerCategory(IGuiHelper guiHelper) {
-
-        this.background = guiHelper.createBlankDrawable(160, 75);
         this.icon = guiHelper.createDrawableItemStack(new ItemStack(ItemsAdds.NETHERITE_DAGGER.get()));
     }
 
@@ -50,9 +50,13 @@ public class NetheriteDaggerCategory implements IRecipeCategory<NetheriteDaggerR
     }
 
     @Override
-    @SuppressWarnings("removal")
-    public IDrawable getBackground() {
-        return background;
+    public int getWidth() {
+        return WIDTH;
+    }
+
+    @Override
+    public int getHeight() {
+        return HEIGHT;
     }
 
     @Override
@@ -73,18 +77,18 @@ public class NetheriteDaggerCategory implements IRecipeCategory<NetheriteDaggerR
     }
 
     @Override
-    public void draw(NetheriteDaggerRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
+    public void draw(NetheriteDaggerRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphicsExtractor guiGraphics, double mouseX, double mouseY) {
         Font font = Minecraft.getInstance().font;
 
-        guiGraphics.drawString(font, "+", SLOT_SWORD_X + 20, SLOT_SWORD_Y + 5, 0x404040, false);
+        guiGraphics.text(font, "+", SLOT_SWORD_X + 20, SLOT_SWORD_Y + 5, 0x404040, false);
 
-        guiGraphics.drawString(font, "\u2192", SLOT_BLOCK_X + 20, SLOT_BLOCK_Y + 5, 0x404040, false);
+        guiGraphics.text(font, "\u2192", SLOT_BLOCK_X + 20, SLOT_BLOCK_Y + 5, 0x404040, false);
 
-        guiGraphics.drawString(font,
+        guiGraphics.text(font,
                 Component.translatable("jei.ultimatefoods.netherite_dagger.hint1").getVisualOrderText(),
                 5, 42, 0x666666, false);
 
-        guiGraphics.drawString(font,
+        guiGraphics.text(font,
                 Component.translatable("jei.ultimatefoods.netherite_dagger.hint2").getVisualOrderText(),
                 5, 54, 0x666666, false);
     }

@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "C": {
-      "item": "ultimatefoods:corazon_de_los_caidos"
-    },
-    "N": {
-      "item": "ultimatefoods:mushashite_ingot"
-    }
+    "C": "ultimatefoods:corazon_de_los_caidos",
+    "N": "ultimatefoods:mushashite_ingot"
   },
   "pattern": [
     "N N",
@@ -15,7 +11,6 @@
     "NNN"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:mushashite_remera"
   }
 }

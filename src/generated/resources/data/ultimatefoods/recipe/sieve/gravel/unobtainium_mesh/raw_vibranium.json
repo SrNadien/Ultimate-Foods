@@ -18,12 +18,8 @@
     }
   ],
   "type": "exdeorum:sieve",
-  "ingredient": {
-    "item": "minecraft:gravel"
-  },
-  "mesh": {
-    "item": "ultimatefoods:unobtainium_mesh"
-  },
+  "ingredient": "minecraft:gravel",
+  "mesh": "ultimatefoods:unobtainium_mesh",
   "result": {
     "count": 1,
     "id": "allthemodium:raw_vibranium"

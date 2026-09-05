@@ -10,12 +10,8 @@
     }
   ],
   "type": "exdeorum:sieve",
-  "ingredient": {
-    "item": "minecraft:gravel"
-  },
-  "mesh": {
-    "item": "ultimatefoods:mushashite_mesh"
-  },
+  "ingredient": "minecraft:gravel",
+  "mesh": "ultimatefoods:mushashite_mesh",
   "result": {
     "count": 1,
     "id": "ultimatefoods:raw_joanfoite"

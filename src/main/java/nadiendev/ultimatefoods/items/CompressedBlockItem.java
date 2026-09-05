@@ -8,7 +8,9 @@ import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.NotNull;
 
 import java.text.NumberFormat;
-import java.util.List;
+import net.minecraft.world.item.component.TooltipDisplay;
+
+import java.util.function.Consumer;
 
 public class CompressedBlockItem extends BlockItem {
 
@@ -21,8 +23,8 @@ public class CompressedBlockItem extends BlockItem {
 
     @Override
     public void appendHoverText(@NotNull ItemStack stack, @NotNull TooltipContext context,
-                                @NotNull List<Component> tooltip, @NotNull TooltipFlag flag) {
-        super.appendHoverText(stack, context, tooltip, flag);
-        tooltip.add(Component.translatable("tooltip.ultimatefoods.quantity", this.quantity));
+                                @NotNull TooltipDisplay display, @NotNull Consumer<Component> tooltip, @NotNull TooltipFlag flag) {
+        super.appendHoverText(stack, context, display, tooltip, flag);
+        tooltip.accept(Component.translatable("tooltip.ultimatefoods.quantity", this.quantity));
     }
 }

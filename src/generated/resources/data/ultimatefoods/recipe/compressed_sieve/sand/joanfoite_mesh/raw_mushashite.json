@@ -10,12 +10,8 @@
     }
   ],
   "type": "exdeorum:compressed_sieve",
-  "ingredient": {
-    "tag": "exdeorum:compressed/sand"
-  },
-  "mesh": {
-    "item": "ultimatefoods:joanfoite_mesh"
-  },
+  "ingredient": "#exdeorum:compressed/sand",
+  "mesh": "ultimatefoods:joanfoite_mesh",
   "result": {
     "count": 1,
     "id": "ultimatefoods:raw_mushashite"

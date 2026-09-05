@@ -178,15 +178,9 @@ public class ExDeorumCompatProvider implements DataProvider {
     }
 
     private static JsonObject sieveRecipe(SieveSource source, String input, Drop drop, boolean compressed) {
-        JsonObject ingredient = new JsonObject();
-        if (compressed) {
-            ingredient.addProperty("tag", EXDEORUM + ":compressed/" + shortName(input));
-        } else {
-            ingredient.addProperty("item", input);
-        }
-
-        JsonObject meshItem = new JsonObject();
-        meshItem.addProperty("item", source.meshItem());
+        String ingredient = compressed
+                ? "#" + EXDEORUM + ":compressed/" + shortName(input)
+                : input;
 
         JsonObject result = new JsonObject();
         result.addProperty("count", 1);
@@ -200,8 +194,8 @@ public class ExDeorumCompatProvider implements DataProvider {
         JsonObject json = new JsonObject();
         json.add("neoforge:conditions", conditions(source.requiredMod(), drop.requiredMod()));
         json.addProperty("type", compressed ? "exdeorum:compressed_sieve" : "exdeorum:sieve");
-        json.add("ingredient", ingredient);
-        json.add("mesh", meshItem);
+        json.addProperty("ingredient", ingredient);
+        json.addProperty("mesh", source.meshItem());
         json.add("result", result);
         json.add("result_amount", amount);
         return json;

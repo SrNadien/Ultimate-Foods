@@ -12,15 +12,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "tag": "c:ingots/nadienite"
-    },
-    "P": {
-      "item": "ultimatefoods:joanfoite_mesh"
-    },
-    "S": {
-      "tag": "c:strings"
-    }
+    "#": "#c:ingots/nadienite",
+    "P": "ultimatefoods:joanfoite_mesh",
+    "S": "#c:strings"
   },
   "pattern": [
     "S#S",
@@ -28,7 +22,6 @@
     "S#S"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:nadienite_mesh"
   }
 }

@@ -10,12 +10,8 @@
     }
   ],
   "type": "exdeorum:sieve",
-  "ingredient": {
-    "item": "minecraft:sand"
-  },
-  "mesh": {
-    "item": "ultimatefoods:mushashite_mesh"
-  },
+  "ingredient": "minecraft:sand",
+  "mesh": "ultimatefoods:mushashite_mesh",
   "result": {
     "count": 1,
     "id": "minecraft:diamond"

@@ -7,7 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 import java.nio.file.Path;
 import java.util.concurrent.CompletableFuture;
@@ -30,14 +30,14 @@ public class ModJukeboxSongProvider implements DataProvider {
             );
 
             CompletableFuture<?> mccacao = saveJukeboxSong(cache, pathProvider,
-                SonidosReproducibles.DISC_MCCACAO_KEY.location().getPath(),
+                SonidosReproducibles.DISC_MCCACAO_KEY.identifier().getPath(),
                 "ultimatefoods:cajitafeli",
                 "jukebox_song.ultimatefoods.disc_mccacao",
                 163, 1
             );
 
             CompletableFuture<?> avengers = saveJukeboxSong(cache, pathProvider,
-                SonidosReproducibles.DISC_AVENGERS_KEY.location().getPath(),
+                SonidosReproducibles.DISC_AVENGERS_KEY.identifier().getPath(),
                 "ultimatefoods:the_avengers_theme_song",
                 "jukebox_song.ultimatefoods.disc_avengers",
                 121, 2
@@ -50,7 +50,7 @@ public class ModJukeboxSongProvider implements DataProvider {
     private CompletableFuture<?> saveJukeboxSong(CachedOutput cache, PackOutput.PathProvider pathProvider,
                                                    String name, String soundEvent, String descKey,
                                                    int lengthSeconds, int comparatorOutput) {
-        Path path = pathProvider.json(ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, name));
+        Path path = pathProvider.json(Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, name));
 
         JsonObject desc = new JsonObject();
         desc.addProperty("translate", descKey);

@@ -5,7 +5,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -19,7 +19,7 @@ public class EnchantAutoSmelt {
 
     public static final ResourceKey<Enchantment> AUTOSMELT =
             ResourceKey.create(Registries.ENCHANTMENT,
-                    ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "autosmelt"));
+                    Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "autosmelt"));
 
     public static void register(IEventBus modEventBus) {
         ENCHANTMENTS.register(modEventBus);

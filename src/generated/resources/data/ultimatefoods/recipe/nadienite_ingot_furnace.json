@@ -3,11 +3,8 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 1.0,
-  "ingredient": {
-    "item": "ultimatefoods:raw_nadienite"
-  },
+  "ingredient": "ultimatefoods:raw_nadienite",
   "result": {
-    "count": 1,
     "id": "ultimatefoods:nadienite_ingot"
   }
 }

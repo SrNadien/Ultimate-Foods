@@ -2,7 +2,7 @@ package nadiendev.ultimatefoods.registry;
 
 import nadiendev.ultimatefoods.UltimateFoodsCore;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -26,35 +26,15 @@ public class FluidsRegistry {
     public static final DeferredRegister<Fluid> FLUIDS =
             DeferredRegister.create(BuiltInRegistries.FLUID, UltimateFoodsCore.MOD_ID);
 
-    public static final DeferredRegister<net.minecraft.world.level.block.Block> FLUID_BLOCKS =
-            DeferredRegister.create(BuiltInRegistries.BLOCK, UltimateFoodsCore.MOD_ID);
+    public static final DeferredRegister.Blocks FLUID_BLOCKS =
+            DeferredRegister.createBlocks(UltimateFoodsCore.MOD_ID);
 
     @SuppressWarnings({"deprecation", "removal"})
     public static final Supplier<FluidType> NADIENITE_FLUID_TYPE = FLUID_TYPES.register("nadienite_fluid",
             () -> new FluidType(FluidType.Properties.create()
                     .density(1000)
                     .viscosity(1000)
-            ) {
-                @Override
-                public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
-                    consumer.accept(new IClientFluidTypeExtensions() {
-                        @Override
-                        public ResourceLocation getStillTexture() {
-                            return ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "block/nadienite_fluid");
-                        }
-
-                        @Override
-                        public ResourceLocation getFlowingTexture() {
-                            return ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "block/nadienite_flow");
-                        }
-
-                        @Override
-                        public int getTintColor() {
-                            return 0xFFFFFFFF;
-                        }
-                    });
-                }
-            });
+            ));
 
     public static final Supplier<BaseFlowingFluid.Source> NADIENITE_FLUID_SOURCE = FLUIDS.register("nadienite_fluid",
             () -> new BaseFlowingFluid.Source(nadieniteProperties()));
@@ -63,12 +43,12 @@ public class FluidsRegistry {
             () -> new BaseFlowingFluid.Flowing(nadieniteProperties()));
 
     public static final DeferredHolder<net.minecraft.world.level.block.Block, LiquidBlock> NADIENITE_FLUID_BLOCK =
-            FLUID_BLOCKS.register("nadienite_fluid", () -> new LiquidBlock(
+            RegHelper.block(FLUID_BLOCKS, "nadienite_fluid", () -> new LiquidBlock(
                     NADIENITE_FLUID_SOURCE.get(),
-                    BlockBehaviour.Properties.of()
+                    RegHelper.blockProps()
                             .mapColor(MapColor.COLOR_LIGHT_GREEN)
                             .replaceable()
-                            .noCollission()
+                            .noCollision()
                             .strength(100f)
                             .pushReaction(PushReaction.DESTROY)
                             .noLootTable()

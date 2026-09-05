@@ -3,7 +3,7 @@ package nadiendev.ultimatefoods.datagen.providers;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -18,47 +18,47 @@ public class NadieniteChestLootModifier extends LootModifier {
 
     private static final ThreadLocal<Boolean> IS_APPLYING = ThreadLocal.withInitial(() -> false);
 
-    private static final ResourceLocation[] DUNGEON_TABLES = {
-        ResourceLocation.parse("minecraft:chests/simple_dungeon"),
-        ResourceLocation.parse("minecraft:chests/stronghold_corridor"),
-        ResourceLocation.parse("minecraft:chests/stronghold_crossing"),
-        ResourceLocation.parse("minecraft:chests/stronghold_library"),
-        ResourceLocation.parse("minecraft:chests/abandoned_mineshaft"),
-        ResourceLocation.parse("minecraft:chests/jungle_temple"),
-        ResourceLocation.parse("minecraft:chests/desert_pyramid"),
-        ResourceLocation.parse("minecraft:chests/pillager_outpost"),
-        ResourceLocation.parse("minecraft:chests/ancient_city"),
+    private static final Identifier[] DUNGEON_TABLES = {
+        Identifier.parse("minecraft:chests/simple_dungeon"),
+        Identifier.parse("minecraft:chests/stronghold_corridor"),
+        Identifier.parse("minecraft:chests/stronghold_crossing"),
+        Identifier.parse("minecraft:chests/stronghold_library"),
+        Identifier.parse("minecraft:chests/abandoned_mineshaft"),
+        Identifier.parse("minecraft:chests/jungle_temple"),
+        Identifier.parse("minecraft:chests/desert_pyramid"),
+        Identifier.parse("minecraft:chests/pillager_outpost"),
+        Identifier.parse("minecraft:chests/ancient_city"),
     };
 
-    private static final ResourceLocation[] NETHER_TABLES = {
-        ResourceLocation.parse("minecraft:chests/nether_bridge"),
-        ResourceLocation.parse("minecraft:chests/bastion_treasure"),
-        ResourceLocation.parse("minecraft:chests/bastion_other"),
-        ResourceLocation.parse("minecraft:chests/bastion_hoglin_stable"),
+    private static final Identifier[] NETHER_TABLES = {
+        Identifier.parse("minecraft:chests/nether_bridge"),
+        Identifier.parse("minecraft:chests/bastion_treasure"),
+        Identifier.parse("minecraft:chests/bastion_other"),
+        Identifier.parse("minecraft:chests/bastion_hoglin_stable"),
     };
 
-    private static final ResourceLocation BONUS_DUNGEON =
-            ResourceLocation.fromNamespaceAndPath("ultimatefoods", "chests/nadienite_dungeon_bonus");
-    private static final ResourceLocation BONUS_NETHER =
-            ResourceLocation.fromNamespaceAndPath("ultimatefoods", "chests/nadienite_nether_bonus");
+    private static final Identifier BONUS_DUNGEON =
+            Identifier.fromNamespaceAndPath("ultimatefoods", "chests/nadienite_dungeon_bonus");
+    private static final Identifier BONUS_NETHER =
+            Identifier.fromNamespaceAndPath("ultimatefoods", "chests/nadienite_nether_bonus");
 
-    public NadieniteChestLootModifier(LootItemCondition[] conditionsIn) {
-        super(conditionsIn);
+    public NadieniteChestLootModifier(LootItemCondition[] conditionsIn, int priority) {
+        super(conditionsIn, priority);
     }
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
         if (IS_APPLYING.get()) return generatedLoot;
 
-        ResourceLocation tableId = context.getQueriedLootTableId();
+        Identifier tableId = context.getQueriedLootTableId();
 
-        ResourceLocation bonusTable = null;
+        Identifier bonusTable = null;
 
-        for (ResourceLocation rl : DUNGEON_TABLES) {
+        for (Identifier rl : DUNGEON_TABLES) {
             if (rl.equals(tableId)) { bonusTable = BONUS_DUNGEON; break; }
         }
         if (bonusTable == null) {
-            for (ResourceLocation rl : NETHER_TABLES) {
+            for (Identifier rl : NETHER_TABLES) {
                 if (rl.equals(tableId)) { bonusTable = BONUS_NETHER; break; }
             }
         }

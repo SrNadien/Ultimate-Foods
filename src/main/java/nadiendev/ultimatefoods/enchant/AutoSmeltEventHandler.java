@@ -27,8 +27,8 @@ public class AutoSmeltEventHandler {
         ItemStack tool = event.getSource().getWeaponItem();
         if (tool == null || tool.isEmpty()) return;
 
-        var enchantmentRegistry = level.registryAccess().registryOrThrow(Registries.ENCHANTMENT);
-        var autoSmeltHolder = enchantmentRegistry.getHolder(ModEnchantments.AUTOSMELT).orElse(null);
+        var enchantmentRegistry = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
+        var autoSmeltHolder = enchantmentRegistry.get(ModEnchantments.AUTOSMELT).orElse(null);
         if (autoSmeltHolder == null) return;
 
         int enchLevel = EnchantmentHelper.getItemEnchantmentLevel(autoSmeltHolder, tool);
@@ -41,10 +41,10 @@ public class AutoSmeltEventHandler {
             ItemStack stack = itemEntity.getItem().copy();
             var recipeInput = new SingleRecipeInput(stack);
 
-            level.getRecipeManager()
+            level.recipeAccess()
                     .getRecipeFor(RecipeType.SMELTING, recipeInput, level)
                     .ifPresent(recipe -> {
-                        ItemStack result = recipe.value().assemble(recipeInput, level.registryAccess());
+                        ItemStack result = recipe.value().assemble(recipeInput);
                         if (!result.isEmpty()) {
                             result.setCount(stack.getCount());
                             toAdd.add(new ItemEntity(level,

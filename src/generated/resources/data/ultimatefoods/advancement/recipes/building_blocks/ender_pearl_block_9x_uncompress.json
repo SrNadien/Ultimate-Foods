@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "ultimatefoods:config",
+      "option": "allTheCompressed"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ender_pearl_block_9x": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatefoods:ender_pearl_block_9x"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ultimatefoods:ender_pearl_block_9x_uncompress"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ender_pearl_block_9x"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ultimatefoods:ender_pearl_block_9x_uncompress"
+    ]
+  }
+}

@@ -2,18 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "K": {
-      "item": "ultimatefoods:netherite_dagger"
-    },
-    "O": {
-      "item": "minecraft:mutton"
-    },
-    "P": {
-      "item": "minecraft:porkchop"
-    },
-    "V": {
-      "item": "minecraft:beef"
-    }
+    "K": "ultimatefoods:netherite_dagger",
+    "O": "minecraft:mutton",
+    "P": "minecraft:porkchop",
+    "V": "minecraft:beef"
   },
   "pattern": [
     " O ",
@@ -21,7 +13,6 @@
     " O "
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:raw_hamburger_meat"
   }
 }

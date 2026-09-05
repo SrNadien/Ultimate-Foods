@@ -4,15 +4,10 @@
   "cookingtime": 100,
   "experience": 1.0,
   "ingredient": [
-    {
-      "item": "ultimatefoods:nadienite_ore"
-    },
-    {
-      "item": "ultimatefoods:deepslate_nadienite_ore"
-    }
+    "ultimatefoods:nadienite_ore",
+    "ultimatefoods:deepslate_nadienite_ore"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:nadienite_ingot"
   }
 }

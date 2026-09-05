@@ -41,7 +41,6 @@ public class UltimateFoodsCore {
 
         SonidosReproducibles.register(modEventBus);
         EffectsAdds.register(modEventBus);
-        ModArmorMaterials.ARMOR_MATERIALS.register(modEventBus);
         BlocksAdds.register(modEventBus);
         ModOreBlocks.register(modEventBus);
         ItemsAdds.register(modEventBus);
@@ -60,7 +59,8 @@ public class UltimateFoodsCore {
         CreativeTab.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
-        modEventBus.addListener(DataGenerators::gatherData);
+        modEventBus.addListener(DataGenerators::gatherClientData);
+        modEventBus.addListener(DataGenerators::gatherServerData);
 
         LOGGER.info("Ultimate Foods Mod inicializado correctamente!");
     }

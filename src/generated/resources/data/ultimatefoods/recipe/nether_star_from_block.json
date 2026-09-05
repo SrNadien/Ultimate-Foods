@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "ultimatefoods:nether_star_block"
-    }
+    "ultimatefoods:nether_star_block"
   ],
   "result": {
     "count": 9,

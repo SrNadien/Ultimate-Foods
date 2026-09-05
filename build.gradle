@@ -2,7 +2,7 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'maven-publish'
-    id 'net.neoforged.gradle.userdev' version '7.0.171'
+    id 'net.neoforged.gradle.userdev' version '7.1.38'
 }
 
 version =minecraft_version + "-" + mod_version + "-" + tag_lanzador
@@ -14,7 +14,7 @@ base {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(25)
     }
 }
 
@@ -43,12 +43,23 @@ runs {
         systemProperty 'forge.enabledGameTestNamespaces', mod_id
     }
 
-    data {
+    clientData {
         workingDirectory project.file('run-data')
-        
-        programArguments.addAll '--mod', mod_id, 
-                                '--all', 
-                                '--output', file('src/generated/resources/').getAbsolutePath(), 
+
+        programArguments.addAll '--mod', mod_id,
+                                '--all',
+                                '--uncached',
+                                '--output', file('src/generated/resources/').getAbsolutePath(),
+                                '--existing', file('src/main/resources/').getAbsolutePath()
+    }
+
+    serverData {
+        workingDirectory project.file('run-data')
+
+        programArguments.addAll '--mod', mod_id,
+                                '--all',
+                                '--uncached',
+                                '--output', file('src/generated/resources/').getAbsolutePath(),
                                 '--existing', file('src/main/resources/').getAbsolutePath()
     }
 }
@@ -117,20 +128,20 @@ dependencies {
     runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
 
     //jade
-    implementation "curse.maven:jade-324717:${jade_version}"
+    implementation "maven.modrinth:jade:${jade_version}"
 
     //Avaritia
     // implementation "curse.maven:re-avaritia-623969:${avaritia_version_id}"
 
     //GeckoLib
-    implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
+    implementation "maven.modrinth:geckolib:${geckolib_version}"
 
     //Apple Skin
     compileOnly "squeek.appleskin:appleskin-neoforge:mc${mc}-${appleskin_version}:api"
     runtimeOnly "squeek.appleskin:appleskin-neoforge:mc${mc}-${appleskin_version}"
 
     //Patchouli
-    implementation "vazkii.patchouli:Patchouli:${patchouli_version}"
+    implementation files("libs/patchouli-neoforge-26.1-94.jar")
 
     // Ex Deorum y AllTheModium van como jars en run/mods, no aca:
     // Ex Deorum corre su propio datagen y necesita ModKit, que no publica esas clases,

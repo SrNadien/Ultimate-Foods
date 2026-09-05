@@ -10,12 +10,8 @@
     }
   ],
   "type": "exdeorum:sieve",
-  "ingredient": {
-    "item": "exdeorum:crushed_netherrack"
-  },
-  "mesh": {
-    "item": "ultimatefoods:nadienite_mesh"
-  },
+  "ingredient": "exdeorum:crushed_netherrack",
+  "mesh": "ultimatefoods:nadienite_mesh",
   "result": {
     "count": 1,
     "id": "ultimatefoods:raw_mushashite"

@@ -20,15 +20,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "m": {
-      "tag": "c:ingots/unobtainium"
-    },
-    "p": {
-      "item": "ultimatefoods:vibranium_hammer"
-    },
-    "s": {
-      "tag": "c:rods/wooden"
-    }
+    "m": "#c:ingots/unobtainium",
+    "p": "ultimatefoods:vibranium_hammer",
+    "s": "#c:rods/wooden"
   },
   "pattern": [
     " m ",
@@ -36,7 +30,6 @@
     "s  "
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:unobtainium_hammer"
   }
 }

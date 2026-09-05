@@ -22,11 +22,11 @@ public class PoopEffectHandler {
         }
 
         long currentTime = player.level().getGameTime();
-        long endTime = serverPlayer.getPersistentData().getLong("queGuarroEndTime");
+        long endTime = serverPlayer.getPersistentData().getLongOr("queGuarroEndTime", 0L);
 
         if (endTime > 0 && currentTime < endTime) {
 
-            int ticksElapsed = serverPlayer.getPersistentData().getInt("queGuarroTicks");
+            int ticksElapsed = serverPlayer.getPersistentData().getIntOr("queGuarroTicks", 0);
             ticksElapsed++;
 
             if (ticksElapsed >= TICKS_PER_DROP) {

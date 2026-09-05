@@ -1,5 +1,28 @@
 # Changelog
 
+## [2.0.9] — 2026-09-04 — Minecraft 26.1.2
+
+Port to Minecraft 26.1.2. Same content as the 1.21.1 release, rebuilt against the new APIs.
+
+### ✨ Added
+- Ex Deorum, AllTheModium, JEI, Jade, GeckoLib and Patchouli support on 26.1.2.
+- Equipment assets for the three armor tiers, replacing the old armor layer textures.
+
+### ⚔️ Changed
+- Requires **Java 25** and NeoForge `26.1.2.100`.
+- The whole item, tool and armor layer was rebuilt: `ArmorItem`, `SwordItem` and `DiggerItem` no longer exist, so every tool and armor piece is now a plain `Item` configured through its properties.
+- Food effects moved from `FoodProperties` to the `Consumable` component.
+- The Nadienite fluid is rendered through the new fluid model registration instead of a client extension.
+- The wizard hat model moved to the folders GeckoLib 5 expects.
+- Data generation is split into client and server passes, and every model and recipe was regenerated in the 26.1 format.
+
+### 🐛 Fixes
+- Ex Deorum sieve recipes now use the new single-string ingredient format, so they load again.
+- Every item ships a client item definition, so nothing renders as a missing model.
+
+### 🗑️ Removed
+- Avaritia support: the mod has no 26.1.2 release, so its code is disabled.
+
 ## [2.0.9] — 2026-09-04 — Minecraft 1.21.1
 
 ### ✨ Added

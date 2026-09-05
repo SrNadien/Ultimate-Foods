@@ -12,15 +12,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "m": {
-      "tag": "c:ingots/steel"
-    },
-    "p": {
-      "tag": "ultimatefoods:compat/exdeorum_iron_hammer"
-    },
-    "s": {
-      "tag": "c:rods/wooden"
-    }
+    "m": "#c:ingots/steel",
+    "p": "#ultimatefoods:compat/exdeorum_iron_hammer",
+    "s": "#c:rods/wooden"
   },
   "pattern": [
     " m ",
@@ -28,7 +22,6 @@
     "s  "
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:steel_hammer"
   }
 }

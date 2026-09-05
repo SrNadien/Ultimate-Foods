@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_patty_raw": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatefoods:raw_hamburger_meat"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ultimatefoods:cooked_hamburguer_meat_campfire"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_patty_raw"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ultimatefoods:cooked_hamburguer_meat_campfire"
+    ]
+  }
+}

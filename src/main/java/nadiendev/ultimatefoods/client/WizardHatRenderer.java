@@ -1,36 +1,48 @@
 package nadiendev.ultimatefoods.client;
 
+import com.geckolib.model.GeoModel;
+import com.geckolib.renderer.GeoArmorRenderer;
+import com.geckolib.renderer.base.GeoRenderState;
 import nadiendev.ultimatefoods.UltimateFoodsCore;
+import nadiendev.ultimatefoods.items.ModTier;
 import nadiendev.ultimatefoods.items.armor.WizardHatItem;
-import net.minecraft.resources.ResourceLocation;
-import software.bernie.geckolib.model.GeoModel;
-import software.bernie.geckolib.renderer.GeoArmorRenderer;
+import net.minecraft.client.renderer.entity.state.HumanoidRenderState;
+import net.minecraft.resources.Identifier;
 
-public class WizardHatRenderer extends GeoArmorRenderer<WizardHatItem> {
+public class WizardHatRenderer extends GeoArmorRenderer<WizardHatItem, HumanoidRenderState> {
 
-    public WizardHatRenderer() {
-        super(new WizardHatGeoModel());
+    public WizardHatRenderer(ModTier tier) {
+        super(new WizardHatGeoModel(tier));
     }
 
     private static class WizardHatGeoModel extends GeoModel<WizardHatItem> {
 
-        @Override
-        public ResourceLocation getModelResource(WizardHatItem item) {
-            return path("geo/wizard_hat.geo.json");
+        private static final Identifier MODEL = path("geckolib/models/wizard_hat.geo.json");
+        private static final Identifier ANIMATION = path("geckolib/animations/wizard_hat.animation.json");
+
+        private final Identifier texture;
+
+        WizardHatGeoModel(ModTier tier) {
+            this.texture = path("textures/armor/" + tier.id() + "_wizard_hat.png");
         }
 
         @Override
-        public ResourceLocation getTextureResource(WizardHatItem item) {
-            return path("textures/armor/" + item.modTier().id() + "_wizard_hat.png");
+        public Identifier getModelResource(GeoRenderState state) {
+            return MODEL;
         }
 
         @Override
-        public ResourceLocation getAnimationResource(WizardHatItem item) {
-            return path("animations/wizard_hat.animation.json");
+        public Identifier getTextureResource(GeoRenderState state) {
+            return this.texture;
         }
 
-        private static ResourceLocation path(String path) {
-            return ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, path);
+        @Override
+        public Identifier getAnimationResource(WizardHatItem item) {
+            return ANIMATION;
+        }
+
+        private static Identifier path(String path) {
+            return Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, path);
         }
     }
 }

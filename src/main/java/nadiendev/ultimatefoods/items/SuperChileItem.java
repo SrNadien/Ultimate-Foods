@@ -5,7 +5,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 
-import java.util.List;
+import net.minecraft.world.item.component.TooltipDisplay;
+
+import java.util.function.Consumer;
 
 public class SuperChileItem extends Item {
 
@@ -14,21 +16,21 @@ public class SuperChileItem extends Item {
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+    public void appendHoverText(ItemStack stack, TooltipContext context, TooltipDisplay display, Consumer<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        super.appendHoverText(stack, context, display, tooltipComponents, tooltipFlag);
 
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_0"));
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_1"));
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_2"));
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_3"));
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_4"));
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_5"));
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_6"));
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_7"));
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_8"));
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_9"));
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_10"));
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_11"));
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.super_chile.description_12"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.super_chile.description_0"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.super_chile.description_1"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.super_chile.description_2"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.super_chile.description_3"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.super_chile.description_4"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.super_chile.description_5"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.super_chile.description_6"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.super_chile.description_7"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.super_chile.description_8"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.super_chile.description_9"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.super_chile.description_10"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.super_chile.description_11"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.super_chile.description_12"));
     }
 }

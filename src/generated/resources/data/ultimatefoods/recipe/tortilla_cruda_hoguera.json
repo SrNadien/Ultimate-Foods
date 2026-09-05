@@ -3,11 +3,8 @@
   "category": "food",
   "cookingtime": 600,
   "experience": 1.0,
-  "ingredient": {
-    "item": "ultimatefoods:baked_tortilla"
-  },
+  "ingredient": "ultimatefoods:baked_tortilla",
   "result": {
-    "count": 1,
     "id": "ultimatefoods:tortilla"
   }
 }

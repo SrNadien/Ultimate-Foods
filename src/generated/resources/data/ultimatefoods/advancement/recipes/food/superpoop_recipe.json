@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_poop": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatefoods:poop"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ultimatefoods:superpoop_recipe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_poop"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ultimatefoods:superpoop_recipe"
+    ]
+  }
+}

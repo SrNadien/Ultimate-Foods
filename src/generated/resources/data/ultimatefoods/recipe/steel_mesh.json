@@ -12,15 +12,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "tag": "c:ingots/steel"
-    },
-    "P": {
-      "tag": "ultimatefoods:compat/exdeorum_iron_mesh"
-    },
-    "S": {
-      "tag": "c:strings"
-    }
+    "#": "#c:ingots/steel",
+    "P": "#ultimatefoods:compat/exdeorum_iron_mesh",
+    "S": "#c:strings"
   },
   "pattern": [
     "S#S",
@@ -28,7 +22,6 @@
     "S#S"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:steel_mesh"
   }
 }

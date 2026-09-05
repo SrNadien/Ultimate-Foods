@@ -17,7 +17,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.advancements.Criterion;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -34,39 +34,41 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends RecipeProvider {
 
-    public ModRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries);
+    protected ModRecipeProvider(HolderLookup.Provider registries, RecipeOutput output) {
+        super(registries, output);
+    }
+
+    public static class Runner extends RecipeProvider.Runner {
+
+        public Runner(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+            super(output, registries);
+        }
+
+        @Override
+        public String getName() {
+            return "Recipes: " + UltimateFoodsCore.MOD_ID;
+        }
+
+        @Override
+        protected RecipeProvider createRecipeProvider(HolderLookup.Provider registries, RecipeOutput output) {
+            return new ModRecipeProvider(registries, output);
+        }
     }
 
     @Override
-    protected void buildRecipes(RecipeOutput writer) {
-
-        RecipeOutput recipeOutput = new RecipeOutput() {
-            @Override
-            public void accept(ResourceLocation id, net.minecraft.world.item.crafting.Recipe<?> recipe,
-                               net.minecraft.advancements.AdvancementHolder advancement) {
-                writer.accept(id, recipe, null);
-            }
-            @Override
-            public net.minecraft.advancements.Advancement.Builder advancement() {
-                return writer.advancement();
-            }
-            @Override
-            public void accept(ResourceLocation id, net.minecraft.world.item.crafting.Recipe<?> recipe,
-                               net.minecraft.advancements.AdvancementHolder advancement, ICondition... conditions) {
-                writer.accept(id, recipe, null, conditions);
-            }
-        };
+    protected void buildRecipes() {
+        RecipeOutput writer = this.output;
+        RecipeOutput recipeOutput = writer;
 
         SimpleCookingRecipeBuilder.smelting(
                 Ingredient.of(ItemsAdds.BAKED_TORTILLA.get()),
-                RecipeCategory.MISC, ItemsAdds.TORTILLA.get(), 1.0f, 200)
+                RecipeCategory.MISC, net.minecraft.world.item.crafting.CookingBookCategory.MISC, ItemsAdds.TORTILLA.get(), 1.0f, 200)
                 .unlockedBy("has_baked_tortilla", has(ItemsAdds.BAKED_TORTILLA.get()))
                 .save(recipeOutput, rl("tortilla_cruda_horno"));
 
         SimpleCookingRecipeBuilder.smelting(
                 Ingredient.of(ItemsAdds.RAW_HAMBURGUER_MEAT.get()),
-                RecipeCategory.FOOD, ItemsAdds.COOKED_HAMBURGUER_MEAT.get(), 0.35f, 200)
+                RecipeCategory.FOOD, net.minecraft.world.item.crafting.CookingBookCategory.MISC, ItemsAdds.COOKED_HAMBURGUER_MEAT.get(), 0.35f, 200)
                 .unlockedBy("has_raw_hamburguer_meat", has(ItemsAdds.RAW_HAMBURGUER_MEAT.get()))
                 .save(recipeOutput, rl("cooked_hamburguer_meat_furnace"));
 
@@ -94,7 +96,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_patty_raw", has(ItemsAdds.RAW_HAMBURGUER_MEAT.get()))
                 .save(recipeOutput, rl("cooked_hamburguer_meat_campfire"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.RAW_HAMBURGUER_MEAT.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.FOOD, ItemsAdds.RAW_HAMBURGUER_MEAT.get(), 1)
                 .pattern(" O ")
                 .pattern("PKV")
                 .pattern(" O ")
@@ -105,7 +107,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_beef", has(Items.BEEF))
                 .save(recipeOutput, rl("patty_raw_recipe"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.BURGER.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.FOOD, ItemsAdds.BURGER.get(), 1)
                 .pattern(" B ")
                 .pattern("CMG")
                 .pattern(" B ")
@@ -116,26 +118,26 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_patty_cooked", has(ItemsAdds.COOKED_HAMBURGUER_MEAT.get()))
                 .save(recipeOutput, rl("hamburguesa_recipe"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.DORITOS.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.FOOD, ItemsAdds.DORITOS.get(), 1)
                 .pattern("aba").pattern("bcb").pattern("aba")
                 .define('a', Items.WHEAT).define('b', Items.BAKED_POTATO).define('c', Items.BUCKET)
                 .unlockedBy("has_wheat", has(Items.WHEAT))
                 .save(recipeOutput, rl("doritos_recipe"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.CAJITA_FELIZ.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.FOOD, ItemsAdds.CAJITA_FELIZ.get(), 1)
                 .pattern(" a ").pattern("bcd")
                 .define('a', Items.APPLE).define('b', Items.BAKED_POTATO)
                 .define('c', Items.CHEST).define('d', Items.COOKED_CHICKEN)
                 .unlockedBy("has_chest", has(Items.CHEST))
                 .save(recipeOutput, rl("cajita_feliz_recipe"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.POOP.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.FOOD, ItemsAdds.POOP.get(), 1)
                 .pattern("aaa").pattern("aba").pattern("aaa")
                 .define('a', Items.ROTTEN_FLESH).define('b', Items.GOLDEN_APPLE)
                 .unlockedBy("has_golden_apple", has(Items.GOLDEN_APPLE))
                 .save(recipeOutput, rl("poop_recipe"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.MONSTER.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.FOOD, ItemsAdds.MONSTER.get(), 1)
                 .pattern(" a ").pattern("bcd").pattern(" a ")
                 .define('a', Items.SUGAR)
                 .define('b', Items.BLAZE_POWDER)
@@ -144,7 +146,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_blaze_powder", has(Items.BLAZE_POWDER))
                 .save(recipeOutput, rl("monster_recipe"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.SUPER_ENERGY_DRINK.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.FOOD, ItemsAdds.SUPER_ENERGY_DRINK.get(), 1)
                 .pattern("aba").pattern("cdc").pattern("aba")
                 .define('a', Items.BLAZE_POWDER)
                 .define('b', Items.GHAST_TEAR)
@@ -153,20 +155,20 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_monster", has(ItemsAdds.MONSTER.get()))
                 .save(recipeOutput, rl("super_energy_drink_recipe"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.SUPERPOOP.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.FOOD, ItemsAdds.SUPERPOOP.get(), 1)
                 .pattern("aaa").pattern("aba").pattern("aaa")
                 .define('a', Items.WHEAT)
                 .define('b', ItemsAdds.POOP.get())
                 .unlockedBy("has_poop", has(ItemsAdds.POOP.get()))
                 .save(recipeOutput, rl("superpoop_recipe"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlocksAdds.NETHER_STAR_BLOCK.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.BUILDING_BLOCKS, BlocksAdds.NETHER_STAR_BLOCK.get(), 1)
                 .pattern("aaa").pattern("aaa").pattern("aaa")
                 .define('a', Items.NETHER_STAR)
                 .unlockedBy("has_nether_star", has(Items.NETHER_STAR))
                 .save(recipeOutput, rl("nether_star_block"));
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.NETHER_STAR, 9)
+        ShapelessRecipeBuilder.shapeless(this.items, RecipeCategory.MISC, Items.NETHER_STAR, 9)
                .requires(BlocksAdds.NETHER_STAR_BLOCK.get())
                .unlockedBy("has_nether_star_block", has(BlocksAdds.NETHER_STAR_BLOCK.get()))
                .save(recipeOutput, rl("nether_star_from_block"));
@@ -176,18 +178,18 @@ public class ModRecipeProvider extends RecipeProvider {
         buildCompressedRecipes(recipeOutput);
         buildHammerRecipes(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlocksAdds.ENDER_PEARL_BLOCK.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.BUILDING_BLOCKS, BlocksAdds.ENDER_PEARL_BLOCK.get(), 1)
                 .pattern("aaa").pattern("aaa").pattern("aaa")
                 .define('a', Items.ENDER_PEARL)
                 .unlockedBy("has_ender_pearl", has(Items.ENDER_PEARL))
                 .save(recipeOutput, rl("ender_pearl_block"));
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.ENDER_PEARL, 9)
+        ShapelessRecipeBuilder.shapeless(this.items, RecipeCategory.MISC, Items.ENDER_PEARL, 9)
                 .requires(BlocksAdds.ENDER_PEARL_BLOCK.get())
                 .unlockedBy("has_ender_pearl_block", has(BlocksAdds.ENDER_PEARL_BLOCK.get()))
                 .save(recipeOutput, rl("ender_pearl_from_block"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ToolsAdds.CHANCLA.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.COMBAT, ToolsAdds.CHANCLA.get(), 1)
                 .pattern(" C ").pattern(" N ").pattern(" S ")
                 .define('N', ToolsAdds.NADIENITE_SWORD.get())
                 .define('S', Items.STICK)
@@ -195,32 +197,32 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_nadienite_ingot", has(ItemsAdds.NADIENITE_INGOT.get()))
                 .save(recipeOutput, rl("chancleta"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.TACO.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.FOOD, ItemsAdds.TACO.get(), 1)
                 .pattern("aaa").pattern("bcd").pattern("aaa")
                 .define('a', ItemsAdds.TORTILLA.get()).define('b', Items.GOLDEN_CARROT)
                 .define('c', Items.COOKED_BEEF).define('d', Items.BEETROOT)
                 .unlockedBy("has_cooked_beef", has(Items.COOKED_BEEF))
                 .save(recipeOutput, rl("taco"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.BAKED_TORTILLA.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.FOOD, ItemsAdds.BAKED_TORTILLA.get(), 1)
                 .pattern("aaa").pattern("aba").pattern("aaa")
                 .define('a', Items.WHEAT).define('b', Items.BREAD)
                 .unlockedBy("has_bread", has(Items.BREAD))
                 .save(recipeOutput, rl("tortilla_cruda"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.STEEL_INGOT.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.FOOD, ItemsAdds.STEEL_INGOT.get(), 1)
                 .pattern("aa ").pattern("bb ").pattern("   ")
                 .define('a', Items.IRON_INGOT).define('b', Items.COAL)
                 .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
                 .save(recipeOutput, rl("acero"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemsAdds.STEEL_INGOT.get(), 9)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.FOOD, ItemsAdds.STEEL_INGOT.get(), 9)
                 .pattern("a  ").pattern("   ").pattern("   ")
                 .define('a', BlocksAdds.STEEL_BLOCK.get())
                 .unlockedBy("has_steel_block", has(BlocksAdds.STEEL_BLOCK.get()))
                 .save(recipeOutput, rl("acero_desde_bloque"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlocksAdds.STEEL_BLOCK.get(), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.BUILDING_BLOCKS, BlocksAdds.STEEL_BLOCK.get(), 1)
                 .pattern("aaa").pattern("aaa").pattern("aaa")
                 .define('a', ItemsAdds.STEEL_INGOT.get())
                 .unlockedBy("has_steel_ingot", has(ItemsAdds.STEEL_INGOT.get()))
@@ -240,7 +242,7 @@ public class ModRecipeProvider extends RecipeProvider {
                             new ModLoadedCondition("exdeorum"),
                             new ConfigCondition(ConfigCondition.EX_DEORUM));
 
-            TagKey<Item> ingots = ItemTags.create(ResourceLocation.parse(hammer.ingotTag()));
+            TagKey<Item> ingots = ItemTags.create(Identifier.parse(hammer.ingotTag()));
 
             hammerRecipe(target, HammerAdds.name(hammer.material(), false), ingots,
                     hammer.previousMaterial(), hammer.heart());
@@ -252,7 +254,7 @@ public class ModRecipeProvider extends RecipeProvider {
                               String previousMaterial, ModTier heart) {
         Item result = item(name);
 
-        ShapedRecipeBuilder builder = ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, result, 1)
+        ShapedRecipeBuilder builder = ShapedRecipeBuilder.shaped(this.items, RecipeCategory.TOOLS, result, 1)
                 .define('s', Tags.Items.RODS_WOODEN)
                 .define('m', ingots);
 
@@ -278,7 +280,7 @@ public class ModRecipeProvider extends RecipeProvider {
     private void compressedHammerRecipe(RecipeOutput out, String material) {
         Item base = item(HammerAdds.name(material, false));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, item(HammerAdds.name(material, true)), 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.TOOLS, item(HammerAdds.name(material, true)), 1)
                 .define('#', base)
                 .pattern("###")
                 .pattern("###")
@@ -288,8 +290,8 @@ public class ModRecipeProvider extends RecipeProvider {
     }
 
     private static Item item(String path) {
-        return BuiltInRegistries.ITEM.get(
-                ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, path));
+        return BuiltInRegistries.ITEM.getValue(
+                Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, path));
     }
 
     private void buildCompressedRecipes(RecipeOutput out) {
@@ -303,13 +305,13 @@ public class ModRecipeProvider extends RecipeProvider {
                         : CompressedBlocks.get(material, level - 1).get();
                 String name = CompressedBlocks.name(material, level);
 
-                ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 1)
+                ShapedRecipeBuilder.shaped(this.items, RecipeCategory.BUILDING_BLOCKS, result, 1)
                         .pattern("aaa").pattern("aaa").pattern("aaa")
                         .define('a', source)
                         .unlockedBy("has_" + material, has(source))
                         .save(compressed, rl(name));
 
-                ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, source, 9)
+                ShapelessRecipeBuilder.shapeless(this.items, RecipeCategory.BUILDING_BLOCKS, source, 9)
                         .requires(result)
                         .unlockedBy("has_" + name, has(result))
                         .save(compressed, rl(name + "_uncompress"));
@@ -328,8 +330,8 @@ public class ModRecipeProvider extends RecipeProvider {
                 new ModLoadedCondition("allthemodium"),
                 new ConfigCondition(ConfigCondition.ALLTHEMODIUM));
 
-        mesh(exDeorum, MeshAdds.STEEL_MESH.get(), "c:ingots/steel", Ingredient.of(ModItemTags.Items.compat("exdeorum:iron_mesh")));
-        mesh(exDeorum, MeshAdds.MUSHASHITE_MESH.get(), "c:ingots/mushashite", Ingredient.of(ModItemTags.Items.compat("exdeorum:netherite_mesh")));
+        mesh(exDeorum, MeshAdds.STEEL_MESH.get(), "c:ingots/steel", Ingredient.of(this.items.getOrThrow(ModItemTags.Items.compat("exdeorum:iron_mesh"))));
+        mesh(exDeorum, MeshAdds.MUSHASHITE_MESH.get(), "c:ingots/mushashite", Ingredient.of(this.items.getOrThrow(ModItemTags.Items.compat("exdeorum:netherite_mesh"))));
         mesh(exDeorum, MeshAdds.JOANFOITE_MESH.get(), "c:ingots/joanfoite", Ingredient.of(MeshAdds.MUSHASHITE_MESH.get()));
         mesh(exDeorum, MeshAdds.NADIENITE_MESH.get(), "c:ingots/nadienite", Ingredient.of(MeshAdds.JOANFOITE_MESH.get()));
 
@@ -339,8 +341,8 @@ public class ModRecipeProvider extends RecipeProvider {
     }
 
     private void mesh(RecipeOutput out, ItemLike result, String ingotTag, Ingredient previousMesh) {
-        TagKey<Item> ingots = ItemTags.create(ResourceLocation.parse(ingotTag));
-        ShapedRecipeBuilder builder = ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 1)
+        TagKey<Item> ingots = ItemTags.create(Identifier.parse(ingotTag));
+        ShapedRecipeBuilder builder = ShapedRecipeBuilder.shaped(this.items, RecipeCategory.MISC, result, 1)
                 .define('#', ingots)
                 .define('S', Tags.Items.STRINGS)
                 .define('P', previousMesh)
@@ -362,12 +364,12 @@ public class ModRecipeProvider extends RecipeProvider {
     }
 
     private void buildNuggetRecipes(RecipeOutput out, String id, ItemLike ingot, ItemLike nugget) {
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, nugget, 9)
+        ShapelessRecipeBuilder.shapeless(this.items, RecipeCategory.MISC, nugget, 9)
                 .requires(ingot)
                 .unlockedBy("has_" + id + "_ingot", has(ingot))
                 .save(out, rl(id + "_nugget_from_ingot"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ingot, 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.MISC, ingot, 1)
                 .pattern("aaa").pattern("aaa").pattern("aaa")
                 .define('a', nugget)
                 .unlockedBy("has_" + id + "_nugget", has(nugget))
@@ -386,45 +388,45 @@ public class ModRecipeProvider extends RecipeProvider {
 
         SimpleCookingRecipeBuilder.smelting(
                 Ingredient.of(rawOre),
-                RecipeCategory.MISC, ingot, 1.0f, 200)
+                RecipeCategory.MISC, net.minecraft.world.item.crafting.CookingBookCategory.MISC, ingot, 1.0f, 200)
                 .unlockedBy("has_raw_" + id, hasRaw)
                 .save(out, rl(id + "_ingot_furnace"));
 
         SimpleCookingRecipeBuilder.blasting(
                 Ingredient.of(rawOre),
-                RecipeCategory.MISC, ingot, 1.0f, 100)
+                RecipeCategory.MISC, net.minecraft.world.item.crafting.CookingBookCategory.MISC, ingot, 1.0f, 100)
                 .unlockedBy("has_raw_" + id, hasRaw)
                 .save(out, rl(id + "_ingot_blastfurnace"));
 
         SimpleCookingRecipeBuilder.smelting(
                 Ingredient.of(ModOreBlocks.stoneOreOf(tier).get(), ModOreBlocks.deepslateOreOf(tier).get()),
-                RecipeCategory.MISC, ingot, 1.0f, 200)
+                RecipeCategory.MISC, net.minecraft.world.item.crafting.CookingBookCategory.MISC, ingot, 1.0f, 200)
                 .unlockedBy("has_raw_" + id, hasRaw)
                 .save(out, rl(id + "_ingot_from_ore_furnace"));
 
         SimpleCookingRecipeBuilder.blasting(
                 Ingredient.of(ModOreBlocks.stoneOreOf(tier).get(), ModOreBlocks.deepslateOreOf(tier).get()),
-                RecipeCategory.MISC, ingot, 1.0f, 100)
+                RecipeCategory.MISC, net.minecraft.world.item.crafting.CookingBookCategory.MISC, ingot, 1.0f, 100)
                 .unlockedBy("has_raw_" + id, hasRaw)
                 .save(out, rl(id + "_ingot_from_ore_blastfurnace"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, storageBlock, 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.BUILDING_BLOCKS, storageBlock, 1)
                 .pattern("aaa").pattern("aaa").pattern("aaa")
                 .define('a', ingot)
                 .unlockedBy("has_" + id + "_ingot", hasIngot)
                 .save(out, rl(id + "_block_recipe"));
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ingot, 9)
+        ShapelessRecipeBuilder.shapeless(this.items, RecipeCategory.MISC, ingot, 9)
                 .requires(storageBlock)
                 .unlockedBy("has_" + id + "_block", has(storageBlock))
                 .save(out, rl(id + "_ingot_from_block"));
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, nugget, 9)
+        ShapelessRecipeBuilder.shapeless(this.items, RecipeCategory.MISC, nugget, 9)
                 .requires(ingot)
                 .unlockedBy("has_" + id + "_ingot", hasIngot)
                 .save(out, rl(id + "_nugget_from_ingot"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ingot, 1)
+        ShapedRecipeBuilder.shaped(this.items, RecipeCategory.MISC, ingot, 1)
                 .pattern("aaa").pattern("aaa").pattern("aaa")
                 .define('a', nugget)
                 .unlockedBy("has_" + id + "_nugget", has(nugget))
@@ -480,7 +482,7 @@ public class ModRecipeProvider extends RecipeProvider {
         ItemLike base = gearOf(previous, piece);
         ItemLike heart = heartOf(tier);
 
-        ShapedRecipeBuilder.shaped(category, result, 1)
+        ShapedRecipeBuilder.shaped(this.items, category, result, 1)
                 .pattern(" N ")
                 .pattern("NPN")
                 .pattern(" C ")
@@ -493,7 +495,7 @@ public class ModRecipeProvider extends RecipeProvider {
 
     private void forged(RecipeOutput out, ModTier tier, RecipeCategory category, ItemLike result, String piece,
                         Criterion<?> unlock, ItemLike ingot, ItemLike heart, String... pattern) {
-        ShapedRecipeBuilder builder = ShapedRecipeBuilder.shaped(category, result, 1);
+        ShapedRecipeBuilder builder = ShapedRecipeBuilder.shaped(this.items, category, result, 1);
         for (String row : pattern) {
             builder.pattern(row);
         }
@@ -505,7 +507,7 @@ public class ModRecipeProvider extends RecipeProvider {
 
     private void forgedWithStick(RecipeOutput out, ModTier tier, RecipeCategory category, ItemLike result, String piece,
                                  Criterion<?> unlock, ItemLike ingot, ItemLike heart, String... pattern) {
-        ShapedRecipeBuilder builder = ShapedRecipeBuilder.shaped(category, result, 1);
+        ShapedRecipeBuilder builder = ShapedRecipeBuilder.shaped(this.items, category, result, 1);
         for (String row : pattern) {
             builder.pattern(row);
         }
@@ -607,7 +609,8 @@ public class ModRecipeProvider extends RecipeProvider {
         };
     }
 
-    private static ResourceLocation rl(String path) {
-        return ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, path);
+    private static net.minecraft.resources.ResourceKey<net.minecraft.world.item.crafting.Recipe<?>> rl(String path) {
+        return net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.RECIPE,
+                Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, path));
     }
 }

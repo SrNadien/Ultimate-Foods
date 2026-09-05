@@ -12,9 +12,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "#": {
-      "item": "ultimatefoods:mushashite_hammer"
-    }
+    "#": "ultimatefoods:mushashite_hammer"
   },
   "pattern": [
     "###",
@@ -22,7 +20,6 @@
     "###"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:compressed_mushashite_hammer"
   }
 }

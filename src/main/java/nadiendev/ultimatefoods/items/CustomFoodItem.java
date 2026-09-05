@@ -4,7 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.food.FoodProperties;
+
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -16,8 +16,8 @@ public class CustomFoodItem extends Item {
     private static final Logger LOGGER = LogUtils.getLogger();
     protected final Supplier<SoundEvent> customSound;
 
-    public CustomFoodItem(FoodProperties foodProperties, Supplier<SoundEvent> sound) {
-        super(new Item.Properties().food(foodProperties));
+    public CustomFoodItem(Item.Properties properties, ModFood food, Supplier<SoundEvent> sound) {
+        super(properties.food(food.properties(), food.consumable()));
         this.customSound = sound;
     }
 
@@ -40,7 +40,7 @@ public class CustomFoodItem extends Item {
                         1.0F,
                         1.0F
                     );
-                    LOGGER.info("Sonido reproducido en servidor: {}", sound.getLocation());
+                    LOGGER.info("Sonido reproducido en servidor: {}", sound.location());
                 } else {
 
                     level.playLocalSound(
@@ -53,7 +53,7 @@ public class CustomFoodItem extends Item {
                         1.0F,
                         false
                     );
-                    LOGGER.info("Sonido reproducido en cliente: {}", sound.getLocation());
+                    LOGGER.info("Sonido reproducido en cliente: {}", sound.location());
                 }
             } catch (Exception e) {
                 LOGGER.error("Error al reproducir sonido personalizado", e);

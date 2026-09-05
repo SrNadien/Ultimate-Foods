@@ -27,7 +27,7 @@ public class NetheriteDaggerInteraction {
 
         if (!level.getBlockState(event.getPos()).is(Blocks.NETHERITE_BLOCK)) return;
 
-        if (level.isClientSide) return;
+        if (level.isClientSide()) return;
 
         held.shrink(1);
 

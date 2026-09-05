@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "C": {
-      "item": "ultimatefoods:corazon_de_la_elite"
-    },
-    "N": {
-      "item": "ultimatefoods:nadienite_ingot"
-    },
-    "P": {
-      "item": "ultimatefoods:joanfoite_axe"
-    }
+    "C": "ultimatefoods:corazon_de_la_elite",
+    "N": "ultimatefoods:nadienite_ingot",
+    "P": "ultimatefoods:joanfoite_axe"
   },
   "pattern": [
     " N ",
@@ -18,7 +12,6 @@
     " C "
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:nadienite_axe"
   }
 }

@@ -4,16 +4,18 @@ import nadiendev.ultimatefoods.items.ModTier;
 import nadiendev.ultimatefoods.registry.ModArmorMaterials;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.TooltipDisplay;
+import net.minecraft.world.item.equipment.ArmorType;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
+import java.util.function.Consumer;
 
-public class TieredArmorItem extends ArmorItem {
+public class TieredArmorItem extends Item {
 
     public static final int BOOTS = 0;
     public static final int LEGGINGS = 1;
@@ -21,21 +23,33 @@ public class TieredArmorItem extends ArmorItem {
     public static final int HELMET = 3;
 
     private final ModTier tier;
+    private final ArmorType armorType;
 
-    public TieredArmorItem(ModTier tier, Type type, Properties properties) {
-        super(ModArmorMaterials.of(tier), type, properties);
+    public TieredArmorItem(ModTier tier, ArmorType armorType, Properties properties) {
+        super(properties.humanoidArmor(ModArmorMaterials.of(tier), armorType));
         this.tier = tier;
+        this.armorType = armorType;
     }
 
     public ModTier modTier() {
         return tier;
     }
 
+    public ArmorType armorType() {
+        return armorType;
+    }
+
+    private static EquipmentSlot slotOf(int armorSlot) {
+        return switch (armorSlot) {
+            case BOOTS -> EquipmentSlot.FEET;
+            case LEGGINGS -> EquipmentSlot.LEGS;
+            case CHESTPLATE -> EquipmentSlot.CHEST;
+            default -> EquipmentSlot.HEAD;
+        };
+    }
+
     public static boolean wears(LivingEntity entity, ModTier tier, int armorSlot) {
-        if (!(entity instanceof Player player)) {
-            return false;
-        }
-        return player.getInventory().getArmor(armorSlot).getItem() instanceof TieredArmorItem piece
+        return entity.getItemBySlot(slotOf(armorSlot)).getItem() instanceof TieredArmorItem piece
                 && piece.tier == tier;
     }
 
@@ -57,18 +71,19 @@ public class TieredArmorItem extends ArmorItem {
 
     @Override
     public void appendHoverText(@NotNull ItemStack stack, @NotNull TooltipContext context,
-                                @NotNull List<Component> tooltip, @NotNull TooltipFlag flag) {
-        super.appendHoverText(stack, context, tooltip, flag);
+                                @NotNull TooltipDisplay display, @NotNull Consumer<Component> tooltip,
+                                @NotNull TooltipFlag flag) {
+        super.appendHoverText(stack, context, display, tooltip, flag);
 
-        tooltip.add(Component.translatable("tooltip.ultimatefoods." + tier.id() + "_" + pieceKey())
+        tooltip.accept(Component.translatable("tooltip.ultimatefoods." + tier.id() + "_" + pieceKey())
                 .withStyle(ChatFormatting.AQUA));
 
         String[] setKeys = setBonusKeys();
         if (setKeys.length > 0) {
-            tooltip.add(Component.translatable("tooltip.ultimatefoods.set_bonus")
+            tooltip.accept(Component.translatable("tooltip.ultimatefoods.set_bonus")
                     .withStyle(ChatFormatting.GOLD));
             for (String key : setKeys) {
-                tooltip.add(Component.literal(" ")
+                tooltip.accept(Component.literal(" ")
                         .append(Component.translatable(key))
                         .withStyle(ChatFormatting.LIGHT_PURPLE));
             }
@@ -76,7 +91,7 @@ public class TieredArmorItem extends ArmorItem {
     }
 
     private String pieceKey() {
-        return switch (this.getType()) {
+        return switch (armorType) {
             case HELMET -> "gorro";
             case CHESTPLATE -> "remera";
             case LEGGINGS -> "gayumbos";

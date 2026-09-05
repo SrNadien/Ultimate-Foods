@@ -3,7 +3,7 @@ package nadiendev.ultimatefoods.registry;
 import nadiendev.ultimatefoods.UltimateFoodsCore;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.enchantment.Enchantment;
 
 public class ModEnchantments {
@@ -13,6 +13,6 @@ public class ModEnchantments {
 
     private static ResourceKey<Enchantment> key(String name) {
         return ResourceKey.create(Registries.ENCHANTMENT,
-                ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, name));
+                Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, name));
     }
 }

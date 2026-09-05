@@ -18,12 +18,8 @@
     }
   ],
   "type": "exdeorum:sieve",
-  "ingredient": {
-    "item": "exdeorum:crushed_deepslate"
-  },
-  "mesh": {
-    "item": "ultimatefoods:vibranium_mesh"
-  },
+  "ingredient": "exdeorum:crushed_deepslate",
+  "mesh": "ultimatefoods:vibranium_mesh",
   "result": {
     "count": 1,
     "id": "allthemodium:raw_vibranium"

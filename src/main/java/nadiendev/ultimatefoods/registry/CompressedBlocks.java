@@ -24,8 +24,8 @@ public class CompressedBlocks {
     public static final List<String> MATERIALS = List.of(
             "steel", "mushashite", "joanfoite", "nadienite", "nether_star", "ender_pearl");
 
-    public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(BuiltInRegistries.BLOCK, UltimateFoodsCore.MOD_ID);
+    public static final DeferredRegister.Blocks BLOCKS =
+            DeferredRegister.createBlocks(UltimateFoodsCore.MOD_ID);
 
     private static final Map<String, List<DeferredHolder<Block, Block>>> BY_MATERIAL = new LinkedHashMap<>();
 
@@ -41,15 +41,15 @@ public class CompressedBlocks {
 
     private static DeferredHolder<Block, Block> register(String material, int level) {
         String name = name(material, level);
-        DeferredHolder<Block, Block> block = BLOCKS.register(name, () -> new Block(
-                BlockBehaviour.Properties.of()
+        DeferredHolder<Block, Block> block = RegHelper.block(BLOCKS, name, () -> new Block(
+                RegHelper.blockProps()
                         .strength(5f + level, 10f + level * 4f)
                         .sound(SoundType.ANCIENT_DEBRIS)
                         .instrument(NoteBlockInstrument.BASEDRUM)
                         .requiresCorrectToolForDrops()
         ));
-        ItemsAdds.ITEMS.register(name,
-                () -> new CompressedBlockItem(block.get(), new Item.Properties(), level));
+        RegHelper.item(ItemsAdds.ITEMS, name,
+                () -> new CompressedBlockItem(block.get(), RegHelper.itemProps(), level));
         return block;
     }
 

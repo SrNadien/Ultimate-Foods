@@ -1,7 +1,7 @@
 package nadiendev.ultimatefoods.integration.jade;
 
 import nadiendev.ultimatefoods.UltimateFoodsCore;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import snownee.jade.api.IWailaClientRegistration;
 import snownee.jade.api.IWailaCommonRegistration;
 import snownee.jade.api.IWailaPlugin;
@@ -20,7 +20,7 @@ public class JadeCompat implements IWailaPlugin {
 
     }
 
-    public ResourceLocation getUid() {
-        return ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "jade_plugin");
+    public Identifier getUid() {
+        return Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "jade_plugin");
     }
 }

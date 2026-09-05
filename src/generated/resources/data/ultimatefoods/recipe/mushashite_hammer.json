@@ -12,18 +12,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "h": {
-      "item": "ultimatefoods:corazon_de_los_caidos"
-    },
-    "m": {
-      "tag": "c:ingots/mushashite"
-    },
-    "p": {
-      "tag": "ultimatefoods:compat/exdeorum_netherite_hammer"
-    },
-    "s": {
-      "tag": "c:rods/wooden"
-    }
+    "h": "ultimatefoods:corazon_de_los_caidos",
+    "m": "#c:ingots/mushashite",
+    "p": "#ultimatefoods:compat/exdeorum_netherite_hammer",
+    "s": "#c:rods/wooden"
   },
   "pattern": [
     " mh",
@@ -31,7 +23,6 @@
     "s  "
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:mushashite_hammer"
   }
 }

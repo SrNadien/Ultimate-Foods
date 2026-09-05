@@ -4,7 +4,7 @@ import nadiendev.ultimatefoods.UltimateFoodsCore;
 import nadiendev.ultimatefoods.items.ModTier;
 import nadiendev.ultimatefoods.items.armor.TieredArmorItem;
 import net.minecraft.core.Holder;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -29,11 +29,11 @@ public class TieredArmorHandler {
     private static final int REFRESH_INTERVAL = 10;
     private static final int EFFECT_DURATION = 40;
 
-    private static final ResourceLocation MUSHASHITE_HALF_HEART =
-            ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "mushashite_half_heart");
+    private static final Identifier MUSHASHITE_HALF_HEART =
+            Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "mushashite_half_heart");
 
-    private static final ResourceLocation NADIENITE_FLIGHT =
-            ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "nadienite_creative_flight");
+    private static final Identifier NADIENITE_FLIGHT =
+            Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "nadienite_creative_flight");
 
     @SubscribeEvent
     public static void onPlayerTick(PlayerTickEvent.Post event) {
@@ -58,7 +58,7 @@ public class TieredArmorHandler {
                         TieredArmorItem.LEGGINGS, TieredArmorItem.BOOTS));
     }
 
-    private static void toggleModifier(AttributeInstance attribute, ResourceLocation id, boolean active) {
+    private static void toggleModifier(AttributeInstance attribute, Identifier id, boolean active) {
         if (attribute == null) {
             return;
         }
@@ -77,7 +77,7 @@ public class TieredArmorHandler {
         }
         if (TieredArmorItem.wearsPair(player, ModTier.JOANFOITE,
                 TieredArmorItem.LEGGINGS, TieredArmorItem.BOOTS)) {
-            give(player, MobEffects.MOVEMENT_SPEED, 1);
+            give(player, MobEffects.SPEED, 1);
         }
     }
 
@@ -88,15 +88,15 @@ public class TieredArmorHandler {
 
         boolean wearsChestplate = TieredArmorItem.wears(player, ModTier.NADIENITE, TieredArmorItem.CHESTPLATE);
         if (wearsChestplate) {
-            give(player, MobEffects.DAMAGE_RESISTANCE, 2);
+            give(player, MobEffects.RESISTANCE, 2);
         }
         toggleModifier(player.getAttribute(NeoForgeMod.CREATIVE_FLIGHT), NADIENITE_FLIGHT, wearsChestplate);
 
         if (TieredArmorItem.wears(player, ModTier.NADIENITE, TieredArmorItem.LEGGINGS)) {
-            give(player, MobEffects.JUMP, 2);
+            give(player, MobEffects.JUMP_BOOST, 2);
         }
         if (TieredArmorItem.wears(player, ModTier.NADIENITE, TieredArmorItem.BOOTS)) {
-            give(player, MobEffects.MOVEMENT_SPEED, 2);
+            give(player, MobEffects.SPEED, 2);
         }
     }
 

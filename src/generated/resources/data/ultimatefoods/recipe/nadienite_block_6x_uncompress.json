@@ -8,9 +8,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "ultimatefoods:nadienite_block_6x"
-    }
+    "ultimatefoods:nadienite_block_6x"
   ],
   "result": {
     "count": 9,

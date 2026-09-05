@@ -9,7 +9,7 @@ import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 
-import java.util.List;
+import java.util.function.Consumer;
 
 final class TieredToolBehaviour {
 
@@ -21,12 +21,12 @@ final class TieredToolBehaviour {
             return;
         }
 
-        var registry = level.registryAccess().registryOrThrow(Registries.ENCHANTMENT);
+        var registry = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
         int levelWanted = tier.toolEnchantLevel();
 
-        ensure(stack, registry.getHolderOrThrow(Enchantments.EFFICIENCY), levelWanted);
+        ensure(stack, registry.getOrThrow(Enchantments.EFFICIENCY), levelWanted);
         if (withFortune) {
-            ensure(stack, registry.getHolderOrThrow(Enchantments.FORTUNE), levelWanted);
+            ensure(stack, registry.getOrThrow(Enchantments.FORTUNE), levelWanted);
         }
 
         if (stack.getDamageValue() > 0) {
@@ -44,8 +44,8 @@ final class TieredToolBehaviour {
         return tier.miningSpeed() * 5.0F;
     }
 
-    static void appendUnbreakableTooltip(List<Component> tooltipComponents) {
-        tooltipComponents.add(Component.translatable("tooltip.ultimatefoods.unbreakable")
+    static void appendUnbreakableTooltip(Consumer<Component> tooltip) {
+        tooltip.accept(Component.translatable("tooltip.ultimatefoods.unbreakable")
                 .withStyle(style -> style.withColor(0xFFAA00)));
     }
 }

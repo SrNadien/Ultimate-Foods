@@ -18,12 +18,8 @@
     }
   ],
   "type": "exdeorum:compressed_sieve",
-  "ingredient": {
-    "tag": "exdeorum:compressed/sand"
-  },
-  "mesh": {
-    "item": "ultimatefoods:allthemodium_mesh"
-  },
+  "ingredient": "#exdeorum:compressed/sand",
+  "mesh": "ultimatefoods:allthemodium_mesh",
   "result": {
     "count": 1,
     "id": "ultimatefoods:raw_nadienite"

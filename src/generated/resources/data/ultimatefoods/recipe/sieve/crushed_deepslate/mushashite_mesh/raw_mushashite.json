@@ -10,12 +10,8 @@
     }
   ],
   "type": "exdeorum:sieve",
-  "ingredient": {
-    "item": "exdeorum:crushed_deepslate"
-  },
-  "mesh": {
-    "item": "ultimatefoods:mushashite_mesh"
-  },
+  "ingredient": "exdeorum:crushed_deepslate",
+  "mesh": "ultimatefoods:mushashite_mesh",
   "result": {
     "count": 1,
     "id": "ultimatefoods:raw_mushashite"

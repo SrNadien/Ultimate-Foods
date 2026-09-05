@@ -1,19 +1,17 @@
 package nadiendev.ultimatefoods.items.tools;
 
-import nadiendev.ultimatefoods.registry.ModToolTiers;
-
 import nadiendev.ultimatefoods.items.ModTier;
+import nadiendev.ultimatefoods.registry.ModToolTiers;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SwordItem;
 
-public class TieredSwordItem extends SwordItem {
+public class TieredSwordItem extends Item {
 
     private final ModTier tier;
 
     public TieredSwordItem(ModTier tier, Properties properties) {
-
-        super(ModToolTiers.of(tier),
-                properties.attributes(SwordItem.createAttributes(ModToolTiers.of(tier), tier.swordDamage(), 100.0F)));
+        super(properties.sword(ModToolTiers.of(tier), tier.swordDamage(), 100.0F)
+                .enchantable(tier.enchantmentValue()));
         this.tier = tier;
     }
 

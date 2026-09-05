@@ -18,12 +18,8 @@
     }
   ],
   "type": "exdeorum:compressed_sieve",
-  "ingredient": {
-    "tag": "exdeorum:compressed/sand"
-  },
-  "mesh": {
-    "item": "ultimatefoods:vibranium_mesh"
-  },
+  "ingredient": "#exdeorum:compressed/sand",
+  "mesh": "ultimatefoods:vibranium_mesh",
   "result": {
     "count": 1,
     "id": "allthemodium:raw_unobtainium"

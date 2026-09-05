@@ -8,9 +8,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "ultimatefoods:joanfoite_block_8x"
-    }
+    "ultimatefoods:joanfoite_block_8x"
   ],
   "result": {
     "count": 9,

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "a": {
-      "item": "ultimatefoods:joanfoite_ingot"
-    }
+    "a": "ultimatefoods:joanfoite_ingot"
   },
   "pattern": [
     "aaa",
@@ -12,7 +10,6 @@
     "aaa"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:joanfoite_block"
   }
 }

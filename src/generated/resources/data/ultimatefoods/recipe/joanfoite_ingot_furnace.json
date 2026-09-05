@@ -3,11 +3,8 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 1.0,
-  "ingredient": {
-    "item": "ultimatefoods:raw_joanfoite"
-  },
+  "ingredient": "ultimatefoods:raw_joanfoite",
   "result": {
-    "count": 1,
     "id": "ultimatefoods:joanfoite_ingot"
   }
 }

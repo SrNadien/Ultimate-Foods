@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "a": {
-      "item": "ultimatefoods:steel_ingot"
-    }
+    "a": "ultimatefoods:steel_ingot"
   },
   "pattern": [
     "aaa",
@@ -12,7 +10,6 @@
     "aaa"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:steel_block"
   }
 }

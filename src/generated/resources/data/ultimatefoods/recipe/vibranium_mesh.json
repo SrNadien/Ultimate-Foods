@@ -20,15 +20,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "tag": "c:ingots/vibranium"
-    },
-    "P": {
-      "item": "ultimatefoods:allthemodium_mesh"
-    },
-    "S": {
-      "tag": "c:strings"
-    }
+    "#": "#c:ingots/vibranium",
+    "P": "ultimatefoods:allthemodium_mesh",
+    "S": "#c:strings"
   },
   "pattern": [
     "S#S",
@@ -36,7 +30,6 @@
     "S#S"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:vibranium_mesh"
   }
 }

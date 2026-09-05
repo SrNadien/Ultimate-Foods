@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_joanfoite_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatefoods:joanfoite_hoe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ultimatefoods:nadienite_hoe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_joanfoite_hoe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ultimatefoods:nadienite_hoe"
+    ]
+  }
+}

@@ -21,7 +21,7 @@ import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 
@@ -31,8 +31,8 @@ import java.util.List;
 public class JEICompat implements IModPlugin {
 
     @Override
-    public ResourceLocation getPluginUid() {
-        return ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "jei_plugin");
+    public Identifier getPluginUid() {
+        return Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "jei_plugin");
     }
 
     @Override
@@ -136,7 +136,7 @@ public class JEICompat implements IModPlugin {
         if (items.length == 0) {
             return;
         }
-        helpers.getRecipeType(ResourceLocation.fromNamespaceAndPath("exdeorum", type))
+        helpers.getRecipeType(Identifier.fromNamespaceAndPath("exdeorum", type))
                 .ifPresent(recipeType -> registration.addRecipeCatalysts(recipeType, items));
     }
 

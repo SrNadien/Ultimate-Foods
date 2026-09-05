@@ -12,15 +12,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "tag": "c:ingots/mushashite"
-    },
-    "P": {
-      "tag": "ultimatefoods:compat/exdeorum_netherite_mesh"
-    },
-    "S": {
-      "tag": "c:strings"
-    }
+    "#": "#c:ingots/mushashite",
+    "P": "#ultimatefoods:compat/exdeorum_netherite_mesh",
+    "S": "#c:strings"
   },
   "pattern": [
     "S#S",
@@ -28,7 +22,6 @@
     "S#S"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:mushashite_mesh"
   }
 }

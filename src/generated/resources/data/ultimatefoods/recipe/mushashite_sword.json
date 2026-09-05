@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "C": {
-      "item": "ultimatefoods:corazon_de_los_caidos"
-    },
-    "N": {
-      "item": "ultimatefoods:mushashite_ingot"
-    },
-    "S": {
-      "item": "minecraft:stick"
-    }
+    "C": "ultimatefoods:corazon_de_los_caidos",
+    "N": "ultimatefoods:mushashite_ingot",
+    "S": "minecraft:stick"
   },
   "pattern": [
     " C ",
@@ -18,7 +12,6 @@
     " S "
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:mushashite_sword"
   }
 }

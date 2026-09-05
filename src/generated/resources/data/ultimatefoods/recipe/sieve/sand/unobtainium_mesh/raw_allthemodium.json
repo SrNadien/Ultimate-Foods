@@ -18,12 +18,8 @@
     }
   ],
   "type": "exdeorum:sieve",
-  "ingredient": {
-    "item": "minecraft:sand"
-  },
-  "mesh": {
-    "item": "ultimatefoods:unobtainium_mesh"
-  },
+  "ingredient": "minecraft:sand",
+  "mesh": "ultimatefoods:unobtainium_mesh",
   "result": {
     "count": 1,
     "id": "allthemodium:raw_allthemodium"

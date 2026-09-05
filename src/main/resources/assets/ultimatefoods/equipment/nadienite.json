@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "ultimatefoods:nadienite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "ultimatefoods:nadienite"
+      }
+    ]
+  }
+}

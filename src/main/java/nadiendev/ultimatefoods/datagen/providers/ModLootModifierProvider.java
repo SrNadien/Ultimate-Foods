@@ -16,6 +16,6 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider {
     @Override
     protected void start() {
 
-        add("nadienite_chest_loot", new NadieniteChestLootModifier(new net.minecraft.world.level.storage.loot.predicates.LootItemCondition[0]));
+        add("nadienite_chest_loot", new NadieniteChestLootModifier(new net.minecraft.world.level.storage.loot.predicates.LootItemCondition[0], 0));
     }
 }

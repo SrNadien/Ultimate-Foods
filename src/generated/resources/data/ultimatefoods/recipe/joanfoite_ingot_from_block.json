@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "ultimatefoods:joanfoite_block"
-    }
+    "ultimatefoods:joanfoite_block"
   ],
   "result": {
     "count": 9,

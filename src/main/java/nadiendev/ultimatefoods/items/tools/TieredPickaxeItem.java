@@ -1,27 +1,29 @@
 package nadiendev.ultimatefoods.items.tools;
 
-import nadiendev.ultimatefoods.registry.ModToolTiers;
-
 import nadiendev.ultimatefoods.items.ModTier;
+import nadiendev.ultimatefoods.registry.ModToolTiers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
+import java.util.function.Consumer;
 
-public class TieredPickaxeItem extends PickaxeItem {
+public class TieredPickaxeItem extends Item {
 
     private final ModTier tier;
 
     public TieredPickaxeItem(ModTier tier, Properties properties) {
-        super(ModToolTiers.of(tier), properties);
+        super(properties.pickaxe(ModToolTiers.of(tier), 1.0F, -2.8F).enchantable(tier.enchantmentValue()));
         this.tier = tier;
     }
 
@@ -30,25 +32,9 @@ public class TieredPickaxeItem extends PickaxeItem {
     }
 
     @Override
-    public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
+    public void inventoryTick(@NotNull ItemStack stack, @NotNull ServerLevel level, @NotNull Entity entity,
+                              EquipmentSlot slot) {
         TieredToolBehaviour.keepEnchanted(stack, level, tier, true);
-    }
-
-    @Override
-    public void appendHoverText(@NotNull ItemStack stack, @NotNull TooltipContext context,
-                                @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag isAdvanced) {
-        super.appendHoverText(stack, context, tooltipComponents, isAdvanced);
-        TieredToolBehaviour.appendUnbreakableTooltip(tooltipComponents);
-    }
-
-    @Override
-    public boolean isFoil(@NotNull ItemStack stack) {
-        return false;
-    }
-
-    @Override
-    public int getEnchantmentValue(@NotNull ItemStack stack) {
-        return tier.enchantmentValue();
     }
 
     @Override
@@ -61,9 +47,16 @@ public class TieredPickaxeItem extends PickaxeItem {
     }
 
     @Override
-    public boolean mineBlock(@NotNull ItemStack stack, @NotNull Level level, @NotNull BlockState state,
-                             @NotNull BlockPos pos, @NotNull LivingEntity entity) {
-        return true;
+    public void appendHoverText(@NotNull ItemStack stack, @NotNull TooltipContext context,
+                                @NotNull TooltipDisplay display, @NotNull Consumer<Component> tooltip,
+                                @NotNull TooltipFlag flag) {
+        super.appendHoverText(stack, context, display, tooltip, flag);
+        TieredToolBehaviour.appendUnbreakableTooltip(tooltip);
+    }
+
+    @Override
+    public boolean isFoil(@NotNull ItemStack stack) {
+        return false;
     }
 
     @Override
@@ -74,5 +67,11 @@ public class TieredPickaxeItem extends PickaxeItem {
     @Override
     public int getMaxDamage(ItemStack stack) {
         return 0;
+    }
+
+    @Override
+    public boolean mineBlock(@NotNull ItemStack stack, @NotNull Level level, @NotNull BlockState state,
+                             @NotNull BlockPos pos, @NotNull LivingEntity entity) {
+        return true;
     }
 }

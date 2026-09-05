@@ -20,9 +20,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "#": {
-      "item": "ultimatefoods:allthemodium_hammer"
-    }
+    "#": "ultimatefoods:allthemodium_hammer"
   },
   "pattern": [
     "###",
@@ -30,7 +28,6 @@
     "###"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:compressed_allthemodium_hammer"
   }
 }

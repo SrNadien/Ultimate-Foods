@@ -4,7 +4,7 @@ import nadiendev.ultimatefoods.UltimateFoodsCore;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.JukeboxSong;
 import net.neoforged.bus.api.IEventBus;
@@ -41,11 +41,11 @@ public class SonidosReproducibles {
     public static final ResourceKey<JukeboxSong> DISC_AVENGERS_KEY = createSong("the_avengers_theme_song");
 
     private static ResourceKey<JukeboxSong> createSong(String name) {
-        return ResourceKey.create(Registries.JUKEBOX_SONG, ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, name));
+        return ResourceKey.create(Registries.JUKEBOX_SONG, Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, name));
     }
 
     private static DeferredHolder<SoundEvent, SoundEvent> registerSound(String name) {
-        ResourceLocation id = ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, name);
+        Identifier id = Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, name);
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(id));
     }
 

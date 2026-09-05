@@ -35,7 +35,7 @@ public class EffectsAdds {
         }
 
         @Override
-        public boolean applyEffectTick(LivingEntity entity, int amplifier) {
+        public boolean applyEffectTick(net.minecraft.server.level.ServerLevel level, LivingEntity entity, int amplifier) {
             if (entity instanceof Player player) {
                 player.giveExperienceLevels(30);
                 return true;

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "ultimatefoods:ender_pearl_block"
-    }
+    "ultimatefoods:ender_pearl_block"
   ],
   "result": {
     "count": 9,

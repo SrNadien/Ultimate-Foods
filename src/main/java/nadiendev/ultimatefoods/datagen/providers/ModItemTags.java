@@ -11,14 +11,13 @@ import nadiendev.ultimatefoods.registry.ArmorAdds;
 import nadiendev.ultimatefoods.registry.ToolsAdds;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.resources.ResourceLocation;
+import net.neoforged.neoforge.common.data.ItemTagsProvider;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagEntry;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -54,13 +53,13 @@ public class ModItemTags {
         public static final TagKey<Item> STORAGE_BLOCKS_STEEL = commonTag("storage_blocks/steel");
 
         public static final TagKey<Item> HAMMERS =
-                ItemTags.create(ResourceLocation.fromNamespaceAndPath("exdeorum", "hammers"));
+                ItemTags.create(Identifier.fromNamespaceAndPath("exdeorum", "hammers"));
 
         public static final TagKey<Item> COMPRESSED_HAMMERS =
-                ItemTags.create(ResourceLocation.fromNamespaceAndPath("exdeorum", "compressed_hammers"));
+                ItemTags.create(Identifier.fromNamespaceAndPath("exdeorum", "compressed_hammers"));
 
         public static final TagKey<Item> SIEVE_MESHES =
-                ItemTags.create(ResourceLocation.fromNamespaceAndPath("exdeorum", "sieve_meshes"));
+                ItemTags.create(Identifier.fromNamespaceAndPath("exdeorum", "sieve_meshes"));
 
         public static final TagKey<Item> ORES_MUSHASHITE = commonTag("ores/mushashite");
         public static final TagKey<Item> ORES_JOANFOITE = commonTag("ores/joanfoite");
@@ -80,7 +79,7 @@ public class ModItemTags {
         public static final TagKey<Item> XPBOOST_ENCHANTABLE            = tag("enchantable/xpboost");
 
         private static TagKey<Item> commonTag(String name) {
-            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
+            return ItemTags.create(Identifier.fromNamespaceAndPath("c", name));
         }
 
         public static TagKey<Item> compat(String id) {
@@ -88,16 +87,14 @@ public class ModItemTags {
         }
 
         private static TagKey<Item> tag(String name) {
-            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, name));
+            return ItemTags.create(Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, name));
         }
     }
 
     public static class Provider extends ItemTagsProvider {
 
-        public Provider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider,
-                       CompletableFuture<TagLookup<Block>> blockTagsProvider,
-                       @Nullable ExistingFileHelper existingFileHelper) {
-            super(output, lookupProvider, blockTagsProvider, UltimateFoodsCore.MOD_ID, existingFileHelper);
+        public Provider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+            super(output, lookupProvider, UltimateFoodsCore.MOD_ID);
         }
 
         @Override
@@ -109,20 +106,20 @@ public class ModItemTags {
 
             for (String mesh : MeshAdds.MESH_NAMES) {
                 this.tag(Items.SIEVE_MESHES)
-                    .addOptional(ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, mesh));
+                    .add(TagEntry.optionalElement(Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, mesh)));
             }
 
             for (String compat : COMPAT_ITEMS) {
-                this.tag(Items.compat(compat)).addOptional(ResourceLocation.parse(compat));
+                this.tag(Items.compat(compat)).add(TagEntry.optionalElement(Identifier.parse(compat)));
             }
 
             for (HammerAdds.Hammer hammer : HammerAdds.HAMMERS) {
-                this.tag(Items.HAMMERS).addOptional(
-                        ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID,
-                                HammerAdds.name(hammer.material(), false)));
-                this.tag(Items.COMPRESSED_HAMMERS).addOptional(
-                        ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID,
-                                HammerAdds.name(hammer.material(), true)));
+                this.tag(Items.HAMMERS).add(TagEntry.optionalElement(
+                        Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID,
+                                HammerAdds.name(hammer.material(), false))));
+                this.tag(Items.COMPRESSED_HAMMERS).add(TagEntry.optionalElement(
+                        Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID,
+                                HammerAdds.name(hammer.material(), true))));
             }
 
             this.tag(Items.NUGGETS_MUSHASHITE).add(ItemsAdds.MUSHASHITE_NUGGET.get());
@@ -166,7 +163,7 @@ public class ModItemTags {
                 .addTag(Items.AUTOSMELT_ENCHANTABLE_PICKAXES);
 
             this.tag(Items.XPBOOST_ENCHANTABLE_SWORD)
-                .addTag(ItemTags.SWORD_ENCHANTABLE);
+                .addTag(ItemTags.SHARP_WEAPON_ENCHANTABLE);
             this.tag(Items.XPBOOST_ENCHANTABLE_SWORDS)
                 .addTag(ItemTags.SWORDS);
             this.tag(Items.XPBOOST_ENCHANTABLE_AXES)

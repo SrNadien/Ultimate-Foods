@@ -20,15 +20,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "m": {
-      "tag": "c:ingots/allthemodium"
-    },
-    "p": {
-      "item": "ultimatefoods:nadienite_hammer"
-    },
-    "s": {
-      "tag": "c:rods/wooden"
-    }
+    "m": "#c:ingots/allthemodium",
+    "p": "ultimatefoods:nadienite_hammer",
+    "s": "#c:rods/wooden"
   },
   "pattern": [
     " m ",
@@ -36,7 +30,6 @@
     "s  "
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:allthemodium_hammer"
   }
 }

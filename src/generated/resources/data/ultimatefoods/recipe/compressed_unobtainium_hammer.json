@@ -20,9 +20,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "#": {
-      "item": "ultimatefoods:unobtainium_hammer"
-    }
+    "#": "ultimatefoods:unobtainium_hammer"
   },
   "pattern": [
     "###",
@@ -30,7 +28,6 @@
     "###"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:compressed_unobtainium_hammer"
   }
 }

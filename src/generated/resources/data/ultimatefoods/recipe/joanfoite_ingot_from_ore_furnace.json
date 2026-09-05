@@ -4,15 +4,10 @@
   "cookingtime": 200,
   "experience": 1.0,
   "ingredient": [
-    {
-      "item": "ultimatefoods:joanfoite_ore"
-    },
-    {
-      "item": "ultimatefoods:deepslate_joanfoite_ore"
-    }
+    "ultimatefoods:joanfoite_ore",
+    "ultimatefoods:deepslate_joanfoite_ore"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:joanfoite_ingot"
   }
 }

@@ -3,7 +3,7 @@ package nadiendev.ultimatefoods.items;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.food.FoodProperties;
+import nadiendev.ultimatefoods.items.ModFood;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -11,14 +11,16 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
-import java.util.List;
+import net.minecraft.world.item.component.TooltipDisplay;
+
+import java.util.function.Consumer;
 
 public class PoopItem extends Item {
     private final DeferredHolder<SoundEvent, SoundEvent> customSound;
     private final int effectDuration;
 
-    public PoopItem(FoodProperties foodProperties, DeferredHolder<SoundEvent, SoundEvent> sound, int duration) {
-        super(new Item.Properties().food(foodProperties));
+    public PoopItem(Item.Properties properties, ModFood food, DeferredHolder<SoundEvent, SoundEvent> sound, int duration) {
+        super(properties.food(food.properties(), food.consumable()));
         this.customSound = sound;
         this.effectDuration = duration;
     }
@@ -52,10 +54,10 @@ public class PoopItem extends Item {
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+    public void appendHoverText(ItemStack stack, TooltipContext context, TooltipDisplay display, Consumer<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        super.appendHoverText(stack, context, display, tooltipComponents, tooltipFlag);
 
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.cacotas.description_0"));
-        tooltipComponents.add(Component.translatable("item.ultimatefoods.cacotas.description_1"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.cacotas.description_0"));
+        tooltipComponents.accept(Component.translatable("item.ultimatefoods.cacotas.description_1"));
     }
 }

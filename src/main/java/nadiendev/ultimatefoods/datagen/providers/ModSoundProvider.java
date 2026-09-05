@@ -3,16 +3,15 @@ package nadiendev.ultimatefoods.datagen.providers;
 import nadiendev.ultimatefoods.UltimateFoodsCore;
 import nadiendev.ultimatefoods.registry.SonidosReproducibles;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvent;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.common.data.SoundDefinition;
 import net.neoforged.neoforge.common.data.SoundDefinitionsProvider;
 
 public class ModSoundProvider extends SoundDefinitionsProvider {
 
-    public ModSoundProvider(PackOutput output, ExistingFileHelper helper) {
-        super(output, UltimateFoodsCore.MOD_ID, helper);
+    public ModSoundProvider(PackOutput output) {
+        super(output, UltimateFoodsCore.MOD_ID);
     }
 
     @Override
@@ -32,14 +31,14 @@ public class ModSoundProvider extends SoundDefinitionsProvider {
 
     private void addSound(net.neoforged.neoforge.registries.DeferredHolder<SoundEvent, SoundEvent> soundEvent, String soundName) {
         add(soundEvent, SoundDefinition.definition()
-                .with(sound(ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, soundName)))
+                .with(sound(Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, soundName)))
                 .subtitle("sound_event.ultimatefoods." + soundName)
         );
     }
 
     private void addSoundWithPitch(net.neoforged.neoforge.registries.DeferredHolder<SoundEvent, SoundEvent> soundEvent, String soundName, float pitch) {
         add(soundEvent, SoundDefinition.definition()
-                .with(sound(ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, soundName))
+                .with(sound(Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, soundName))
                         .pitch(pitch))
                 .subtitle("sound_event.ultimatefoods." + soundName)
         );

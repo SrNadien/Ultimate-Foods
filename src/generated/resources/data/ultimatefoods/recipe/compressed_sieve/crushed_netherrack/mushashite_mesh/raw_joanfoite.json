@@ -10,12 +10,8 @@
     }
   ],
   "type": "exdeorum:compressed_sieve",
-  "ingredient": {
-    "tag": "exdeorum:compressed/crushed_netherrack"
-  },
-  "mesh": {
-    "item": "ultimatefoods:mushashite_mesh"
-  },
+  "ingredient": "#exdeorum:compressed/crushed_netherrack",
+  "mesh": "ultimatefoods:mushashite_mesh",
   "result": {
     "count": 1,
     "id": "ultimatefoods:raw_joanfoite"

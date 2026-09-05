@@ -8,9 +8,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "ultimatefoods:ender_pearl_block_3x"
-    }
+    "ultimatefoods:ender_pearl_block_3x"
   ],
   "result": {
     "count": 9,

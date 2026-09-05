@@ -18,12 +18,8 @@
     }
   ],
   "type": "exdeorum:compressed_sieve",
-  "ingredient": {
-    "tag": "exdeorum:compressed/crushed_deepslate"
-  },
-  "mesh": {
-    "item": "ultimatefoods:vibranium_mesh"
-  },
+  "ingredient": "#exdeorum:compressed/crushed_deepslate",
+  "mesh": "ultimatefoods:vibranium_mesh",
   "result": {
     "count": 1,
     "id": "ultimatefoods:raw_nadienite"

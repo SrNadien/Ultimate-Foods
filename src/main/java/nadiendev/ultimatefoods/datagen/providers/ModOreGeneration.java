@@ -7,7 +7,7 @@ import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.core.HolderSet;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.tags.BlockTags;
@@ -65,7 +65,7 @@ public class ModOreGeneration {
         for (ModTier tier : ModTier.values()) {
             context.register(
                     ResourceKey.create(NeoForgeRegistries.Keys.BIOME_MODIFIERS,
-                            ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "add_" + tier.id() + "_ore")),
+                            Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "add_" + tier.id() + "_ore")),
                     new BiomeModifiers.AddFeaturesBiomeModifier(
                             biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                             HolderSet.direct(placedFeatures.getOrThrow(placedKey(tier))),
@@ -99,14 +99,14 @@ public class ModOreGeneration {
     public static ResourceKey<ConfiguredFeature<?, ?>> configuredKey(ModTier tier) {
         return ResourceKey.create(
                 Registries.CONFIGURED_FEATURE,
-                ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, tier.id() + "_ore")
+                Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, tier.id() + "_ore")
         );
     }
 
     public static ResourceKey<PlacedFeature> placedKey(ModTier tier) {
         return ResourceKey.create(
                 Registries.PLACED_FEATURE,
-                ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, tier.id() + "_ore")
+                Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, tier.id() + "_ore")
         );
     }
 

@@ -14,8 +14,8 @@ import java.util.List;
 
 public class MeshAdds {
 
-    public static final DeferredRegister<Item> MESH_ITEMS =
-            DeferredRegister.create(BuiltInRegistries.ITEM, UltimateFoodsCore.MOD_ID);
+    public static final DeferredRegister.Items MESH_ITEMS =
+            DeferredRegister.createItems(UltimateFoodsCore.MOD_ID);
 
     private static final List<DeferredHolder<Item, Item>> ALL = new ArrayList<>();
 
@@ -32,8 +32,8 @@ public class MeshAdds {
     public static final DeferredHolder<Item, Item> UNOBTAINIUM_MESH = mesh("unobtainium_mesh", Rarity.EPIC);
 
     private static DeferredHolder<Item, Item> mesh(String name, Rarity rarity) {
-        DeferredHolder<Item, Item> holder = MESH_ITEMS.register(name,
-                () -> new Item(new Item.Properties().stacksTo(1).rarity(rarity)));
+        DeferredHolder<Item, Item> holder = MESH_ITEMS.registerItem(name,
+                Item::new, () -> new Item.Properties().stacksTo(1).rarity(rarity));
         ALL.add(holder);
         return holder;
     }

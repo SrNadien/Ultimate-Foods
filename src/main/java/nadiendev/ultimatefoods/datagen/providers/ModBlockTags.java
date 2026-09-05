@@ -5,14 +5,12 @@ import nadiendev.ultimatefoods.registry.BlocksAdds;
 import nadiendev.ultimatefoods.registry.ModOreBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,19 +35,18 @@ public class ModBlockTags {
         public static final TagKey<Block> STORAGE_BLOCKS_STEEL = commonTag("storage_blocks/steel");
 
         private static TagKey<Block> commonTag(String name) {
-            return BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
+            return BlockTags.create(Identifier.fromNamespaceAndPath("c", name));
         }
 
         private static TagKey<Block> tag(String name) {
-            return BlockTags.create(ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, name));
+            return BlockTags.create(Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, name));
         }
     }
 
     public static class Provider extends BlockTagsProvider {
 
-        public Provider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider,
-                        @Nullable ExistingFileHelper existingFileHelper) {
-            super(output, lookupProvider, UltimateFoodsCore.MOD_ID, existingFileHelper);
+        public Provider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+            super(output, lookupProvider, UltimateFoodsCore.MOD_ID);
         }
 
         @Override

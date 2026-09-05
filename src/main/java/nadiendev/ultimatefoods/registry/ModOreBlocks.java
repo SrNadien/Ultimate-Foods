@@ -20,11 +20,11 @@ import java.util.Map;
 
 public class ModOreBlocks {
 
-    public static final DeferredRegister<Block> ORE_BLOCKS =
-            DeferredRegister.create(BuiltInRegistries.BLOCK, UltimateFoodsCore.MOD_ID);
+    public static final DeferredRegister.Blocks ORE_BLOCKS =
+            DeferredRegister.createBlocks(UltimateFoodsCore.MOD_ID);
 
-    public static final DeferredRegister<Item> ORE_BLOCK_ITEMS =
-            DeferredRegister.create(BuiltInRegistries.ITEM, UltimateFoodsCore.MOD_ID);
+    public static final DeferredRegister.Items ORE_BLOCK_ITEMS =
+            DeferredRegister.createItems(UltimateFoodsCore.MOD_ID);
 
     private static final Map<ModTier, DeferredHolder<Block, Block>> STONE_ORES = new EnumMap<>(ModTier.class);
     private static final Map<ModTier, DeferredHolder<Block, Block>> DEEPSLATE_ORES = new EnumMap<>(ModTier.class);
@@ -51,13 +51,13 @@ public class ModOreBlocks {
     }
 
     private static DeferredHolder<Block, Block> register(String name, float hardness, SoundType sound) {
-        DeferredHolder<Block, Block> block = ORE_BLOCKS.register(name, () -> new Block(
-                BlockBehaviour.Properties.of()
+        DeferredHolder<Block, Block> block = RegHelper.block(ORE_BLOCKS, name, () -> new Block(
+                RegHelper.blockProps()
                         .strength(hardness, 3.0F)
                         .requiresCorrectToolForDrops()
                         .sound(sound)
         ));
-        ORE_BLOCK_ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().rarity(Rarity.RARE)));
+        RegHelper.item(ORE_BLOCK_ITEMS, name, () -> new BlockItem(block.get(), RegHelper.itemProps().rarity(Rarity.RARE)));
         return block;
     }
 

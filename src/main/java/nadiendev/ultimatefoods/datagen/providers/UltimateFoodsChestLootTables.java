@@ -4,7 +4,7 @@ import nadiendev.ultimatefoods.registry.ItemsAdds;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.LootTableSubProvider;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -30,7 +30,7 @@ public class UltimateFoodsChestLootTables implements LootTableSubProvider {
         output.accept(
             ResourceKey.create(
                 net.minecraft.core.registries.Registries.LOOT_TABLE,
-                ResourceLocation.fromNamespaceAndPath("ultimatefoods", "chests/nadienite_dungeon_bonus")
+                Identifier.fromNamespaceAndPath("ultimatefoods", "chests/nadienite_dungeon_bonus")
             ),
             LootTable.lootTable()
                 .withPool(LootPool.lootPool()
@@ -46,7 +46,7 @@ public class UltimateFoodsChestLootTables implements LootTableSubProvider {
         output.accept(
             ResourceKey.create(
                 net.minecraft.core.registries.Registries.LOOT_TABLE,
-                ResourceLocation.fromNamespaceAndPath("ultimatefoods", "chests/nadienite_nether_bonus")
+                Identifier.fromNamespaceAndPath("ultimatefoods", "chests/nadienite_nether_bonus")
             ),
             LootTable.lootTable()
                 .withPool(LootPool.lootPool()

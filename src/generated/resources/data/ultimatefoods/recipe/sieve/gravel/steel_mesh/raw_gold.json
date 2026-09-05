@@ -10,12 +10,8 @@
     }
   ],
   "type": "exdeorum:sieve",
-  "ingredient": {
-    "item": "minecraft:gravel"
-  },
-  "mesh": {
-    "item": "ultimatefoods:steel_mesh"
-  },
+  "ingredient": "minecraft:gravel",
+  "mesh": "ultimatefoods:steel_mesh",
   "result": {
     "count": 1,
     "id": "minecraft:raw_gold"

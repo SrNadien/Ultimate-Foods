@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "a": {
-      "item": "minecraft:ender_pearl"
-    }
+    "a": "minecraft:ender_pearl"
   },
   "pattern": [
     "aaa",
@@ -12,7 +10,6 @@
     "aaa"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:ender_pearl_block"
   }
 }

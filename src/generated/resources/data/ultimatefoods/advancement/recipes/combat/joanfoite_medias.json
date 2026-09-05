@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mushashite_medias": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatefoods:mushashite_medias"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ultimatefoods:joanfoite_medias"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mushashite_medias"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ultimatefoods:joanfoite_medias"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mushashite_heart": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatefoods:corazon_de_los_caidos"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ultimatefoods:mushashite_pickaxe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mushashite_heart"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ultimatefoods:mushashite_pickaxe"
+    ]
+  }
+}

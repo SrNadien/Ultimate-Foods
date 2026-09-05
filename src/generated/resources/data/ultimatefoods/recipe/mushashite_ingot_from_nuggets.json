@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "a": {
-      "item": "ultimatefoods:mushashite_nugget"
-    }
+    "a": "ultimatefoods:mushashite_nugget"
   },
   "pattern": [
     "aaa",
@@ -12,7 +10,6 @@
     "aaa"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:mushashite_ingot"
   }
 }

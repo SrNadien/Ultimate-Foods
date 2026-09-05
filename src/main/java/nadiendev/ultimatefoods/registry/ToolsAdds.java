@@ -13,7 +13,7 @@ import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.component.Unbreakable;
+import net.minecraft.util.Unit;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -23,8 +23,8 @@ import java.util.function.Function;
 
 public class ToolsAdds {
 
-    public static final DeferredRegister<Item> TOOL_ITEMS =
-            DeferredRegister.create(BuiltInRegistries.ITEM, UltimateFoodsCore.MOD_ID);
+    public static final DeferredRegister.Items TOOL_ITEMS =
+            DeferredRegister.createItems(UltimateFoodsCore.MOD_ID);
 
     public static final DeferredHolder<Item, Item> MUSHASHITE_SWORD = sword(ModTier.MUSHASHITE);
     public static final DeferredHolder<Item, Item> MUSHASHITE_PICKAXE = pickaxe(ModTier.MUSHASHITE);
@@ -44,16 +44,14 @@ public class ToolsAdds {
     public static final DeferredHolder<Item, Item> NADIENITE_SHOVEL = shovel(ModTier.NADIENITE);
     public static final DeferredHolder<Item, Item> NADIENITE_HOE = hoe(ModTier.NADIENITE);
 
-    public static final DeferredHolder<Item, Item> CHANCLA = TOOL_ITEMS.register(
+    public static final DeferredHolder<Item, Item> CHANCLA = TOOL_ITEMS.registerItem(
             "chancla",
-            () -> new ChanclaItem(
-                    ModToolTiers.NADIENITE,
-                    new Item.Properties()
-                            .stacksTo(1)
-                            .fireResistant()
-                            .rarity(Rarity.EPIC)
-                            .component(DataComponents.UNBREAKABLE, new Unbreakable(true))
-            )
+            props -> new ChanclaItem(ModToolTiers.NADIENITE, props),
+            () -> new Item.Properties()
+                    .stacksTo(1)
+                    .fireResistant()
+                    .rarity(Rarity.EPIC)
+                    .component(DataComponents.UNBREAKABLE, Unit.INSTANCE)
     );
 
     private static DeferredHolder<Item, Item> sword(ModTier tier) {
@@ -77,13 +75,14 @@ public class ToolsAdds {
     }
 
     private static DeferredHolder<Item, Item> tool(ModTier tier, String suffix, Function<Item.Properties, Item> factory) {
-        return TOOL_ITEMS.register(
+        return TOOL_ITEMS.registerItem(
                 tier.id() + "_" + suffix,
-                () -> factory.apply(new Item.Properties()
+                factory::apply,
+                () -> new Item.Properties()
                         .stacksTo(1)
                         .fireResistant()
                         .rarity(tier.rarity())
-                        .component(DataComponents.UNBREAKABLE, new Unbreakable(true)))
+                        .component(DataComponents.UNBREAKABLE, Unit.INSTANCE)
         );
     }
 

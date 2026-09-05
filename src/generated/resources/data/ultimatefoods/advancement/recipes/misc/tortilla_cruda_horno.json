@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_baked_tortilla": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatefoods:baked_tortilla"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ultimatefoods:tortilla_cruda_horno"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_baked_tortilla"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ultimatefoods:tortilla_cruda_horno"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_joanfoite_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatefoods:joanfoite_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ultimatefoods:nadienite_sword"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_joanfoite_sword"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ultimatefoods:nadienite_sword"
+    ]
+  }
+}

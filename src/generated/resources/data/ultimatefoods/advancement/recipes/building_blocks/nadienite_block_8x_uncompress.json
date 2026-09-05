@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "ultimatefoods:config",
+      "option": "allTheCompressed"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nadienite_block_8x": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatefoods:nadienite_block_8x"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ultimatefoods:nadienite_block_8x_uncompress"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nadienite_block_8x"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ultimatefoods:nadienite_block_8x_uncompress"
+    ]
+  }
+}

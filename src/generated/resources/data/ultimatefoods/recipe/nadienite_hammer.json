@@ -12,18 +12,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "h": {
-      "item": "ultimatefoods:corazon_de_la_elite"
-    },
-    "m": {
-      "tag": "c:ingots/nadienite"
-    },
-    "p": {
-      "item": "ultimatefoods:joanfoite_hammer"
-    },
-    "s": {
-      "tag": "c:rods/wooden"
-    }
+    "h": "ultimatefoods:corazon_de_la_elite",
+    "m": "#c:ingots/nadienite",
+    "p": "ultimatefoods:joanfoite_hammer",
+    "s": "#c:rods/wooden"
   },
   "pattern": [
     " mh",
@@ -31,7 +23,6 @@
     "s  "
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:nadienite_hammer"
   }
 }

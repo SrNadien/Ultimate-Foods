@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "ultimatefoods:joanfoite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "ultimatefoods:joanfoite"
+      }
+    ]
+  }
+}

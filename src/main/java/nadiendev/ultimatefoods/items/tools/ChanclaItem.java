@@ -4,18 +4,18 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.level.Level;
 import nadiendev.ultimatefoods.entities.ChanclaEntity;
 
-public class ChanclaItem extends SwordItem {
+public class ChanclaItem extends Item {
 
-    public ChanclaItem(Tier tier, Properties properties) {
-        super(tier, properties.attributes(SwordItem.createAttributes(tier, 200, 100.0F)));
+    public ChanclaItem(ToolMaterial tier, Properties properties) {
+        super(properties.sword(tier, 200.0F, 100.0F));
     }
 
     @Override
@@ -29,13 +29,13 @@ public class ChanclaItem extends SwordItem {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+    public InteractionResult use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
 
         level.playSound(null, player.getX(), player.getY(), player.getZ(),
                 SoundEvents.TRIDENT_THROW, SoundSource.PLAYERS, 1.0F, 1.0F);
 
-        if (!level.isClientSide) {
+        if (!level.isClientSide()) {
 
             ChanclaEntity chancla = new ChanclaEntity(level, player);
             chancla.setItem(itemstack.copy());
@@ -49,6 +49,6 @@ public class ChanclaItem extends SwordItem {
             player.awardStat(Stats.ITEM_USED.get(this));
         }
 
-        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
+        return InteractionResult.SUCCESS;
     }
 }

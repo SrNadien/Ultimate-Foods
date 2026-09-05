@@ -4,6 +4,8 @@ import nadiendev.ultimatefoods.entities.ChanclaEntity;
 
 import nadiendev.ultimatefoods.UltimateFoodsCore;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -19,6 +21,7 @@ public class ModEntities {
                     .sized(0.5F, 0.5F)
                     .clientTrackingRange(4)
                     .updateInterval(20)
-                    .build("chancla")
+                    .build(ResourceKey.create(Registries.ENTITY_TYPE,
+                            Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "chancla")))
     );
 }

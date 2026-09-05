@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "a": {
-      "item": "ultimatefoods:steel_block"
-    }
+    "a": "ultimatefoods:steel_block"
   },
   "pattern": [
     "a  ",

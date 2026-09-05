@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "a": {
-      "item": "ultimatefoods:joanfoite_nugget"
-    }
+    "a": "ultimatefoods:joanfoite_nugget"
   },
   "pattern": [
     "aaa",
@@ -12,7 +10,6 @@
     "aaa"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:joanfoite_ingot"
   }
 }

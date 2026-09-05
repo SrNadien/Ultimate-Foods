@@ -9,6 +9,7 @@ import nadiendev.ultimatefoods.UltimateFoodsCore;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import nadiendev.ultimatefoods.items.ModFood;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.sounds.SoundEvent;
@@ -19,20 +20,20 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
 
 public class ItemsAdds {
-    public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(BuiltInRegistries.ITEM, UltimateFoodsCore.MOD_ID);
+    public static final DeferredRegister.Items ITEMS =
+            DeferredRegister.createItems(UltimateFoodsCore.MOD_ID);
 
     public static final DeferredHolder<Item, Item> MONSTER = registerFoodItem(
             "monster",
-            () -> new CustomFoodItem(
+            () -> new CustomFoodItem(props(), 
                     createFoodProperties(6, 0.6f)
-                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 1), 1.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.SPEED, 400, 1), 1.0f)
                             .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 400, 2), 1.0f)
                             .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 400, 2), 1.0f)
-                            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 400, 2), 1.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.NAUSEA, 400, 2), 1.0f)
                             .effect(() -> new MobEffectInstance(MobEffects.INVISIBILITY, 400, 2), 1.0f)
                             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 400, 2), 1.0f)
-                            .effect(() -> new MobEffectInstance(MobEffects.HEAL, 400, 2), 1.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.INSTANT_HEALTH, 400, 2), 1.0f)
                             .build(),
                     SonidosReproducibles.MONSTER_EAT
             )
@@ -40,10 +41,10 @@ public class ItemsAdds {
 
     public static final DeferredHolder<Item, Item> CAJITA_FELIZ = registerFoodItem(
             "cajita_feliz",
-            () -> new CustomFoodItem(
+            () -> new CustomFoodItem(props(), 
                     createFoodProperties(8, 0.8f)
                             .effect(() -> new MobEffectInstance(MobEffects.INVISIBILITY, 400, 1), 1.0f)
-                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 800, 2), 1.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.SPEED, 800, 2), 1.0f)
                             .build(),
                     SonidosReproducibles.ERA_PAL_NENE
             )
@@ -51,16 +52,16 @@ public class ItemsAdds {
 
     public static final DeferredHolder<Item, Item> SUPER_ENERGY_DRINK = registerFoodItem(
             "super_energy_drink",
-            () -> new CustomFoodItem(
+            () -> new CustomFoodItem(props(), 
                     createFoodProperties(4, 0.5f)
                             .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 300, 3), 1.0f)
-                            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 300, 3), 1.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.JUMP_BOOST, 300, 3), 1.0f)
                             .effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 300, 3), 1.0f)
-                            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 300, 3), 1.0f)
-                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300, 3), 1.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.STRENGTH, 300, 3), 1.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.SPEED, 300, 3), 1.0f)
                             .effect(() -> new MobEffectInstance(MobEffects.INVISIBILITY, 300, 3), 1.0f)
                             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 300, 2), 1.0f)
-                            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 300, 3), 1.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.HASTE, 300, 3), 1.0f)
                             .build(),
                     SonidosReproducibles.SUPER_ENERGY_DRINK
             )
@@ -68,7 +69,7 @@ public class ItemsAdds {
 
     public static final DeferredHolder<Item, Item> DORITOS = registerFoodItem(
             "doritos",
-            () -> new CustomFoodItem(
+            () -> new CustomFoodItem(props(), 
                     createFoodProperties(3, 0.3f)
                             .fast()
                             .build(),
@@ -78,7 +79,7 @@ public class ItemsAdds {
 
     public static final DeferredHolder<Item, Item> POOP = registerFoodItem(
         "poop",
-        () -> new PoopItem(
+        () -> new PoopItem(props(), 
                 createFoodProperties(1, 0.1f)
                         .effect(() -> new MobEffectInstance(EffectsAdds.QUE_GUARRO, 6000, 0), 1.0f)
                         .build(),
@@ -89,9 +90,9 @@ public class ItemsAdds {
 
     public static final DeferredHolder<Item, Item> SUPERPOOP = registerFoodItem(
         "superpoop",
-        () -> new PoopItem(
+        () -> new PoopItem(props(), 
                 createFoodProperties(40, 40.0f)
-                        .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 12000, 10), 1.0f)
+                        .effect(() -> new MobEffectInstance(MobEffects.SPEED, 12000, 10), 1.0f)
                         .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 12000, 10), 1.0f)
                         .build(),
                 SonidosReproducibles.POOP_EAT,
@@ -99,9 +100,9 @@ public class ItemsAdds {
         )
     );
 
-    public static final DeferredHolder<Item, Item> CHOCOLATADA = ITEMS.register(
+    public static final DeferredHolder<Item, Item> CHOCOLATADA = reg(
         "chocolatada",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .rarity(Rarity.COMMON)
                 .food(new FoodProperties.Builder()
@@ -112,9 +113,9 @@ public class ItemsAdds {
         )
     );
 
-    public static final DeferredHolder<Item, Item> BAKED_TORTILLA = ITEMS.register(
+    public static final DeferredHolder<Item, Item> BAKED_TORTILLA = reg(
         "baked_tortilla",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .rarity(Rarity.COMMON)
                 .food(new FoodProperties.Builder()
@@ -125,9 +126,9 @@ public class ItemsAdds {
         )
     );
 
-    public static final DeferredHolder<Item, Item> TORTILLA = ITEMS.register(
+    public static final DeferredHolder<Item, Item> TORTILLA = reg(
         "tortilla",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .rarity(Rarity.COMMON)
                 .food(new FoodProperties.Builder()
@@ -145,28 +146,28 @@ public class ItemsAdds {
               64,
               Rarity.COMMON,
               createFoodProperties(20, 8f)
-            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 12000, 10), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.SPEED, 12000, 10), 1.0f)
             .build(),
             SonidosReproducibles.RICKROLL
     );
 
-    public static final DeferredHolder<Item, Item> SUPER_CHILE = ITEMS.register(
+    public static final DeferredHolder<Item, Item> SUPER_CHILE = reg(
          "super_chile",
-             () -> new SuperChileItem(new Item.Properties()
+             () -> new SuperChileItem(props()
             .stacksTo(64)
             .rarity(Rarity.COMMON)
-            .food(new FoodProperties.Builder()
-                    .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 12000, 10), 1.0f)
+            .food(ModFood.builder()
+                    .effect(() -> new MobEffectInstance(MobEffects.NAUSEA, 12000, 10), 1.0f)
                     .nutrition(10)
                     .saturationModifier(3f)
-                    .build()
+                    .build().properties()
               )
             )
          );
 
-    public static final DeferredHolder<Item, Item> RAW_HAMBURGUER_MEAT = ITEMS.register(
+    public static final DeferredHolder<Item, Item> RAW_HAMBURGUER_MEAT = reg(
         "raw_hamburger_meat",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .rarity(Rarity.COMMON)
                 .food(new FoodProperties.Builder()
@@ -177,9 +178,9 @@ public class ItemsAdds {
         )
     );
 
-    public static final DeferredHolder<Item, Item> COOKED_HAMBURGUER_MEAT = ITEMS.register(
+    public static final DeferredHolder<Item, Item> COOKED_HAMBURGUER_MEAT = reg(
         "cooked_hamburger_meat",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .rarity(Rarity.COMMON)
                 .food(new FoodProperties.Builder()
@@ -190,16 +191,16 @@ public class ItemsAdds {
         )
     );
 
-    public static final DeferredHolder<Item, Item> BURGER = ITEMS.register(
+    public static final DeferredHolder<Item, Item> BURGER = reg(
         "burger",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .rarity(Rarity.EPIC)
-                .food(new FoodProperties.Builder()
+                .food(ModFood.builder()
                         .nutrition(6)
                         .saturationModifier(1.2f)
-                        .effect(() -> new MobEffectInstance(MobEffects.HEAL, 1, 5), 1.0f)
-                        .build()
+                        .effect(() -> new MobEffectInstance(MobEffects.INSTANT_HEALTH, 1, 5), 1.0f)
+                        .build().properties()
                 )
         )
     );
@@ -218,198 +219,198 @@ public class ItemsAdds {
     public static final DeferredHolder<Item, Item> STEEL_NUGGET = registerMaterial("steel_nugget");
     public static final DeferredHolder<Item, Item> NETHERITE_NUGGET = registerMaterial("netherite_nugget");
 
-    public static final DeferredHolder<Item, Item> STEEL_INGOT = ITEMS.register(
+    public static final DeferredHolder<Item, Item> STEEL_INGOT = reg(
         "steel_ingot",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> GALACTIC_STAR = ITEMS.register(
+    public static final DeferredHolder<Item, Item> GALACTIC_STAR = reg(
         "galactic_star",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> PATRICIO = ITEMS.register(
+    public static final DeferredHolder<Item, Item> PATRICIO = reg(
         "patricio",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> BOB_ESPONJA = ITEMS.register(
+    public static final DeferredHolder<Item, Item> BOB_ESPONJA = reg(
         "bob_esponja",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> SEMILLA = ITEMS.register(
+    public static final DeferredHolder<Item, Item> SEMILLA = reg(
         "semilla",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> RADIOACTIVE_FUEL = ITEMS.register(
+    public static final DeferredHolder<Item, Item> RADIOACTIVE_FUEL = reg(
         "radioactive_fuel",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> PORTALMINI = ITEMS.register(
+    public static final DeferredHolder<Item, Item> PORTALMINI = reg(
         "portalmini",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> RADIOACTIVE_ANTIMATTER = ITEMS.register(
+    public static final DeferredHolder<Item, Item> RADIOACTIVE_ANTIMATTER = reg(
         "radioactive_antimatter",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> PLANOS = ITEMS.register(
+    public static final DeferredHolder<Item, Item> PLANOS = reg(
         "planos",
-       () -> new Item(new Item.Properties()
+       () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> REACTORMINI = ITEMS.register(
+    public static final DeferredHolder<Item, Item> REACTORMINI = reg(
         "reactormini",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> SUPER_SEED = ITEMS.register(
+    public static final DeferredHolder<Item, Item> SUPER_SEED = reg(
         "super_seed",
-       () -> new Item(new Item.Properties()
+       () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> GAMEBOY = ITEMS.register(
+    public static final DeferredHolder<Item, Item> GAMEBOY = reg(
          "gameboy",
-          () -> new Item(new Item.Properties()
+          () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> GALACTIC_GLOBE = ITEMS.register(
+    public static final DeferredHolder<Item, Item> GALACTIC_GLOBE = reg(
          "galactic_globe",
-          () -> new Item(new Item.Properties()
+          () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> DRAGONSOUL = ITEMS.register(
+    public static final DeferredHolder<Item, Item> DRAGONSOUL = reg(
          "dragonsoul",
-          () -> new Item(new Item.Properties()
+          () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> DOLL = ITEMS.register(
+    public static final DeferredHolder<Item, Item> DOLL = reg(
          "doll",
-          () -> new Item(new Item.Properties()
+          () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> CATALIZADOR = ITEMS.register(
+    public static final DeferredHolder<Item, Item> CATALIZADOR = reg(
          "catalizador",
-          () -> new Item(new Item.Properties()
+          () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> CALAVERA = ITEMS.register(
+    public static final DeferredHolder<Item, Item> CALAVERA = reg(
          "calavera",
-          () -> new Item(new Item.Properties()
+          () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> AGUJERONEGRO = ITEMS.register(
+    public static final DeferredHolder<Item, Item> AGUJERONEGRO = reg(
          "agujeronegro",
-          () -> new Item(new Item.Properties()
+          () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> ABSOLUTE_REACTION_PLATING = ITEMS.register(
+    public static final DeferredHolder<Item, Item> ABSOLUTE_REACTION_PLATING = reg(
          "absolute_reaction_plating",
-          () -> new Item(new Item.Properties()
+          () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> BRUJULAMALDITA = ITEMS.register(
+    public static final DeferredHolder<Item, Item> BRUJULAMALDITA = reg(
          "brujulamaldita",
-          () -> new Item(new Item.Properties()
+          () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> UNIVERSE_SEARCH = ITEMS.register(
+    public static final DeferredHolder<Item, Item> UNIVERSE_SEARCH = reg(
          "universe_search",
-          () -> new Item(new Item.Properties()
+          () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
         )
     );
 
-    public static final DeferredHolder<Item, Item> TRANSMISOR = ITEMS.register(
+    public static final DeferredHolder<Item, Item> TRANSMISOR = reg(
          "transmisor",
-          () -> new Item(new Item.Properties()
+          () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
@@ -424,49 +425,67 @@ public class ItemsAdds {
 
     public static final DeferredHolder<Item, Item> CORAZON_DE_LA_ELITE = registerCorazon("corazon_de_la_elite");
 
-    public static final DeferredHolder<Item, Item> NETHERITE_DAGGER = ITEMS.register(
+    public static final DeferredHolder<Item, Item> NETHERITE_DAGGER = reg(
         "netherite_dagger",
-        () -> new Item(new Item.Properties()
+        () -> new Item(props()
                 .stacksTo(1)
                 .fireResistant()
                 .rarity(Rarity.EPIC)
         )
     );
 
-public static final DeferredHolder<Item, Item> DISC_MCCACAO = ITEMS.register(
+public static final DeferredHolder<Item, Item> DISC_MCCACAO = reg(
     "disc_mccacao",
-    () -> new Item(new Item.Properties()
+    () -> new Item(props()
             .jukeboxPlayable(SonidosReproducibles.DISC_MCCACAO_KEY)
             .stacksTo(1)
             .rarity(Rarity.RARE))
 );
 
-public static final DeferredHolder<Item, Item> DISC_AVENGERS = ITEMS.register(
+public static final DeferredHolder<Item, Item> DISC_AVENGERS = reg(
     "disc_avengers",
-    () -> new Item(new Item.Properties()
+    () -> new Item(props()
             .jukeboxPlayable(SonidosReproducibles.DISC_AVENGERS_KEY)
             .stacksTo(1)
             .rarity(Rarity.RARE))
 );
 
-    public static final DeferredHolder<Item, BucketItem> NADIENITE_FLUID_BUCKET = ITEMS.register(
+    public static final DeferredHolder<Item, BucketItem> NADIENITE_FLUID_BUCKET = reg(
         "nadienite_fluid_bucket",
         () -> new BucketItem(
                 FluidsRegistry.NADIENITE_FLUID_SOURCE.get(),
-                new Item.Properties()
+                props()
                         .craftRemainder(Items.BUCKET)
                         .stacksTo(1)
         )
     );
 
-    private static FoodProperties.Builder createFoodProperties(int nutrition, float saturation) {
-        return new FoodProperties.Builder()
+    private static ModFood.Builder createFoodProperties(int nutrition, float saturation) {
+        return ModFood.builder()
                 .nutrition(nutrition)
                 .saturationModifier(saturation);
     }
 
+    private static final ThreadLocal<Item.Properties> CURRENT_PROPERTIES = new ThreadLocal<>();
+
+    private static Item.Properties props() {
+        Item.Properties properties = CURRENT_PROPERTIES.get();
+        return properties != null ? properties : new Item.Properties();
+    }
+
+    private static <T extends Item> DeferredHolder<Item, T> reg(String name, Supplier<T> supplier) {
+        return ITEMS.registerItem(name, properties -> {
+            CURRENT_PROPERTIES.set(properties);
+            try {
+                return supplier.get();
+            } finally {
+                CURRENT_PROPERTIES.remove();
+            }
+        });
+    }
+
     private static DeferredHolder<Item, Item> registerFoodItem(String name, Supplier<Item> item) {
-        return ITEMS.register(name, item);
+        return reg(name, item);
     }
 
     public static DeferredHolder<Item, Item> ingotOf(ModTier tier) {
@@ -502,7 +521,7 @@ public static final DeferredHolder<Item, Item> DISC_AVENGERS = ITEMS.register(
     }
 
     private static DeferredHolder<Item, Item> registerMaterial(String name) {
-        return ITEMS.register(name, () -> new Item(new Item.Properties()
+        return reg(name, () -> new Item(props()
                 .stacksTo(64)
                 .fireResistant()
                 .rarity(Rarity.COMMON)
@@ -510,7 +529,7 @@ public static final DeferredHolder<Item, Item> DISC_AVENGERS = ITEMS.register(
     }
 
     private static DeferredHolder<Item, Item> registerCorazon(String name) {
-        return ITEMS.register(name, () -> new Item(new Item.Properties()
+        return reg(name, () -> new Item(props()
                 .stacksTo(16)
                 .fireResistant()
                 .rarity(Rarity.EPIC)
@@ -518,16 +537,16 @@ public static final DeferredHolder<Item, Item> DISC_AVENGERS = ITEMS.register(
     }
 
     public static DeferredHolder<Item, Item> registerItem(String name) {
-        return ITEMS.register(name, () -> new Item(new Item.Properties()));
+        return reg(name, () -> new Item(props()));
     }
 
     public static DeferredHolder<Item, Item> registerSimpleFood(String name, int nutrition, float saturation) {
-        return ITEMS.register(name, () -> new Item(new Item.Properties()
-                .food(createFoodProperties(nutrition, saturation).build())));
+        return reg(name, () -> new Item(props()
+                .food(createFoodProperties(nutrition, saturation).build().properties())));
     }
 
-    public static DeferredHolder<Item, Item> registerCustomFood(String name, int nutrition, float saturation, int stackSize, Rarity rarity, FoodProperties foodProperties, DeferredHolder<SoundEvent, SoundEvent> sound) {
-        return ITEMS.register(name, () -> new CustomFoodItem(foodProperties, sound));
+    public static DeferredHolder<Item, Item> registerCustomFood(String name, int nutrition, float saturation, int stackSize, Rarity rarity, ModFood foodProperties, DeferredHolder<SoundEvent, SoundEvent> sound) {
+        return reg(name, () -> new CustomFoodItem(props(), foodProperties, sound));
     }
 
     public static void register(IEventBus eventBus) {

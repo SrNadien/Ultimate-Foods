@@ -8,9 +8,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "a": {
-      "item": "ultimatefoods:joanfoite_block_2x"
-    }
+    "a": "ultimatefoods:joanfoite_block_2x"
   },
   "pattern": [
     "aaa",
@@ -18,7 +16,6 @@
     "aaa"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:joanfoite_block_3x"
   }
 }

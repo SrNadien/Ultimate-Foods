@@ -10,7 +10,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
+import net.minecraft.world.entity.projectile.throwableitemprojectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -29,7 +29,7 @@ public class ChanclaEntity extends ThrowableItemProjectile {
     }
 
     public ChanclaEntity(Level level, LivingEntity thrower) {
-        super(ModEntities.CHANCLA.get(), thrower, level);
+        super(ModEntities.CHANCLA.get(), thrower, level, new ItemStack(ToolsAdds.CHANCLA.get()));
     }
 
     @Override
@@ -59,7 +59,7 @@ public class ChanclaEntity extends ThrowableItemProjectile {
                 Vec3 toOwner = ownerCenter.subtract(position());
 
                 if (toOwner.length() < 1.5) {
-                    if (!level().isClientSide && owner instanceof Player player) {
+                    if (!level().isClientSide() && owner instanceof Player player) {
                         ItemStack chanclaStack = new ItemStack(ToolsAdds.CHANCLA.get());
                         if (!player.getInventory().add(chanclaStack)) {
                             player.drop(chanclaStack, false);
@@ -79,9 +79,9 @@ public class ChanclaEntity extends ThrowableItemProjectile {
             }
         }
 
-        if (level().isClientSide) {
+        if (level().isClientSide()) {
             level().addParticle(
-                    new ItemParticleOption(ParticleTypes.ITEM, getItem()),
+                    new ItemParticleOption(ParticleTypes.ITEM, getItem().getItem()),
                     getX(), getY(), getZ(),
                     0, 0, 0
             );
@@ -98,7 +98,7 @@ public class ChanclaEntity extends ThrowableItemProjectile {
 
         if (target == owner) return;
 
-        if (!level().isClientSide) {
+        if (!level().isClientSide()) {
             DamageSource source = (owner instanceof LivingEntity living)
                     ? damageSources().thrown(this, living)
                     : damageSources().thrown(this, this);

@@ -4,15 +4,10 @@
   "cookingtime": 200,
   "experience": 1.0,
   "ingredient": [
-    {
-      "item": "ultimatefoods:mushashite_ore"
-    },
-    {
-      "item": "ultimatefoods:deepslate_mushashite_ore"
-    }
+    "ultimatefoods:mushashite_ore",
+    "ultimatefoods:deepslate_mushashite_ore"
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:mushashite_ingot"
   }
 }

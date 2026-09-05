@@ -1,17 +1,16 @@
 package nadiendev.ultimatefoods.items.armor;
 
+import com.geckolib.animatable.GeoItem;
+import com.geckolib.animatable.client.GeoRenderProvider;
+import com.geckolib.animatable.instance.AnimatableInstanceCache;
+import com.geckolib.animatable.manager.AnimatableManager;
+import com.geckolib.renderer.GeoArmorRenderer;
+import com.geckolib.util.GeckoLibUtil;
 import nadiendev.ultimatefoods.client.WizardHatRenderer;
 import nadiendev.ultimatefoods.items.ModTier;
-import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
-import software.bernie.geckolib.animatable.GeoItem;
-import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.animation.AnimatableManager;
-import software.bernie.geckolib.renderer.GeoArmorRenderer;
-import software.bernie.geckolib.util.GeckoLibUtil;
+import net.minecraft.world.item.equipment.ArmorType;
 
 import java.util.function.Consumer;
 
@@ -20,7 +19,7 @@ public class WizardHatItem extends TieredArmorItem implements GeoItem {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
     public WizardHatItem(ModTier tier, Properties properties) {
-        super(tier, Type.HELMET, properties);
+        super(tier, ArmorType.HELMET, properties);
     }
 
     @Override
@@ -33,18 +32,16 @@ public class WizardHatItem extends TieredArmorItem implements GeoItem {
     }
 
     @Override
-    public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-        consumer.accept(new IClientItemExtensions() {
+    public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {
+        consumer.accept(new GeoRenderProvider() {
 
-            private GeoArmorRenderer<WizardHatItem> renderer;
+            private GeoArmorRenderer<?, ?> renderer;
 
             @Override
-            public HumanoidModel<?> getHumanoidArmorModel(LivingEntity entity, ItemStack stack,
-                                                          EquipmentSlot slot, HumanoidModel<?> original) {
+            public GeoArmorRenderer<?, ?> getGeoArmorRenderer(ItemStack stack, EquipmentSlot slot) {
                 if (this.renderer == null) {
-                    this.renderer = new WizardHatRenderer();
+                    this.renderer = new WizardHatRenderer(modTier());
                 }
-                this.renderer.prepForRender(entity, stack, slot, original);
                 return this.renderer;
             }
         });

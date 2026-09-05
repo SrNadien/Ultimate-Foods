@@ -10,12 +10,8 @@
     }
   ],
   "type": "exdeorum:sieve",
-  "ingredient": {
-    "item": "exdeorum:crushed_netherrack"
-  },
-  "mesh": {
-    "item": "ultimatefoods:steel_mesh"
-  },
+  "ingredient": "exdeorum:crushed_netherrack",
+  "mesh": "ultimatefoods:steel_mesh",
   "result": {
     "count": 1,
     "id": "minecraft:raw_gold"

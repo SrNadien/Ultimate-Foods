@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "C": {
-      "item": "ultimatefoods:corazon_de_los_fantasmas"
-    },
-    "N": {
-      "item": "ultimatefoods:joanfoite_ingot"
-    },
-    "P": {
-      "item": "ultimatefoods:mushashite_shovel"
-    }
+    "C": "ultimatefoods:corazon_de_los_fantasmas",
+    "N": "ultimatefoods:joanfoite_ingot",
+    "P": "ultimatefoods:mushashite_shovel"
   },
   "pattern": [
     " N ",
@@ -18,7 +12,6 @@
     " C "
   ],
   "result": {
-    "count": 1,
     "id": "ultimatefoods:joanfoite_shovel"
   }
 }

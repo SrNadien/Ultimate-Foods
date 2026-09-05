@@ -1,4 +1,5 @@
 {
   "type": "ultimatefoods:nadienite_chest",
-  "conditions": []
+  "conditions": [],
+  "priority": 0
 }

@@ -10,12 +10,8 @@
     }
   ],
   "type": "exdeorum:sieve",
-  "ingredient": {
-    "item": "minecraft:gravel"
-  },
-  "mesh": {
-    "item": "ultimatefoods:nadienite_mesh"
-  },
+  "ingredient": "minecraft:gravel",
+  "mesh": "ultimatefoods:nadienite_mesh",
   "result": {
     "count": 1,
     "id": "ultimatefoods:raw_nadienite"

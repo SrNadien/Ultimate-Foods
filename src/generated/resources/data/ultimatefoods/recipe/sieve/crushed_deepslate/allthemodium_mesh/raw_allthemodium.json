@@ -18,12 +18,8 @@
     }
   ],
   "type": "exdeorum:sieve",
-  "ingredient": {
-    "item": "exdeorum:crushed_deepslate"
-  },
-  "mesh": {
-    "item": "ultimatefoods:allthemodium_mesh"
-  },
+  "ingredient": "exdeorum:crushed_deepslate",
+  "mesh": "ultimatefoods:allthemodium_mesh",
   "result": {
     "count": 1,
     "id": "allthemodium:raw_allthemodium"
