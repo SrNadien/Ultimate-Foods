@@ -116,6 +116,15 @@ repositories {
         name 'AppleSkin' 
         url "https://maven.ryanliptak.com/" 
     }
+     maven {
+        name = 'ModKit'
+        url 'https://jitpack.io'
+        content {
+            includeGroup 'com.github.thedarkcolour'
+            // Required for KubeJS
+            includeGroup 'com.github.rtyley'
+        }
+    }
 }  
 
 dependencies {
@@ -143,9 +152,15 @@ dependencies {
     //Patchouli
     implementation files("libs/patchouli-neoforge-26.1-94.jar")
 
-    // Ex Deorum y AllTheModium van como jars en run/mods, no aca:
-    // Ex Deorum corre su propio datagen y necesita ModKit, que no publica esas clases,
-    // asi que en el classpath del datagen rompe runData.
+   
+    //Ex Deorum 
+    runtimeOnly "maven.modrinth:ex-deorum:${exdeorum_version}"
+
+    // ModKit
+    implementation('com.github.thedarkcolour:ModKit:944589c2a7')
+
+    //AllTheModium 
+    runtimeOnly "curse.maven:allthemodium-${allthemodium_project_id}:${allthemodium_version}"
 }
 
 tasks.withType(ProcessResources).configureEach {
