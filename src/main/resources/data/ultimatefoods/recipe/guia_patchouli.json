@@ -8,8 +8,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    { "item": "minecraft:book" },
-    { "item": "ultimatefoods:nadienite_nugget" }
+    "minecraft:book",
+    "ultimatefoods:nadienite_nugget"
   ],
   "result": {
     "id": "patchouli:guide_book",

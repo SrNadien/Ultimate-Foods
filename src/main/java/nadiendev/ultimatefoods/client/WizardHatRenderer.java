@@ -17,7 +17,7 @@ public class WizardHatRenderer extends GeoArmorRenderer<WizardHatItem, HumanoidR
 
     private static class WizardHatGeoModel extends GeoModel<WizardHatItem> {
 
-        private static final Identifier MODEL = path("geckolib/models/wizard_hat.geo.json");
+        private static final Identifier MODEL = path("wizard_hat");
         private static final Identifier ANIMATION = path("geckolib/animations/wizard_hat.animation.json");
 
         private final Identifier texture;

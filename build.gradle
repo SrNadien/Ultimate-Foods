@@ -139,28 +139,26 @@ dependencies {
     //jade
     implementation "maven.modrinth:jade:${jade_version}"
 
-    //Avaritia
-    // implementation "curse.maven:re-avaritia-623969:${avaritia_version_id}"
-
     //GeckoLib
-    implementation "maven.modrinth:geckolib:${geckolib_version}"
+    implementation "com.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
 
     //Apple Skin
     compileOnly "squeek.appleskin:appleskin-neoforge:mc${mc}-${appleskin_version}:api"
     runtimeOnly "squeek.appleskin:appleskin-neoforge:mc${mc}-${appleskin_version}"
 
     //Patchouli
-    implementation files("libs/patchouli-neoforge-26.1-94.jar")
+    implementation "vazkii.patchouli:patchouli-neoforge:${patchouli_version}"
 
-   
-    //Ex Deorum 
+
+    //Ex Deorum
     runtimeOnly "maven.modrinth:ex-deorum:${exdeorum_version}"
 
-    // ModKit
-    implementation('com.github.thedarkcolour:ModKit:944589c2a7')
+    // ModKit (rama 26.1, requerido por el datagen de Ex Deorum)
+    implementation "com.github.thedarkcolour:ModKit:${modkit_version}"
 
-    //AllTheModium 
+    //AllTheModium
     runtimeOnly "curse.maven:allthemodium-${allthemodium_project_id}:${allthemodium_version}"
+    runtimeOnly "curse.maven:ato-${alltheores_project_id}:${alltheores_version}"
 }
 
 tasks.withType(ProcessResources).configureEach {
