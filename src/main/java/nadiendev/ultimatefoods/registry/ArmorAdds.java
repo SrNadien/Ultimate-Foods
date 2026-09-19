@@ -1,7 +1,7 @@
 package nadiendev.ultimatefoods.registry;
 
+import nadiendev.ultimatefoods.items.armor.HatItem;
 import nadiendev.ultimatefoods.items.armor.TieredArmorItem;
-import nadiendev.ultimatefoods.items.armor.WizardHatItem;
 
 import nadiendev.ultimatefoods.UltimateFoodsCore;
 import nadiendev.ultimatefoods.items.ModTier;
@@ -51,8 +51,11 @@ public class ArmorAdds {
     private static DeferredHolder<Item, Item> piece(ModTier tier, ArmorItem.Type type, String suffix) {
         return ARMOR_ITEMS.register(
                 tier.id() + "_" + suffix,
+                // Solo el gorro es 3D. El resto usa el sistema de capas planas de
+                // Minecraft, que se pinta sobre el cuerpo y por eso no puede
+                // despegarse al caminar.
                 () -> type == ArmorItem.Type.HELMET
-                        ? new WizardHatItem(tier, properties(tier))
+                        ? new HatItem(tier, type, properties(tier))
                         : new TieredArmorItem(tier, type, properties(tier))
         );
     }

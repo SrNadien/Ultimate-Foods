@@ -1,5 +1,24 @@
 # Changelog
 
+## [2.0.10] — 2026-09-19 — Minecraft 1.21.1
+
+### ✨ Added
+- A distinct 3D helmet per tier, rendered through GeckoLib: a **crown** for Nadienite, a **detective fedora** for Mushashite and a **pointed wizard hat** for JoanFoite. The three tiers used to share a single wizard hat.
+- Inventory icons for the twelve armor pieces.
+
+### ⚔️ Changed
+- New item textures for the swords, axes, pickaxes, shovels, hoes, hammers and ingots of the three tiers.
+- The three ingots now share one base with a per-tier hue, so they read as a family.
+- Deepslate ores redrawn to match the vanilla deepslate ore silhouette.
+- New armor layer textures, one theme per tier: Roman king in deep red and gold, spy in black and gunmetal, mage in violet and gold.
+- Only the helmet is 3D. Chestplate, leggings and boots use Minecraft's flat armor layers, which are painted onto the player's body and therefore cannot drift away from it while walking.
+- `WizardHatItem` and `WizardHatRenderer` replaced by `HatItem` and `HatRenderer`, which choose the model from the tier.
+
+
+### 🗑️ Removed
+- `green_ingot.png` 
+- The Mushashite and Nadienite `wizard_hat` armor textures, replaced by the crown and fedora atlases.
+
 ## [2.0.9] — 2026-09-04 — Minecraft 1.21.1
 
 ### ✨ Added
