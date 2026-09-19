@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.0.10] — 2026-09-19 — Minecraft 26.1.2
+
+Texture refresh matching the 1.21.1 release. No code changes on this branch.
+
+### ⚔️ Changed
+- New item textures for the swords, axes, pickaxes, shovels, hoes, hammers and ingots of the three tiers.
+- The three ingots now share one base with a per-tier hue, so they read as a family.
+- Deepslate ores redrawn to match the vanilla deepslate ore silhouette.
+- Equipment assets redrawn for the three tiers, both `humanoid` and `humanoid_leggings`.
+- New icons for the twelve armor pieces.
+
+### 🐛 Fixes
+- The Nadienite ingot model pointed at `green_ingot`, a texture that no longer exists, so the item rendered as a missing model. It now points at `nadienite_ingot`.
+
 ## [2.0.9] — 2026-09-04 — Minecraft 26.1.2
 
 Port to Minecraft 26.1.2. Same content as the 1.21.1 release, rebuilt against the new APIs.
