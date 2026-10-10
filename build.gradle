@@ -119,19 +119,18 @@ dependencies {
     //jade
     implementation "curse.maven:jade-324717:${jade_version}"
 
+    // Requerido por la receta de la carne cruda (usa sus cuchillos). No se referencia en codigo.
+    runtimeOnly "maven.modrinth:farmers-delight:${farmersdelight_version}"
+
     //Avaritia
     // implementation "curse.maven:re-avaritia-623969:${avaritia_version_id}"
 
-    //GeckoLib
-    implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
-
+    //GeckoLib
     //Apple Skin
     compileOnly "squeek.appleskin:appleskin-neoforge:mc${mc}-${appleskin_version}:api"
     runtimeOnly "squeek.appleskin:appleskin-neoforge:mc${mc}-${appleskin_version}"
 
-    //Patchouli
-    implementation "vazkii.patchouli:Patchouli:${patchouli_version}"
-
+    //Patchouli
     // Ex Deorum y AllTheModium van como jars en run/mods, no aca:
     // Ex Deorum corre su propio datagen y necesita ModKit, que no publica esas clases,
     // asi que en el classpath del datagen rompe runData.

@@ -1,6 +1,0 @@
-{
-  "type": "neoforge:add_features",
-  "biomes": "#minecraft:is_overworld",
-  "features": "ultimatefoods:nadienite_ore",
-  "step": "underground_ores"
-}

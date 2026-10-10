@@ -1,23 +1,24 @@
 # Changelog
 
-## [2.0.10] — 2026-09-19 — Minecraft 1.21.1
+## [2.0.10] — 2026-10-10 — Minecraft 1.21.1
+
+Ultimate Foods is now only the foods and drinks. The equipment and materials moved to **UltimateArmoury: Tools And Weapons**, and the utility items and music discs moved to **Ultimate Tweaks**.
+
+### ⚠️ Breaking
+- Everything that is not a food left this mod, together with its item and block ids. Worlds made with 2.0.9 or earlier lose those items.
+- **Farmer's Delight** is now required. It is also a dependency of the raw burger meat recipe.
+- AppleSkin stays required.
 
 ### ✨ Added
-- A distinct 3D helmet per tier, rendered through GeckoLib: a **crown** for Nadienite, a **detective fedora** for Mushashite and a **pointed wizard hat** for JoanFoite. The three tiers used to share a single wizard hat.
-- Inventory icons for the twelve armor pieces.
+- The raw burger meat recipe uses any **Farmer's Delight knife** instead of the Netherite Dagger, which now belongs to UltimateArmoury.
 
 ### ⚔️ Changed
-- New item textures for the swords, axes, pickaxes, shovels, hoes, hammers and ingots of the three tiers.
-- The three ingots now share one base with a per-tier hue, so they read as a family.
-- Deepslate ores redrawn to match the vanilla deepslate ore silhouette.
-- New armor layer textures, one theme per tier: Roman king in deep red and gold, spy in black and gunmetal, mage in violet and gold.
-- Only the helmet is 3D. Chestplate, leggings and boots use Minecraft's flat armor layers, which are painted onto the player's body and therefore cannot drift away from it while walking.
-- `WizardHatItem` and `WizardHatRenderer` replaced by `HatItem` and `HatRenderer`, which choose the model from the tier.
-
+- The mod is reduced to the 14 foods, their 6 eating sounds, the Poop effect and the burger drops of the Sniffer, Armadillo, Villager and Warden.
+- GeckoLib, Patchouli, Ex Deorum and AllTheModium are no longer dependencies.
 
 ### 🗑️ Removed
-- `green_ingot.png` 
-- The Mushashite and Nadienite `wizard_hat` armor textures, replaced by the crown and fedora atlases.
+- Materials, ores, armor, tools, weapons, hammers, meshes, compressed blocks and the Nadienite fluid: now in UltimateArmoury.
+- The 21 utility items, the 2 music discs and their sounds: now in Ultimate Tweaks.
 
 ## [2.0.9] — 2026-09-04 — Minecraft 1.21.1
 

@@ -22,11 +22,5 @@ public class ItemsModelProvider extends ItemModelProvider {
         basicItem(nadiendev.ultimatefoods.registry.ItemsAdds.COOKED_HAMBURGUER_MEAT.get());
         basicItem(nadiendev.ultimatefoods.registry.ItemsAdds.BURGER.get());
 
-        withExistingParent(
-                nadiendev.ultimatefoods.registry.ItemsAdds.NETHERITE_DAGGER.getId().getPath(),
-                ResourceLocation.withDefaultNamespace("item/handheld")
-        ).texture("layer0", ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "item/netherite_dagger"));
-
-        basicItem(nadiendev.ultimatefoods.registry.ItemsAdds.NADIENITE_NUGGET.get());
     }
 }

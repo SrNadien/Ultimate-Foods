@@ -1,18 +1,11 @@
 package nadiendev.ultimatefoods.datagen;
 
 import nadiendev.ultimatefoods.UltimateFoodsCore;
-import nadiendev.ultimatefoods.datagen.providers.BlockModelProvider;
-import nadiendev.ultimatefoods.datagen.providers.ExDeorumCompatProvider;
 import nadiendev.ultimatefoods.datagen.providers.ItemsModelProvider;
 import nadiendev.ultimatefoods.datagen.providers.ModAdvancementProvider;
-import nadiendev.ultimatefoods.datagen.providers.ModJukeboxSongProvider;
-import nadiendev.ultimatefoods.datagen.providers.ModLootModifierProvider;
 import nadiendev.ultimatefoods.datagen.providers.ModLootTableProvider;
 import nadiendev.ultimatefoods.datagen.providers.ModRecipeProvider;
 import nadiendev.ultimatefoods.datagen.providers.ModSoundProvider;
-import nadiendev.ultimatefoods.datagen.providers.ModWorldGenProvider;
-import nadiendev.ultimatefoods.datagen.providers.ModBlockTags;
-import nadiendev.ultimatefoods.datagen.providers.ModItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -48,25 +41,11 @@ public class DataGenerators {
         UltimateFoodsCore.LOGGER.info("=== INICIANDO GENERACION DE DATOS ===");
 
         generator.addProvider(event.includeServer(), new ModRecipeProvider(output, lookupProvider));
-        generator.addProvider(event.includeServer(), new ModWorldGenProvider(output, lookupProvider));
         generator.addProvider(event.includeServer(), new ModLootTableProvider(output, lookupProvider));
         generator.addProvider(event.includeServer(),
                 new AdvancementProvider(output, lookupProvider, existingFileHelper,
                         List.of(new ModAdvancementProvider())));
-        generator.addProvider(event.includeServer(), new ModJukeboxSongProvider(output, lookupProvider));
-        generator.addProvider(event.includeServer(), new ModLootModifierProvider(output, lookupProvider));
-        generator.addProvider(event.includeServer(), new ExDeorumCompatProvider(output));
 
-        ModBlockTags.Provider blockTagsProvider = generator.addProvider(
-                event.includeServer(),
-                new ModBlockTags.Provider(output, lookupProvider, existingFileHelper)
-        );
-        generator.addProvider(
-                event.includeServer(),
-                new ModItemTags.Provider(output, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper)
-        );
-
-        generator.addProvider(event.includeClient(), new BlockModelProvider(output, existingFileHelper));
         generator.addProvider(event.includeClient(), new ItemsModelProvider(output, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModSoundProvider(output, existingFileHelper));
 

@@ -13,9 +13,7 @@ public class ModLootTableProvider extends LootTableProvider {
 
     public ModLootTableProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, Set.of(), List.of(
-                new SubProviderEntry(UltimateFoodsBlockLootTables::new, LootContextParamSets.BLOCK),
-                new SubProviderEntry(UltimateFoodsMobLootTables::new,  LootContextParamSets.ENTITY),
-                new SubProviderEntry(UltimateFoodsChestLootTables::new, LootContextParamSets.CHEST)
+                new SubProviderEntry(UltimateFoodsMobLootTables::new, LootContextParamSets.ENTITY)
         ), registries);
     }
 }

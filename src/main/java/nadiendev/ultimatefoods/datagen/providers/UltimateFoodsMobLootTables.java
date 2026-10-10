@@ -29,30 +29,12 @@ public class UltimateFoodsMobLootTables extends EntityLootSubProvider {
         add(EntityType.ARMADILLO, burgerTable(0.02f));
         add(EntityType.VILLAGER, burgerTable(0.20f));
 
-        add(EntityType.ZOMBIE, heartTable(ItemsAdds.CORAZON_DE_LOS_CAIDOS.get(), 0.03f));
-        add(EntityType.SKELETON, heartTable(ItemsAdds.CORAZON_DE_LOS_CAIDOS.get(), 0.03f));
-        add(EntityType.WITHER_SKELETON, heartTable(ItemsAdds.CORAZON_DE_LOS_CAIDOS.get(), 0.25f));
+        add(EntityType.WARDEN, guaranteedTable(ItemsAdds.BURGER.get(), 6));
 
-        add(EntityType.PHANTOM, heartTable(ItemsAdds.CORAZON_DE_LOS_FANTASMAS.get(), 0.15f));
-        add(EntityType.GHAST, heartTable(ItemsAdds.CORAZON_DE_LOS_FANTASMAS.get(), 0.25f));
-        add(EntityType.VEX, heartTable(ItemsAdds.CORAZON_DE_LOS_FANTASMAS.get(), 0.20f));
-
-        add(EntityType.ELDER_GUARDIAN, heartTable(ItemsAdds.CORAZON_DE_LA_ELITE.get(), 0.50f));
-        add(EntityType.WITHER, guaranteedTable(ItemsAdds.CORAZON_DE_LA_ELITE.get(), 1));
-        add(EntityType.ENDER_DRAGON, guaranteedTable(ItemsAdds.CORAZON_DE_LA_ELITE.get(), 2));
-
-        add(EntityType.WARDEN, LootTable.lootTable()
-                .withPool(guaranteedPool(ItemsAdds.BURGER.get(), 6))
-                .withPool(guaranteedPool(ItemsAdds.CORAZON_DE_LA_ELITE.get(), 1))
-        );
     }
 
     private LootTable.Builder burgerTable(float chance) {
         return LootTable.lootTable().withPool(chancePool(ItemsAdds.BURGER.get(), 6, chance));
-    }
-
-    private LootTable.Builder heartTable(ItemLike heart, float chance) {
-        return LootTable.lootTable().withPool(chancePool(heart, 1, chance));
     }
 
     private LootTable.Builder guaranteedTable(ItemLike item, int count) {
@@ -85,16 +67,7 @@ public class UltimateFoodsMobLootTables extends EntityLootSubProvider {
                 EntityType.SNIFFER,
                 EntityType.ARMADILLO,
                 EntityType.VILLAGER,
-                EntityType.WARDEN,
-                EntityType.ZOMBIE,
-                EntityType.SKELETON,
-                EntityType.WITHER_SKELETON,
-                EntityType.PHANTOM,
-                EntityType.GHAST,
-                EntityType.VEX,
-                EntityType.ELDER_GUARDIAN,
-                EntityType.WITHER,
-                EntityType.ENDER_DRAGON
+                EntityType.WARDEN
         );
     }
 }
