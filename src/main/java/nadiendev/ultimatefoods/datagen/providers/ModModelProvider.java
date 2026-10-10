@@ -1,10 +1,7 @@
 package nadiendev.ultimatefoods.datagen.providers;
 
 import nadiendev.ultimatefoods.UltimateFoodsCore;
-import nadiendev.ultimatefoods.registry.BlocksAdds;
-import nadiendev.ultimatefoods.registry.CompressedBlocks;
 import nadiendev.ultimatefoods.registry.ItemsAdds;
-import nadiendev.ultimatefoods.registry.ModOreBlocks;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
@@ -13,9 +10,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.registries.DeferredHolder;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -25,54 +20,24 @@ public class ModModelProvider extends ModelProvider {
         super(output, UltimateFoodsCore.MOD_ID);
     }
 
-    private static List<Block> generatedBlocks() {
-        List<Block> blocks = new ArrayList<>(List.of(
-                BlocksAdds.MUSHASHITE_BLOCK.get(),
-                BlocksAdds.JOANFOITE_BLOCK.get(),
-                BlocksAdds.NADIENITE_BLOCK.get(),
-                BlocksAdds.STEEL_BLOCK.get(),
-                BlocksAdds.SEXY_XD.get(),
-                BlocksAdds.NETHER_STAR_BLOCK.get(),
-                BlocksAdds.ENDER_PEARL_BLOCK.get(),
-                ModOreBlocks.MUSHASHITE_ORE.get(),
-                ModOreBlocks.DEEPSLATE_MUSHASHITE_ORE.get(),
-                ModOreBlocks.JOANFOITE_ORE.get(),
-                ModOreBlocks.DEEPSLATE_JOANFOITE_ORE.get(),
-                ModOreBlocks.NADIENITE_ORE.get(),
-                ModOreBlocks.DEEPSLATE_NADIENITE_ORE.get()
-        ));
-        for (DeferredHolder<Block, Block> compressed : CompressedBlocks.all()) {
-            blocks.add(compressed.get());
-        }
-        return blocks;
-    }
-
     private static List<Item> generatedItems() {
         return List.of(
                 ItemsAdds.RAW_HAMBURGUER_MEAT.get(),
                 ItemsAdds.COOKED_HAMBURGUER_MEAT.get(),
-                ItemsAdds.BURGER.get(),
-                ItemsAdds.NADIENITE_NUGGET.get(),
-                ItemsAdds.NETHERITE_DAGGER.get()
+                ItemsAdds.BURGER.get()
         );
     }
 
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
-        for (Block block : generatedBlocks()) {
-            blockModels.createTrivialCube(block);
-        }
-
         itemModels.generateFlatItem(ItemsAdds.RAW_HAMBURGUER_MEAT.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemsAdds.COOKED_HAMBURGUER_MEAT.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemsAdds.BURGER.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemsAdds.NADIENITE_NUGGET.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemsAdds.NETHERITE_DAGGER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
     }
 
     @Override
     protected Stream<? extends Holder<Block>> getKnownBlocks() {
-        return generatedBlocks().stream().map(Block::builtInRegistryHolder);
+        return Stream.empty();
     }
 
     @Override

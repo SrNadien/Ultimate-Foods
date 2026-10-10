@@ -1,28 +1,4 @@
 {
-  "cajitafeli": {
-    "sounds": [
-      "ultimatefoods:cajitafeli"
-    ],
-    "subtitle": "sound_event.ultimatefoods.cajitafeli"
-  },
-  "cajitafelizmccaco": {
-    "sounds": [
-      "ultimatefoods:cajitafelizmccaco"
-    ],
-    "subtitle": "sound_event.ultimatefoods.cajitafelizmccaco"
-  },
-  "galaxysound": {
-    "sounds": [
-      "ultimatefoods:galaxysound"
-    ],
-    "subtitle": "sound_event.ultimatefoods.galaxysound"
-  },
-  "luzverdeluzrojamakdonald": {
-    "sounds": [
-      "ultimatefoods:luzverdeluzrojamakdonald"
-    ],
-    "subtitle": "sound_event.ultimatefoods.luzverdeluzrojamakdonald"
-  },
   "me_compre_una_cajita_feliz": {
     "sounds": [
       "ultimatefoods:me_compre_una_cajita_feliz"
@@ -58,11 +34,5 @@
       "ultimatefoods:saxofono"
     ],
     "subtitle": "sound_event.ultimatefoods.saxofono"
-  },
-  "the_avengers_theme_song": {
-    "sounds": [
-      "ultimatefoods:the_avengers_theme_song"
-    ],
-    "subtitle": "sound_event.ultimatefoods.the_avengers_theme_song"
   }
 }

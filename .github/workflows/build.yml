@@ -51,7 +51,7 @@ jobs:
         uses: softprops/action-gh-release@v3
         with:
           tag_name: v${{ steps.gradle_props.outputs.release_version }}
-          name: ConstructionWandsRevived ${{ steps.gradle_props.outputs.release_version }}
+          name: Ultimate Foods ${{ steps.gradle_props.outputs.release_version }}
           generate_release_notes: true
           files: |
             build/libs/*.jar

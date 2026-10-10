@@ -40,35 +40,15 @@ ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
-modId = "avaritia"
-type = "optional"
-versionRange = "${avaritia_version_id}"
-ordering = "NONE"
-side = "BOTH"
-
-[[dependencies.${mod_id}]]
 modId = "appleskin"
 type = "required"
 versionRange = "${appleskin_version}"
 ordering = "NONE"
 side = "BOTH"
+
 [[dependencies.${mod_id}]]
-modId = "geckolib"
+modId = "farmersdelight"
 type = "required"
-versionRange = "[${geckolib_version},)"
+versionRange = "[0,)"
 ordering = "AFTER"
-side = "BOTH"
-
-[[dependencies.${mod_id}]]
-modId = "patchouli"
-type = "required"
-versionRange = "[0,)"
-ordering = "NONE"
-side = "BOTH"
-
-[[dependencies.${mod_id}]]
-modId = "exdeorum"
-type = "optional"
-versionRange = "[0,)"
-ordering = "NONE"
 side = "BOTH"

@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "K": "ultimatefoods:netherite_dagger",
+    "K": "#farmersdelight:tools/knives",
     "O": "minecraft:mutton",
     "P": "minecraft:porkchop",
     "V": "minecraft:beef"

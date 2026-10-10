@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "ultimatefoods:item/nadienite_shovel"
-  }
-}

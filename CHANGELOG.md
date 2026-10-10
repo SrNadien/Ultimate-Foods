@@ -1,18 +1,26 @@
 # Changelog
 
-## [2.0.10] — 2026-09-19 — Minecraft 26.1.2
+## [2.0.10] — 2026-10-10 — Minecraft 26.1.2
 
-Texture refresh matching the 1.21.1 release. No code changes on this branch.
+Ultimate Foods is now only the foods and drinks. The equipment and materials moved to **UltimateArmoury: Tools And Weapons**, and the utility items and music discs moved to **Ultimate Tweaks**.
+
+Requires **Java 25** and NeoForge `26.1.2.100`.
+
+### ⚠️ Breaking
+- Everything that is not a food left this mod, together with its item and block ids. Worlds made with 2.0.9 or earlier lose those items.
+- **Farmer's Delight** is now required. On 26.1.2 use the community port *Farmer's Delight 26 Neo Ver*. It is also a dependency of the raw burger meat recipe.
+- AppleSkin stays required.
+
+### ✨ Added
+- The raw burger meat recipe uses any **Farmer's Delight knife** instead of the Netherite Dagger, which now belongs to UltimateArmoury.
 
 ### ⚔️ Changed
-- New item textures for the swords, axes, pickaxes, shovels, hoes, hammers and ingots of the three tiers.
-- The three ingots now share one base with a per-tier hue, so they read as a family.
-- Deepslate ores redrawn to match the vanilla deepslate ore silhouette.
-- Equipment assets redrawn for the three tiers, both `humanoid` and `humanoid_leggings`.
-- New icons for the twelve armor pieces.
+- The mod is reduced to the 14 foods, their 6 eating sounds, the Poop effect and the burger drops of the Sniffer, Armadillo, Villager and Warden.
+- GeckoLib, Patchouli, Ex Deorum and AllTheModium are no longer dependencies.
 
-### 🐛 Fixes
-- The Nadienite ingot model pointed at `green_ingot`, a texture that no longer exists, so the item rendered as a missing model. It now points at `nadienite_ingot`.
+### 🗑️ Removed
+- Materials, ores, armor, tools, weapons, hammers, meshes, compressed blocks and the Nadienite fluid: now in UltimateArmoury.
+- The 21 utility items, the 2 music discs and their sounds: now in Ultimate Tweaks.
 
 ## [2.0.9] — 2026-09-04 — Minecraft 26.1.2
 
