@@ -108,6 +108,7 @@ public final class MateModule {
 
         MateTags.Bloques bloques = new MateTags.Bloques(output, lookup, helper);
         generator.addProvider(event.includeServer(), new NamedProvider("Mate: Tags de bloques", bloques));
+        generator.addProvider(event.includeServer(), new NamedProvider("Mate: Tags de POI", new MateTags.Poi(output, lookup, helper)));
         generator.addProvider(event.includeServer(), new NamedProvider("Mate: Tags de items",
                 new MateTags.Items(output, lookup, bloques.contentsGetter(), helper)));
 

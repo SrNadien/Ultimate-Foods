@@ -2,13 +2,16 @@ package nadiendev.ultimatefoods.argentina.mate.datagen;
 
 import nadiendev.ultimatefoods.UltimateFoodsCore;
 import nadiendev.ultimatefoods.argentina.mate.MateBlocks;
+import nadiendev.ultimatefoods.argentina.aldeano.MateVillagers;
 import nadiendev.ultimatefoods.argentina.mate.MateItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.data.tags.PoiTypeTagsProvider;
 import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.PoiTypeTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -35,6 +38,21 @@ public final class MateTags {
             tag(BlockTags.LEAVES).add(MateBlocks.YERBA_MATE_LEAVES.get());
             tag(BlockTags.MINEABLE_WITH_HOE).add(MateBlocks.YERBA_MATE_LEAVES.get());
             tag(BlockTags.SAPLINGS).add(MateBlocks.YERBA_MATE_SAPLING.get());
+        }
+    }
+
+    /**
+     * Sin esto ningun aldeano toma la yerbera como puesto de trabajo: desde 1.20.2 los aldeanos solo
+     * buscan puestos que esten en el tag minecraft:acquirable_job_site.
+     */
+    public static class Poi extends PoiTypeTagsProvider {
+        public Poi(PackOutput output, CompletableFuture<HolderLookup.Provider> lookup, ExistingFileHelper helper) {
+            super(output, lookup, UltimateFoodsCore.MOD_ID, helper);
+        }
+
+        @Override
+        protected void addTags(HolderLookup.Provider provider) {
+            tag(PoiTypeTags.ACQUIRABLE_JOB_SITE).add(MateVillagers.YERBERA_POI.getKey());
         }
     }
 
