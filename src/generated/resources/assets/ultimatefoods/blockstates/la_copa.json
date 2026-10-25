@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "ultimatefoods:block/argentina/la_copa",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "ultimatefoods:block/argentina/la_copa"
+    },
+    "facing=south": {
+      "model": "ultimatefoods:block/argentina/la_copa",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ultimatefoods:block/argentina/la_copa",
+      "y": 270
+    }
+  }
+}

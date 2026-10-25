@@ -18,12 +18,12 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 public class MateItemModels extends ItemModelProvider {
 
     private static final String[] PLANOS = {
-            "yerba_mate_leaf", "yerba_mate_leaf_dried", "yerba_mate", "bombilla", "yuyos"
+            "yerba_mate_leaf", "yerba_mate_leaf_dried", "yerba_mate", "yuyos"
     };
 
     /** Ids con modelo 3D hecho a mano (agente C). */
     private static final String[] TRES_D = {
-            "yerba_verdeflor", "yerbera", "azucarera", "mate", "mate_con_yerba", "mate_amargo", "mate_dulce",
+            "yerba_verdeflor", "bombilla", "yerbera", "azucarera", "mate", "mate_con_yerba", "mate_amargo", "mate_dulce",
             "mate_de_leche", "mate_con_yuyos", "mate_lavado", "pava", "pava_con_agua", "pava_caliente"
     };
 

@@ -34,5 +34,11 @@
       "ultimatefoods:saxofono"
     ],
     "subtitle": "sound_event.ultimatefoods.saxofono"
+  },
+  "vendo_carros": {
+    "sounds": [
+      "ultimatefoods:vendo_carros"
+    ],
+    "subtitle": "sound_event.ultimatefoods.vendo_carros"
   }
 }
