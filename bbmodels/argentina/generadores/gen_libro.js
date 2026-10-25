@@ -1,3 +1,4 @@
+// OJO: el modelo final del libro se pulio a mano en Blockbench (marcador, lomo redondeado, cabezales). Correr este script lo pisa.
 // El libro guia ("Recetas De La Buela"): tapa dura celeste y blanca, como la bandera, con el titulo y las paginas a la vista.
 // Inspirado un 10 % en un libro de recetas argentinas de tapa albiceleste; el texto y el dibujo son propios.
 //   node bbmodels/argentina/generadores/gen_libro.js
