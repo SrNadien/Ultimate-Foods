@@ -103,14 +103,26 @@ public class MateRecipes extends RecipeProvider {
                 .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
                 .save(out, rl("pava"));
 
+        // Bolsitas de tela con base de cuero: la yerbera con lana verde, la azucarera con lana blanca.
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, MateItems.YERBERA.get())
-                .pattern("PBP")
-                .pattern("P P")
-                .pattern("PPP")
-                .define('P', ItemTags.PLANKS)
-                .define('B', Items.BOWL)
-                .unlockedBy("has_bowl", has(Items.BOWL))
+                .pattern(" S ")
+                .pattern("WLW")
+                .pattern("LLL")
+                .define('S', Items.STRING)
+                .define('W', Items.GREEN_WOOL)
+                .define('L', Items.LEATHER)
+                .unlockedBy("has_leather", has(Items.LEATHER))
                 .save(out, rl("yerbera"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, MateItems.AZUCARERA.get())
+                .pattern(" S ")
+                .pattern("WLW")
+                .pattern("LLL")
+                .define('S', Items.STRING)
+                .define('W', Items.WHITE_WOOL)
+                .define('L', Items.LEATHER)
+                .unlockedBy("has_leather", has(Items.LEATHER))
+                .save(out, rl("azucarera"));
 
         // ---- yuyos: unas hierbitas del campo ----
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MateItems.YUYOS.get(), 2)

@@ -36,6 +36,7 @@ public class MateBlockStates extends BlockStateProvider {
         simpleBlock(MateBlocks.YERBA_MATE_SAPLING.get(),
                 models().cross("block/argentina/yerba_mate_sapling", tex("yerba_mate_sapling")).renderType("cutout"));
 
-        simpleBlock(MateBlocks.YERBERA.get(), new ModelFile.UncheckedModelFile(modLoc("block/argentina/yerbera")));
+        horizontalBlock(MateBlocks.YERBERA.get(), new ModelFile.UncheckedModelFile(modLoc("block/argentina/yerbera")));
+        horizontalBlock(MateBlocks.AZUCARERA.get(), new ModelFile.UncheckedModelFile(modLoc("block/argentina/azucarera")));
     }
 }

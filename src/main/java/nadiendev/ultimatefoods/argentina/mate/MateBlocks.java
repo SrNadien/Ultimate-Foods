@@ -1,6 +1,7 @@
 package nadiendev.ultimatefoods.argentina.mate;
 
 import nadiendev.ultimatefoods.UltimateFoodsCore;
+import nadiendev.ultimatefoods.argentina.mate.block.AzucareraBlock;
 import nadiendev.ultimatefoods.argentina.mate.block.YerbaLeavesBlock;
 import nadiendev.ultimatefoods.argentina.mate.block.YerbaLogBlock;
 import nadiendev.ultimatefoods.argentina.mate.block.YerberaBlock;
@@ -55,8 +56,17 @@ public final class MateBlocks {
             YerberaBlock::new,
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
-                    .strength(1.5F)
-                    .sound(SoundType.WOOD)
+                    .strength(0.8F)
+                    .sound(SoundType.WOOL)
+                    .noOcclusion()
+                    .ignitedByLava());
+
+    public static final DeferredBlock<AzucareraBlock> AZUCARERA = BLOCKS.registerBlock("azucarera",
+            AzucareraBlock::new,
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_LIGHT_GREEN)
+                    .strength(0.8F)
+                    .sound(SoundType.WOOL)
                     .noOcclusion()
                     .ignitedByLava());
 

@@ -1,6 +1,7 @@
 package nadiendev.ultimatefoods.argentina.mate;
 
 import nadiendev.ultimatefoods.UltimateFoodsCore;
+import nadiendev.ultimatefoods.argentina.mate.item.AzucareraItem;
 import nadiendev.ultimatefoods.argentina.mate.item.MateCebableItem;
 import nadiendev.ultimatefoods.argentina.mate.item.MateCebadoItem;
 import nadiendev.ultimatefoods.argentina.mate.item.PavaCalienteItem;
@@ -32,6 +33,9 @@ public final class MateItems {
     // ---- yerbera ----
     public static final DeferredItem<YerberaItem> YERBERA = ITEMS.registerItem("yerbera",
             props -> new YerberaItem(MateBlocks.YERBERA.get(), props));
+
+    public static final DeferredItem<AzucareraItem> AZUCARERA = ITEMS.registerItem("azucarera",
+            props -> new AzucareraItem(MateBlocks.AZUCARERA.get(), props));
 
     // ---- el mate, en todos sus estados ----
     public static final DeferredItem<Item> MATE = ITEMS.registerItem("mate", Item::new,

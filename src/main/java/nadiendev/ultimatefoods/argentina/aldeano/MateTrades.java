@@ -55,6 +55,7 @@ public final class MateTrades {
         List<VillagerTrades.ItemListing> n4 = trades.get(4);
         n4.add(compra(MateItems.YERBA_MATE.get(), 12, 2, 12, 15));
         n4.add(venta(8, MateItems.YERBERA.get(), 1, 4, 15));
+        n4.add(venta(6, MateItems.AZUCARERA.get(), 1, 4, 15));
 
         // Nivel 5: Maestro
         List<VillagerTrades.ItemListing> n5 = trades.get(5);

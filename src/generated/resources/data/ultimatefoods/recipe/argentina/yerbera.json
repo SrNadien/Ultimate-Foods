@@ -2,17 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
-      "item": "minecraft:bowl"
+    "L": {
+      "item": "minecraft:leather"
     },
-    "P": {
-      "tag": "minecraft:planks"
+    "S": {
+      "item": "minecraft:string"
+    },
+    "W": {
+      "item": "minecraft:green_wool"
     }
   },
   "pattern": [
-    "PBP",
-    "P P",
-    "PPP"
+    " S ",
+    "WLW",
+    "LLL"
   ],
   "result": {
     "count": 1,

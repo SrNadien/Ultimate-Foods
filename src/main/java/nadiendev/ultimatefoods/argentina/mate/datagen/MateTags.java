@@ -31,7 +31,7 @@ public final class MateTags {
             Block log = MateBlocks.YERBA_MATE_LOG.get();
             tag(BlockTags.LOGS).add(log);
             tag(BlockTags.LOGS_THAT_BURN).add(log);
-            tag(BlockTags.MINEABLE_WITH_AXE).add(log, MateBlocks.YERBERA.get());
+            tag(BlockTags.MINEABLE_WITH_AXE).add(log);
             tag(BlockTags.LEAVES).add(MateBlocks.YERBA_MATE_LEAVES.get());
             tag(BlockTags.MINEABLE_WITH_HOE).add(MateBlocks.YERBA_MATE_LEAVES.get());
             tag(BlockTags.SAPLINGS).add(MateBlocks.YERBA_MATE_SAPLING.get());

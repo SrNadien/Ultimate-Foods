@@ -19,19 +19,15 @@
   "item.ultimatefoods.pava_caliente": "Hot Pava",
   "item.ultimatefoods.bombilla": "Bombilla",
   "item.ultimatefoods.yuyos": "Yuyos",
-
   "effect.ultimatefoods.tranquilidad": "Tranquility",
   "effect.ultimatefoods.mandale_mecha": "Out of my way!",
   "effect.ultimatefoods.desarrollo": "Development",
   "effect.ultimatefoods.bonanza": "Prosperity",
-
   "entity.minecraft.villager.ultimatefoods.yerbatero": "Yerba Mate Merchant",
-
   "mate.ultimatefoods.sabor.amargo": "Bitter",
   "mate.ultimatefoods.sabor.dulce": "Sweet",
   "mate.ultimatefoods.sabor.leche": "Milk",
   "mate.ultimatefoods.sabor.yuyos": "Herbal",
-
   "tooltip.ultimatefoods.mate.sabor": "Flavor: %s",
   "tooltip.ultimatefoods.mate.cebadas": "Brews used: %s/%s",
   "tooltip.ultimatefoods.mate.cebar": "Hold a hot pava in the other hand and right-click to brew it (you need a bombilla).",
@@ -40,9 +36,13 @@
   "tooltip.ultimatefoods.pava.calentar": "Right-click a lit campfire or furnace to heat the water.",
   "tooltip.ultimatefoods.pava.cebadas": "Hot water: %s/%s",
   "tooltip.ultimatefoods.pava.cebar": "Hold a mate with yerba in the other hand and right-click to brew it.",
-
   "message.ultimatefoods.mate.sin_bombilla": "You need a bombilla in your inventory.",
   "message.ultimatefoods.yerbera.llena": "The yerbera is full.",
   "message.ultimatefoods.yerbera.vacia": "The yerbera is empty.",
-  "message.ultimatefoods.yerbera.porciones": "Yerba: %s/%s servings"
+  "message.ultimatefoods.yerbera.porciones": "Yerba: %s/%s servings",
+  "block.ultimatefoods.azucarera": "Azucarera",
+  "message.ultimatefoods.azucarera.llena": "The azucarera is full.",
+  "message.ultimatefoods.azucarera.vacia": "The azucarera is empty.",
+  "message.ultimatefoods.azucarera.ya_dulce": "This mate is already sweet.",
+  "message.ultimatefoods.azucarera.porciones": "Sugar: %s/%s servings"
 }

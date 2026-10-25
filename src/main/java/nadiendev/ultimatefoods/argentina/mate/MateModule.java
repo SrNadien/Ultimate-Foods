@@ -71,6 +71,7 @@ public final class MateModule {
         output.accept(MateItems.YERBA_VERDEFLOR.get());
 
         output.accept(MateItems.YERBERA.get());
+        output.accept(MateItems.AZUCARERA.get());
 
         output.accept(MateItems.MATE.get());
         output.accept(MateItems.MATE_CON_YERBA.get());

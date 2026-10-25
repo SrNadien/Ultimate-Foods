@@ -51,12 +51,13 @@ public class MateBlockLoot extends BlockLootSubProvider {
                         .add(applyExplosionCondition(hojas, LootItem.lootTableItem(MateItems.YERBA_MATE_LEAF.get()))
                                 .when(BonusLevelTableCondition.bonusLevelFlatChance(fortuna, CHANCE_HOJA)))));
 
-        // La yerbera conserva la yerba que tenga adentro.
-        Block yerbera = MateBlocks.YERBERA.get();
-        add(yerbera, LootTable.lootTable().withPool(applyExplosionCondition(yerbera, LootPool.lootPool()
-                .setRolls(ConstantValue.exactly(1.0F))
-                .add(LootItem.lootTableItem(yerbera)
-                        .apply(CopyComponentsFunction.copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY)
-                                .include(MateComponents.PORCIONES.get()))))));
+        // La yerbera y la azucarera conservan lo que tengan adentro.
+        for (Block bolsa : new Block[]{MateBlocks.YERBERA.get(), MateBlocks.AZUCARERA.get()}) {
+            add(bolsa, LootTable.lootTable().withPool(applyExplosionCondition(bolsa, LootPool.lootPool()
+                    .setRolls(ConstantValue.exactly(1.0F))
+                    .add(LootItem.lootTableItem(bolsa)
+                            .apply(CopyComponentsFunction.copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY)
+                                    .include(MateComponents.PORCIONES.get()))))));
+        }
     }
 }

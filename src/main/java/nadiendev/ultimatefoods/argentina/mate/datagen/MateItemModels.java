@@ -23,7 +23,7 @@ public class MateItemModels extends ItemModelProvider {
 
     /** Ids con modelo 3D hecho a mano (agente C). */
     private static final String[] TRES_D = {
-            "yerba_verdeflor", "yerbera", "mate", "mate_con_yerba", "mate_amargo", "mate_dulce",
+            "yerba_verdeflor", "yerbera", "azucarera", "mate", "mate_con_yerba", "mate_amargo", "mate_dulce",
             "mate_de_leche", "mate_con_yuyos", "mate_lavado", "pava", "pava_con_agua", "pava_caliente"
     };
 

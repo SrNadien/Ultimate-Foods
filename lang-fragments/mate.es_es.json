@@ -19,19 +19,15 @@
   "item.ultimatefoods.pava_caliente": "Pava caliente",
   "item.ultimatefoods.bombilla": "Bombilla",
   "item.ultimatefoods.yuyos": "Yuyos",
-
   "effect.ultimatefoods.tranquilidad": "Tranquilidad",
   "effect.ultimatefoods.mandale_mecha": "Mandale mecha",
   "effect.ultimatefoods.desarrollo": "Desarrollo",
   "effect.ultimatefoods.bonanza": "Bonanza",
-
   "entity.minecraft.villager.ultimatefoods.yerbatero": "Yerbatero",
-
   "mate.ultimatefoods.sabor.amargo": "Amargo",
   "mate.ultimatefoods.sabor.dulce": "Dulce",
   "mate.ultimatefoods.sabor.leche": "De leche",
   "mate.ultimatefoods.sabor.yuyos": "Con yuyos",
-
   "tooltip.ultimatefoods.mate.sabor": "Sabor: %s",
   "tooltip.ultimatefoods.mate.cebadas": "Cebadas usadas: %s/%s",
   "tooltip.ultimatefoods.mate.cebar": "Con una pava caliente en la otra mano, click derecho para cebarlo (hace falta una bombilla).",
@@ -40,9 +36,13 @@
   "tooltip.ultimatefoods.pava.calentar": "Click derecho a una fogata o un horno encendido para calentar el agua.",
   "tooltip.ultimatefoods.pava.cebadas": "Agua caliente: %s/%s",
   "tooltip.ultimatefoods.pava.cebar": "Con un mate con yerba en la otra mano, click derecho para cebarlo.",
-
   "message.ultimatefoods.mate.sin_bombilla": "Te falta la bombilla en el inventario.",
   "message.ultimatefoods.yerbera.llena": "La yerbera está llena.",
   "message.ultimatefoods.yerbera.vacia": "La yerbera está vacía.",
-  "message.ultimatefoods.yerbera.porciones": "Yerba: %s/%s porciones"
+  "message.ultimatefoods.yerbera.porciones": "Yerba: %s/%s porciones",
+  "block.ultimatefoods.azucarera": "Azucarera",
+  "message.ultimatefoods.azucarera.llena": "La azucarera está llena.",
+  "message.ultimatefoods.azucarera.vacia": "La azucarera está vacía.",
+  "message.ultimatefoods.azucarera.ya_dulce": "Este mate ya está dulce.",
+  "message.ultimatefoods.azucarera.porciones": "Azúcar: %s/%s porciones"
 }

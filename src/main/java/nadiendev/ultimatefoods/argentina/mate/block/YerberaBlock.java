@@ -29,7 +29,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
  * mate vacio en la mano, sirve una porcion y te lo devuelve con yerba. Es el puesto
  * de trabajo del yerbatero.
  */
-public class YerberaBlock extends BaseEntityBlock {
+public class YerberaBlock extends BolsaBlock {
 
     public static final MapCodec<YerberaBlock> CODEC = simpleCodec(YerberaBlock::new);
 
@@ -40,10 +40,8 @@ public class YerberaBlock extends BaseEntityBlock {
     /** Tope de la yerbera: cuatro paquetes. */
     public static final int MAX_PORCIONES = 64;
 
-    private static final VoxelShape SHAPE = box(3, 0, 3, 13, 11, 13);
-
     public YerberaBlock(Properties properties) {
-        super(properties);
+        super(properties, MateShapes.YERBERA);
     }
 
     @Override
@@ -54,16 +52,6 @@ public class YerberaBlock extends BaseEntityBlock {
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
         return new YerberaBlockEntity(pos, state);
-    }
-
-    @Override
-    protected RenderShape getRenderShape(BlockState state) {
-        return RenderShape.MODEL;
-    }
-
-    @Override
-    protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return SHAPE;
     }
 
     @Override
