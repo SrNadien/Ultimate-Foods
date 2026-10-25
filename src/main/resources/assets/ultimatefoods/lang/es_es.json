@@ -97,7 +97,7 @@
   "jei.ultimatefoods.doritos.info": "Unos Dorilocos???",
   "jei.ultimatefoods.netherite_dagger.category": "Ritual de la Daga de Netherite",
   "jei.ultimatefoods.netherite_dagger.hint1": "Sujeta una Espada de Netherite y haz",
-"jei.ultimatefoods.netherite_dagger.hint2": "clic derecho en un Bloque de Netherite.",
+  "jei.ultimatefoods.netherite_dagger.hint2": "clic derecho en un Bloque de Netherite.",
   "jei.ultimatefoods.netherite_dagger.info": "Sujeta una Espada de Netherite y haz clic derecho sobre un Bloque de Netherite para obtener esta daga.",
   "tooltip.ultimatefoods.unbreakable": "¡Indestructible!",
   "sound_event.ultimatefoods.cajitafeli": "Sonido de Cajita Feliz",
@@ -282,5 +282,6 @@
   "item.ultimatefoods.compressed_vibranium_hammer": "Martillo Comprimido de Vibranium",
   "item.ultimatefoods.unobtainium_hammer": "Martillo de Unobtainium",
   "item.ultimatefoods.compressed_unobtainium_hammer": "Martillo Comprimido de Unobtainium",
-  "tooltip.ultimatefoods.quantity": "%s bloques"
+  "tooltip.ultimatefoods.quantity": "%s bloques",
+  "itemGroup.ultimatefoods.argentina_delight": "Argentina Delight"
 }

@@ -1,0 +1,22 @@
+package nadiendev.ultimatefoods.argentina;
+
+import nadiendev.ultimatefoods.argentina.comida.ComidaModule;
+import nadiendev.ultimatefoods.argentina.mate.MateModule;
+import net.neoforged.bus.api.IEventBus;
+
+/**
+ * Contenido argentino del mod: la pestaña "Argentina Delight" y sus dos modulos.
+ * Cada modulo tiene un dueño y se registra solo desde aca, asi que ninguno
+ * necesita tocar archivos compartidos.
+ */
+public final class ArgentinaDelight {
+
+    private ArgentinaDelight() {
+    }
+
+    public static void register(IEventBus modEventBus) {
+        MateModule.register(modEventBus);
+        ComidaModule.register(modEventBus);
+        ArgentinaTab.register(modEventBus);
+    }
+}

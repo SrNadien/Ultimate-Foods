@@ -282,5 +282,6 @@
   "item.ultimatefoods.compressed_vibranium_hammer": "Compressed Vibranium Hammer",
   "item.ultimatefoods.unobtainium_hammer": "Unobtainium Hammer",
   "item.ultimatefoods.compressed_unobtainium_hammer": "Compressed Unobtainium Hammer",
-  "tooltip.ultimatefoods.quantity": "%s Blocks"
+  "tooltip.ultimatefoods.quantity": "%s Blocks",
+  "itemGroup.ultimatefoods.argentina_delight": "Argentina Delight"
 }
