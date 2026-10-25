@@ -1,0 +1,364 @@
+{
+  "variants": {
+    "comida=alfajor,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/alfajor",
+      "y": 90
+    },
+    "comida=alfajor,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/alfajor"
+    },
+    "comida=alfajor,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/alfajor",
+      "y": 180
+    },
+    "comida=alfajor,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/alfajor",
+      "y": 270
+    },
+    "comida=andes,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/andes",
+      "y": 90
+    },
+    "comida=andes,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/andes"
+    },
+    "comida=andes,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/andes",
+      "y": 180
+    },
+    "comida=andes,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/andes",
+      "y": 270
+    },
+    "comida=asado,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/asado",
+      "y": 90
+    },
+    "comida=asado,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/asado"
+    },
+    "comida=asado,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/asado",
+      "y": 180
+    },
+    "comida=asado,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/asado",
+      "y": 270
+    },
+    "comida=choripan,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/choripan",
+      "y": 90
+    },
+    "comida=choripan,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/choripan"
+    },
+    "comida=choripan,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/choripan",
+      "y": 180
+    },
+    "comida=choripan,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/choripan",
+      "y": 270
+    },
+    "comida=chorizo_asado,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/chorizo_asado",
+      "y": 90
+    },
+    "comida=chorizo_asado,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/chorizo_asado"
+    },
+    "comida=chorizo_asado,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/chorizo_asado",
+      "y": 180
+    },
+    "comida=chorizo_asado,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/chorizo_asado",
+      "y": 270
+    },
+    "comida=empanada,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/empanada",
+      "y": 90
+    },
+    "comida=empanada,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/empanada"
+    },
+    "comida=empanada,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/empanada",
+      "y": 180
+    },
+    "comida=empanada,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/empanada",
+      "y": 270
+    },
+    "comida=fernet_branca,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/fernet_branca",
+      "y": 90
+    },
+    "comida=fernet_branca,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/fernet_branca"
+    },
+    "comida=fernet_branca,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/fernet_branca",
+      "y": 180
+    },
+    "comida=fernet_branca,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/fernet_branca",
+      "y": 270
+    },
+    "comida=flan_con_dulce_de_leche,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/flan_con_dulce_de_leche",
+      "y": 90
+    },
+    "comida=flan_con_dulce_de_leche,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/flan_con_dulce_de_leche"
+    },
+    "comida=flan_con_dulce_de_leche,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/flan_con_dulce_de_leche",
+      "y": 180
+    },
+    "comida=flan_con_dulce_de_leche,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/flan_con_dulce_de_leche",
+      "y": 270
+    },
+    "comida=fugazzeta,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/fugazzeta",
+      "y": 90
+    },
+    "comida=fugazzeta,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/fugazzeta"
+    },
+    "comida=fugazzeta,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/fugazzeta",
+      "y": 180
+    },
+    "comida=fugazzeta,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/fugazzeta",
+      "y": 270
+    },
+    "comida=guiso,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/guiso",
+      "y": 90
+    },
+    "comida=guiso,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/guiso"
+    },
+    "comida=guiso,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/guiso",
+      "y": 180
+    },
+    "comida=guiso,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/guiso",
+      "y": 270
+    },
+    "comida=locro,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/locro",
+      "y": 90
+    },
+    "comida=locro,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/locro"
+    },
+    "comida=locro,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/locro",
+      "y": 180
+    },
+    "comida=locro,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/locro",
+      "y": 270
+    },
+    "comida=medialuna,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/medialuna",
+      "y": 90
+    },
+    "comida=medialuna,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/medialuna"
+    },
+    "comida=medialuna,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/medialuna",
+      "y": 180
+    },
+    "comida=medialuna,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/medialuna",
+      "y": 270
+    },
+    "comida=mega_dibu,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/mega_dibu",
+      "y": 90
+    },
+    "comida=mega_dibu,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/mega_dibu"
+    },
+    "comida=mega_dibu,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/mega_dibu",
+      "y": 180
+    },
+    "comida=mega_dibu,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/mega_dibu",
+      "y": 270
+    },
+    "comida=milanesa_de_carne,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/milanesa_de_carne",
+      "y": 90
+    },
+    "comida=milanesa_de_carne,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/milanesa_de_carne"
+    },
+    "comida=milanesa_de_carne,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/milanesa_de_carne",
+      "y": 180
+    },
+    "comida=milanesa_de_carne,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/milanesa_de_carne",
+      "y": 270
+    },
+    "comida=milanesa_de_pollo,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/milanesa_de_pollo",
+      "y": 90
+    },
+    "comida=milanesa_de_pollo,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/milanesa_de_pollo"
+    },
+    "comida=milanesa_de_pollo,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/milanesa_de_pollo",
+      "y": 180
+    },
+    "comida=milanesa_de_pollo,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/milanesa_de_pollo",
+      "y": 270
+    },
+    "comida=noquis,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/noquis",
+      "y": 90
+    },
+    "comida=noquis,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/noquis"
+    },
+    "comida=noquis,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/noquis",
+      "y": 180
+    },
+    "comida=noquis,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/noquis",
+      "y": 270
+    },
+    "comida=panqueque_con_dulce_de_leche,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/panqueque_con_dulce_de_leche",
+      "y": 90
+    },
+    "comida=panqueque_con_dulce_de_leche,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/panqueque_con_dulce_de_leche"
+    },
+    "comida=panqueque_con_dulce_de_leche,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/panqueque_con_dulce_de_leche",
+      "y": 180
+    },
+    "comida=panqueque_con_dulce_de_leche,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/panqueque_con_dulce_de_leche",
+      "y": 270
+    },
+    "comida=pepas,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/pepas",
+      "y": 90
+    },
+    "comida=pepas,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/pepas"
+    },
+    "comida=pepas,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/pepas",
+      "y": 180
+    },
+    "comida=pepas,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/pepas",
+      "y": 270
+    },
+    "comida=pitusas,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/pitusas",
+      "y": 90
+    },
+    "comida=pitusas,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/pitusas"
+    },
+    "comida=pitusas,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/pitusas",
+      "y": 180
+    },
+    "comida=pitusas,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/pitusas",
+      "y": 270
+    },
+    "comida=provoleta,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/provoleta",
+      "y": 90
+    },
+    "comida=provoleta,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/provoleta"
+    },
+    "comida=provoleta,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/provoleta",
+      "y": 180
+    },
+    "comida=provoleta,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/provoleta",
+      "y": 270
+    },
+    "comida=quilmes,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/quilmes",
+      "y": 90
+    },
+    "comida=quilmes,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/quilmes"
+    },
+    "comida=quilmes,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/quilmes",
+      "y": 180
+    },
+    "comida=quilmes,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/quilmes",
+      "y": 270
+    },
+    "comida=sanguche_de_milanesa,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/sanguche_de_milanesa",
+      "y": 90
+    },
+    "comida=sanguche_de_milanesa,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/sanguche_de_milanesa"
+    },
+    "comida=sanguche_de_milanesa,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/sanguche_de_milanesa",
+      "y": 180
+    },
+    "comida=sanguche_de_milanesa,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/sanguche_de_milanesa",
+      "y": 270
+    },
+    "comida=stella_artois,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/stella_artois",
+      "y": 90
+    },
+    "comida=stella_artois,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/stella_artois"
+    },
+    "comida=stella_artois,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/stella_artois",
+      "y": 180
+    },
+    "comida=stella_artois,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/stella_artois",
+      "y": 270
+    },
+    "comida=tortafrita,facing=east": {
+      "model": "ultimatefoods:block/argentina/comida/tortafrita",
+      "y": 90
+    },
+    "comida=tortafrita,facing=north": {
+      "model": "ultimatefoods:block/argentina/comida/tortafrita"
+    },
+    "comida=tortafrita,facing=south": {
+      "model": "ultimatefoods:block/argentina/comida/tortafrita",
+      "y": 180
+    },
+    "comida=tortafrita,facing=west": {
+      "model": "ultimatefoods:block/argentina/comida/tortafrita",
+      "y": 270
+    }
+  }
+}

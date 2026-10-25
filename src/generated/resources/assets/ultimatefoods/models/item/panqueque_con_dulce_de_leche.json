@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "ultimatefoods:item/argentina/panqueque_con_dulce_de_leche"
-  }
+  "parent": "ultimatefoods:block/argentina/comida/panqueque_con_dulce_de_leche"
 }

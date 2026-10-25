@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "ultimatefoods:item/argentina/tortafrita"
-  }
+  "parent": "ultimatefoods:block/argentina/comida/tortafrita"
 }

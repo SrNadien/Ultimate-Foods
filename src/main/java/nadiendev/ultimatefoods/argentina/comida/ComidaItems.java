@@ -1,6 +1,8 @@
 package nadiendev.ultimatefoods.argentina.comida;
 
 import nadiendev.ultimatefoods.UltimateFoodsCore;
+import nadiendev.ultimatefoods.argentina.comida.colocada.Comida;
+import nadiendev.ultimatefoods.argentina.comida.colocada.ComidaColocableItem;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -13,10 +15,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
@@ -145,7 +149,7 @@ public final class ComidaItems {
     // saturacion y da los mejores efectos del mod, pero el empacho dura bastante.
 
     public static final DeferredItem<Item> MEGA_DIBU = track("mega_dibu", ITEMS.registerItem("mega_dibu",
-            props -> new Item(props
+            props -> create("mega_dibu", props
                     .stacksTo(16)
                     .rarity(Rarity.EPIC)
                     .food(new FoodProperties.Builder()
@@ -158,7 +162,7 @@ public final class ComidaItems {
                             .effect(effect(ComidaEffects.ATAJAPENALES, 300, 0), 1.0f)
                             .effect(effect(ComidaEffects.PANZA_LLENA, 300, 1), 1.0f)
                             .effect(effect(ComidaEffects.EMPACHO, 240, 0), 1.0f)
-                            .build()))));
+                            .build()), null, UseAnim.EAT)));
 
     // ---- Bebidas (devuelven la botella de vidrio) -------------------------------------------------
 
@@ -213,7 +217,7 @@ public final class ComidaItems {
                                            java.util.function.UnaryOperator<FoodProperties.Builder> extras) {
         FoodProperties.Builder builder = new FoodProperties.Builder().nutrition(nutrition).saturationModifier(saturation);
         FoodProperties properties = extras.apply(builder).build();
-        return track(id, ITEMS.registerItem(id, props -> new Item(props.food(properties))));
+        return track(id, ITEMS.registerItem(id, props -> create(id, props.food(properties), null, UseAnim.EAT)));
     }
 
     private static DeferredItem<Item> bowl(String id, int nutrition, float saturation,
@@ -221,7 +225,7 @@ public final class ComidaItems {
         FoodProperties.Builder builder = new FoodProperties.Builder().nutrition(nutrition).saturationModifier(saturation);
         FoodProperties properties = extras.apply(builder).build();
         return track(id, ITEMS.registerItem(id,
-                props -> new ContainerFoodItem(props.stacksTo(16).food(properties), Items.BOWL, UseAnim.EAT)));
+                props -> create(id, props.stacksTo(16).food(properties), Items.BOWL, UseAnim.EAT)));
     }
 
     private static DeferredItem<Item> drink(String id, int nutrition, float saturation, Rarity rarity,
@@ -229,8 +233,17 @@ public final class ComidaItems {
         FoodProperties.Builder builder = new FoodProperties.Builder()
                 .nutrition(nutrition).saturationModifier(saturation).alwaysEdible();
         FoodProperties properties = extras.apply(builder).build();
-        return track(id, ITEMS.registerItem(id, props -> new ContainerFoodItem(
-                props.stacksTo(16).rarity(rarity).food(properties), Items.GLASS_BOTTLE, UseAnim.DRINK)));
+        return track(id, ITEMS.registerItem(id, props -> create(
+                id, props.stacksTo(16).rarity(rarity).food(properties), Items.GLASS_BOTTLE, UseAnim.DRINK)));
+    }
+
+    /**
+     * Las comidas de {@link Comida} son colocables como bloque (y devuelven su recipiente al
+     * consumirse); el resto de los ingredientes comestibles son items comunes.
+     */
+    private static Item create(String id, Item.Properties props, @Nullable ItemLike container, UseAnim animation) {
+        Comida comida = Comida.byId(id);
+        return comida == null ? new Item(props) : new ComidaColocableItem(props, comida, container, animation);
     }
 
     private static <T extends Item> DeferredItem<T> track(String id, DeferredItem<T> item) {
