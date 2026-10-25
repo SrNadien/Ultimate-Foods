@@ -13,7 +13,7 @@ const ES_BASE = name => /^(plato|tabla|papel)(_|$)/.test(name || '');
 
 fs.mkdirSync(ITEMS, { recursive: true });
 let quitados = 0;
-for (const archivo of fs.readdirSync(BLOQUES).filter(f => f.endsWith('.json') && !f.includes('_b'))) {
+for (const archivo of fs.readdirSync(BLOQUES).filter(f => f.endsWith('.json') && !/_b[0-9]\.json$/.test(f))) {
   const modelo = JSON.parse(fs.readFileSync(path.join(BLOQUES, archivo), 'utf8'));
   const comida = modelo.elements.filter(e => !ES_BASE(e.name));
   const bajar = comida.length < modelo.elements.length
