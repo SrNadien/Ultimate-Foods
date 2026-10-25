@@ -54,7 +54,9 @@ public final class ColocadaData {
                 pool.add(LootItem.lootTableItem(comida.item()).when(
                         LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
                                 .setProperties(StatePropertiesPredicate.Builder.properties()
-                                        .hasProperty(ComidaColocadaBlock.COMIDA, comida))));
+                                        .hasProperty(ComidaColocadaBlock.COMIDA, comida)
+                                        // Una comida empezada no suelta el item entero.
+                                        .hasProperty(ComidaColocadaBlock.BOCADOS, 0))));
             }
             add(block, LootTable.lootTable().withPool(pool));
         }
@@ -81,7 +83,7 @@ public final class ColocadaData {
             getVariantBuilder(ColocadaRegistry.COMIDA_COLOCADA.get()).forAllStates(state -> {
                 Comida comida = state.getValue(ComidaColocadaBlock.COMIDA);
                 return ConfiguredModel.builder()
-                        .modelFile(new ModelFile.UncheckedModelFile(comida.blockModel()))
+                        .modelFile(new ModelFile.UncheckedModelFile(comida.blockModel(state.getValue(ComidaColocadaBlock.BOCADOS))))
                         .rotationY(Comida.rotationY(state.getValue(ComidaColocadaBlock.FACING)))
                         .build();
             });

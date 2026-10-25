@@ -10,6 +10,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -23,6 +24,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -44,10 +46,12 @@ public class ComidaColocadaBlock extends Block {
     public static final MapCodec<ComidaColocadaBlock> CODEC = simpleCodec(ComidaColocadaBlock::new);
     public static final EnumProperty<Comida> COMIDA = EnumProperty.create("comida", Comida.class);
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+    /** Bocados ya sacados (solo lo usan las comidas que se comen por partes, como el asado). */
+    public static final IntegerProperty BOCADOS = IntegerProperty.create("bocados", 0, 3);
 
     public ComidaColocadaBlock(Properties properties) {
         super(properties);
-        registerDefaultState(stateDefinition.any().setValue(COMIDA, Comida.ASADO).setValue(FACING, Direction.NORTH));
+        registerDefaultState(stateDefinition.any().setValue(COMIDA, Comida.ASADO).setValue(FACING, Direction.NORTH).setValue(BOCADOS, 0));
     }
 
     @Override
@@ -57,7 +61,7 @@ public class ComidaColocadaBlock extends Block {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(COMIDA, FACING);
+        builder.add(COMIDA, FACING, BOCADOS);
     }
 
     /** Estado para colocar {@code comida} mirando hacia quien la pone. */
@@ -114,6 +118,10 @@ public class ComidaColocadaBlock extends Block {
 
         // Si el jugador esta agachado aca solo llega con las dos manos vacias: la recoge.
         if (player.isSecondaryUseActive()) {
+            if (state.getValue(BOCADOS) > 0) {
+                // Ya empezada: no se levanta entera (seria duplicar lo que ya se comio).
+                return InteractionResult.sidedSuccess(level.isClientSide);
+            }
             if (!level.isClientSide) {
                 level.removeBlock(pos, false);
                 level.gameEvent(player, GameEvent.BLOCK_DESTROY, pos);
@@ -131,6 +139,21 @@ public class ComidaColocadaBlock extends Block {
             return InteractionResult.CONSUME;
         }
 
+        int bocados = comida.bocados();
+        int comidos = state.getValue(BOCADOS);
+        if (bocados > 1) {
+            if (!level.isClientSide) {
+                comerBocado(player, food, bocados, comidos + 1 >= bocados);
+                if (comidos + 1 >= bocados) {
+                    level.removeBlock(pos, false);
+                    level.gameEvent(player, GameEvent.BLOCK_DESTROY, pos);
+                } else {
+                    level.setBlock(pos, state.setValue(BOCADOS, comidos + 1), 3);
+                }
+            }
+            return InteractionResult.sidedSuccess(level.isClientSide);
+        }
+
         if (!level.isClientSide) {
             level.removeBlock(pos, false);
             level.gameEvent(player, GameEvent.BLOCK_DESTROY, pos);
@@ -143,6 +166,25 @@ public class ComidaColocadaBlock extends Block {
             }
         }
         return InteractionResult.sidedSuccess(level.isClientSide);
+    }
+
+    /**
+     * Un bocado de una comida que se come por partes: una parte de la nutricion y la saciedad en cada
+     * uno, y los efectos (el empacho, la panza llena...) recien al terminarla.
+     */
+    private static void comerBocado(Player player, FoodProperties food, int bocados, boolean ultimo) {
+        FoodProperties parte = new FoodProperties(Math.max(1, food.nutrition() / bocados), food.saturation() / bocados,
+                true, food.eatSeconds(), java.util.Optional.empty(), java.util.List.of());
+        player.getFoodData().eat(parte);
+        player.level().playSound(null, player.blockPosition(), SoundEvents.GENERIC_EAT, SoundSource.PLAYERS,
+                0.8F, 0.9F + player.getRandom().nextFloat() * 0.2F);
+        if (ultimo) {
+            for (FoodProperties.PossibleEffect efecto : food.effects()) {
+                if (player.getRandom().nextFloat() < efecto.probability()) {
+                    player.addEffect(new MobEffectInstance(efecto.effect()));
+                }
+            }
+        }
     }
 
     private static void give(Player player, ItemStack stack) {

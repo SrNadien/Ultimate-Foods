@@ -1,0 +1,348 @@
+{
+  "credit": "Ultimate Foods - Argentina",
+  "texture_size": [
+    64,
+    64
+  ],
+  "textures": {
+    "0": "ultimatefoods:block/argentina/comida/asado",
+    "particle": "ultimatefoods:block/argentina/comida/asado"
+  },
+  "elements": [
+    {
+      "name": "tabla",
+      "from": [
+        1,
+        0,
+        2
+      ],
+      "to": [
+        15,
+        1,
+        14
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            8.5,
+            7,
+            9
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            0,
+            8.5,
+            6,
+            9
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            0,
+            8.5,
+            7,
+            9
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            0,
+            8.5,
+            6,
+            9
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            7,
+            6
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            7,
+            6
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "tira",
+      "from": [
+        2,
+        1,
+        3
+      ],
+      "to": [
+        14,
+        2.5,
+        6
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            7.5,
+            10,
+            8.25
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            10,
+            7.5,
+            11.5,
+            8.25
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            4,
+            7.5,
+            10,
+            8.25
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            10,
+            7.5,
+            11.5,
+            8.25
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            0,
+            6,
+            6,
+            7.5
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            0,
+            6,
+            6,
+            7.5
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "vacio_1",
+      "from": [
+        2.5,
+        1,
+        7
+      ],
+      "to": [
+        4.5,
+        3,
+        13
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            6,
+            10,
+            7
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            0,
+            7.5,
+            3,
+            8.5
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            12.5,
+            6,
+            13.5,
+            7
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            0,
+            7.5,
+            3,
+            8.5
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            7,
+            0,
+            8,
+            3
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            7,
+            0,
+            8,
+            3
+          ],
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        4.56,
+        2.63
+      ],
+      "scale": [
+        0.843,
+        0.843,
+        0.843
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        6.57,
+        0
+      ],
+      "scale": [
+        0.571,
+        0.571,
+        0.571
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        -0.5
+      ],
+      "scale": [
+        0.929,
+        0.929,
+        0.929
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        3.11,
+        2.26
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        3.11,
+        2.26
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        6.38,
+        0
+      ],
+      "scale": [
+        0.381,
+        0.381,
+        0.381
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        6.38,
+        0
+      ],
+      "scale": [
+        0.381,
+        0.381,
+        0.381
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        12.89,
+        0
+      ],
+      "scale": [
+        0.786,
+        0.786,
+        0.786
+      ]
+    }
+  }
+}

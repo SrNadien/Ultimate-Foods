@@ -11,6 +11,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "asado"
               }
             }
@@ -24,6 +25,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "choripan"
               }
             }
@@ -37,6 +39,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "chorizo_asado"
               }
             }
@@ -50,6 +53,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "provoleta"
               }
             }
@@ -63,6 +67,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "milanesa_de_carne"
               }
             }
@@ -76,6 +81,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "milanesa_de_pollo"
               }
             }
@@ -89,6 +95,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "sanguche_de_milanesa"
               }
             }
@@ -102,6 +109,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "guiso"
               }
             }
@@ -115,6 +123,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "locro"
               }
             }
@@ -128,6 +137,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "noquis"
               }
             }
@@ -141,6 +151,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "alfajor"
               }
             }
@@ -154,6 +165,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "medialuna"
               }
             }
@@ -167,6 +179,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "panqueque_con_dulce_de_leche"
               }
             }
@@ -180,6 +193,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "flan_con_dulce_de_leche"
               }
             }
@@ -193,6 +207,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "tortafrita"
               }
             }
@@ -206,6 +221,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "empanada"
               }
             }
@@ -219,6 +235,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "pitusas"
               }
             }
@@ -232,6 +249,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "pepas"
               }
             }
@@ -245,6 +263,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "fugazzeta"
               }
             }
@@ -258,6 +277,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "mega_dibu"
               }
             }
@@ -271,6 +291,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "fernet_branca"
               }
             }
@@ -284,6 +305,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "quilmes"
               }
             }
@@ -297,6 +319,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "stella_artois"
               }
             }
@@ -310,6 +333,7 @@
               "block": "ultimatefoods:comida_colocada",
               "condition": "minecraft:block_state_property",
               "properties": {
+                "bocados": "0",
                 "comida": "andes"
               }
             }

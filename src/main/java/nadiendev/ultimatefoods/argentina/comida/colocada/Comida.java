@@ -99,6 +99,22 @@ public enum Comida implements StringRepresentable {
         return ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "block/argentina/comida/" + id);
     }
 
+    /** Bocados en los que se come estando colocada: el asado se va sacando por partes, el resto es de un solo bocado. */
+    public int bocados() {
+        return this == ASADO ? 4 : 1;
+    }
+
+    /** Modelo del bloque con {@code comidos} bocados ya sacados (0 es el modelo completo). */
+    public ResourceLocation blockModel(int comidos) {
+        return comidos <= 0 || bocados() <= 1 ? blockModel()
+                : ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "block/argentina/comida/" + id + "_b" + comidos);
+    }
+
+    /** Modelo 3D del item (inventario, mano y suelo): el del bloque sin el plato, que sale al colocarla. */
+    public ResourceLocation itemModel() {
+        return ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "item/argentina/comida/" + id);
+    }
+
     @Nullable
     public static Comida byId(String id) {
         return BY_ID.get(id);

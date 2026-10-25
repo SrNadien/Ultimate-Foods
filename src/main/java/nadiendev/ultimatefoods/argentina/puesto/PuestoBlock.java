@@ -1,11 +1,20 @@
 package nadiendev.ultimatefoods.argentina.puesto;
 
 import com.mojang.serialization.MapCodec;
+import nadiendev.ultimatefoods.argentina.mate.MateComponents;
+import nadiendev.ultimatefoods.argentina.mate.MateItems;
+import nadiendev.ultimatefoods.argentina.mate.MateRitual;
+import nadiendev.ultimatefoods.argentina.mate.MateSabor;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -125,6 +134,85 @@ public class PuestoBlock extends BaseEntityBlock {
             return be.getStack().copy();
         }
         return new ItemStack(state.getValue(PUESTO).item());
+    }
+
+    /**
+     * Servir el mate ya puesto: con la yerbera (o yerba suelta) en la mano se le pone yerba al mate
+     * vacio, y con la pava caliente se ceba el que tiene yerba (hace falta una bombilla en el
+     * inventario). El mate queda donde esta, solo cambia de estado.
+     */
+    @Override
+    protected ItemInteractionResult useItemOn(ItemStack held, BlockState state, Level level, BlockPos pos,
+                                              Player player, InteractionHand hand, BlockHitResult hit) {
+        if (!(level.getBlockEntity(pos) instanceof PuestoBlockEntity be)) {
+            return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+        }
+        Puesto puesto = state.getValue(PUESTO);
+        ItemStack mate = be.getStack().isEmpty() ? new ItemStack(puesto.item()) : be.getStack();
+
+        // Yerba al mate vacio
+        boolean yerbera = held.is(MateItems.YERBERA.get()) && held.getOrDefault(MateComponents.PORCIONES.get(), 0) > 0;
+        if (puesto == Puesto.MATE && (yerbera || held.is(MateItems.YERBA_MATE.get()))) {
+            if (!level.isClientSide) {
+                if (yerbera) {
+                    if (!player.hasInfiniteMaterials()) {
+                        held.set(MateComponents.PORCIONES.get(), held.getOrDefault(MateComponents.PORCIONES.get(), 0) - 1);
+                    }
+                } else if (!player.hasInfiniteMaterials()) {
+                    held.shrink(1);
+                }
+                cambiar(level, pos, state, be, mate.transmuteCopy(MateItems.MATE_CON_YERBA.get(), 1));
+                level.playSound(null, pos, SoundEvents.SAND_PLACE, SoundSource.BLOCKS, 0.9F, 1.1F);
+                ((ServerLevel) level).sendParticles(ParticleTypes.COMPOSTER,
+                        pos.getX() + 0.5, pos.getY() + 0.7, pos.getZ() + 0.5, 4, 0.1, 0.05, 0.1, 0.0);
+            }
+            return ItemInteractionResult.sidedSuccess(level.isClientSide);
+        }
+
+        // Cebar con la pava caliente
+        if ((puesto == Puesto.MATE_CON_YERBA || puesto == Puesto.MATE_LAVADO) && held.is(MateItems.PAVA_CALIENTE.get())) {
+            if (!MateRitual.tieneBombilla(player)) {
+                if (!level.isClientSide) {
+                    player.displayClientMessage(Component.translatable("message.ultimatefoods.mate.sin_bombilla"), true);
+                }
+                return ItemInteractionResult.sidedSuccess(level.isClientSide);
+            }
+            if (!level.isClientSide) {
+                MateSabor sabor = mate.getOrDefault(MateComponents.SABOR.get(), MateSabor.AMARGO);
+                int cebadas = mate.getOrDefault(MateComponents.CEBADAS.get(), 0) + 1;
+                ItemStack cebado = mate.transmuteCopy(sabor.itemCebado(), 1);
+                cebado.set(MateComponents.SABOR.get(), sabor);
+                cebado.set(MateComponents.CEBADAS.get(), cebadas);
+                cebado.set(MateComponents.SORBOS.get(), MateRitual.SORBOS_POR_CEBADA);
+                cambiar(level, pos, state, be, cebado);
+
+                int restantes = held.getOrDefault(MateComponents.CEBADAS_RESTANTES.get(), 1) - 1;
+                if (!player.hasInfiniteMaterials()) {
+                    if (restantes <= 0) {
+                        ItemStack vacia = held.transmuteCopy(MateItems.PAVA.get(), 1);
+                        vacia.remove(MateComponents.CEBADAS_RESTANTES.get());
+                        player.setItemInHand(hand, vacia);
+                    } else {
+                        held.set(MateComponents.CEBADAS_RESTANTES.get(), restantes);
+                    }
+                }
+                level.playSound(null, pos, SoundEvents.BREWING_STAND_BREW, SoundSource.BLOCKS, 0.6F, 1.4F);
+                level.playSound(null, pos, SoundEvents.BOTTLE_FILL, SoundSource.BLOCKS, 0.8F, 0.9F);
+                ((ServerLevel) level).sendParticles(ParticleTypes.CLOUD,
+                        pos.getX() + 0.5, pos.getY() + 0.8, pos.getZ() + 0.5, 3, 0.1, 0.1, 0.1, 0.01);
+            }
+            return ItemInteractionResult.sidedSuccess(level.isClientSide);
+        }
+        return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+    }
+
+    /** Cambia el mate puesto por otro estado (nuevo modelo y nuevo item guardado), sin moverlo. */
+    private static void cambiar(Level level, BlockPos pos, BlockState state, PuestoBlockEntity be, ItemStack nuevo) {
+        Puesto destino = Puesto.de(nuevo);
+        if (destino != null) {
+            level.setBlock(pos, state.setValue(PUESTO, destino), 3);
+        }
+        be.setStack(nuevo);
     }
 
     @Override

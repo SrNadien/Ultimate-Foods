@@ -51,10 +51,10 @@ public final class ComidaModels {
         protected void registerModels() {
             ModelFile generated = new ModelFile.UncheckedModelFile(ResourceLocation.withDefaultNamespace("item/generated"));
             for (String id : ComidaModule.flatItemIds()) {
-                // Las comidas colocables usan el modelo 3D de su bloque (hereda el display del modelo).
+                // Las comidas colocables usan su modelo 3D de item: el del bloque pero sin el plato de abajo.
                 Comida colocable = Comida.byId(id);
                 if (colocable != null) {
-                    getBuilder(id).parent(new ModelFile.UncheckedModelFile(colocable.blockModel()));
+                    getBuilder(id).parent(new ModelFile.UncheckedModelFile(colocable.itemModel()));
                     continue;
                 }
                 getBuilder(id)
