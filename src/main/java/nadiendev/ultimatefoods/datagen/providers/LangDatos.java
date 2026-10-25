@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Textos del mod, en ingles y en español. El español se usa tal cual para es_es,
  * es_ar y es_mx; si algun dia una region necesita palabras distintas, se agrega un
- * mapa de diferencias en ArgentinaData.
+ * mapa de diferencias en FisuraData.
  * Archivo generado a partir de los lang que se escribian a mano.
  */
 public final class LangDatos {
@@ -300,7 +300,7 @@ public final class LangDatos {
         EN.put("item.ultimatefoods.unobtainium_hammer", "Unobtainium Hammer");
         EN.put("item.ultimatefoods.compressed_unobtainium_hammer", "Compressed Unobtainium Hammer");
         EN.put("tooltip.ultimatefoods.quantity", "%s Blocks");
-        EN.put("itemGroup.ultimatefoods.argentina_delight", "Artinna Re Fisura");
+        EN.put("itemGroup.ultimatefoods.fisura", "Artinna Re Fisura");
         EN.put("block.ultimatefoods.azucarera", "Azucarera");
         EN.put("block.ultimatefoods.yerba_mate_leaves", "Yerba Mate Leaves");
         EN.put("block.ultimatefoods.yerba_mate_log", "Yerba Mate Log");
@@ -350,13 +350,13 @@ public final class LangDatos {
         EN.put("tooltip.ultimatefoods.pava.cebar", "Hold a mate with yerba in the other hand and right-click to brew it.");
         EN.put("block.ultimatefoods.cacerola_essen", "Essen Pot");
         EN.put("block.ultimatefoods.parrilla", "Grill");
-        EN.put("effect.ultimatefoods.argentina.atajapenales", "Penalty Saver");
-        EN.put("effect.ultimatefoods.argentina.buena_onda", "Good Vibes");
-        EN.put("effect.ultimatefoods.argentina.curda", "Tipsy");
-        EN.put("effect.ultimatefoods.argentina.dulzura", "Sugar Rush");
-        EN.put("effect.ultimatefoods.argentina.empacho", "Overstuffed");
-        EN.put("effect.ultimatefoods.argentina.fuego_de_parrilla", "Grill Fire");
-        EN.put("effect.ultimatefoods.argentina.panza_llena", "Full Belly");
+        EN.put("effect.ultimatefoods.fisura.atajapenales", "Penalty Saver");
+        EN.put("effect.ultimatefoods.fisura.buena_onda", "Good Vibes");
+        EN.put("effect.ultimatefoods.fisura.curda", "Tipsy");
+        EN.put("effect.ultimatefoods.fisura.dulzura", "Sugar Rush");
+        EN.put("effect.ultimatefoods.fisura.empacho", "Overstuffed");
+        EN.put("effect.ultimatefoods.fisura.fuego_de_parrilla", "Grill Fire");
+        EN.put("effect.ultimatefoods.fisura.panza_llena", "Full Belly");
         EN.put("item.ultimatefoods.alfajor", "Alfajor");
         EN.put("item.ultimatefoods.andes", "Andes Beer");
         EN.put("item.ultimatefoods.asado", "Asado");
@@ -685,7 +685,7 @@ public final class LangDatos {
         ES.put("item.ultimatefoods.unobtainium_hammer", "Martillo de Unobtainium");
         ES.put("item.ultimatefoods.compressed_unobtainium_hammer", "Martillo Comprimido de Unobtainium");
         ES.put("tooltip.ultimatefoods.quantity", "%s bloques");
-        ES.put("itemGroup.ultimatefoods.argentina_delight", "Artinna Re Fisura");
+        ES.put("itemGroup.ultimatefoods.fisura", "Artinna Re Fisura");
         ES.put("block.ultimatefoods.azucarera", "Azucarera");
         ES.put("block.ultimatefoods.yerba_mate_leaves", "Hojas de yerba mate");
         ES.put("block.ultimatefoods.yerba_mate_log", "Tronco de yerba mate");
@@ -735,13 +735,13 @@ public final class LangDatos {
         ES.put("tooltip.ultimatefoods.pava.cebar", "Con un mate con yerba en la otra mano, click derecho para cebarlo.");
         ES.put("block.ultimatefoods.cacerola_essen", "Cacerola Essen");
         ES.put("block.ultimatefoods.parrilla", "Parrilla");
-        ES.put("effect.ultimatefoods.argentina.atajapenales", "Atajapenales");
-        ES.put("effect.ultimatefoods.argentina.buena_onda", "Buena onda");
-        ES.put("effect.ultimatefoods.argentina.curda", "Curda");
-        ES.put("effect.ultimatefoods.argentina.dulzura", "Dulzura");
-        ES.put("effect.ultimatefoods.argentina.empacho", "Empacho");
-        ES.put("effect.ultimatefoods.argentina.fuego_de_parrilla", "Fuego de parrilla");
-        ES.put("effect.ultimatefoods.argentina.panza_llena", "Panza llena");
+        ES.put("effect.ultimatefoods.fisura.atajapenales", "Atajapenales");
+        ES.put("effect.ultimatefoods.fisura.buena_onda", "Buena onda");
+        ES.put("effect.ultimatefoods.fisura.curda", "Curda");
+        ES.put("effect.ultimatefoods.fisura.dulzura", "Dulzura");
+        ES.put("effect.ultimatefoods.fisura.empacho", "Empacho");
+        ES.put("effect.ultimatefoods.fisura.fuego_de_parrilla", "Fuego de parrilla");
+        ES.put("effect.ultimatefoods.fisura.panza_llena", "Panza llena");
         ES.put("item.ultimatefoods.alfajor", "Alfajor");
         ES.put("item.ultimatefoods.andes", "Cerveza Andes");
         ES.put("item.ultimatefoods.asado", "Asado");
@@ -803,7 +803,7 @@ public final class LangDatos {
         EN.put("message.ultimatefoods.cacerola.estado.sin_fuego", "Ready to cook %s, but there is no fire (%s %%).");
         EN.put("message.ultimatefoods.cacerola.estado.cocinando", "Cooking %s: %s %%");
         EN.put("message.ultimatefoods.cacerola.estado.listo", "Ready: %s servings of %s (you need a %s).");
-        EN.put("ultimatefoods.guia.nombre", "The Good Argentine's Guide");
+        EN.put("ultimatefoods.guia.nombre", "Grandma's Recipes");
         EN.put("ultimatefoods.guia.portada", "Everything you need to know about mate, the grill and the long table, che.");
         EN.put("message.ultimatefoods.puesto.sin_bombilla", "The mate needs its bombilla first.");
         EN.put("tooltip.ultimatefoods.colocable", "Shift + right click to place");
@@ -820,7 +820,7 @@ public final class LangDatos {
         ES.put("message.ultimatefoods.cacerola.estado.sin_fuego", "Lista para cocinar %s, pero falta fuego (%s %%).");
         ES.put("message.ultimatefoods.cacerola.estado.cocinando", "Cocinando %s: %s %%");
         ES.put("message.ultimatefoods.cacerola.estado.listo", "Listo: %s porciones de %s (hace falta un %s).");
-        ES.put("ultimatefoods.guia.nombre", "Gu\u00eda del buen argentino");
+        ES.put("ultimatefoods.guia.nombre", "Recetas De La Buela");
         ES.put("ultimatefoods.guia.portada", "Todo lo que hay que saber de mate, parrilla y mesa larga, che.");
         ES.put("message.ultimatefoods.puesto.sin_bombilla", "Primero ponele la bombilla al mate.");
         ES.put("tooltip.ultimatefoods.colocable", "Shift + click derecho para colocar");

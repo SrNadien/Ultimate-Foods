@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ultimatefoods:block/argentina/yerba_mate_sapling"
+    "layer0": "ultimatefoods:block/fisura/yerba_mate_sapling"
   }
 }

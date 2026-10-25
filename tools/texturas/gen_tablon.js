@@ -1,7 +1,7 @@
 // Textura del tablon de yerba mate: tablones verdes (#dbfab8) con el mismo dibujo de los tablones de vanilla.
 //   node tools/texturas/gen_tablon.js
 const fs = require('fs'), zlib = require('zlib'), path = require('path');
-const SALIDA = path.resolve(__dirname, '..', '..', 'src/main/resources/assets/ultimatefoods/textures/block/argentina/yerba_mate_planks.png');
+const SALIDA = path.resolve(__dirname, '..', '..', 'src/main/resources/assets/ultimatefoods/textures/block/fisura/yerba_mate_planks.png');
 
 function crc32(b) { const t = []; for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } let c = 0xFFFFFFFF; for (const x of b) c = t[(c ^ x) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
 function chunk(ty, d) { const l = Buffer.alloc(4); l.writeUInt32BE(d.length); const td = Buffer.concat([Buffer.from(ty), d]); const c = Buffer.alloc(4); c.writeUInt32BE(crc32(td)); return Buffer.concat([l, td, c]); }

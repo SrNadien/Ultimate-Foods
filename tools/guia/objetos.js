@@ -1,7 +1,7 @@
 // Una ficha por cada item y bloque: [categoria, id, tipo, [es, en], receta?]
 //   categoria: objetos_mate | objetos_mesa | ultimate_foods
 //   tipo: 'item' | 'bloque' (el bloque sin item propio usa 'icono' para mostrarse)
-//   receta: id de una receta de crafteo para dibujarla (por defecto argentina/<id>; con "/" al principio, en la raiz)
+//   receta: id de una receta de crafteo para dibujarla (por defecto fisura/<id>; con "/" al principio, en la raiz)
 // Los textos son [espanol, ingles]. Los datos (hambre, efectos, duraciones) salen de ComidaItems.java e ItemsAdds.java.
 module.exports = [
   // ============================================================ objetos del mate

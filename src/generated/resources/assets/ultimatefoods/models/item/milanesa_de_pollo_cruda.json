@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ultimatefoods:item/argentina/milanesa_de_pollo_cruda"
+    "layer0": "ultimatefoods:item/fisura/milanesa_de_pollo_cruda"
   }
 }

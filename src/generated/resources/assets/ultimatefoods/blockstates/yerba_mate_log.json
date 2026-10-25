@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "ultimatefoods:block/argentina/yerba_mate_log_horizontal",
+      "model": "ultimatefoods:block/fisura/yerba_mate_log_horizontal",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "ultimatefoods:block/argentina/yerba_mate_log"
+      "model": "ultimatefoods:block/fisura/yerba_mate_log"
     },
     "axis=z": {
-      "model": "ultimatefoods:block/argentina/yerba_mate_log_horizontal",
+      "model": "ultimatefoods:block/fisura/yerba_mate_log_horizontal",
       "x": 90
     }
   }

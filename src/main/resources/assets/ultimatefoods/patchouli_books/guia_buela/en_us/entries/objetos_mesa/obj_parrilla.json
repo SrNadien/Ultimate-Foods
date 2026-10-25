@@ -1,0 +1,17 @@
+{
+  "name": "Grill",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:parrilla",
+  "sortnum": 86,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:parrilla",
+      "text": "The grill: fuel, flint and steel or fire charge, and it cooks 6 things at once. Walking on it while lit burns."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/parrilla"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Mate",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:mate",
+  "sortnum": 37,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:mate",
+      "text": "El mate vacio: un cuenco y cuero. Se llena con yerba (de la yerbera o suelta) y despues se ceba. Se puede apoyar con Shift + click derecho."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/mate"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ultimatefoods:item/argentina/pan_rallado"
+    "layer0": "ultimatefoods:item/fisura/pan_rallado"
   }
 }

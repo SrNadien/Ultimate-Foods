@@ -1,33 +1,33 @@
 {
   "variants": {
     "facing=east,lit=false": {
-      "model": "ultimatefoods:block/argentina/parrilla",
+      "model": "ultimatefoods:block/fisura/parrilla",
       "y": 90
     },
     "facing=east,lit=true": {
-      "model": "ultimatefoods:block/argentina/parrilla",
+      "model": "ultimatefoods:block/fisura/parrilla",
       "y": 90
     },
     "facing=north,lit=false": {
-      "model": "ultimatefoods:block/argentina/parrilla"
+      "model": "ultimatefoods:block/fisura/parrilla"
     },
     "facing=north,lit=true": {
-      "model": "ultimatefoods:block/argentina/parrilla"
+      "model": "ultimatefoods:block/fisura/parrilla"
     },
     "facing=south,lit=false": {
-      "model": "ultimatefoods:block/argentina/parrilla",
+      "model": "ultimatefoods:block/fisura/parrilla",
       "y": 180
     },
     "facing=south,lit=true": {
-      "model": "ultimatefoods:block/argentina/parrilla",
+      "model": "ultimatefoods:block/fisura/parrilla",
       "y": 180
     },
     "facing=west,lit=false": {
-      "model": "ultimatefoods:block/argentina/parrilla",
+      "model": "ultimatefoods:block/fisura/parrilla",
       "y": 270
     },
     "facing=west,lit=true": {
-      "model": "ultimatefoods:block/argentina/parrilla",
+      "model": "ultimatefoods:block/fisura/parrilla",
       "y": 270
     }
   }

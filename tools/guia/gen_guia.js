@@ -1,11 +1,11 @@
-// Genera el libro guia de Patchouli ("Guia del buen argentino") en espanol (es_ar, es_es, es_mx) e ingles.
+// Genera el libro guia de Patchouli ("Recetas De La Buela") en espanol (es_ar, es_es, es_mx) e ingles.
 // Patchouli es opcional: sin el mod, estos archivos no se leen.
 //   node tools/guia/gen_guia.js
 const fs = require('fs');
 const path = require('path');
 
 const RAIZ = process.env.UF_REPO || path.resolve(__dirname, '..', '..');
-const ID = 'guia_argentina';
+const ID = 'guia_buela';
 const DATA = path.join(RAIZ, 'src/main/resources/data/ultimatefoods/patchouli_books', ID);
 const ASSETS = path.join(RAIZ, 'src/main/resources/assets/ultimatefoods/patchouli_books', ID);
 const M = 'ultimatefoods:';
@@ -13,7 +13,7 @@ const M = 'ultimatefoods:';
 // ---- helpers para escribir el contenido: cada texto es [es, en] ---------------------------------
 const t = (es, en, title) => ({ type: 'patchouli:text', text: [es, en], ...(title ? { title } : {}) });
 const spot = (item, es, en, title) => ({ type: 'patchouli:spotlight', item: M + item, text: [es, en], ...(title ? { title } : {}) });
-const craft = (recipe, es, en) => ({ type: 'patchouli:crafting', recipe: M + (recipe.startsWith('/') ? recipe.slice(1) : 'argentina/' + recipe), ...(es ? { text: [es, en] } : {}) });
+const craft = (recipe, es, en) => ({ type: 'patchouli:crafting', recipe: M + (recipe.startsWith('/') ? recipe.slice(1) : 'fisura/' + recipe), ...(es ? { text: [es, en] } : {}) });
 const BR = '$(br2)';
 
 const CATEGORIAS = {
@@ -21,7 +21,7 @@ const CATEGORIAS = {
   mate: { name: ['El mate', 'The mate'], description: ['De la yerba al mate cebado, con todos sus gustos.', 'From the yerba to a brewed mate, in every flavor.'], icon: M + 'mate_amargo' },
   comidas: { name: ['A la mesa', 'At the table'], description: ['Parrilla, cacerola, milanesas, dulces y bebidas.', 'Grill, pot, milanesas, sweets and drinks.'], icon: M + 'asado' },
   objetos_mate: { name: ['Objetos: el mate', 'Items: the mate'], description: ['Cada item y bloque del mate, uno por uno.', 'Every mate item and block, one by one.'], icon: M + 'mate' },
-  objetos_mesa: { name: ['Objetos: la mesa', 'Items: the table'], description: ['Cada comida, bebida y bloque de la mesa argentina.', 'Every food, drink and block of the Argentine table.'], icon: M + 'milanesa_de_carne' },
+  objetos_mesa: { name: ['Objetos: la mesa', 'Items: the table'], description: ['Cada comida, bebida y bloque de la mesa fisura.', 'Every food, drink and block of the Criollo table.'], icon: M + 'milanesa_de_carne' },
   ultimate_foods: { name: ['Ultimate Foods', 'Ultimate Foods'], description: ['Las comidas originales del mod.', 'The mod\'s original foods.'], icon: M + 'monster' },
   secretos: { name: ['Secretos', 'Secrets'], description: ['Pistas de lo que esconde el mod.', 'Hints about what the mod hides.'], icon: M + 'la_copa' },
 };
@@ -29,8 +29,8 @@ const CATEGORIAS = {
 const ENTRADAS = [
   // ------------------------------------------------------------------ para empezar
   ['inicio', 'bienvenida', ['Bienvenido, che', 'Welcome, che'], 'yerba_verdeflor', 0, [
-    t('Esta guia reune todo lo argentino de Ultimate Foods: el mate y su ritual, la parrilla, la cacerola, las milanesas, los dulces y las bebidas.' + BR + 'Todo vive en la pestana "Artinna Re Fisura" del creativo.',
-      'This guide gathers everything Argentine in Ultimate Foods: the mate ritual, the grill, the pot, milanesas, sweets and drinks.' + BR + 'It all lives in the "Artinna Re Fisura" creative tab.'),
+    t('Esta guia reune todo lo criollo de Ultimate Foods: el mate y su ritual, la parrilla, la cacerola, las milanesas, los dulces y las bebidas.' + BR + 'Todo vive en la pestana "Artinna Re Fisura" del creativo.',
+      'This guide gathers everything Criollo in Ultimate Foods: the mate ritual, the grill, the pot, milanesas, sweets and drinks.' + BR + 'It all lives in the "Artinna Re Fisura" creative tab.'),
   ]],
   ['inicio', 'colocar_y_comer', ['Colocar y comer', 'Placing and eating'], 'asado', 0, [
     t('Las comidas se pueden dejar apoyadas como bloque: Shift + click derecho sobre un bloque firme con la comida en la mano.' + BR + 'Colocadas llevan su plato o tabla; en la mano y el inventario se ven sin el.',
@@ -200,7 +200,7 @@ const idioma = l => JSON.parse(fs.readFileSync(path.join(generado, 'assets/ultim
 const LANG = [idioma('es_es'), idioma('en_us')];
 const nombreDe = (id, i) => LANG[i]['item.ultimatefoods.' + id] || LANG[i]['block.ultimatefoods.' + id] || id;
 function recetaCrafteo(rec) {
-  const rel = rec.startsWith('/') ? rec.slice(1) : 'argentina/' + rec;
+  const rel = rec.startsWith('/') ? rec.slice(1) : 'fisura/' + rec;
   const archivo = path.join(generado, 'data/ultimatefoods/recipe', rel + '.json');
   if (!fs.existsSync(archivo)) return null;
   return JSON.parse(fs.readFileSync(archivo, 'utf8')).type.startsWith('minecraft:crafting') ? rec : null;
@@ -210,7 +210,7 @@ for (const [cat, id, tipo, texto, rec, icono] of require('./objetos')) {
   const item = icono || id;
   pages.push({ type: 'patchouli:spotlight', item: M + item, text: texto });
   const r = recetaCrafteo(rec === undefined ? id : (rec || ''));
-  if (rec !== null && r) pages.push({ type: 'patchouli:crafting', recipe: M + (r.startsWith('/') ? r.slice(1) : 'argentina/' + r) });
+  if (rec !== null && r) pages.push({ type: 'patchouli:crafting', recipe: M + (r.startsWith('/') ? r.slice(1) : 'fisura/' + r) });
   ENTRADAS.push([cat, 'obj_' + id, [nombreDe(id, 0), nombreDe(id, 1)], M + item, 0, pages]);
 }
 
@@ -226,11 +226,11 @@ escribir(path.join(DATA, 'book.json'), {
   version: 1,
   i18n: true,
   use_resource_pack: true,
-  creative_tab: 'ultimatefoods:argentina_delight_tab',
+  creative_tab: 'ultimatefoods:fisura_tab',
   show_progress: false,
-  // modelo 3D y GUI propios (bbmodels/argentina/generadores/gen_libro.js y tools/guia/gen_gui.js)
+  // modelo 3D y GUI propios (bbmodels/fisura/generadores/gen_libro.js y tools/guia/gen_gui.js)
   book_texture: 'ultimatefoods:textures/gui/guia_libro.png',
-  model: 'ultimatefoods:guia_argentina',
+  model: 'ultimatefoods:guia_buela',
   text_color: '1B2A35',
   header_color: '0B5F86',
   nameplate_color: 'FFFFFF',

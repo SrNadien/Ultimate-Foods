@@ -1,0 +1,17 @@
+{
+  "name": "Yuyos",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yuyos",
+  "sortnum": 48,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yuyos",
+      "text": "Yuyos: hierbas para el mate. Se craftean y el yerbatero las vende. Con yuyos un mate sale con gusto a Bonanza."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/yuyos"
+    }
+  ]
+}

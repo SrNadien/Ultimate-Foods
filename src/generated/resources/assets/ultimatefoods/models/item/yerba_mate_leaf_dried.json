@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ultimatefoods:item/argentina/yerba_mate_leaf_dried"
+    "layer0": "ultimatefoods:item/fisura/yerba_mate_leaf_dried"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "name": "Quilmes Beer",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:quilmes",
+  "sortnum": 83,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:quilmes",
+      "text": "Quilmes Beer: Good Vibes (2 min) and Tipsy. A cold one. Returns the bottle."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/quilmes"
+    }
+  ]
+}

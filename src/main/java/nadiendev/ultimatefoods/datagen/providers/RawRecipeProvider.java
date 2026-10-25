@@ -26,7 +26,7 @@ public class RawRecipeProvider implements DataProvider {
     @Override
     public CompletableFuture<?> run(CachedOutput cache) {
         Path base = output.getOutputFolder(PackOutput.Target.DATA_PACK)
-                .resolve(UltimateFoodsCore.MOD_ID).resolve("recipe").resolve("argentina");
+                .resolve(UltimateFoodsCore.MOD_ID).resolve("recipe").resolve("fisura");
         List<CompletableFuture<?>> tareas = new ArrayList<>();
         RecetasCrudas.RECETAS.forEach((id, json) ->
                 tareas.add(DataProvider.saveStable(cache, JsonParser.parseString(json), base.resolve(id + ".json"))));
@@ -35,6 +35,6 @@ public class RawRecipeProvider implements DataProvider {
 
     @Override
     public String getName() {
-        return "Argentina: recetas de Farmer's Delight";
+        return "Fisura: recetas de Farmer's Delight";
     }
 }

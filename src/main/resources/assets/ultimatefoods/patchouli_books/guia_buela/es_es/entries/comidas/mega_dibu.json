@@ -1,0 +1,16 @@
+{
+  "name": "La Mega Dibu",
+  "category": "ultimatefoods:comidas",
+  "icon": "ultimatefoods:mega_dibu",
+  "sortnum": 20,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Doble carne, doble cheddar, doble panceta, cebolla crispy y salsa barbacoa. Llena todo el hambre y da los mejores efectos del mod... y un buen Empacho de postre."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/mega_dibu"
+    }
+  ]
+}

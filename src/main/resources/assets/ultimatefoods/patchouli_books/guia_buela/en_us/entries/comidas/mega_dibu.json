@@ -1,0 +1,16 @@
+{
+  "name": "The Mega Dibu",
+  "category": "ultimatefoods:comidas",
+  "icon": "ultimatefoods:mega_dibu",
+  "sortnum": 20,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Double patty, double cheddar, double bacon, crispy onion and barbecue sauce. It fills your hunger and gives the best effects in the mod... plus a hefty Overstuffed for dessert."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/mega_dibu"
+    }
+  ]
+}

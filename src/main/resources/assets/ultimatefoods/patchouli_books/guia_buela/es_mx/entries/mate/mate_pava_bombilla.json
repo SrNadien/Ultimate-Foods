@@ -1,0 +1,24 @@
+{
+  "name": "Mate, pava y bombilla",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:pava",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "El mate se hace con un cuenco y cuero. La bombilla, con tres pepitas de hierro. La pava, con hierro y un palo."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/mate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/bombilla"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/pava"
+    }
+  ]
+}

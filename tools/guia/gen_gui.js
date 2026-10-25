@@ -4,8 +4,8 @@
 // se toman de ella y se pintan de celeste. Esos iconos son de Patchouli (Vazkii, CC BY-NC-SA 3.0): ver CREDITOS.md.
 //   node tools/guia/gen_gui.js [ruta/a/book_green.png]
 const fs = require('fs'), path = require('path');
-const { decodePNG } = require('../../bbmodels/argentina/comida/generadores/lib.js');
-const { encodePNG } = require('../../bbmodels/argentina/generadores/lib.js');
+const { decodePNG } = require('../../bbmodels/fisura/comida/generadores/lib.js');
+const { encodePNG } = require('../../bbmodels/fisura/generadores/lib.js');
 
 const SALIDA = path.resolve(__dirname, '..', '..', 'src/main/resources/assets/ultimatefoods/textures/gui/guia_libro.png');
 let plantilla = process.argv[2];

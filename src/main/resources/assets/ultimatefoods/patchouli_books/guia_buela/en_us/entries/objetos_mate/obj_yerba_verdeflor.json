@@ -1,0 +1,17 @@
+{
+  "name": "Yerba Verdeflor",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_verdeflor",
+  "sortnum": 34,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_verdeflor",
+      "text": "Verdeflor package: 4 yerba and a paper. Adds 16 portions to the yerbera. Set it down with Shift + right click."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/yerba_verdeflor"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Pepas",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:pepas",
+  "sortnum": 79,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:pepas",
+      "text": "Pepas with quince: 4 hunger, eaten fast, Good Vibes (45 s) and Sugar Rush."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/pepas"
+    }
+  ]
+}

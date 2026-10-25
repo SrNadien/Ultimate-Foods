@@ -1,0 +1,17 @@
+{
+  "name": "Mate de leche",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:mate_de_leche",
+  "sortnum": 41,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:mate_de_leche",
+      "text": "Mate de leche cebado: efecto Desarrollo (30 s), las crias cercanas crecen al instante."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/mate_de_leche"
+    }
+  ]
+}

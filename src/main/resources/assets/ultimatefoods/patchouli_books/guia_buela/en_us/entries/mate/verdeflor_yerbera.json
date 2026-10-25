@@ -1,0 +1,24 @@
+{
+  "name": "Verdeflor and the yerbera",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:yerbera",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Four ground yerba mate and a paper make a Verdeflor package. Set it down with Shift + right click."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/yerba_verdeflor"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The yerbera stores yerba: a package adds 16 portions and loose yerba adds 4 (max 64).$(br2)Right click with an empty mate to get it back filled."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/yerbera"
+    }
+  ]
+}

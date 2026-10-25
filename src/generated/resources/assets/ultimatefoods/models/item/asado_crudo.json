@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ultimatefoods:item/argentina/asado_crudo"
+    "layer0": "ultimatefoods:item/fisura/asado_crudo"
   }
 }

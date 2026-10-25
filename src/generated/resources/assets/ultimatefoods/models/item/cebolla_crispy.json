@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ultimatefoods:item/argentina/cebolla_crispy"
+    "layer0": "ultimatefoods:item/fisura/cebolla_crispy"
   }
 }

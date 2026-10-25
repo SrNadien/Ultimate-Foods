@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=east": {
-      "model": "ultimatefoods:block/argentina/yerbera",
+      "model": "ultimatefoods:block/fisura/yerbera",
       "y": 90
     },
     "facing=north": {
-      "model": "ultimatefoods:block/argentina/yerbera"
+      "model": "ultimatefoods:block/fisura/yerbera"
     },
     "facing=south": {
-      "model": "ultimatefoods:block/argentina/yerbera",
+      "model": "ultimatefoods:block/fisura/yerbera",
       "y": 180
     },
     "facing=west": {
-      "model": "ultimatefoods:block/argentina/yerbera",
+      "model": "ultimatefoods:block/fisura/yerbera",
       "y": 270
     }
   }

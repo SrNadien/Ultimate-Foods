@@ -1,7 +1,7 @@
 package nadiendev.ultimatefoods;
 
 import com.mojang.logging.LogUtils;
-import nadiendev.ultimatefoods.argentina.ArgentinaDelight;
+import nadiendev.ultimatefoods.fisura.Fisura;
 import nadiendev.ultimatefoods.config.ConfigCondition;
 import nadiendev.ultimatefoods.config.ModConfigs;
 import nadiendev.ultimatefoods.datagen.DataGenerators;
@@ -34,7 +34,7 @@ public class UltimateFoodsCore {
         ItemsAdds.register(modEventBus);
 
         CreativeTab.register(modEventBus);
-        ArgentinaDelight.register(modEventBus);
+        Fisura.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(DataGenerators::gatherData);

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ultimatefoods:item/argentina/empanada_cruda"
+    "layer0": "ultimatefoods:item/fisura/empanada_cruda"
   }
 }

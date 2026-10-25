@@ -1,0 +1,17 @@
+{
+  "name": "Sánguche de milanesa",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:sanguche_de_milanesa",
+  "sortnum": 68,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:sanguche_de_milanesa",
+      "text": "Sanguche de milanesa: 13 de hambre, Fuerza (1,5 min), Resistencia (1 min) y Panza llena (2 min)."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/sanguche_de_milanesa"
+    }
+  ]
+}

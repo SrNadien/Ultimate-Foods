@@ -1,0 +1,17 @@
+{
+  "name": "Stella Artois Beer",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:stella_artois",
+  "sortnum": 84,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:stella_artois",
+      "text": "Stella Artois Beer: Good Vibes (3 min) and Tipsy. Returns the bottle."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/stella_artois"
+    }
+  ]
+}

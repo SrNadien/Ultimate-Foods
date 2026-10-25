@@ -1,0 +1,16 @@
+{
+  "name": "Choripan and provoleta",
+  "category": "ultimatefoods:comidas",
+  "icon": "ultimatefoods:choripan",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Choripan: grilled chorizo, bread and tomato. Grill Fire and Absorption.$(br2)Provoleta: grilled cheese. Grill Fire and Resistance."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/choripan"
+    }
+  ]
+}

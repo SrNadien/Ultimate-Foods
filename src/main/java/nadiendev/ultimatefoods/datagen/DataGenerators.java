@@ -1,6 +1,6 @@
 package nadiendev.ultimatefoods.datagen;
 
-import nadiendev.ultimatefoods.argentina.ArgentinaData;
+import nadiendev.ultimatefoods.fisura.FisuraData;
 import nadiendev.ultimatefoods.UltimateFoodsCore;
 import nadiendev.ultimatefoods.datagen.providers.ItemsModelProvider;
 import nadiendev.ultimatefoods.datagen.providers.ModAdvancementProvider;
@@ -49,7 +49,7 @@ public class DataGenerators {
 
         generator.addProvider(event.includeClient(), new ItemsModelProvider(output, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModSoundProvider(output, existingFileHelper));
-        ArgentinaData.gather(event);
+        FisuraData.gather(event);
 
 
         UltimateFoodsCore.LOGGER.info("=== TODOS LOS PROVIDERS REGISTRADOS CORRECTAMENTE ===");

@@ -1,0 +1,17 @@
+{
+  "name": "Essen Pot",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:cacerola_essen",
+  "sortnum": 87,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:cacerola_essen",
+      "text": "The Essen pot, for the guiso and the locro. Over a heat source; right click with an empty hand reports progress. Serve with a bowl."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/cacerola_essen"
+    }
+  ]
+}

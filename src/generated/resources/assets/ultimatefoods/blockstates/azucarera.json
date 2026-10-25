@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=east": {
-      "model": "ultimatefoods:block/argentina/azucarera",
+      "model": "ultimatefoods:block/fisura/azucarera",
       "y": 90
     },
     "facing=north": {
-      "model": "ultimatefoods:block/argentina/azucarera"
+      "model": "ultimatefoods:block/fisura/azucarera"
     },
     "facing=south": {
-      "model": "ultimatefoods:block/argentina/azucarera",
+      "model": "ultimatefoods:block/fisura/azucarera",
       "y": 180
     },
     "facing=west": {
-      "model": "ultimatefoods:block/argentina/azucarera",
+      "model": "ultimatefoods:block/fisura/azucarera",
       "y": 270
     }
   }

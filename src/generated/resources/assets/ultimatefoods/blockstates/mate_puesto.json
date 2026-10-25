@@ -1,363 +1,363 @@
 {
   "variants": {
     "bombilla=false,facing=east,puesto=bombilla": {
-      "model": "ultimatefoods:item/argentina/bombilla",
+      "model": "ultimatefoods:item/fisura/bombilla",
       "y": 90
     },
     "bombilla=false,facing=east,puesto=mate": {
-      "model": "ultimatefoods:item/argentina/mate",
+      "model": "ultimatefoods:item/fisura/mate",
       "y": 90
     },
     "bombilla=false,facing=east,puesto=mate_amargo": {
-      "model": "ultimatefoods:block/argentina/mate/mate_amargo_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_amargo_sin_bombilla",
       "y": 90
     },
     "bombilla=false,facing=east,puesto=mate_con_yerba": {
-      "model": "ultimatefoods:block/argentina/mate/mate_con_yerba_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_con_yerba_sin_bombilla",
       "y": 90
     },
     "bombilla=false,facing=east,puesto=mate_con_yuyos": {
-      "model": "ultimatefoods:block/argentina/mate/mate_con_yuyos_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_con_yuyos_sin_bombilla",
       "y": 90
     },
     "bombilla=false,facing=east,puesto=mate_de_leche": {
-      "model": "ultimatefoods:block/argentina/mate/mate_de_leche_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_de_leche_sin_bombilla",
       "y": 90
     },
     "bombilla=false,facing=east,puesto=mate_dulce": {
-      "model": "ultimatefoods:block/argentina/mate/mate_dulce_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_dulce_sin_bombilla",
       "y": 90
     },
     "bombilla=false,facing=east,puesto=mate_lavado": {
-      "model": "ultimatefoods:block/argentina/mate/mate_lavado_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_lavado_sin_bombilla",
       "y": 90
     },
     "bombilla=false,facing=east,puesto=pava": {
-      "model": "ultimatefoods:item/argentina/pava",
+      "model": "ultimatefoods:item/fisura/pava",
       "y": 90
     },
     "bombilla=false,facing=east,puesto=pava_caliente": {
-      "model": "ultimatefoods:item/argentina/pava_caliente",
+      "model": "ultimatefoods:item/fisura/pava_caliente",
       "y": 90
     },
     "bombilla=false,facing=east,puesto=pava_con_agua": {
-      "model": "ultimatefoods:item/argentina/pava_con_agua",
+      "model": "ultimatefoods:item/fisura/pava_con_agua",
       "y": 90
     },
     "bombilla=false,facing=east,puesto=yerba_verdeflor": {
-      "model": "ultimatefoods:item/argentina/yerba_verdeflor",
+      "model": "ultimatefoods:item/fisura/yerba_verdeflor",
       "y": 90
     },
     "bombilla=false,facing=north,puesto=bombilla": {
-      "model": "ultimatefoods:item/argentina/bombilla"
+      "model": "ultimatefoods:item/fisura/bombilla"
     },
     "bombilla=false,facing=north,puesto=mate": {
-      "model": "ultimatefoods:item/argentina/mate"
+      "model": "ultimatefoods:item/fisura/mate"
     },
     "bombilla=false,facing=north,puesto=mate_amargo": {
-      "model": "ultimatefoods:block/argentina/mate/mate_amargo_sin_bombilla"
+      "model": "ultimatefoods:block/fisura/mate/mate_amargo_sin_bombilla"
     },
     "bombilla=false,facing=north,puesto=mate_con_yerba": {
-      "model": "ultimatefoods:block/argentina/mate/mate_con_yerba_sin_bombilla"
+      "model": "ultimatefoods:block/fisura/mate/mate_con_yerba_sin_bombilla"
     },
     "bombilla=false,facing=north,puesto=mate_con_yuyos": {
-      "model": "ultimatefoods:block/argentina/mate/mate_con_yuyos_sin_bombilla"
+      "model": "ultimatefoods:block/fisura/mate/mate_con_yuyos_sin_bombilla"
     },
     "bombilla=false,facing=north,puesto=mate_de_leche": {
-      "model": "ultimatefoods:block/argentina/mate/mate_de_leche_sin_bombilla"
+      "model": "ultimatefoods:block/fisura/mate/mate_de_leche_sin_bombilla"
     },
     "bombilla=false,facing=north,puesto=mate_dulce": {
-      "model": "ultimatefoods:block/argentina/mate/mate_dulce_sin_bombilla"
+      "model": "ultimatefoods:block/fisura/mate/mate_dulce_sin_bombilla"
     },
     "bombilla=false,facing=north,puesto=mate_lavado": {
-      "model": "ultimatefoods:block/argentina/mate/mate_lavado_sin_bombilla"
+      "model": "ultimatefoods:block/fisura/mate/mate_lavado_sin_bombilla"
     },
     "bombilla=false,facing=north,puesto=pava": {
-      "model": "ultimatefoods:item/argentina/pava"
+      "model": "ultimatefoods:item/fisura/pava"
     },
     "bombilla=false,facing=north,puesto=pava_caliente": {
-      "model": "ultimatefoods:item/argentina/pava_caliente"
+      "model": "ultimatefoods:item/fisura/pava_caliente"
     },
     "bombilla=false,facing=north,puesto=pava_con_agua": {
-      "model": "ultimatefoods:item/argentina/pava_con_agua"
+      "model": "ultimatefoods:item/fisura/pava_con_agua"
     },
     "bombilla=false,facing=north,puesto=yerba_verdeflor": {
-      "model": "ultimatefoods:item/argentina/yerba_verdeflor"
+      "model": "ultimatefoods:item/fisura/yerba_verdeflor"
     },
     "bombilla=false,facing=south,puesto=bombilla": {
-      "model": "ultimatefoods:item/argentina/bombilla",
+      "model": "ultimatefoods:item/fisura/bombilla",
       "y": 180
     },
     "bombilla=false,facing=south,puesto=mate": {
-      "model": "ultimatefoods:item/argentina/mate",
+      "model": "ultimatefoods:item/fisura/mate",
       "y": 180
     },
     "bombilla=false,facing=south,puesto=mate_amargo": {
-      "model": "ultimatefoods:block/argentina/mate/mate_amargo_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_amargo_sin_bombilla",
       "y": 180
     },
     "bombilla=false,facing=south,puesto=mate_con_yerba": {
-      "model": "ultimatefoods:block/argentina/mate/mate_con_yerba_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_con_yerba_sin_bombilla",
       "y": 180
     },
     "bombilla=false,facing=south,puesto=mate_con_yuyos": {
-      "model": "ultimatefoods:block/argentina/mate/mate_con_yuyos_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_con_yuyos_sin_bombilla",
       "y": 180
     },
     "bombilla=false,facing=south,puesto=mate_de_leche": {
-      "model": "ultimatefoods:block/argentina/mate/mate_de_leche_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_de_leche_sin_bombilla",
       "y": 180
     },
     "bombilla=false,facing=south,puesto=mate_dulce": {
-      "model": "ultimatefoods:block/argentina/mate/mate_dulce_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_dulce_sin_bombilla",
       "y": 180
     },
     "bombilla=false,facing=south,puesto=mate_lavado": {
-      "model": "ultimatefoods:block/argentina/mate/mate_lavado_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_lavado_sin_bombilla",
       "y": 180
     },
     "bombilla=false,facing=south,puesto=pava": {
-      "model": "ultimatefoods:item/argentina/pava",
+      "model": "ultimatefoods:item/fisura/pava",
       "y": 180
     },
     "bombilla=false,facing=south,puesto=pava_caliente": {
-      "model": "ultimatefoods:item/argentina/pava_caliente",
+      "model": "ultimatefoods:item/fisura/pava_caliente",
       "y": 180
     },
     "bombilla=false,facing=south,puesto=pava_con_agua": {
-      "model": "ultimatefoods:item/argentina/pava_con_agua",
+      "model": "ultimatefoods:item/fisura/pava_con_agua",
       "y": 180
     },
     "bombilla=false,facing=south,puesto=yerba_verdeflor": {
-      "model": "ultimatefoods:item/argentina/yerba_verdeflor",
+      "model": "ultimatefoods:item/fisura/yerba_verdeflor",
       "y": 180
     },
     "bombilla=false,facing=west,puesto=bombilla": {
-      "model": "ultimatefoods:item/argentina/bombilla",
+      "model": "ultimatefoods:item/fisura/bombilla",
       "y": 270
     },
     "bombilla=false,facing=west,puesto=mate": {
-      "model": "ultimatefoods:item/argentina/mate",
+      "model": "ultimatefoods:item/fisura/mate",
       "y": 270
     },
     "bombilla=false,facing=west,puesto=mate_amargo": {
-      "model": "ultimatefoods:block/argentina/mate/mate_amargo_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_amargo_sin_bombilla",
       "y": 270
     },
     "bombilla=false,facing=west,puesto=mate_con_yerba": {
-      "model": "ultimatefoods:block/argentina/mate/mate_con_yerba_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_con_yerba_sin_bombilla",
       "y": 270
     },
     "bombilla=false,facing=west,puesto=mate_con_yuyos": {
-      "model": "ultimatefoods:block/argentina/mate/mate_con_yuyos_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_con_yuyos_sin_bombilla",
       "y": 270
     },
     "bombilla=false,facing=west,puesto=mate_de_leche": {
-      "model": "ultimatefoods:block/argentina/mate/mate_de_leche_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_de_leche_sin_bombilla",
       "y": 270
     },
     "bombilla=false,facing=west,puesto=mate_dulce": {
-      "model": "ultimatefoods:block/argentina/mate/mate_dulce_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_dulce_sin_bombilla",
       "y": 270
     },
     "bombilla=false,facing=west,puesto=mate_lavado": {
-      "model": "ultimatefoods:block/argentina/mate/mate_lavado_sin_bombilla",
+      "model": "ultimatefoods:block/fisura/mate/mate_lavado_sin_bombilla",
       "y": 270
     },
     "bombilla=false,facing=west,puesto=pava": {
-      "model": "ultimatefoods:item/argentina/pava",
+      "model": "ultimatefoods:item/fisura/pava",
       "y": 270
     },
     "bombilla=false,facing=west,puesto=pava_caliente": {
-      "model": "ultimatefoods:item/argentina/pava_caliente",
+      "model": "ultimatefoods:item/fisura/pava_caliente",
       "y": 270
     },
     "bombilla=false,facing=west,puesto=pava_con_agua": {
-      "model": "ultimatefoods:item/argentina/pava_con_agua",
+      "model": "ultimatefoods:item/fisura/pava_con_agua",
       "y": 270
     },
     "bombilla=false,facing=west,puesto=yerba_verdeflor": {
-      "model": "ultimatefoods:item/argentina/yerba_verdeflor",
+      "model": "ultimatefoods:item/fisura/yerba_verdeflor",
       "y": 270
     },
     "bombilla=true,facing=east,puesto=bombilla": {
-      "model": "ultimatefoods:item/argentina/bombilla",
+      "model": "ultimatefoods:item/fisura/bombilla",
       "y": 90
     },
     "bombilla=true,facing=east,puesto=mate": {
-      "model": "ultimatefoods:item/argentina/mate",
+      "model": "ultimatefoods:item/fisura/mate",
       "y": 90
     },
     "bombilla=true,facing=east,puesto=mate_amargo": {
-      "model": "ultimatefoods:item/argentina/mate_amargo",
+      "model": "ultimatefoods:item/fisura/mate_amargo",
       "y": 90
     },
     "bombilla=true,facing=east,puesto=mate_con_yerba": {
-      "model": "ultimatefoods:item/argentina/mate_con_yerba",
+      "model": "ultimatefoods:item/fisura/mate_con_yerba",
       "y": 90
     },
     "bombilla=true,facing=east,puesto=mate_con_yuyos": {
-      "model": "ultimatefoods:item/argentina/mate_con_yuyos",
+      "model": "ultimatefoods:item/fisura/mate_con_yuyos",
       "y": 90
     },
     "bombilla=true,facing=east,puesto=mate_de_leche": {
-      "model": "ultimatefoods:item/argentina/mate_de_leche",
+      "model": "ultimatefoods:item/fisura/mate_de_leche",
       "y": 90
     },
     "bombilla=true,facing=east,puesto=mate_dulce": {
-      "model": "ultimatefoods:item/argentina/mate_dulce",
+      "model": "ultimatefoods:item/fisura/mate_dulce",
       "y": 90
     },
     "bombilla=true,facing=east,puesto=mate_lavado": {
-      "model": "ultimatefoods:item/argentina/mate_lavado",
+      "model": "ultimatefoods:item/fisura/mate_lavado",
       "y": 90
     },
     "bombilla=true,facing=east,puesto=pava": {
-      "model": "ultimatefoods:item/argentina/pava",
+      "model": "ultimatefoods:item/fisura/pava",
       "y": 90
     },
     "bombilla=true,facing=east,puesto=pava_caliente": {
-      "model": "ultimatefoods:item/argentina/pava_caliente",
+      "model": "ultimatefoods:item/fisura/pava_caliente",
       "y": 90
     },
     "bombilla=true,facing=east,puesto=pava_con_agua": {
-      "model": "ultimatefoods:item/argentina/pava_con_agua",
+      "model": "ultimatefoods:item/fisura/pava_con_agua",
       "y": 90
     },
     "bombilla=true,facing=east,puesto=yerba_verdeflor": {
-      "model": "ultimatefoods:item/argentina/yerba_verdeflor",
+      "model": "ultimatefoods:item/fisura/yerba_verdeflor",
       "y": 90
     },
     "bombilla=true,facing=north,puesto=bombilla": {
-      "model": "ultimatefoods:item/argentina/bombilla"
+      "model": "ultimatefoods:item/fisura/bombilla"
     },
     "bombilla=true,facing=north,puesto=mate": {
-      "model": "ultimatefoods:item/argentina/mate"
+      "model": "ultimatefoods:item/fisura/mate"
     },
     "bombilla=true,facing=north,puesto=mate_amargo": {
-      "model": "ultimatefoods:item/argentina/mate_amargo"
+      "model": "ultimatefoods:item/fisura/mate_amargo"
     },
     "bombilla=true,facing=north,puesto=mate_con_yerba": {
-      "model": "ultimatefoods:item/argentina/mate_con_yerba"
+      "model": "ultimatefoods:item/fisura/mate_con_yerba"
     },
     "bombilla=true,facing=north,puesto=mate_con_yuyos": {
-      "model": "ultimatefoods:item/argentina/mate_con_yuyos"
+      "model": "ultimatefoods:item/fisura/mate_con_yuyos"
     },
     "bombilla=true,facing=north,puesto=mate_de_leche": {
-      "model": "ultimatefoods:item/argentina/mate_de_leche"
+      "model": "ultimatefoods:item/fisura/mate_de_leche"
     },
     "bombilla=true,facing=north,puesto=mate_dulce": {
-      "model": "ultimatefoods:item/argentina/mate_dulce"
+      "model": "ultimatefoods:item/fisura/mate_dulce"
     },
     "bombilla=true,facing=north,puesto=mate_lavado": {
-      "model": "ultimatefoods:item/argentina/mate_lavado"
+      "model": "ultimatefoods:item/fisura/mate_lavado"
     },
     "bombilla=true,facing=north,puesto=pava": {
-      "model": "ultimatefoods:item/argentina/pava"
+      "model": "ultimatefoods:item/fisura/pava"
     },
     "bombilla=true,facing=north,puesto=pava_caliente": {
-      "model": "ultimatefoods:item/argentina/pava_caliente"
+      "model": "ultimatefoods:item/fisura/pava_caliente"
     },
     "bombilla=true,facing=north,puesto=pava_con_agua": {
-      "model": "ultimatefoods:item/argentina/pava_con_agua"
+      "model": "ultimatefoods:item/fisura/pava_con_agua"
     },
     "bombilla=true,facing=north,puesto=yerba_verdeflor": {
-      "model": "ultimatefoods:item/argentina/yerba_verdeflor"
+      "model": "ultimatefoods:item/fisura/yerba_verdeflor"
     },
     "bombilla=true,facing=south,puesto=bombilla": {
-      "model": "ultimatefoods:item/argentina/bombilla",
+      "model": "ultimatefoods:item/fisura/bombilla",
       "y": 180
     },
     "bombilla=true,facing=south,puesto=mate": {
-      "model": "ultimatefoods:item/argentina/mate",
+      "model": "ultimatefoods:item/fisura/mate",
       "y": 180
     },
     "bombilla=true,facing=south,puesto=mate_amargo": {
-      "model": "ultimatefoods:item/argentina/mate_amargo",
+      "model": "ultimatefoods:item/fisura/mate_amargo",
       "y": 180
     },
     "bombilla=true,facing=south,puesto=mate_con_yerba": {
-      "model": "ultimatefoods:item/argentina/mate_con_yerba",
+      "model": "ultimatefoods:item/fisura/mate_con_yerba",
       "y": 180
     },
     "bombilla=true,facing=south,puesto=mate_con_yuyos": {
-      "model": "ultimatefoods:item/argentina/mate_con_yuyos",
+      "model": "ultimatefoods:item/fisura/mate_con_yuyos",
       "y": 180
     },
     "bombilla=true,facing=south,puesto=mate_de_leche": {
-      "model": "ultimatefoods:item/argentina/mate_de_leche",
+      "model": "ultimatefoods:item/fisura/mate_de_leche",
       "y": 180
     },
     "bombilla=true,facing=south,puesto=mate_dulce": {
-      "model": "ultimatefoods:item/argentina/mate_dulce",
+      "model": "ultimatefoods:item/fisura/mate_dulce",
       "y": 180
     },
     "bombilla=true,facing=south,puesto=mate_lavado": {
-      "model": "ultimatefoods:item/argentina/mate_lavado",
+      "model": "ultimatefoods:item/fisura/mate_lavado",
       "y": 180
     },
     "bombilla=true,facing=south,puesto=pava": {
-      "model": "ultimatefoods:item/argentina/pava",
+      "model": "ultimatefoods:item/fisura/pava",
       "y": 180
     },
     "bombilla=true,facing=south,puesto=pava_caliente": {
-      "model": "ultimatefoods:item/argentina/pava_caliente",
+      "model": "ultimatefoods:item/fisura/pava_caliente",
       "y": 180
     },
     "bombilla=true,facing=south,puesto=pava_con_agua": {
-      "model": "ultimatefoods:item/argentina/pava_con_agua",
+      "model": "ultimatefoods:item/fisura/pava_con_agua",
       "y": 180
     },
     "bombilla=true,facing=south,puesto=yerba_verdeflor": {
-      "model": "ultimatefoods:item/argentina/yerba_verdeflor",
+      "model": "ultimatefoods:item/fisura/yerba_verdeflor",
       "y": 180
     },
     "bombilla=true,facing=west,puesto=bombilla": {
-      "model": "ultimatefoods:item/argentina/bombilla",
+      "model": "ultimatefoods:item/fisura/bombilla",
       "y": 270
     },
     "bombilla=true,facing=west,puesto=mate": {
-      "model": "ultimatefoods:item/argentina/mate",
+      "model": "ultimatefoods:item/fisura/mate",
       "y": 270
     },
     "bombilla=true,facing=west,puesto=mate_amargo": {
-      "model": "ultimatefoods:item/argentina/mate_amargo",
+      "model": "ultimatefoods:item/fisura/mate_amargo",
       "y": 270
     },
     "bombilla=true,facing=west,puesto=mate_con_yerba": {
-      "model": "ultimatefoods:item/argentina/mate_con_yerba",
+      "model": "ultimatefoods:item/fisura/mate_con_yerba",
       "y": 270
     },
     "bombilla=true,facing=west,puesto=mate_con_yuyos": {
-      "model": "ultimatefoods:item/argentina/mate_con_yuyos",
+      "model": "ultimatefoods:item/fisura/mate_con_yuyos",
       "y": 270
     },
     "bombilla=true,facing=west,puesto=mate_de_leche": {
-      "model": "ultimatefoods:item/argentina/mate_de_leche",
+      "model": "ultimatefoods:item/fisura/mate_de_leche",
       "y": 270
     },
     "bombilla=true,facing=west,puesto=mate_dulce": {
-      "model": "ultimatefoods:item/argentina/mate_dulce",
+      "model": "ultimatefoods:item/fisura/mate_dulce",
       "y": 270
     },
     "bombilla=true,facing=west,puesto=mate_lavado": {
-      "model": "ultimatefoods:item/argentina/mate_lavado",
+      "model": "ultimatefoods:item/fisura/mate_lavado",
       "y": 270
     },
     "bombilla=true,facing=west,puesto=pava": {
-      "model": "ultimatefoods:item/argentina/pava",
+      "model": "ultimatefoods:item/fisura/pava",
       "y": 270
     },
     "bombilla=true,facing=west,puesto=pava_caliente": {
-      "model": "ultimatefoods:item/argentina/pava_caliente",
+      "model": "ultimatefoods:item/fisura/pava_caliente",
       "y": 270
     },
     "bombilla=true,facing=west,puesto=pava_con_agua": {
-      "model": "ultimatefoods:item/argentina/pava_con_agua",
+      "model": "ultimatefoods:item/fisura/pava_con_agua",
       "y": 270
     },
     "bombilla=true,facing=west,puesto=yerba_verdeflor": {
-      "model": "ultimatefoods:item/argentina/yerba_verdeflor",
+      "model": "ultimatefoods:item/fisura/yerba_verdeflor",
       "y": 270
     }
   }

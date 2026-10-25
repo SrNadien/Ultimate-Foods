@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Recetas de Farmer's Delight (tabla de cortar y olla). Se dan como JSON porque sus
  * tipos de receta no estan en el classpath de compilacion. La clave es el nombre del
- * archivo dentro de data/ultimatefoods/recipe/argentina/.
+ * archivo dentro de data/ultimatefoods/recipe/fisura/.
  */
 public final class RecetasCrudas {
 
@@ -25,7 +25,7 @@ public final class RecetasCrudas {
         RECETAS.put("fernet_branca", "{\"type\":\"minecraft:crafting_shapeless\",\"category\":\"misc\",\"ingredients\":[{\"item\":\"minecraft:glass_bottle\"},{\"item\":\"minecraft:nether_wart\"},{\"item\":\"minecraft:cocoa_beans\"},{\"item\":\"minecraft:sweet_berries\"}],\"result\":{\"count\":1,\"id\":\"ultimatefoods:fernet_branca\"}}");
         RECETAS.put("flan_con_dulce_de_leche", "{\"type\":\"farmersdelight:cooking\",\"cookingtime\":300,\"experience\":0.5,\"ingredients\":[{\"type\":\"neoforge:compound\",\"children\":[{\"tag\":\"c:drinks/milk\"},{\"item\":\"minecraft:milk_bucket\"}]},{\"tag\":\"c:eggs\"},{\"item\":\"minecraft:sugar\"},{\"item\":\"ultimatefoods:dulce_de_leche\"}],\"recipe_book_tab\":\"misc\",\"result\":{\"count\":2,\"id\":\"ultimatefoods:flan_con_dulce_de_leche\"}}");
         // Solo existe si esta Patchouli: un libro, una yerba y la guia.
-        RECETAS.put("guia", "{\"neoforge:conditions\":[{\"type\":\"neoforge:mod_loaded\",\"modid\":\"patchouli\"}],\"type\":\"minecraft:crafting_shapeless\",\"category\":\"misc\",\"ingredients\":[{\"item\":\"minecraft:book\"},{\"item\":\"ultimatefoods:yerba_mate\"}],\"result\":{\"count\":1,\"id\":\"patchouli:guide_book\",\"components\":{\"patchouli:book\":\"ultimatefoods:guia_argentina\"}}}");
+        RECETAS.put("guia", "{\"neoforge:conditions\":[{\"type\":\"neoforge:mod_loaded\",\"modid\":\"patchouli\"}],\"type\":\"minecraft:crafting_shapeless\",\"category\":\"misc\",\"ingredients\":[{\"item\":\"minecraft:book\"},{\"item\":\"ultimatefoods:yerba_mate\"}],\"result\":{\"count\":1,\"id\":\"patchouli:guide_book\",\"components\":{\"patchouli:book\":\"ultimatefoods:guia_buela\"}}}");
         RECETAS.put("queso", "{\"type\":\"farmersdelight:cooking\",\"cookingtime\":300,\"experience\":0.3,\"ingredients\":[{\"type\":\"neoforge:compound\",\"children\":[{\"tag\":\"c:drinks/milk\"},{\"item\":\"minecraft:milk_bucket\"}]},{\"type\":\"neoforge:compound\",\"children\":[{\"tag\":\"c:drinks/milk\"},{\"item\":\"minecraft:milk_bucket\"}]},{\"item\":\"minecraft:bone_meal\"}],\"recipe_book_tab\":\"misc\",\"result\":{\"count\":2,\"id\":\"ultimatefoods:queso\"}}");
     }
 

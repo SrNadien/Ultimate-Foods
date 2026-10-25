@@ -1,0 +1,20 @@
+{
+  "name": "Milanesas",
+  "category": "ultimatefoods:comidas",
+  "icon": "ultimatefoods:milanesa_de_carne",
+  "sortnum": 17,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Bread crumbs + beef (or chicken) = raw milanesa; cook it like any meat.$(br2)Beef: Strength. Chicken: Speed.$(br2)Milanesa sandwich: milanesa, bread, tomato and greens. Strength, Resistance and Full Belly."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/milanesa_cruda"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/sanguche_de_milanesa"
+    }
+  ]
+}

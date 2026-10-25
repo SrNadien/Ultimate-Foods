@@ -1,0 +1,17 @@
+{
+  "name": "Alfajor",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:alfajor",
+  "sortnum": 72,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:alfajor",
+      "text": "Alfajor: 4 hunger, eaten fast, gives Sugar Rush (1 min)."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/alfajor"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Yerba mate",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_mate",
+  "sortnum": 33,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_mate",
+      "text": "Yerba mate molida: 3 hojas secas dan 2. Llena la yerbera (4 porciones), se usa para el paquete Verdeflor y le pone yerba a un mate vacio."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/yerba_mate_molida"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ultimatefoods:item/argentina/dulce_de_membrillo"
+    "layer0": "ultimatefoods:item/fisura/dulce_de_membrillo"
   }
 }

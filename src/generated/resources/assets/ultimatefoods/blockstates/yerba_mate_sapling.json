@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "ultimatefoods:block/argentina/yerba_mate_sapling"
+      "model": "ultimatefoods:block/fisura/yerba_mate_sapling"
     }
   }
 }
