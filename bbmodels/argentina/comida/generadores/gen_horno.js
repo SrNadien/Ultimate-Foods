@@ -5,9 +5,17 @@ const { ModelBuilder, mix, shade, rnd, blob, ramp, save, disc, discMask, slab, r
 const MASA = ['#e0a858', '#e8b866', '#eec478', '#d89a48'];
 
 // ================= EMPANADA =================
+// Segun la foto de referencia: dos empanadas de carne sobre una tabla de madera, una entera (dorada, con
+// ampollas y repulgue) y otra abierta al medio mostrando la carne picada.
 function empanada() {
   const m = new ModelBuilder({ size: 64, density: 2 });
-  regionesPlato(m, { w: 14 });
+  // tabla de madera rectangular (el nombre empieza con "tabla": en el item no se dibuja, solo colocada)
+  m.region('tabla_top', 28, 20, (x, y, w, h) => {
+    let c = ramp(['#d8aa70', '#e0b47a', '#cf9f64', '#e6bc86'], 0.5 + Math.sin(y * 0.9 + blob(x * 0.3, y, 4, 141) * 4) * 0.3 + rnd(x, y, 142) * 0.15);
+    if (x === 0 || y === 0 || x === w - 1 || y === h - 1) c = '#f0cc98';
+    return c;
+  });
+  m.region('tabla_lado', 28, 2, (x, y) => y === 0 ? '#f0cc98' : '#c8965a');
   m.region('repulgue', 18, 10, (x, y) => ((x + y) % 3 === 0) ? '#c88a3a' : ((x + y) % 3 === 1 ? '#f2d49a' : '#e6bc78'));
   m.region('emp_lado', 14, 3, (x, y) => y === 0 ? '#ecc888' : (y === 2 ? '#c88a3a' : '#e2b46c'));
   m.region('emp_top', 16, 8, (x, y, w, h) => {
@@ -15,6 +23,13 @@ function empanada() {
     let c = ramp(['#f2d8a0', '#ecc480', '#e0a85a', '#d4923e'], 1 - cx * 0.6 - y / h * 0.2 + blob(x, y, 2, 151) * 0.3 - 0.1);
     if (rnd(x, y, 152) > 0.92) c = '#f8e8c0';   // ampollas de la masa
     return c;
+  });
+  // carne picada de la empanada abierta: marron con trocitos de cebolla y de huevo
+  m.region('emp_relleno', 14, 8, (x, y) => {
+    const r = rnd(x, y, 153);
+    if (r > 0.93) return '#d8c488';              // huevo
+    if (r > 0.84) return '#c89858';              // cebolla
+    return ramp(['#5a3018', '#6e3c1e', '#7c4824', '#8a5428'], blob(x, y, 2, 154) + r * 0.25);
   });
   // media luna: franjas medidas desde el borde recto (dz) hacia la curva
   const half = (x0, zf, dir) => {
@@ -24,12 +39,15 @@ function empanada() {
       domo: [R(1, 8, 0.25, 2.25), R(2.25, 6.75, 2.25, 3.25)]
     };
   };
-  plato(m, { w: 14 });
-  [[1.75, 7.75, -1, 'a'], [5.25, 8.25, 1, 'b']].forEach(([x0, zf, dir, n]) => {
-    const h = half(x0, zf, dir);
-    slab(m, h.base, 1, 2, { sides: 'emp_lado', up: 'repulgue', down: null }, 'empanada_' + n);
-    slab(m, h.domo, 2, 3.25, { sides: 'emp_top', up: 'emp_top', down: null }, 'empanada_' + n + '_domo');
-  });
+  slab(m, [[1, 3, 15, 13]], 0, 1, { sides: 'tabla_lado', up: 'tabla_top', down: 'tabla_top' }, 'tabla');
+  // entera
+  const a = half(1.75, 7.75, -1);
+  slab(m, a.base, 1, 2, { sides: 'emp_lado', up: 'repulgue', down: null }, 'empanada_a');
+  slab(m, a.domo, 2, 3.25, { sides: 'emp_top', up: 'emp_top', down: null }, 'empanada_a_domo');
+  // abierta: el cascaron de masa y, adentro, la carne a la vista
+  const b = half(5.25, 8.25, 1);
+  slab(m, b.base, 1, 2, { sides: 'emp_lado', up: 'repulgue', down: null }, 'empanada_b');
+  slab(m, b.domo, 2, 2.75, { sides: 'emp_relleno', up: 'emp_relleno', down: null }, 'empanada_b_relleno');
   return save('empanada', m);
 }
 

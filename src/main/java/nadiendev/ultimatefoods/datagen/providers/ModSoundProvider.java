@@ -23,7 +23,14 @@ public class ModSoundProvider extends SoundDefinitionsProvider {
         addSound(SonidosReproducibles.POOP_EAT, "peo");
         addSound(SonidosReproducibles.RICKROLL, "rickroll");
         addSound(SonidosReproducibles.ERA_PAL_NENE, "me_compre_una_cajita_feliz");
-        addSound(SonidosReproducibles.VENDO_CARROS, "vendo_carros");
+        // Cinco pregones distintos; el comerciante errante usa uno al azar cada vez.
+        add(SonidosReproducibles.VENDO_CARROS, SoundDefinition.definition()
+                .with(sound(ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "vendo_carros/idle1")),
+                        sound(ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "vendo_carros/idle2")),
+                        sound(ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "vendo_carros/idle3")),
+                        sound(ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "vendo_carros/idle4")),
+                        sound(ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "vendo_carros/idle5")))
+                .subtitle("sound_event.ultimatefoods.vendo_carros"));
     }
 
     private void addSound(net.neoforged.neoforge.registries.DeferredHolder<SoundEvent, SoundEvent> soundEvent, String soundName) {

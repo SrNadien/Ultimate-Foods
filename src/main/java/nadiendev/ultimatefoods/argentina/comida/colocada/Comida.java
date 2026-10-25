@@ -41,7 +41,7 @@ public enum Comida implements StringRepresentable {
     FLAN_CON_DULCE_DE_LECHE("flan_con_dulce_de_leche",
             () -> ComidaItems.FLAN_CON_DULCE_DE_LECHE.get(), 1, 0, 1, 15, 5.5, 15),
     TORTAFRITA("tortafrita", () -> ComidaItems.TORTAFRITA.get(), 1, 0, 1, 15, 2.25, 15),
-    EMPANADA("empanada", () -> ComidaItems.EMPANADA.get(), 1, 0, 1, 15, 3.25, 15),
+    EMPANADA("empanada", () -> ComidaItems.EMPANADA.get(), 1, 0, 3, 15, 3.25, 13),
     PITUSAS("pitusas", () -> ComidaItems.PITUSAS.get(), 1, 0, 1, 15, 5.5, 15),
     PEPAS("pepas", () -> ComidaItems.PEPAS.get(), 1, 0, 1, 15, 2.4, 15),
     FUGAZZETA("fugazzeta", () -> ComidaItems.FUGAZZETA.get(), 0.5, 0, 0.5, 15.5, 3.25, 15.5),
