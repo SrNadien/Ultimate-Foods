@@ -791,6 +791,11 @@ public final class LangDatos {
         ES.put("easter_egg.ultimatefoods.messi", "\u00a1Gracias, Messi! \u00a1Campe\u00f3n del mundo!");
         EN.put("block.ultimatefoods.comida_colocada", "Placed Food");
         EN.put("block.ultimatefoods.mate_puesto", "Placed Mate");
+        EN.put("message.ultimatefoods.cacerola.estado.vacia", "The pot is empty.");
+        EN.put("message.ultimatefoods.cacerola.estado.incompleta", "%s/%s ingredients: they do not make a recipe yet.");
+        EN.put("message.ultimatefoods.cacerola.estado.sin_fuego", "Ready to cook %s, but there is no fire (%s %%).");
+        EN.put("message.ultimatefoods.cacerola.estado.cocinando", "Cooking %s: %s %%");
+        EN.put("message.ultimatefoods.cacerola.estado.listo", "Ready: %s servings of %s (you need a %s).");
         EN.put("ultimatefoods.guia.nombre", "The Good Argentine's Guide");
         EN.put("ultimatefoods.guia.portada", "Everything you need to know about mate, the grill and the long table, che.");
         EN.put("message.ultimatefoods.puesto.sin_bombilla", "The mate needs its bombilla first.");
@@ -798,6 +803,11 @@ public final class LangDatos {
         EN.put("message.ultimatefoods.comida_colocada.llena", "You are not hungry.");
         ES.put("block.ultimatefoods.comida_colocada", "Comida colocada");
         ES.put("block.ultimatefoods.mate_puesto", "Mate puesto");
+        ES.put("message.ultimatefoods.cacerola.estado.vacia", "La cacerola est\u00e1 vac\u00eda.");
+        ES.put("message.ultimatefoods.cacerola.estado.incompleta", "%s/%s ingredientes: todav\u00eda no forman ninguna receta.");
+        ES.put("message.ultimatefoods.cacerola.estado.sin_fuego", "Lista para cocinar %s, pero falta fuego (%s %%).");
+        ES.put("message.ultimatefoods.cacerola.estado.cocinando", "Cocinando %s: %s %%");
+        ES.put("message.ultimatefoods.cacerola.estado.listo", "Listo: %s porciones de %s (hace falta un %s).");
         ES.put("ultimatefoods.guia.nombre", "Gu\u00eda del buen argentino");
         ES.put("ultimatefoods.guia.portada", "Todo lo que hay que saber de mate, parrilla y mesa larga, che.");
         ES.put("message.ultimatefoods.puesto.sin_bombilla", "Primero ponele la bombilla al mate.");

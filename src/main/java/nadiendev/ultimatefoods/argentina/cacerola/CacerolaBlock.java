@@ -147,24 +147,28 @@ public class CacerolaBlock extends BaseEntityBlock {
         return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
     }
 
-    /** Mano vacia: devuelve el ultimo ingrediente cargado. */
+    /** Mano vacia: cuenta como va la cacerola y, si todavia se esta cargando, devuelve el ultimo ingrediente. */
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player,
                                                BlockHitResult hit) {
         if (!player.getMainHandItem().isEmpty()) {
             return InteractionResult.PASS;
         }
-        if (!(level.getBlockEntity(pos) instanceof CacerolaBlockEntity pot) || pot.ingredientCount() == 0) {
+        if (!(level.getBlockEntity(pos) instanceof CacerolaBlockEntity pot)) {
             return InteractionResult.PASS;
         }
         if (!level.isClientSide) {
-            ItemStack taken = pot.removeLastIngredient();
-            if (!taken.isEmpty()) {
-                level.playSound(null, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 0.4F, 1.0F);
-                if (!player.getInventory().add(taken)) {
-                    player.drop(taken, false);
+            // Mientras se carga devuelve el ultimo ingrediente; cocinando o lista, solo cuenta como esta.
+            if (!pot.isCooking() && !pot.hasPortions() && pot.ingredientCount() > 0) {
+                ItemStack taken = pot.removeLastIngredient();
+                if (!taken.isEmpty()) {
+                    level.playSound(null, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 0.4F, 1.0F);
+                    if (!player.getInventory().add(taken)) {
+                        player.drop(taken, false);
+                    }
                 }
             }
+            message(player, pot.statusMessage(level));
         }
         return InteractionResult.sidedSuccess(level.isClientSide);
     }

@@ -4,6 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
@@ -86,6 +87,32 @@ public class CacerolaBlockEntity extends BlockEntity {
 
     public ItemStack getContainer() {
         return container;
+    }
+
+    /**
+     * Que esta pasando adentro, en una linea: vacia, con ingredientes que no forman receta, lista para
+     * cocinar sin fuego, cocinando (con el porcentaje) o con las porciones listas para servir.
+     * Es lo que muestra el click con la mano vacia y el visor de bloques (Jade).
+     */
+    public Component statusMessage(Level level) {
+        if (portions > 0) {
+            return Component.translatable("message.ultimatefoods.cacerola.estado.listo",
+                    portions, meal.getHoverName(), container.getHoverName());
+        }
+        int count = ingredientCount();
+        if (count == 0) {
+            return Component.translatable("message.ultimatefoods.cacerola.estado.vacia");
+        }
+        Optional<RecipeHolder<CacerolaRecipe>> found = check().getRecipeFor(input(), level);
+        if (found.isEmpty()) {
+            return Component.translatable("message.ultimatefoods.cacerola.estado.incompleta", count, SLOTS);
+        }
+        CacerolaRecipe recipe = found.get().value();
+        int pct = Math.min(100, progress * 100 / Math.max(1, recipe.getCookingTime()));
+        Component dish = recipe.getResultItem(level.registryAccess()).getHoverName();
+        return Component.translatable(isHeated(level, worldPosition)
+                ? "message.ultimatefoods.cacerola.estado.cocinando"
+                : "message.ultimatefoods.cacerola.estado.sin_fuego", dish, pct);
     }
 
     public boolean isCooking() {
