@@ -1,0 +1,17 @@
+{
+  "name": "Yerbera",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerbera",
+  "sortnum": 35,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerbera",
+      "text": "Guarda hasta 64 porciones de yerba y es el puesto de trabajo del yerbatero. Click con un mate vacio: te lo devuelve con yerba. Conserva lo que tiene al romperla."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/yerbera"
+    }
+  ]
+}

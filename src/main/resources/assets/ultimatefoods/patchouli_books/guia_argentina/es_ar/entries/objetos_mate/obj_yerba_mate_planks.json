@@ -1,0 +1,17 @@
+{
+  "name": "Tablón de yerba mate",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_mate_planks",
+  "sortnum": 28,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_mate_planks",
+      "text": "Tablon verde claro (#dbfab8). Se craftea con un tronco de yerba mate y salen 4. Cuenta como tablon para todas las recetas."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/yerba_mate_planks"
+    }
+  ]
+}

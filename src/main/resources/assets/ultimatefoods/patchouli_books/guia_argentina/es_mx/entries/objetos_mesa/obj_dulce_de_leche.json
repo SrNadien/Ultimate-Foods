@@ -1,0 +1,13 @@
+{
+  "name": "Dulce de leche",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:dulce_de_leche",
+  "sortnum": 55,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:dulce_de_leche",
+      "text": "Dulce de leche: leche y azucar en la olla de Farmer's Delight. Da 2 y regala un poco de Dulzura al comerlo."
+    }
+  ]
+}

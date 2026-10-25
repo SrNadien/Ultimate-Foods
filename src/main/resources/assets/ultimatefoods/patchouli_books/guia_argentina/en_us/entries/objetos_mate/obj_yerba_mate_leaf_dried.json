@@ -1,0 +1,13 @@
+{
+  "name": "Dried Yerba Mate Leaf",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_mate_leaf_dried",
+  "sortnum": 32,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_mate_leaf_dried",
+      "text": "Dried leaf: a yerba leaf cooked in a campfire, furnace or smoker. Three of them grind into yerba."
+    }
+  ]
+}

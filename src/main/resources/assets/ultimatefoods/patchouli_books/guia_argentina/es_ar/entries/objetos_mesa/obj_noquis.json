@@ -1,0 +1,13 @@
+{
+  "name": "Ñoquis",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:noquis",
+  "sortnum": 71,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:noquis",
+      "text": "Noquis: 9 de hambre, Suerte (5 min) y Panza llena (1 min). Papa, masa y tomate en la olla de Farmer's Delight."
+    }
+  ]
+}

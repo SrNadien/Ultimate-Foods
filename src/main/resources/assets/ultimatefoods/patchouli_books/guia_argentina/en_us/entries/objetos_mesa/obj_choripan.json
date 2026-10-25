@@ -1,0 +1,17 @@
+{
+  "name": "Choripán",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:choripan",
+  "sortnum": 64,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:choripan",
+      "text": "Choripan: 10 hunger, Grill Fire (1 min) and Absorption (2 min)."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/choripan"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Washed-Out Mate",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:mate_lavado",
+  "sortnum": 43,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:mate_lavado",
+      "text": "Washed mate: the yerba gave all it had. It can be brewed once more, or unwashed with a brush to leave it empty."
+    }
+  ]
+}

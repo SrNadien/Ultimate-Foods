@@ -1,0 +1,17 @@
+{
+  "name": "Doritos",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:doritos",
+  "sortnum": 93,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:doritos",
+      "text": "Doritos: 3 hunger, eaten fast. It plays the saxophone."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:doritos_recipe"
+    }
+  ]
+}

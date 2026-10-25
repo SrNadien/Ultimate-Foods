@@ -20,6 +20,9 @@ const CATEGORIAS = {
   inicio: { name: ['Para empezar', 'Getting started'], description: ['Como se come y como se coloca todo lo del mod.', 'How everything in the mod is eaten and placed.'], icon: M + 'yerba_verdeflor' },
   mate: { name: ['El mate', 'The mate'], description: ['De la yerba al mate cebado, con todos sus gustos.', 'From the yerba to a brewed mate, in every flavor.'], icon: M + 'mate_amargo' },
   comidas: { name: ['A la mesa', 'At the table'], description: ['Parrilla, cacerola, milanesas, dulces y bebidas.', 'Grill, pot, milanesas, sweets and drinks.'], icon: M + 'asado' },
+  objetos_mate: { name: ['Objetos: el mate', 'Items: the mate'], description: ['Cada item y bloque del mate, uno por uno.', 'Every mate item and block, one by one.'], icon: M + 'mate' },
+  objetos_mesa: { name: ['Objetos: la mesa', 'Items: the table'], description: ['Cada comida, bebida y bloque de la mesa argentina.', 'Every food, drink and block of the Argentine table.'], icon: M + 'milanesa_de_carne' },
+  ultimate_foods: { name: ['Ultimate Foods', 'Ultimate Foods'], description: ['Las comidas originales del mod.', 'The mod\'s original foods.'], icon: M + 'monster' },
   secretos: { name: ['Secretos', 'Secrets'], description: ['Pistas de lo que esconde el mod.', 'Hints about what the mod hides.'], icon: M + 'la_copa' },
 };
 
@@ -190,6 +193,26 @@ const ENTRADAS = [
       'Look at the sky by day: Minecraft\'s sun is a Sun of May, with straight and wavy rays and a very familiar face in the middle.' + BR + 'It is a texture change, so nothing is needed to see it: it just shows up.'),
   ]],
 ];
+
+// ---- una ficha por cada item y bloque (tools/guia/objetos.js) ----
+const generado = path.join(RAIZ, 'src/generated/resources');
+const idioma = l => JSON.parse(fs.readFileSync(path.join(generado, 'assets/ultimatefoods/lang', l + '.json'), 'utf8'));
+const LANG = [idioma('es_es'), idioma('en_us')];
+const nombreDe = (id, i) => LANG[i]['item.ultimatefoods.' + id] || LANG[i]['block.ultimatefoods.' + id] || id;
+function recetaCrafteo(rec) {
+  const rel = rec.startsWith('/') ? rec.slice(1) : 'argentina/' + rec;
+  const archivo = path.join(generado, 'data/ultimatefoods/recipe', rel + '.json');
+  if (!fs.existsSync(archivo)) return null;
+  return JSON.parse(fs.readFileSync(archivo, 'utf8')).type.startsWith('minecraft:crafting') ? rec : null;
+}
+for (const [cat, id, tipo, texto, rec, icono] of require('./objetos')) {
+  const pages = [];
+  const item = icono || id;
+  pages.push({ type: 'patchouli:spotlight', item: M + item, text: texto });
+  const r = recetaCrafteo(rec === undefined ? id : (rec || ''));
+  if (rec !== null && r) pages.push({ type: 'patchouli:crafting', recipe: M + (r.startsWith('/') ? r.slice(1) : 'argentina/' + r) });
+  ENTRADAS.push([cat, 'obj_' + id, [nombreDe(id, 0), nombreDe(id, 1)], M + item, 0, pages]);
+}
 
 // ---- escritura -------------------------------------------------------------------------------------
 const LOCALES = { es_ar: 0, es_es: 0, es_mx: 0, en_us: 1 };

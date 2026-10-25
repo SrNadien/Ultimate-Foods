@@ -1,0 +1,13 @@
+{
+  "name": "Placed Food",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:asado",
+  "sortnum": 88,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:asado",
+      "text": "It has no item of its own: it is what remains when you set a food down with Shift + right click. Right click eats it; Shift + right click with empty hands picks it up. It is named after the food."
+    }
+  ]
+}

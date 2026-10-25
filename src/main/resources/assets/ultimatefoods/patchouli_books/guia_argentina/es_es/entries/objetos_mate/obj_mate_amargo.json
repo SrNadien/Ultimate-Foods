@@ -1,0 +1,13 @@
+{
+  "name": "Mate amargo",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:mate_amargo",
+  "sortnum": 39,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:mate_amargo",
+      "text": "Mate amargo cebado: efecto Tranquilidad (20 s), las criaturas hostiles cercanas se ponen lentas. 4 sorbos por cebada."
+    }
+  ]
+}

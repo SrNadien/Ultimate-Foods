@@ -1,0 +1,17 @@
+{
+  "name": "Raw Empanada",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:empanada_cruda",
+  "sortnum": 61,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:empanada_cruda",
+      "text": "Raw empanada: dough, beef, onion and an egg (makes 3). Cook it in a campfire, furnace, smoker or grill."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/empanada_cruda"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Hamburger",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:burger",
+  "sortnum": 103,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:burger",
+      "text": "Burger: bread, cooked patty, golden carrot and glistering melon slice. Heals instantly."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:hamburguesa_recipe"
+    }
+  ]
+}

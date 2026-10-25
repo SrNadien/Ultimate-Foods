@@ -1,0 +1,13 @@
+{
+  "name": "Chocolate Milk",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:chocolatada",
+  "sortnum": 96,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:chocolatada",
+      "text": "Chocolate milk: 20 hunger and lots of saturation. Creative-only."
+    }
+  ]
+}

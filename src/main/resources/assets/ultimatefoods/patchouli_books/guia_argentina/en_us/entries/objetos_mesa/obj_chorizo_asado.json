@@ -1,0 +1,13 @@
+{
+  "name": "Grilled Chorizo",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:chorizo_asado",
+  "sortnum": 62,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:chorizo_asado",
+      "text": "Grilled chorizo: 6 hunger and Grill Fire (30 s)."
+    }
+  ]
+}

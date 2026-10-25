@@ -1,0 +1,17 @@
+{
+  "name": "Super Caca",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:superpoop",
+  "sortnum": 95,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:superpoop",
+      "text": "Super Caca: 40 de hambre, 10 minutos de Velocidad XI y Salud extra XI. Se craftea con una Caca."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:superpoop_recipe"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Hoja de yerba mate",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_mate_leaf",
+  "sortnum": 31,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_mate_leaf",
+      "text": "Hoja de yerba mate: la sueltan las hojas del arbol. El yerbatero te la compra."
+    }
+  ]
+}

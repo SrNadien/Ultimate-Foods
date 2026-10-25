@@ -1,0 +1,13 @@
+{
+  "name": "Bitter Mate",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:mate_amargo",
+  "sortnum": 39,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:mate_amargo",
+      "text": "Brewed bitter mate: Tranquility (20 s), nearby hostile mobs slow down. 4 sips per brew."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Carne de Hamburguesa Cocinada",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:cooked_hamburger_meat",
+  "sortnum": 102,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:cooked_hamburger_meat",
+      "text": "Carne de hamburguesa cocinada: 6 de hambre. Para la hamburguesa."
+    }
+  ]
+}

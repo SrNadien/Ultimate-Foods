@@ -1,0 +1,13 @@
+{
+  "name": "Cooked Tortilla",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:tortilla",
+  "sortnum": 98,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:tortilla",
+      "text": "Cooked tortilla: the raw tortilla smelted. 20 hunger. Used to make tacos."
+    }
+  ]
+}

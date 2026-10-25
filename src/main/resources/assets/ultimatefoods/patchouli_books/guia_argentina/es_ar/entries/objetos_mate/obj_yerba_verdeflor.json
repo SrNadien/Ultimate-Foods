@@ -1,0 +1,17 @@
+{
+  "name": "Yerba Verdeflor",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_verdeflor",
+  "sortnum": 34,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_verdeflor",
+      "text": "Paquete Verdeflor: 4 de yerba y un papel. Le suma 16 porciones a la yerbera. Se apoya en el suelo con Shift + click derecho."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/yerba_verdeflor"
+    }
+  ]
+}

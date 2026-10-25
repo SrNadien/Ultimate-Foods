@@ -1,0 +1,13 @@
+{
+  "name": "Locro",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:locro",
+  "sortnum": 70,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:locro",
+      "text": "Locro: 13 de hambre, Panza llena (4 min), Nutricion (2 min) y Resistencia (2 min). Se cocina en la Cacerola Essen."
+    }
+  ]
+}

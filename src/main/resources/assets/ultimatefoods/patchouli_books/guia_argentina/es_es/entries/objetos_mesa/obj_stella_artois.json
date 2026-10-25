@@ -1,0 +1,17 @@
+{
+  "name": "Cerveza Stella Artois",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:stella_artois",
+  "sortnum": 84,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:stella_artois",
+      "text": "Cerveza Stella Artois: Buena onda (3 min) y Curda. Devuelve la botella."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/stella_artois"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Hamburguesa",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:burger",
+  "sortnum": 103,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:burger",
+      "text": "Hamburguesa: pan, carne cocinada, zanahoria dorada y rodaja de sandia brillante. Cura al instante."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:hamburguesa_recipe"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Pava with Water",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:pava_con_agua",
+  "sortnum": 45,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:pava_con_agua",
+      "text": "Kettle with cold water. Right click a lit campfire, furnace or fire to heat it."
+    }
+  ]
+}

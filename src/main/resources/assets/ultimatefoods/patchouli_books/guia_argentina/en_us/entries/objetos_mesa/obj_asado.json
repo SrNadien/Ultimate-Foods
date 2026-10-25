@@ -1,0 +1,13 @@
+{
+  "name": "Asado",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:asado",
+  "sortnum": 63,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:asado",
+      "text": "Asado: 10 hunger, Grill Fire (2 min) and Nourishment (30 s). Set down, it is eaten in 4 bites."
+    }
+  ]
+}

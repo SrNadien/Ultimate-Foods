@@ -1,0 +1,13 @@
+{
+  "name": "Yerba Mate Leaves",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_mate_leaves",
+  "sortnum": 29,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_mate_leaves",
+      "text": "Leaves of the yerba mate tree. They drop yerba leaves (more with Fortune) and sometimes a sapling. Shears or Silk Touch take the block."
+    }
+  ]
+}

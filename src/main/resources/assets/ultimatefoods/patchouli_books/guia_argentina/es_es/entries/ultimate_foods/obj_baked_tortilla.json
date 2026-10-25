@@ -1,0 +1,17 @@
+{
+  "name": "Tortilla Cruda",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:baked_tortilla",
+  "sortnum": 97,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:baked_tortilla",
+      "text": "Tortilla cruda: trigo y pan. Al horno se hace Tortilla cocinada."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:tortilla_cruda"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Dulce de Leche Pancake",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:panqueque_con_dulce_de_leche",
+  "sortnum": 74,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:panqueque_con_dulce_de_leche",
+      "text": "Dulce de leche pancake: 8 hunger, Sugar Rush (2 min) and Regeneration."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/panqueque_con_dulce_de_leche"
+    }
+  ]
+}

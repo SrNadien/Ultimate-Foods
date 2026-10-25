@@ -1,0 +1,13 @@
+{
+  "name": "Hot Pava",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:pava_caliente",
+  "sortnum": 46,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:pava_caliente",
+      "text": "Kettle with hot water, just right for mate: serves 8 brews and then becomes an empty kettle."
+    }
+  ]
+}

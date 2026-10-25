@@ -1,0 +1,13 @@
+{
+  "name": "Asado",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:asado",
+  "sortnum": 63,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:asado",
+      "text": "Asado: 10 de hambre, Fuego de parrilla (2 min) y Nutricion (30 s). Colocado se come en 4 bocados."
+    }
+  ]
+}

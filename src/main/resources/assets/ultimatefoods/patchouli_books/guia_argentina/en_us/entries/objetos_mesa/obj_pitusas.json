@@ -1,0 +1,17 @@
+{
+  "name": "Pitusas",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:pitusas",
+  "sortnum": 78,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:pitusas",
+      "text": "Pitusas: the afternoon cookies. 3 hunger, eaten fast, Sugar Rush (30 s)."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/pitusas"
+    }
+  ]
+}

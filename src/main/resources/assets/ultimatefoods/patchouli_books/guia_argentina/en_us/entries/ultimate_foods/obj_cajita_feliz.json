@@ -1,0 +1,17 @@
+{
+  "name": "Happy Meal",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:cajita_feliz",
+  "sortnum": 91,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:cajita_feliz",
+      "text": "Happy Meal: 8 hunger, Invisibility II (20 s) and Speed III (40 s). It plays \"I bought a Happy Meal\"."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:cajita_feliz_recipe"
+    }
+  ]
+}

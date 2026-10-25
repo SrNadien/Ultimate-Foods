@@ -1,0 +1,17 @@
+{
+  "name": "Yuyos",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yuyos",
+  "sortnum": 48,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yuyos",
+      "text": "Yuyos: herbs for mate. Crafted, and the yerbatero sells them. With yuyos a mate gets the Prosperity flavor."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/yuyos"
+    }
+  ]
+}

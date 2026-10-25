@@ -1,0 +1,17 @@
+{
+  "name": "Herbal Mate",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:mate_con_yuyos",
+  "sortnum": 42,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:mate_con_yuyos",
+      "text": "Brewed yuyos mate: Prosperity (15 s), extra luck, some experience and 50 % more experience from kills."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/mate_con_yuyos"
+    }
+  ]
+}

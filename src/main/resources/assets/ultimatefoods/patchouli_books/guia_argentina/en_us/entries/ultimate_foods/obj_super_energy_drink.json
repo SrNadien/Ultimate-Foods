@@ -1,0 +1,17 @@
+{
+  "name": "Super Energy Drink",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:super_energy_drink",
+  "sortnum": 92,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:super_energy_drink",
+      "text": "Super Energy Drink: 4 hunger and 15 s of eight effects: Night Vision, Jump, Water Breathing, Strength, Speed, Invisibility, Regeneration and Haste. Crafted with a Monster."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:super_energy_drink_recipe"
+    }
+  ]
+}

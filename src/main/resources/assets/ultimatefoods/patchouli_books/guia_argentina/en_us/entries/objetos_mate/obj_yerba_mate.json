@@ -1,0 +1,17 @@
+{
+  "name": "Yerba Mate",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_mate",
+  "sortnum": 33,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_mate",
+      "text": "Ground yerba mate: 3 dried leaves make 2. Fills the yerbera (4 portions), makes the Verdeflor package and fills an empty mate."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/yerba_mate_molida"
+    }
+  ]
+}

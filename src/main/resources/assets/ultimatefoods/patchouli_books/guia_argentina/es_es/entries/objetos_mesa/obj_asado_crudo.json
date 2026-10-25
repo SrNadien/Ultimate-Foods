@@ -1,0 +1,17 @@
+{
+  "name": "Asado crudo",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:asado_crudo",
+  "sortnum": 57,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:asado_crudo",
+      "text": "Asado crudo: se asa en la parrilla, la hoguera, el horno o el ahumador. Crudo da un poco de hambre y puede hacerte mal."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/asado_crudo"
+    }
+  ]
+}

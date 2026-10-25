@@ -1,0 +1,13 @@
+{
+  "name": "Flan with Dulce de Leche",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:flan_con_dulce_de_leche",
+  "sortnum": 75,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:flan_con_dulce_de_leche",
+      "text": "Dulce de leche flan: 8 hunger, Sugar Rush (1.5 min) and Absorption II (1.5 min). In the pot: milk, egg, sugar and dulce de leche."
+    }
+  ]
+}

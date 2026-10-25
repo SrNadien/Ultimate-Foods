@@ -1,0 +1,17 @@
+{
+  "name": "Taco Mexicano",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:taco",
+  "sortnum": 99,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:taco",
+      "text": "Taco mexicano: 20 de hambre y 10 minutos de Velocidad XI. Al comerlo suena el Rickroll."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:taco"
+    }
+  ]
+}

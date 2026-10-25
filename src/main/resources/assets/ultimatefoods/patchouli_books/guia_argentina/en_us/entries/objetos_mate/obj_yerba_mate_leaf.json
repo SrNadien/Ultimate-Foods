@@ -1,0 +1,13 @@
+{
+  "name": "Yerba Mate Leaf",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_mate_leaf",
+  "sortnum": 31,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_mate_leaf",
+      "text": "Yerba mate leaf, dropped by the tree leaves. The yerbatero buys it."
+    }
+  ]
+}

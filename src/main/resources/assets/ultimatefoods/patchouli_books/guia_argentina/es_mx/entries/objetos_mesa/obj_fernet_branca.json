@@ -1,0 +1,17 @@
+{
+  "name": "Fernet Branca",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:fernet_branca",
+  "sortnum": 82,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:fernet_branca",
+      "text": "Fernet Branca: Resistencia (2 min), Curda y un rato de confusion y debilidad. Devuelve la botella."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/fernet_branca"
+    }
+  ]
+}

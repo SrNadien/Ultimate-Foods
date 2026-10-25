@@ -1,0 +1,17 @@
+{
+  "name": "Pava",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:pava",
+  "sortnum": 44,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:pava",
+      "text": "La pava vacia: hierro y un palo. Click derecho al agua (o a un caldero con agua) para llenarla."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/pava"
+    }
+  ]
+}

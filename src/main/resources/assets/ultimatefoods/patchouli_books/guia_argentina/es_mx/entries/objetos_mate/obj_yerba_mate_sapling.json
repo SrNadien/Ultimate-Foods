@@ -1,0 +1,13 @@
+{
+  "name": "Brote de yerba mate",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_mate_sapling",
+  "sortnum": 30,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_mate_sapling",
+      "text": "Brote del arbol de yerba mate. Lo sueltan las hojas a veces y lo vende el yerbatero. Plantalo y crece."
+    }
+  ]
+}

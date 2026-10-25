@@ -1,0 +1,17 @@
+{
+  "name": "Fernet Branca",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:fernet_branca",
+  "sortnum": 82,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:fernet_branca",
+      "text": "Fernet Branca: Resistance (2 min), Tipsy and a bit of nausea and weakness. Returns the bottle."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/fernet_branca"
+    }
+  ]
+}

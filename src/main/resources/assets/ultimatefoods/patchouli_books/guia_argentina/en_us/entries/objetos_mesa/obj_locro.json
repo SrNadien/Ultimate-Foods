@@ -1,0 +1,13 @@
+{
+  "name": "Locro",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:locro",
+  "sortnum": 70,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:locro",
+      "text": "Locro: 13 hunger, Full Belly (4 min), Nourishment (2 min) and Resistance (2 min). Cooked in the Essen pot."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Chocolatada",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:chocolatada",
+  "sortnum": 96,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:chocolatada",
+      "text": "Chocolatada: 20 de hambre y mucha saciedad. Solo se consigue desde el creativo."
+    }
+  ]
+}

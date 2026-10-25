@@ -1,0 +1,13 @@
+{
+  "name": "Super Chili",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:super_chile",
+  "sortnum": 100,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:super_chile",
+      "text": "Super Chile: 10 hunger and 10 minutes of Nausea XI. It has a very funny tooltip. Creative-only."
+    }
+  ]
+}

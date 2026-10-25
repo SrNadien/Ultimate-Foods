@@ -1,0 +1,17 @@
+{
+  "name": "Poop",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:poop",
+  "sortnum": 94,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:poop",
+      "text": "Poop: 1 hunger and 5 minutes of the \"Que guarro\" effect. Better not."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:poop_recipe"
+    }
+  ]
+}

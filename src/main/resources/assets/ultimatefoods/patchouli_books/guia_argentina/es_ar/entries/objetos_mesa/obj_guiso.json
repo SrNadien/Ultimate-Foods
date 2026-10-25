@@ -1,0 +1,13 @@
+{
+  "name": "Guiso",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:guiso",
+  "sortnum": 69,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:guiso",
+      "text": "Guiso: 12 de hambre, Panza llena (3 min), Comodidad (2 min) y un toque de Regeneracion. Se cocina en la Cacerola Essen y se sirve con un cuenco."
+    }
+  ]
+}

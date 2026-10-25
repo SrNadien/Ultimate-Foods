@@ -1,0 +1,17 @@
+{
+  "name": "Monster",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:monster",
+  "sortnum": 90,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:monster",
+      "text": "Monster: 6 de hambre y 20 s de siete efectos: Velocidad II, Resistencia al fuego III, Absorcion III, Nauseas III, Invisibilidad III, Regeneracion III y Salud instantanea III. Suena el quemacizo."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:monster_recipe"
+    }
+  ]
+}

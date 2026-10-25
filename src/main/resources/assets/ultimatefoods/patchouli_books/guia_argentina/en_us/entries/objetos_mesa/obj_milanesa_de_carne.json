@@ -1,0 +1,13 @@
+{
+  "name": "Beef Milanesa",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:milanesa_de_carne",
+  "sortnum": 66,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:milanesa_de_carne",
+      "text": "Beef milanesa: 9 hunger and Strength (1 min)."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Cheese",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:queso",
+  "sortnum": 52,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:queso",
+      "text": "Cheese: 2 milks and bone meal in a Farmer's Delight pot. Makes 2."
+    }
+  ]
+}

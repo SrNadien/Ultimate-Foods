@@ -1,0 +1,13 @@
+{
+  "name": "Chorizo asado",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:chorizo_asado",
+  "sortnum": 62,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:chorizo_asado",
+      "text": "Chorizo asado: 6 de hambre y Fuego de parrilla (30 s)."
+    }
+  ]
+}

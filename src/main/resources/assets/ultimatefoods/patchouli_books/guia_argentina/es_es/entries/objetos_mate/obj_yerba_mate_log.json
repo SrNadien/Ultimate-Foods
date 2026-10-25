@@ -1,0 +1,13 @@
+{
+  "name": "Tronco de yerba mate",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_mate_log",
+  "sortnum": 27,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_mate_log",
+      "text": "Tronco del arbol de yerba mate: se obtiene talando el arbol. Con uno se hacen 4 tablones de yerba."
+    }
+  ]
+}

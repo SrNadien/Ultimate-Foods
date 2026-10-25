@@ -1,0 +1,17 @@
+{
+  "name": "Mexican Taco",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:taco",
+  "sortnum": 99,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:taco",
+      "text": "Mexican taco: 20 hunger and 10 minutes of Speed XI. Eating it plays the Rickroll."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:taco"
+    }
+  ]
+}
