@@ -1,0 +1,636 @@
+{
+  "credit": "Ultimate Foods - Argentina",
+  "texture_size": [64, 64],
+  "textures": {
+    "0": "ultimatefoods:block/argentina/comida/medialuna",
+    "particle": "ultimatefoods:block/argentina/comida/medialuna"
+  },
+  "elements": [
+    {
+      "name": "plato_pie",
+      "from": [4.5, 0, 3],
+      "to": [11.5, 0.5, 13],
+      "faces": {
+        "north": {
+          "uv": [1, 7, 4.5, 7.25],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [1, 7, 6, 7.25],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [1, 7, 4.5, 7.25],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [1, 7, 6, 7.25],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [7.6, 0, 10.4, 4],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "plato_pie_o1",
+      "from": [3, 0, 4.5],
+      "to": [4.5, 0.5, 11.5],
+      "faces": {
+        "north": {
+          "uv": [1, 7, 1.75, 7.25],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [1, 7, 4.5, 7.25],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [1, 7, 1.75, 7.25],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [1, 7, 4.5, 7.25],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [7, 0.6, 7.6, 3.4],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "plato_pie_e1",
+      "from": [11.5, 0, 4.5],
+      "to": [13, 0.5, 11.5],
+      "faces": {
+        "north": {
+          "uv": [1, 7, 1.75, 7.25],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [1, 7, 4.5, 7.25],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [1, 7, 1.75, 7.25],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [1, 7, 4.5, 7.25],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [10.4, 0.6, 11, 3.4],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "plato",
+      "from": [4.5, 0.5, 1],
+      "to": [11.5, 1, 15],
+      "faces": {
+        "north": {
+          "uv": [1, 7, 4.5, 7.25],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [1, 7, 8, 7.25],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [1, 7, 4.5, 7.25],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [1, 7, 8, 7.25],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [1.75, 0, 5.25, 7],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [8, 0, 10, 4],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "plato_o1",
+      "from": [2, 0.5, 2],
+      "to": [4.5, 1, 14],
+      "faces": {
+        "north": {
+          "uv": [1, 7, 2.25, 7.25],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [1, 7, 7, 7.25],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [1, 7, 2.25, 7.25],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [1, 7, 7, 7.25],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [0.5, 0.5, 1.75, 6.5],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [7.2857, 0.2857, 8, 3.7143],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "plato_e1",
+      "from": [11.5, 0.5, 2],
+      "to": [14, 1, 14],
+      "faces": {
+        "north": {
+          "uv": [1, 7, 2.25, 7.25],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [1, 7, 7, 7.25],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [1, 7, 2.25, 7.25],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [1, 7, 7, 7.25],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [5.25, 0.5, 6.5, 6.5],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [10, 0.2857, 10.7143, 3.7143],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "plato_o2",
+      "from": [1, 0.5, 4.5],
+      "to": [2, 1, 11.5],
+      "faces": {
+        "north": {
+          "uv": [1, 7, 1.5, 7.25],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [1, 7, 4.5, 7.25],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [1, 7, 1.5, 7.25],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [1, 7, 4.5, 7.25],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [0, 1.75, 0.5, 5.25],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [7, 1, 7.2857, 3],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "plato_e2",
+      "from": [14, 0.5, 4.5],
+      "to": [15, 1, 11.5],
+      "faces": {
+        "north": {
+          "uv": [1, 7, 1.5, 7.25],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [1, 7, 4.5, 7.25],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [1, 7, 1.5, 7.25],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [1, 7, 4.5, 7.25],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [6.5, 1.75, 7, 5.25],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [10.7143, 1, 11, 3],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "medialuna_a_centro",
+      "from": [6.5, 1, 4.5],
+      "to": [9.5, 3.75, 7.5],
+      "faces": {
+        "north": {
+          "uv": [11, 0, 12.5, 1.375],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [11, 0, 12.5, 1.375],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [11, 0, 12.5, 1.375],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [11, 0, 12.5, 1.375],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [13.5, 0, 15, 1.5],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [11, 0, 12.5, 1.5],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "medialuna_a_tramo_o",
+      "from": [4.3356, 1, 4.3195],
+      "to": [6.5856, 3.5, 6.8195],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "y",
+        "origin": [5.4606, 1, 5.5695]
+      },
+      "faces": {
+        "north": {
+          "uv": [11, 0, 12.125, 1.25],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [0, 7, 1, 8],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [11, 0, 12.125, 1.25],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [0, 7, 1, 8],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [13.5, 0, 14.625, 1.25],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [11, 0, 12.125, 1.25],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "medialuna_a_punta_o",
+      "from": [3.0837, 1, 3.8349],
+      "to": [5.0837, 2.5, 5.3349],
+      "rotation": {
+        "angle": -45,
+        "axis": "y",
+        "origin": [4.0837, 1, 4.5849]
+      },
+      "faces": {
+        "north": {
+          "uv": [0, 7, 1, 7.75],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [0, 7, 0.75, 7.75],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [0, 7, 1, 7.75],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [0, 7, 0.75, 7.75],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [13.5, 0, 14.5, 0.75],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [0, 7, 1, 7.75],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "medialuna_a_tramo_e",
+      "from": [9.4144, 1, 4.3195],
+      "to": [11.6644, 3.5, 6.8195],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "y",
+        "origin": [10.5394, 1, 5.5695]
+      },
+      "faces": {
+        "north": {
+          "uv": [11, 0, 12.125, 1.25],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [0, 7, 1, 8],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [11, 0, 12.125, 1.25],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [0, 7, 1, 8],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [13.5, 0, 14.625, 1.25],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [11, 0, 12.125, 1.25],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "medialuna_a_punta_e",
+      "from": [10.9163, 1, 3.8349],
+      "to": [12.9163, 2.5, 5.3349],
+      "rotation": {
+        "angle": 45,
+        "axis": "y",
+        "origin": [11.9163, 1, 4.5849]
+      },
+      "faces": {
+        "north": {
+          "uv": [0, 7, 1, 7.75],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [0, 7, 0.75, 7.75],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [0, 7, 1, 7.75],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [0, 7, 0.75, 7.75],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [13.5, 0, 14.5, 0.75],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [0, 7, 1, 7.75],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "medialuna_b_centro",
+      "from": [6.5, 1, 8.75],
+      "to": [9.5, 3.75, 11.75],
+      "faces": {
+        "north": {
+          "uv": [11, 0, 12.5, 1.375],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [11, 0, 12.5, 1.375],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [11, 0, 12.5, 1.375],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [11, 0, 12.5, 1.375],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [13.5, 0, 15, 1.5],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [11, 0, 12.5, 1.5],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "medialuna_b_tramo_o",
+      "from": [4.3356, 1, 9.4305],
+      "to": [6.5856, 3.5, 11.9305],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "y",
+        "origin": [5.4606, 1, 10.6805]
+      },
+      "faces": {
+        "north": {
+          "uv": [11, 0, 12.125, 1.25],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [0, 7, 1, 8],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [11, 0, 12.125, 1.25],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [0, 7, 1, 8],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [13.5, 0, 14.625, 1.25],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [11, 0, 12.125, 1.25],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "medialuna_b_punta_o",
+      "from": [3.0837, 1, 10.9151],
+      "to": [5.0837, 2.5, 12.4151],
+      "rotation": {
+        "angle": 45,
+        "axis": "y",
+        "origin": [4.0837, 1, 11.6651]
+      },
+      "faces": {
+        "north": {
+          "uv": [0, 7, 1, 7.75],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [0, 7, 0.75, 7.75],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [0, 7, 1, 7.75],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [0, 7, 0.75, 7.75],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [13.5, 0, 14.5, 0.75],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [0, 7, 1, 7.75],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "medialuna_b_tramo_e",
+      "from": [9.4144, 1, 9.4305],
+      "to": [11.6644, 3.5, 11.9305],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "y",
+        "origin": [10.5394, 1, 10.6805]
+      },
+      "faces": {
+        "north": {
+          "uv": [11, 0, 12.125, 1.25],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [0, 7, 1, 8],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [11, 0, 12.125, 1.25],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [0, 7, 1, 8],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [13.5, 0, 14.625, 1.25],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [11, 0, 12.125, 1.25],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "medialuna_b_punta_e",
+      "from": [10.9163, 1, 10.9151],
+      "to": [12.9163, 2.5, 12.4151],
+      "rotation": {
+        "angle": -45,
+        "axis": "y",
+        "origin": [11.9163, 1, 11.6651]
+      },
+      "faces": {
+        "north": {
+          "uv": [0, 7, 1, 7.75],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [0, 7, 0.75, 7.75],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [0, 7, 1, 7.75],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [0, 7, 0.75, 7.75],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [13.5, 0, 14.5, 0.75],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [0, 7, 1, 7.75],
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "display": {
+    "gui": {
+      "rotation": [30, 225, 0],
+      "translation": [0, 4.15, 2.4],
+      "scale": [0.783, 0.783, 0.783]
+    },
+    "ground": {
+      "translation": [0, 6.5, 0],
+      "scale": [0.571, 0.571, 0.571]
+    },
+    "fixed": {
+      "rotation": [-90, 0, 0],
+      "translation": [0, 0, -0.5],
+      "scale": [0.929, 0.929, 0.929]
+    },
+    "thirdperson_righthand": {
+      "rotation": [75, 45, 0],
+      "translation": [0, 3.05, 2.06],
+      "scale": [0.348, 0.348, 0.348]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [75, 45, 0],
+      "translation": [0, 3.05, 2.06],
+      "scale": [0.348, 0.348, 0.348]
+    },
+    "firstperson_righthand": {
+      "rotation": [0, 45, 0],
+      "translation": [0, 6.17, 0],
+      "scale": [0.354, 0.354, 0.354]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, 225, 0],
+      "translation": [0, 6.17, 0],
+      "scale": [0.354, 0.354, 0.354]
+    },
+    "head": {
+      "translation": [0, 12.89, 0],
+      "scale": [0.786, 0.786, 0.786]
+    }
+  }
+}
