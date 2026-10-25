@@ -331,6 +331,7 @@
   "message.ultimatefoods.parrilla.llena": "The grill is full.",
   "message.ultimatefoods.parrilla.lluvia": "The rain puts out the fire.",
   "message.ultimatefoods.parrilla.sin_combustible": "The grill has no fuel.",
+  "message.ultimatefoods.puesto.sin_bombilla": "The mate needs its bombilla first.",
   "message.ultimatefoods.yerbera.llena": "The yerbera is full.",
   "message.ultimatefoods.yerbera.porciones": "Yerba: %s/%s servings",
   "message.ultimatefoods.yerbera.vacia": "The yerbera is empty.",

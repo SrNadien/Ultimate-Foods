@@ -12,7 +12,11 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
-/** Datagen del mate puesto: una variante por mate o pava y por orientacion, con el modelo 3D del item. */
+/**
+ * Datagen del mate puesto: una variante por objeto, orientacion y bombilla, con el modelo 3D del item.
+ * Los mates con yerba sin la bombilla clavada usan {@code block/argentina/mate/<id>_sin_bombilla}
+ * (lo genera {@code bbmodels/argentina/sin_bombilla.js}).
+ */
 public final class PuestoData {
 
     private PuestoData() {
@@ -36,10 +40,12 @@ public final class PuestoData {
             getVariantBuilder(PuestoRegistry.MATE_PUESTO.get()).forAllStates(state -> {
                 Puesto puesto = state.getValue(PuestoBlock.PUESTO);
                 Direction facing = state.getValue(PuestoBlock.FACING);
-                ModelFile modelo = new ModelFile.UncheckedModelFile(
-                        ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "item/argentina/" + puesto.id()));
+                boolean sinBombilla = puesto.esMateConYerba() && !state.getValue(PuestoBlock.BOMBILLA);
+                String ruta = sinBombilla ? "block/argentina/mate/" + puesto.id() + "_sin_bombilla"
+                        : "item/argentina/" + puesto.id();
                 return ConfiguredModel.builder()
-                        .modelFile(modelo)
+                        .modelFile(new ModelFile.UncheckedModelFile(
+                                ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, ruta)))
                         .rotationY(((int) facing.toYRot() + 180) % 360)
                         .build();
             });

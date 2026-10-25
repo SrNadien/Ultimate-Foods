@@ -31,7 +31,9 @@ public enum Puesto implements StringRepresentable {
     MATE_LAVADO("mate_lavado", () -> MateItems.MATE_LAVADO.get(), 3.5, 0, 3.5, 12.9, 16, 12.5),
     PAVA("pava", () -> MateItems.PAVA.get(), 0, 0, 2, 16, 14.6, 14),
     PAVA_CON_AGUA("pava_con_agua", () -> MateItems.PAVA_CON_AGUA.get(), 0, 0, 2, 16, 14.6, 14),
-    PAVA_CALIENTE("pava_caliente", () -> MateItems.PAVA_CALIENTE.get(), 0, 0, 2, 16, 16, 14);
+    PAVA_CALIENTE("pava_caliente", () -> MateItems.PAVA_CALIENTE.get(), 0, 0, 2, 16, 16, 14),
+    YERBA_VERDEFLOR("yerba_verdeflor", () -> MateItems.YERBA_VERDEFLOR.get(), 3.5, 0, 5.5, 12.5, 14.8, 10.5),
+    BOMBILLA("bombilla", () -> MateItems.BOMBILLA.get(), 6.75, 0, 7.5, 9.25, 16, 8.5);
 
     private final String id;
     private final Supplier<? extends Item> item;
@@ -45,6 +47,14 @@ public enum Puesto implements StringRepresentable {
         for (Direction dir : Direction.Plane.HORIZONTAL) {
             shapes.put(dir, girar(norte, dir));
         }
+    }
+
+    /** Los mates con yerba (con o sin cebar): los unicos a los que se les clava la bombilla. */
+    public boolean esMateConYerba() {
+        return switch (this) {
+            case MATE_CON_YERBA, MATE_LAVADO, MATE_AMARGO, MATE_DULCE, MATE_DE_LECHE, MATE_CON_YUYOS -> true;
+            default -> false;
+        };
     }
 
     public String id() {
