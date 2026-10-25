@@ -81,11 +81,11 @@ public class PuestoBlock extends BaseEntityBlock {
     }
 
     public BlockState stateFor(Puesto puesto, BlockPlaceContext context) {
-        // Los mates y la bombilla se inclinan hacia donde mira quien los pone; el resto, de frente a el.
+        // Los mates y la bombilla se inclinan hacia quien los pone (la boquilla apunta a quien toma); el resto, de frente a el.
         Direction mira = context.getHorizontalDirection();
         return defaultBlockState()
                 .setValue(PUESTO, puesto)
-                .setValue(FACING, puesto.seInclina() ? mira.getCounterClockWise() : mira.getOpposite());
+                .setValue(FACING, puesto.seInclina() ? mira.getClockWise() : mira.getOpposite());
     }
 
     @Override
@@ -215,9 +215,9 @@ public class PuestoBlock extends BaseEntityBlock {
         // La bombilla se clava aparte, a un mate que ya tiene yerba
         if (held.is(MateItems.BOMBILLA.get()) && sirve && !state.getValue(BOMBILLA)) {
             if (!level.isClientSide) {
-                // La bombilla queda inclinada hacia donde mira quien la clava, no hacia donde se puso el mate.
+                // La bombilla queda inclinada hacia quien la clava, no hacia donde se puso el mate.
                 level.setBlock(pos, state.setValue(BOMBILLA, true)
-                        .setValue(FACING, player.getDirection().getCounterClockWise()), 3);
+                        .setValue(FACING, player.getDirection().getClockWise()), 3);
                 if (!player.hasInfiniteMaterials()) {
                     held.shrink(1);
                 }
