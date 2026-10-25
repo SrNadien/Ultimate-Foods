@@ -37,11 +37,7 @@
   },
   "vendo_carros": {
     "sounds": [
-      "ultimatefoods:vendo_carros/idle1",
-      "ultimatefoods:vendo_carros/idle2",
-      "ultimatefoods:vendo_carros/idle3",
-      "ultimatefoods:vendo_carros/idle4",
-      "ultimatefoods:vendo_carros/idle5"
+      "ultimatefoods:vendo_carros"
     ],
     "subtitle": "sound_event.ultimatefoods.vendo_carros"
   }
