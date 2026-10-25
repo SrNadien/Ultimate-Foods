@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "ultimatefoods:yerba_mate_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:oak_planks"
+  }
+}

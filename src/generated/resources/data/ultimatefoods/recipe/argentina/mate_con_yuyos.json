@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ultimatefoods:mate_con_yerba"
+    },
+    {
+      "item": "ultimatefoods:yuyos"
+    }
+  ],
+  "result": {
+    "components": {
+      "ultimatefoods:sabor": "yuyos"
+    },
+    "count": 1,
+    "id": "ultimatefoods:mate_con_yerba"
+  }
+}
