@@ -1,5 +1,5 @@
 {
-  "name": "Noquis, empanadas y fugazzeta",
+  "name": "Empanadas y mas",
   "category": "ultimatefoods:comidas",
   "icon": "ultimatefoods:noquis",
   "sortnum": 18,
@@ -7,6 +7,14 @@
     {
       "type": "patchouli:text",
       "text": "Noquis: papa, masa y tomate en la olla de Farmer's Delight. Suerte y Panza llena.$(br2)Empanada: Buena onda (se hornea).$(br2)Fugazzeta: cebolla, queso y masa. Buena onda y Panza llena."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Empanada cruda: masa, carne vacuna cruda, cebolla y un huevo (en la mesa de crafteo, salen 3). Despues se cocinan como cualquier carne: en la hoguera, el horno, el ahumador o la parrilla."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/empanada_cruda"
     },
     {
       "type": "patchouli:crafting",

@@ -136,9 +136,12 @@ const ENTRADAS = [
     craft('milanesa_cruda'),
     craft('sanguche_de_milanesa'),
   ]],
-  ['comidas', 'noquis_y_mas', ['Noquis, empanadas y fugazzeta', 'Noquis, empanadas and fugazzeta'], 'noquis', 0, [
+  ['comidas', 'noquis_y_mas', ['Empanadas y mas', 'Empanadas and more'], 'noquis', 0, [
     t('Noquis: papa, masa y tomate en la olla de Farmer\'s Delight. Suerte y Panza llena.' + BR + 'Empanada: Buena onda (se hornea).' + BR + 'Fugazzeta: cebolla, queso y masa. Buena onda y Panza llena.',
       'Noquis: potato, dough and tomato in a Farmer\'s Delight pot. Luck and Full Belly.' + BR + 'Empanada: Good Vibes (baked).' + BR + 'Fugazzeta: onion, cheese and dough. Good Vibes and Full Belly.'),
+    t('Empanada cruda: masa, carne vacuna cruda, cebolla y un huevo (en la mesa de crafteo, salen 3). Despues se cocinan como cualquier carne: en la hoguera, el horno, el ahumador o la parrilla.',
+      'Raw empanada: dough, raw beef, onion and an egg (crafting table, makes 3). Then cook them like any meat: campfire, furnace, smoker or grill.'),
+    craft('empanada_cruda'),
     craft('fugazzeta'),
   ]],
   ['comidas', 'dulces', ['Dulces y panaderia', 'Sweets and bakery'], 'alfajor', 0, [
