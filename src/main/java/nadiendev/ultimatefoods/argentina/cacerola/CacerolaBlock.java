@@ -195,7 +195,7 @@ public class CacerolaBlock extends BaseEntityBlock {
         double z = pos.getZ() + 0.5 + (random.nextDouble() - 0.5) * 0.5;
         double y = pos.getY() + 0.6;
         if (random.nextInt(cooking ? 3 : 8) == 0) {
-            level.addParticle(ParticleTypes.CLOUD, x, y + 0.2, z, 0.0, 0.03, 0.0);
+            level.addParticle(ParticleTypes.SMOKE, x, y + 0.2, z, 0.0, 0.02, 0.0);
         }
         if (cooking && random.nextInt(5) == 0) {
             level.addParticle(ParticleTypes.BUBBLE_POP, x, y, z, 0.0, 0.02, 0.0);
