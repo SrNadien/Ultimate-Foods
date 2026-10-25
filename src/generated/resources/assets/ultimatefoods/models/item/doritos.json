@@ -1,0 +1,7 @@
+{
+  "parent": "ultimatefoods:custom/doritos",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "ultimatefoods:item/doritos"
+  }
+}
