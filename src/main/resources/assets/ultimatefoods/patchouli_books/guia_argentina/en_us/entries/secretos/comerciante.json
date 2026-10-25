@@ -1,0 +1,12 @@
+{
+  "name": "Easter egg: the trader",
+  "category": "ultimatefoods:secretos",
+  "icon": "minecraft:wandering_trader_spawn_egg",
+  "sortnum": 25,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The wandering trader stops muttering and shouts its sales pitch: \"We buy old cars and trucks for scrap\".$(br2)It lasts about 13 seconds; no other one starts over it. All its other sounds (buying, refusing, drinking the potion) stay as usual."
+    }
+  ]
+}

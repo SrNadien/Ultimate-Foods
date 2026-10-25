@@ -171,9 +171,23 @@ const ENTRADAS = [
       'A golden trophy for decoration, in honor of Lionel Andres Messi. Six gold ingots in a cup shape.'),
     craft('/la_copa'),
   ]],
-  ['secretos', 'pistas', ['Pistas', 'Hints'], 'minecraft:name_tag', 0, [
-    t('Los aldeanos tienen nombre propio... prueba ponerles uno con una etiqueta.' + BR + 'Un cerdo con el nombre justo ya no parece un cerdo.' + BR + 'El comerciante errante tiene algo que vender. Siempre.' + BR + 'Y mira el cielo: el sol anda con cara de alguien.',
-      'Villagers have names of their own... try giving them one with a name tag.' + BR + 'A pig with the right name no longer looks like a pig.' + BR + 'The wandering trader has something to sell. Always.' + BR + 'And look at the sky: the sun has someone\'s face.'),
+  ['secretos', 'messi', ['Easter egg: Messi', 'Easter egg: Messi'], 'minecraft:name_tag', 0, [
+    t('Ponele una etiqueta con el nombre "Messi" a un aldeano (tambien valen "Lionel Messi", "Lionel Andres Messi", "Leo Messi" y "La Pulga", con o sin mayusculas y tildes).' + BR + 'El aldeano se transforma en un homenaje: salen fuegos artificiales, suenan festejos y un mensaje de campeon del mundo.',
+      'Rename a villager with a name tag to "Messi" ("Lionel Messi", "Lionel Andres Messi", "Leo Messi" and "La Pulga" also work, in any case and with or without accents).' + BR + 'The villager becomes a tribute: fireworks, cheering sounds and a world champion message.'),
+    t('Desde ese momento el aldeano te vende La Copa por 32 esmeraldas (una sola vez por aldeano).' + BR + 'La Copa tambien se puede craftear con oro, pero asi tiene su historia.',
+      'From then on that villager sells you The Cup for 32 emeralds (once per villager).' + BR + 'The Cup can also be crafted from gold, but this way it has its story.'),
+  ]],
+  ['secretos', 'carpincho', ['Easter egg: el carpincho', 'Easter egg: the capybara'], 'minecraft:pig_spawn_egg', 0, [
+    t('Ponele una etiqueta con el nombre "carpincho" a un cerdo (con o sin mayusculas ni tildes).' + BR + 'El cerdo cambia de piel y pasa a ser un carpincho marron y gordito. Es solo la apariencia: sigue siendo un cerdo.' + BR + 'Si le sacas el nombre, vuelve a ser cerdo.',
+      'Rename a pig to "carpincho" with a name tag (any case, with or without accents).' + BR + 'The pig changes skin into a chubby brown capybara. It is only looks: it is still a pig.' + BR + 'Remove the name and it is a pig again.'),
+  ]],
+  ['secretos', 'comerciante', ['Easter egg: el comerciante', 'Easter egg: the trader'], 'minecraft:wandering_trader_spawn_egg', 0, [
+    t('El comerciante errante deja de murmurar y lanza su pregon: "Compramos carros y camionetas viejas para desarmar".' + BR + 'El pregon dura unos 13 segundos; mientras suena no empieza otro encima. Todos sus otros sonidos (comprar, rechazar, tomar la pocion) quedan como siempre.',
+      'The wandering trader stops muttering and shouts its sales pitch: "We buy old cars and trucks for scrap".' + BR + 'It lasts about 13 seconds; no other one starts over it. All its other sounds (buying, refusing, drinking the potion) stay as usual.'),
+  ]],
+  ['secretos', 'el_sol', ['Easter egg: el sol', 'Easter egg: the sun'], 'minecraft:clock', 0, [
+    t('Mira el cielo de dia: el sol de Minecraft es un Sol de Mayo, con rayos rectos y ondulados y una cara sonriente en el centro.' + BR + 'Es un cambio de textura, asi que no hace falta nada para verlo: sale solo.',
+      'Look at the sky by day: Minecraft\'s sun is a Sun of May, with straight and wavy rays and a smiling face in the middle.' + BR + 'It is a texture change, so nothing is needed to see it: it just shows up.'),
   ]],
 ];
 
