@@ -229,6 +229,11 @@ public class CacerolaBlockEntity extends BlockEntity {
     // ---- Tick ------------------------------------------------------------------------------------
 
     public static void serverTick(Level level, BlockPos pos, BlockState state, CacerolaBlockEntity pot) {
+        // La tapa se abre mientras hay ingredientes o porciones adentro, y se cierra cuando queda vacia.
+        boolean abierta = pot.ingredientCount() > 0 || pot.portions > 0;
+        if (state.getValue(CacerolaBlock.ABIERTA) != abierta) {
+            level.setBlock(pos, state.setValue(CacerolaBlock.ABIERTA, abierta), Block.UPDATE_ALL);
+        }
         if (pot.portions > 0 || pot.ingredientCount() == 0) {
             if (pot.progress != 0) {
                 pot.progress = 0;

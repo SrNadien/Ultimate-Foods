@@ -26,6 +26,7 @@ import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -42,13 +43,15 @@ public class CacerolaBlock extends BaseEntityBlock {
 
     public static final MapCodec<CacerolaBlock> CODEC = simpleCodec(CacerolaBlock::new);
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+    /** Con la tapa abierta: mientras tiene ingredientes adentro o porciones para servir. Vacia, queda cerrada. */
+    public static final BooleanProperty ABIERTA = BooleanProperty.create("abierta");
 
     /** Huella de 12x12 y 9 de alto (con las manijas). El modelo 3D respeta esta caja. */
     private static final VoxelShape SHAPE = Block.box(2, 0, 2, 14, 9, 14);
 
     public CacerolaBlock(Properties properties) {
         super(properties);
-        registerDefaultState(stateDefinition.any().setValue(FACING, Direction.NORTH));
+        registerDefaultState(stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(ABIERTA, false));
     }
 
     @Override
@@ -58,7 +61,7 @@ public class CacerolaBlock extends BaseEntityBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
+        builder.add(FACING, ABIERTA);
     }
 
     @Nullable

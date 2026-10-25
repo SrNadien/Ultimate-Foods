@@ -30,6 +30,8 @@ public final class ComidaModels {
 
     private static final ResourceLocation CACEROLA_BLOCK_MODEL =
             ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "block/argentina/cacerola_essen");
+    private static final ResourceLocation CACEROLA_ABIERTA_MODEL =
+            ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "block/argentina/cacerola_essen_abierta");
     private static final ResourceLocation CACEROLA_ITEM_MODEL =
             ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "item/argentina/cacerola_essen");
 
@@ -92,10 +94,11 @@ public final class ComidaModels {
             });
 
             ModelFile cacerola = new ModelFile.UncheckedModelFile(CACEROLA_BLOCK_MODEL);
+            ModelFile cacerolaAbierta = new ModelFile.UncheckedModelFile(CACEROLA_ABIERTA_MODEL);
             getVariantBuilder(CacerolaRegistry.CACEROLA_ESSEN.get()).forAllStates(state -> {
                 Direction facing = state.getValue(CacerolaBlock.FACING);
                 return ConfiguredModel.builder()
-                        .modelFile(cacerola)
+                        .modelFile(state.getValue(CacerolaBlock.ABIERTA) ? cacerolaAbierta : cacerola)
                         .rotationY((int) (facing.toYRot() + 180.0F) % 360)
                         .build();
             });
