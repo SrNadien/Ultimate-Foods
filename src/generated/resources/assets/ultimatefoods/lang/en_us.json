@@ -390,5 +390,7 @@
   "tooltip.ultimatefoods.set.phantoms": "Phantoms are friendly",
   "tooltip.ultimatefoods.set.piglins": "Piglins won't attack you",
   "tooltip.ultimatefoods.set_bonus": "Full set:",
-  "tooltip.ultimatefoods.unbreakable": "Unbreakable!"
+  "tooltip.ultimatefoods.unbreakable": "Unbreakable!",
+  "ultimatefoods.guia.nombre": "The Good Argentine's Guide",
+  "ultimatefoods.guia.portada": "Everything you need to know about mate, the grill and the long table, che."
 }

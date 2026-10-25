@@ -1,0 +1,24 @@
+{
+  "name": "Sweets and bakery",
+  "category": "ultimatefoods:comidas",
+  "icon": "ultimatefoods:alfajor",
+  "sortnum": 19,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Dulce de leche: milk and sugar in the pot.$(br2)Alfajor: Sugar Rush. Medialuna, dulce de leche pancake, flan and fried cake.$(br2)Pitusas and pepas: the afternoon cookies."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/alfajor"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/pitusas"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/pepas"
+    }
+  ]
+}

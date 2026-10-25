@@ -1,0 +1,12 @@
+{
+  "name": "Hints",
+  "category": "ultimatefoods:secretos",
+  "icon": "minecraft:name_tag",
+  "sortnum": 23,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Villagers have names of their own... try giving them one with a name tag.$(br2)A pig with the right name no longer looks like a pig.$(br2)The wandering trader has something to sell. Always.$(br2)And look at the sky: the sun has someone's face."
+    }
+  ]
+}

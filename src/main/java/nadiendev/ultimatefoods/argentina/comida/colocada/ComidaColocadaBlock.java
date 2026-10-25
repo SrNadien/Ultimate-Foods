@@ -16,7 +16,10 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
@@ -41,7 +44,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
  *   <li>Romperla suelta el item. Si falta el bloque de abajo, se rompe sola y tambien lo suelta.</li>
  * </ul>
  */
-public class ComidaColocadaBlock extends Block {
+public class ComidaColocadaBlock extends BaseEntityBlock {
 
     public static final MapCodec<ComidaColocadaBlock> CODEC = simpleCodec(ComidaColocadaBlock::new);
     public static final EnumProperty<Comida> COMIDA = EnumProperty.create("comida", Comida.class);
@@ -55,8 +58,20 @@ public class ComidaColocadaBlock extends Block {
     }
 
     @Override
-    protected MapCodec<? extends Block> codec() {
+    protected MapCodec<? extends BaseEntityBlock> codec() {
         return CODEC;
+    }
+
+    // El block entity no guarda nada: solo le da a cada comida colocada su propio nombre en los visores
+    // de bloques (Jade y compania), que leen el nombre de la entidad.
+    @Override
+    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+        return new ComidaColocadaBlockEntity(pos, state);
+    }
+
+    @Override
+    protected RenderShape getRenderShape(BlockState state) {
+        return RenderShape.MODEL;
     }
 
     @Override

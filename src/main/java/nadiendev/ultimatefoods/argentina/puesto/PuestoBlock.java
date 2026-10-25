@@ -17,6 +17,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -80,9 +81,11 @@ public class PuestoBlock extends BaseEntityBlock {
     }
 
     public BlockState stateFor(Puesto puesto, BlockPlaceContext context) {
+        // Los mates y la bombilla se inclinan hacia donde mira quien los pone; el resto, de frente a el.
+        Direction mira = context.getHorizontalDirection();
         return defaultBlockState()
                 .setValue(PUESTO, puesto)
-                .setValue(FACING, context.getHorizontalDirection().getOpposite());
+                .setValue(FACING, puesto.seInclina() ? mira.getCounterClockWise() : mira.getOpposite());
     }
 
     @Override
@@ -180,6 +183,30 @@ public class PuestoBlock extends BaseEntityBlock {
                 }
                 cambiar(level, pos, state, be, mate.transmuteCopy(MateItems.MATE_CON_YERBA.get(), 1));
                 sonido(level, pos, SoundEvents.SAND_PLACE, 1.1F);
+                particulas(level, pos, ParticleTypes.COMPOSTER);
+            }
+            return ItemInteractionResult.sidedSuccess(level.isClientSide);
+        }
+
+        // Deslavar: con un pincel se saca la yerba ya usada y el mate queda vacio (y suelta la bombilla)
+        if (puesto == Puesto.MATE_LAVADO && held.is(Items.BRUSH)) {
+            if (!level.isClientSide) {
+                held.hurtAndBreak(1, player, hand == InteractionHand.MAIN_HAND ? EquipmentSlot.MAINHAND : EquipmentSlot.OFFHAND);
+                ItemStack vacio = mate.transmuteCopy(MateItems.MATE.get(), 1);
+                vacio.remove(MateComponents.SABOR.get());
+                vacio.remove(MateComponents.CEBADAS.get());
+                vacio.remove(MateComponents.SORBOS.get());
+                boolean teniaBombilla = state.getValue(BOMBILLA);
+                BlockState nuevo = state.setValue(PUESTO, Puesto.MATE).setValue(BOMBILLA, false);
+                level.setBlock(pos, nuevo, 3);
+                be.setStack(vacio);
+                if (teniaBombilla) {
+                    ItemStack bombilla = new ItemStack(MateItems.BOMBILLA.get());
+                    if (!player.getInventory().add(bombilla)) {
+                        player.drop(bombilla, false);
+                    }
+                }
+                sonido(level, pos, SoundEvents.BRUSH_SAND, 1.0F);
                 particulas(level, pos, ParticleTypes.COMPOSTER);
             }
             return ItemInteractionResult.sidedSuccess(level.isClientSide);

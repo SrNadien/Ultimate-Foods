@@ -791,11 +791,15 @@ public final class LangDatos {
         ES.put("easter_egg.ultimatefoods.messi", "\u00a1Gracias, Messi! \u00a1Campe\u00f3n del mundo!");
         EN.put("block.ultimatefoods.comida_colocada", "Placed Food");
         EN.put("block.ultimatefoods.mate_puesto", "Placed Mate");
+        EN.put("ultimatefoods.guia.nombre", "The Good Argentine's Guide");
+        EN.put("ultimatefoods.guia.portada", "Everything you need to know about mate, the grill and the long table, che.");
         EN.put("message.ultimatefoods.puesto.sin_bombilla", "The mate needs its bombilla first.");
         EN.put("tooltip.ultimatefoods.colocable", "Shift + right click to place");
         EN.put("message.ultimatefoods.comida_colocada.llena", "You are not hungry.");
         ES.put("block.ultimatefoods.comida_colocada", "Comida colocada");
         ES.put("block.ultimatefoods.mate_puesto", "Mate puesto");
+        ES.put("ultimatefoods.guia.nombre", "Gu\u00eda del buen argentino");
+        ES.put("ultimatefoods.guia.portada", "Todo lo que hay que saber de mate, parrilla y mesa larga, che.");
         ES.put("message.ultimatefoods.puesto.sin_bombilla", "Primero ponele la bombilla al mate.");
         ES.put("tooltip.ultimatefoods.colocable", "Shift + click derecho para colocar");
         ES.put("message.ultimatefoods.comida_colocada.llena", "No ten\u00e9s hambre.");

@@ -1,0 +1,16 @@
+{
+  "name": "Colocar y comer",
+  "category": "ultimatefoods:inicio",
+  "icon": "ultimatefoods:asado",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Las comidas se pueden dejar apoyadas como bloque: Shift + click derecho sobre un bloque firme con la comida en la mano.$(br2)Colocadas llevan su plato o tabla; en la mano y el inventario se ven sin el."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Click derecho sobre la comida colocada: te la comes (con su nutricion y sus efectos).$(br2)Shift + click derecho con las manos vacias: la levantas.$(br2)El asado se come en cuatro bocados: los efectos llegan con el ultimo y, una vez empezado, ya no se puede levantar."
+    }
+  ]
+}

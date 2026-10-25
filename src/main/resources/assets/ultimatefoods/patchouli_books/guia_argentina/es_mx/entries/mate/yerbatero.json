@@ -1,0 +1,12 @@
+{
+  "name": "El yerbatero",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:yerba_mate",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Un aldeano con profesion propia. Te compra hojas, yerba y yuyos, y te vende el mate, la bombilla, la pava, paquetes Verdeflor, brotes del arbol, la yerbera y la azucarera.$(br2)Su puesto de trabajo es la yerbera."
+    }
+  ]
+}

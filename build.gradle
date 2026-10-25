@@ -125,12 +125,13 @@ dependencies {
     //Avaritia
     // implementation "curse.maven:re-avaritia-623969:${avaritia_version_id}"
 
-    //GeckoLib
+    //GeckoLib
     //Apple Skin
     compileOnly "squeek.appleskin:appleskin-neoforge:mc${mc}-${appleskin_version}:api"
     runtimeOnly "squeek.appleskin:appleskin-neoforge:mc${mc}-${appleskin_version}"
 
-    //Patchouli
+    // Patchouli (opcional): solo para probar el libro guia en el juego, el codigo no lo usa
+    runtimeOnly "vazkii.patchouli:Patchouli:${patchouli_version}"
     // Ex Deorum y AllTheModium van como jars en run/mods, no aca:
     // Ex Deorum corre su propio datagen y necesita ModKit, que no publica esas clases,
     // asi que en el classpath del datagen rompe runData.
@@ -200,4 +201,4 @@ publishing {
             url "file://${project.projectDir}/repo"
         }
     }
-}
+}

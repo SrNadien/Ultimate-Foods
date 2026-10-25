@@ -1,0 +1,20 @@
+{
+  "name": "La Cacerola Essen",
+  "category": "ultimatefoods:comidas",
+  "icon": "ultimatefoods:cacerola_essen",
+  "sortnum": 16,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Se apoya sobre una fuente de calor (fogata, horno o parrilla prendidos), se le tiran los ingredientes, se espera y se sirve con un bowl.$(br2)Mano vacia: devuelve el ultimo ingrediente."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/cacerola_essen"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Guiso: papa, zanahoria, tomate, cebolla y carne vacuna cruda. Panza llena, Comodidad y un toque de Regeneracion.$(br2)Locro: zapallo, trigo, papa, cebolla, chorizo y carne. Panza llena, Nutricion y Resistencia."
+    }
+  ]
+}

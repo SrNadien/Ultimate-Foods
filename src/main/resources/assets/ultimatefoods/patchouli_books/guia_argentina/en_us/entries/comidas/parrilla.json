@@ -1,0 +1,16 @@
+{
+  "name": "The grill",
+  "category": "ultimatefoods:comidas",
+  "icon": "ultimatefoods:parrilla",
+  "sortnum": 13,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Fuel it, light it with flint and steel or a fire charge, and it cooks six things at once like a campfire.$(br2)Careful: walking on it while lit burns you."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/parrilla"
+    }
+  ]
+}

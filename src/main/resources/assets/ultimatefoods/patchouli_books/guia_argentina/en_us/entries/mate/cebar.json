@@ -1,0 +1,16 @@
+{
+  "name": "Brewing the mate",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:mate_con_yerba",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "With a yerba-filled mate in one hand, the hot kettle in the other and a bombilla in your inventory: right click to brew.$(br2)Each brew gives 4 sips. The yerba washes out a bit each time: the effect lasts less."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "After 4 brews the yerba is fully washed and the mate comes back empty (sometimes with used yerba).$(br2)A washed mate can still be brewed once more."
+    }
+  ]
+}

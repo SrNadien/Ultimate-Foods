@@ -390,5 +390,7 @@
   "tooltip.ultimatefoods.set.phantoms": "Los Phantoms son amigables",
   "tooltip.ultimatefoods.set.piglins": "Los Piglins no te atacan",
   "tooltip.ultimatefoods.set_bonus": "Set completo:",
-  "tooltip.ultimatefoods.unbreakable": "¡Indestructible!"
+  "tooltip.ultimatefoods.unbreakable": "¡Indestructible!",
+  "ultimatefoods.guia.nombre": "Guía del buen argentino",
+  "ultimatefoods.guia.portada": "Todo lo que hay que saber de mate, parrilla y mesa larga, che."
 }

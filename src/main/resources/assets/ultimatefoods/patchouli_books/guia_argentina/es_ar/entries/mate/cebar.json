@@ -1,0 +1,16 @@
+{
+  "name": "Cebar el mate",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:mate_con_yerba",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Con un mate con yerba en una mano, la pava caliente en la otra y una bombilla en el inventario: click derecho para cebar.$(br2)Cada cebada da 4 sorbos. Con cada una la yerba se lava un poco: el efecto dura menos."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Despues de 4 cebadas la yerba queda lavada del todo y el mate vuelve vacio (a veces, con yerba usada).$(br2)Un mate lavado todavia se puede cebar una vez mas."
+    }
+  ]
+}

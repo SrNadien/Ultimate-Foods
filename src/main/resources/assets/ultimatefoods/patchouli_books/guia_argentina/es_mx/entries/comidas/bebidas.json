@@ -1,0 +1,12 @@
+{
+  "name": "Bebidas",
+  "category": "ultimatefoods:comidas",
+  "icon": "ultimatefoods:fernet_branca",
+  "sortnum": 21,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Fernet Branca, Quilmes, Stella Artois y Andes. Dan efectos buenos (Resistencia, Buena onda, Salto) y se pagan con Curda y un poco de confusion.$(br2)Devuelven la botella de vidrio. Se pueden dejar apoyadas en una mesa."
+    }
+  ]
+}

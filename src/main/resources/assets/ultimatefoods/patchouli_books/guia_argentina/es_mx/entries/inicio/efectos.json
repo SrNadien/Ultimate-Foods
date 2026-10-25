@@ -1,0 +1,16 @@
+{
+  "name": "Efectos de las comidas",
+  "category": "ultimatefoods:inicio",
+  "icon": "ultimatefoods:mega_dibu",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Panza llena: mas vida maxima, pero mas lento.$(br2)Fuego de parrilla: pegas mas fuerte y cuesta empujarte.$(br2)Dulzura: velocidad al caminar y al pegar.$(br2)Buena onda: suerte."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Curda: mas lento al caminar y al pegar (lo dejan las bebidas).$(br2)Empacho: lento y sin fuerza (te pasaste de comida).$(br2)Atajapenales: mas alcance y las caidas duelen menos.$(br2)Los efectos del mate, en el capitulo \"El mate\"."
+    }
+  ]
+}

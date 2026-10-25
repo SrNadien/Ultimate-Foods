@@ -1,0 +1,12 @@
+{
+  "name": "The yerbatero",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:yerba_mate",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A villager with its own profession. It buys leaves, yerba and yuyos, and sells the mate, bombilla, kettle, Verdeflor packages, tree saplings, the yerbera and the sugar pouch.$(br2)Its job site is the yerbera."
+    }
+  ]
+}

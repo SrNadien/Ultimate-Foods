@@ -57,6 +57,11 @@ public enum Puesto implements StringRepresentable {
         };
     }
 
+    /** Los que se apoyan inclinados hacia donde mira quien los pone: los mates (con su bombilla) y la bombilla. */
+    public boolean seInclina() {
+        return this == MATE || esMateConYerba() || this == BOMBILLA;
+    }
+
     public String id() {
         return id;
     }

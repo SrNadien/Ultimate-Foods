@@ -1,0 +1,16 @@
+{
+  "name": "Placing and eating",
+  "category": "ultimatefoods:inicio",
+  "icon": "ultimatefoods:asado",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Foods can be set down as a block: Shift + right click on a solid block while holding the food.$(br2)Placed, they show their plate or board; in hand and inventory they do not."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Right click a placed food to eat it (nutrition and effects included).$(br2)Shift + right click with empty hands picks it up.$(br2)The asado is eaten in four bites: the effects arrive with the last one, and once started it can no longer be picked up."
+    }
+  ]
+}

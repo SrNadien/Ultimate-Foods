@@ -1,0 +1,16 @@
+{
+  "name": "The sugar pouch",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:azucarera",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Like the yerbera, but it stores sugar (8 portions per sugar). Right click with a yerba-filled mate to make it sweet."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/azucarera"
+    }
+  ]
+}

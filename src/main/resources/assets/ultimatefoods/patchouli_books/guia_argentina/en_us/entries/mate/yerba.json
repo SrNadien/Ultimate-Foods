@@ -1,0 +1,20 @@
+{
+  "name": "The yerba mate",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:yerba_mate_sapling",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The yerba mate tree grows from a sapling. Its leaves often drop a yerba leaf (more with Fortune) and sometimes a new sapling.$(br2)Use shears or Silk Touch to take the leaf block."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Yerba leaf: dry it in a campfire, furnace or smoker.$(br2)Three dried leaves make two ground yerba mate."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/yerba_mate_molida"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "The flavors",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:mate_dulce",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Bitter mate: Tranquility. Nearby hostile mobs get slowed.$(br2)Sweet mate: Out of my way! Lots of speed, you push nearby mobs and you are slow for a moment afterwards."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Milk mate: Development. Nearby babies grow up instantly.$(br2)Yuyos mate: Prosperity. Extra luck, some experience now and then and 50 % more experience from kills."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/mate_dulce"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/mate_de_leche"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/mate_con_yuyos"
+    }
+  ]
+}

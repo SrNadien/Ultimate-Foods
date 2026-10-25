@@ -1,0 +1,20 @@
+{
+  "name": "El mate sobre la mesa",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:mate",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Mates, pavas, paquetes de yerba y bombillas se apoyan con Shift + click derecho y quedan inclinados hacia donde miras.$(br2)Click derecho con la mano vacia: lo levantas (con la bombilla, que sale aparte)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Servilo ahi mismo:$(br2)Yerbera o yerba suelta sobre un mate vacio: le pone yerba.$(br2)Azucar, balde de leche o yuyos: le dan gusto, antes de cebar.$(br2)Bombilla: se clava aparte y ya no sale sola.$(br2)Pava caliente: lo ceba (hace falta la bombilla clavada)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Deslavar: con un pincel (Brush) sobre un mate lavado sacas la yerba usada y queda vacio; la bombilla vuelve a tu inventario. El pincel pierde 1 de durabilidad."
+    }
+  ]
+}

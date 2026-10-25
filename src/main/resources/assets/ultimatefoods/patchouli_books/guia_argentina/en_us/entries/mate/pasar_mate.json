@@ -1,0 +1,12 @@
+{
+  "name": "Passing the mate",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:mate_amargo",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Right click another player or a villager with a brewed mate to pass it over; they get the effect."
+    }
+  ]
+}
