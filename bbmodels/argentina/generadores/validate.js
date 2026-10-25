@@ -1,8 +1,8 @@
 // Valida los modelos 3D del agente C.
 const fs = require('fs'), path = require('path');
 const { REPO } = require('./lib');
-const ITEMS = ['mate', 'mate_con_yerba', 'mate_amargo', 'mate_dulce', 'mate_de_leche', 'mate_con_yuyos', 'mate_lavado', 'pava', 'pava_con_agua', 'pava_caliente', 'yerba_verdeflor', 'yerbera', 'parrilla', 'cacerola_essen'];
-const BLOCKS = ['yerbera', 'parrilla', 'cacerola_essen'];
+const ITEMS = ['mate', 'mate_con_yerba', 'mate_amargo', 'mate_dulce', 'mate_de_leche', 'mate_con_yuyos', 'mate_lavado', 'pava', 'pava_con_agua', 'pava_caliente', 'yerba_verdeflor', 'yerbera', 'parrilla', 'cacerola_essen', 'azucarera'];
+const BLOCKS = ['yerbera', 'parrilla', 'cacerola_essen', 'azucarera'];
 const SLOTS = ['gui', 'ground', 'fixed', 'thirdperson_righthand', 'thirdperson_lefthand', 'firstperson_righthand', 'firstperson_lefthand', 'head'];
 const ANGLES = new Set([-45, -22.5, 0, 22.5, 45]);
 let errors = 0;
@@ -52,5 +52,5 @@ for (const id of ITEMS) {
   console.log(`OK? ${id}: ${info.els} cubos, ${info.faces} caras, texturas ${info.tex.join(', ')}`);
 }
 { const i = checkFull('cacerola_essen_abierta', 'ultimatefoods:block/argentina/cacerola_essen_abierta'); console.log('OK? cacerola_essen_abierta (solo bloque, variante): ' + i.els + ' cubos'); }
-console.log(errors ? `\n${errors} ERRORES` : '\nTODO VALIDO (14 ids + variante, JSON parsea, texturas existen, display completo)');
+console.log(errors ? `\n${errors} ERRORES` : '\nTODO VALIDO (15 ids + variante, JSON parsea, texturas existen, display completo)');
 process.exit(errors ? 1 : 0);

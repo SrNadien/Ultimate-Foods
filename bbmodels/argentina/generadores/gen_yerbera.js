@@ -1,63 +1,60 @@
-// Yerbera: lata enlozada crema con tapa verde, leyenda "YERBA" y ramita de yerba mate pintada.
-const { ModelBuilder, Img, mix, shade, rnd, pick, writeModel, writeTexture } = require('./lib');
-const { F57, textWidth } = require('./font');
+// Yerbera y azucarera de tela (foto del usuario): lona verde con trama, base de cuero marron claro,
+// forma de trapecio (base angosta, arriba ancha) que se cierra en una cumbrera con cierre negro, boca en diagonal.
+const { ModelBuilder, mix, shade, rnd, writeModel, writeTexture } = require('./lib');
 
-const CREAM = '#f1e8d0', CREAM2 = '#e6dcc0', CREAMD = '#cfc3a2', GRN = '#1f5a32', GRN2 = '#2f7a44', GRNL = '#4f9a50', RED = '#b8322a', EDGE = '#20262a';
-const D = 4;
+const VARIANTES = {
+  yerbera: { tela: ['#5b6b2e', '#647634', '#526228', '#6c7e3a'], parche: null },
+  azucarera: { tela: ['#7f9a62', '#89a46c', '#748e58', '#94ae76'], parche: true }
+};
 
-function enamel(x, y) { const r = rnd(x, y, 41); return r > 0.93 ? CREAM2 : (r < 0.02 ? '#d9cfb3' : CREAM); }
+function build(id) {
+  const V = VARIANTES[id];
+  const m = new ModelBuilder({ size: 64, density: 2 });
+  const [T0, T1, T2, T3] = V.tela;
+  // lona: trama de tejido (cuadricula fina) con algo de ruido
+  m.region('tela', 28, 26, (x, y) => {
+    let c = ((x + y) % 2) ? T0 : T1;
+    if (x % 4 === 0 && y % 2 === 0) c = T2;
+    if (rnd(x, y, 71) > 0.94) c = T3;
+    if (rnd(x, y, 72) > 0.97) c = shade(T0, 0.85);
+    return c;
+  });
+  m.region('telaSombra', 28, 6, (x, y) => shade(((x + y) % 2) ? T0 : T1, 0.82));
+  m.region('cuero', 28, 6, (x, y, w, h) => {
+    if (y === 0) return (x % 3 === 1) ? '#4a2e1a' : '#9a5c2c'; // costura
+    let c = rnd(x, y, 73) > 0.85 ? '#c07a42' : '#b5703a';
+    if (y === h - 1) c = '#8e5426';
+    return c;
+  });
+  m.region('cueroBase', 16, 16, (x, y) => rnd(x, y, 74) > 0.8 ? '#8e5426' : '#9a5e2e');
+  m.region('cierre', 30, 2, (x, y) => y === 0 ? ((x % 2) ? '#3a3a3a' : '#1a1a1a') : '#101010');
+  m.region('cierreLado', 4, 2, () => '#151515');
+  m.region('tirador', 4, 4, (x, y) => (x === 0 || y === 0) ? '#f0f0f0' : (x === 3 || y === 3 ? '#8a8a8a' : '#c8c8c8'));
+  if (V.parche) m.region('parche', 8, 6, (x, y, w, h) => (x === 0 || y === 0 || x === w - 1 || y === h - 1) ? ((x + y) % 2 ? '#8a6a44' : '#e8dcc0') : (y === 2 && x > 1 && x < w - 2 ? '#c8b48a' : '#efe4c8'));
 
-function panel(wpx, hpx, conTexto) {
-  const w = Math.round(wpx * D), h = Math.round(hpx * D);
-  const img = new Img(w, h, enamel);
-  // sombreado de cilindro: bordes laterales mas oscuros
-  for (let y = 0; y < h; y++) { img.set(0, y, CREAMD); img.set(w - 1, y, CREAMD); img.set(1, y, CREAM2); img.set(w - 2, y, CREAM2); }
-  // borde inferior oscuro (lata) y filete verde arriba
-  img.rect(0, h - 2, w, 2, EDGE); img.rect(0, h - 4, w, 1, GRN);
-  img.rect(0, 2, w, 2, GRN); img.rect(0, 5, w, 1, RED);
-  if (conTexto) {
-    const tw = textWidth(F57, 'YERBA'), tx = Math.floor((w - tw) / 2), ty = 11;
-    img.text(F57, 'YERBA', tx + 1, ty + 1, CREAMD); // sombra
-    img.text(F57, 'YERBA', tx, ty, GRN);
-  }
-  // ramita de yerba mate
-  const cx = Math.floor(w / 2), y0 = conTexto ? 22 : 12, y1 = h - 7;
-  for (let y = y0; y <= y1; y++) img.set(cx + Math.round(Math.sin((y - y0) / 5) * 1), y, '#6a4a2a');
-  const hojas = [];
-  for (let y = y0 + 2, i = 0; y < y1 - 2; y += 5, i++) hojas.push([cx + (i % 2 ? 1 : -1), y, i % 2 ? 1 : -1]);
-  for (const [hx, hy, s] of hojas) {
-    for (let k = 0; k < 6; k++) { const lx = hx + s * k, ly = hy - Math.round(k / 2); const ww = k === 0 || k === 5 ? 0 : 1; for (let j = -ww; j <= ww; j++) img.set(lx, ly + j, j === 0 && k > 0 && k < 5 ? GRN2 : GRNL); }
-    img.set(hx + s * 2, hy - 1, GRN);
-  }
-  return img;
-}
-
-function build() {
-  const m = new ModelBuilder({ size: 128, density: D });
-  const W = 10.5, cut = 1.25, Hb = 12;
-  const front = panel(W - 2 * cut, Hb, true), back = panel(W - 2 * cut, Hb, false), diag = panel(W, Hb, false);
-  m.region('front', front.w, front.h, front.painter());
-  m.region('back', back.w, back.h, back.painter());
-  m.region('diag', diag.w, diag.h, diag.painter());
-  m.region('bottom', 40, 40, () => '#2a3034');
-  m.region('inside', 8, 8, () => CREAMD);
-  m.region('lidSide', 44, 6, (x, y) => y === 0 ? '#3c8a54' : (y >= 4 ? EDGE : (x % 11 === 3 && y === 1 ? '#6ab878' : GRN)));
-  m.region('lidTop', 44, 44, (x, y, w, h) => { const d = Math.hypot(x - w * 0.42, y - h * 0.42) / (w * 0.6); let c = mix('#3f9a5a', GRN, Math.min(1, d)); if (rnd(x, y, 42) > 0.95) c = shade(c, 0.92); return c; });
-  m.region('knob', 10, 6, (x, y) => y === 0 ? '#8a5a32' : (x === 9 ? '#4a2e18' : (y > 3 ? '#5a3a1e' : '#6e4626')));
-
-  const cx = 8, cz = 8;
-  // cuerpo octogonal: el cubo "z" lleva el frente con YERBA (norte/sur)
-  m.cube([cx - W / 2 + cut, 0, cz - W / 2], [cx + W / 2 - cut, Hb, cz + W / 2], { north: 'front', south: 'back', east: null, west: null, up: 'inside', down: 'bottom' }, null, 'cuerpo_z');
-  m.cube([cx - W / 2, 0, cz - W / 2 + cut], [cx + W / 2, Hb, cz + W / 2 - cut], { north: { r: 'diag' }, south: { r: 'diag' }, east: 'back', west: 'back', up: 'inside', down: 'bottom' }, null, 'cuerpo_x');
-  // tapa verde con borde oscuro
-  const L = 11.3, lc = 1.5;
-  m.cube([cx - L / 2 + lc, Hb, cz - L / 2], [cx + L / 2 - lc, Hb + 1.4, cz + L / 2], { sides: 'lidSide', up: 'lidTop', down: 'bottom' }, null, 'tapa_z');
-  m.cube([cx - L / 2, Hb, cz - L / 2 + lc], [cx + L / 2, Hb + 1.4, cz + L / 2 - lc], { sides: 'lidSide', up: 'lidTop', down: 'bottom' }, null, 'tapa_x');
-  m.cube([cx - 3.5, Hb + 1.4, cz - 3.5], [cx + 3.5, Hb + 2, cz + 3.5], { sides: 'lidSide', up: 'lidTop', down: 'bottom' }, null, 'tapa_cupula');
-  m.cube([cx - 1.2, Hb + 2, cz - 1.2], [cx + 1.2, Hb + 3.2, cz + 1.2], { all: 'knob' }, null, 'perilla');
+  const S = { sides: 'tela', up: 'tela', down: 'cueroBase' };
+  // base de cuero (aprox. 20 % inferior)
+  m.cube([5, 0, 5], [11, 2.6, 11], { sides: 'cuero', up: 'cueroBase', down: 'cueroBase' }, null, 'base_cuero');
+  // cuerpo de lona: se ensancha en x y se afina en z al subir (trapecio que termina en cumbrera)
+  const capas = [
+    [2.6, 4.2, 4.4, 11.6, 5.0, 11.0],
+    [4.2, 5.8, 3.8, 12.2, 5.2, 10.8],
+    [5.8, 7.4, 3.2, 12.8, 5.5, 10.5],
+    [7.4, 9.0, 2.8, 13.2, 5.9, 10.1],
+    [9.0, 10.4, 2.6, 13.4, 6.4, 9.6]
+  ];
+  capas.forEach(([y1, y2, x1, x2, z1, z2], i) => m.cube([x1, y1, z1], [x2, y2, z2], { ...S, sides: { r: 'tela', oy: i * 3 } }, null, 'lona_' + i));
+  // boca en diagonal: bloque inclinado 22.5 grados (lado este mas alto), se cierra arriba en la cumbrera
+  const rot = { angle: 22.5, axis: 'z', origin: [8, 10.4, 8] };
+  m.cube([2.5, 9.2, 6.6], [13.6, 11.6, 9.4], { ...S, sides: { r: 'tela', oy: 14 } }, rot, 'boca_inclinada');
+  m.cube([2.8, 11.6, 7.2], [13.3, 12.6, 8.8], { ...S, sides: { r: 'tela', oy: 18 } }, rot, 'boca_pliegue');
+  // cierre negro sobre la cumbrera + tirador plateado en el extremo alto
+  m.cube([2.6, 12.6, 7.6], [13.5, 13.1, 8.4], { all: 'cierre', east: 'cierreLado', west: 'cierreLado' }, rot, 'cierre');
+  m.cube([12.9, 12.4, 7.4], [14.1, 13.6, 7.7], { all: 'tirador' }, rot, 'tirador');
+  if (V.parche) m.cube([6.2, 4.6, 4.9], [9.8, 7.0, 5.0], { north: 'parche', south: null, east: null, west: null, up: null, down: null }, null, 'parche_azucar');
 
   const display = {
-    gui: { rotation: [30, 225, 0], translation: [0, -1, 0], scale: [0.75, 0.75, 0.75] },
+    gui: { rotation: [25, 155, 0], translation: [0, -0.5, 0], scale: [0.8, 0.8, 0.8] },
     ground: { translation: [0, 3, 0], scale: [0.25, 0.25, 0.25] },
     fixed: { scale: [0.5, 0.5, 0.5] },
     thirdperson_righthand: { rotation: [75, 45, 0], translation: [0, 2.5, 0], scale: [0.375, 0.375, 0.375] },
@@ -66,11 +63,10 @@ function build() {
     firstperson_lefthand: { rotation: [0, 225, 0], scale: [0.4, 0.4, 0.4] },
     head: { translation: [0, 14, 0] }
   };
-  const tex = 'ultimatefoods:block/argentina/yerbera';
+  const tex = `ultimatefoods:block/argentina/${id}`;
   const json = m.toJSON({ texture: tex, display });
-  writeTexture('block', 'yerbera', m.paint());
-  const f1 = writeModel('block', 'yerbera', json);
-  const f2 = writeModel('item', 'yerbera', { parent: 'ultimatefoods:block/argentina/yerbera' });
-  return f1 + '\n' + f2;
+  writeTexture('block', id, m.paint());
+  return writeModel('block', id, json) + '\n' + writeModel('item', id, { parent: `ultimatefoods:block/argentina/${id}` });
 }
-console.log(build());
+console.log(build('yerbera'));
+console.log(build('azucarera'));
