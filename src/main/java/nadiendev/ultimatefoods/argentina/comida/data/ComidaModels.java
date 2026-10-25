@@ -4,6 +4,7 @@ import nadiendev.ultimatefoods.UltimateFoodsCore;
 import nadiendev.ultimatefoods.argentina.cacerola.CacerolaBlock;
 import nadiendev.ultimatefoods.argentina.cacerola.CacerolaRegistry;
 import nadiendev.ultimatefoods.argentina.comida.ComidaModule;
+import nadiendev.ultimatefoods.argentina.comida.colocada.Comida;
 import nadiendev.ultimatefoods.argentina.parrilla.ParrillaBlock;
 import nadiendev.ultimatefoods.argentina.parrilla.ParrillaRegistry;
 import net.minecraft.core.Direction;
@@ -50,6 +51,12 @@ public final class ComidaModels {
         protected void registerModels() {
             ModelFile generated = new ModelFile.UncheckedModelFile(ResourceLocation.withDefaultNamespace("item/generated"));
             for (String id : ComidaModule.flatItemIds()) {
+                // Las comidas colocables usan el modelo 3D de su bloque (hereda el display del modelo).
+                Comida colocable = Comida.byId(id);
+                if (colocable != null) {
+                    getBuilder(id).parent(new ModelFile.UncheckedModelFile(colocable.blockModel()));
+                    continue;
+                }
                 getBuilder(id)
                         .parent(generated)
                         .texture("layer0", ResourceLocation.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, "item/argentina/" + id));

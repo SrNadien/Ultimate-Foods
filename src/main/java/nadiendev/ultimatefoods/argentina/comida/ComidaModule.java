@@ -1,6 +1,8 @@
 package nadiendev.ultimatefoods.argentina.comida;
 
 import nadiendev.ultimatefoods.argentina.cacerola.CacerolaRegistry;
+import nadiendev.ultimatefoods.argentina.comida.colocada.ColocadaData;
+import nadiendev.ultimatefoods.argentina.comida.colocada.ColocadaRegistry;
 import nadiendev.ultimatefoods.argentina.comida.data.ComidaLootAndTags;
 import nadiendev.ultimatefoods.argentina.comida.data.ComidaModels;
 import nadiendev.ultimatefoods.argentina.comida.data.ComidaRecipes;
@@ -27,6 +29,7 @@ public final class ComidaModule {
         ComidaItems.register(modEventBus);
         ParrillaRegistry.register(modEventBus);
         CacerolaRegistry.register(modEventBus);
+        ColocadaRegistry.register(modEventBus);
     }
 
     public static void displayItems(CreativeModeTab.Output output) {
@@ -56,5 +59,10 @@ public final class ComidaModule {
                 new NamedProvider("Comida: Item Models", new ComidaModels.Items(output, existing)));
         generator.addProvider(event.includeClient(),
                 new NamedProvider("Comida: Block States", new ComidaModels.Blocks(output, existing)));
+
+        // Bloque comida_colocada: blockstate y loot propios (providers con nombre unico).
+        generator.addProvider(event.includeServer(),
+                new NamedProvider("Comida colocada: Loot Tables", new ColocadaData.Loot(output, lookup)));
+        generator.addProvider(event.includeClient(), new ColocadaData.States(output, existing));
     }
 }

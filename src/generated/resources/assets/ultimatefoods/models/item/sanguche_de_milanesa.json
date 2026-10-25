@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "ultimatefoods:item/argentina/sanguche_de_milanesa"
-  }
+  "parent": "ultimatefoods:block/argentina/comida/sanguche_de_milanesa"
 }

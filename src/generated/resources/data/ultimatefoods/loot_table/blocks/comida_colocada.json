@@ -1,0 +1,324 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "asado"
+              }
+            }
+          ],
+          "name": "ultimatefoods:asado"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "choripan"
+              }
+            }
+          ],
+          "name": "ultimatefoods:choripan"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "chorizo_asado"
+              }
+            }
+          ],
+          "name": "ultimatefoods:chorizo_asado"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "provoleta"
+              }
+            }
+          ],
+          "name": "ultimatefoods:provoleta"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "milanesa_de_carne"
+              }
+            }
+          ],
+          "name": "ultimatefoods:milanesa_de_carne"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "milanesa_de_pollo"
+              }
+            }
+          ],
+          "name": "ultimatefoods:milanesa_de_pollo"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "sanguche_de_milanesa"
+              }
+            }
+          ],
+          "name": "ultimatefoods:sanguche_de_milanesa"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "guiso"
+              }
+            }
+          ],
+          "name": "ultimatefoods:guiso"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "locro"
+              }
+            }
+          ],
+          "name": "ultimatefoods:locro"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "noquis"
+              }
+            }
+          ],
+          "name": "ultimatefoods:noquis"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "alfajor"
+              }
+            }
+          ],
+          "name": "ultimatefoods:alfajor"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "medialuna"
+              }
+            }
+          ],
+          "name": "ultimatefoods:medialuna"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "panqueque_con_dulce_de_leche"
+              }
+            }
+          ],
+          "name": "ultimatefoods:panqueque_con_dulce_de_leche"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "flan_con_dulce_de_leche"
+              }
+            }
+          ],
+          "name": "ultimatefoods:flan_con_dulce_de_leche"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "tortafrita"
+              }
+            }
+          ],
+          "name": "ultimatefoods:tortafrita"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "empanada"
+              }
+            }
+          ],
+          "name": "ultimatefoods:empanada"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "pitusas"
+              }
+            }
+          ],
+          "name": "ultimatefoods:pitusas"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "pepas"
+              }
+            }
+          ],
+          "name": "ultimatefoods:pepas"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "fugazzeta"
+              }
+            }
+          ],
+          "name": "ultimatefoods:fugazzeta"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "mega_dibu"
+              }
+            }
+          ],
+          "name": "ultimatefoods:mega_dibu"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "fernet_branca"
+              }
+            }
+          ],
+          "name": "ultimatefoods:fernet_branca"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "quilmes"
+              }
+            }
+          ],
+          "name": "ultimatefoods:quilmes"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "stella_artois"
+              }
+            }
+          ],
+          "name": "ultimatefoods:stella_artois"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "ultimatefoods:comida_colocada",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "comida": "andes"
+              }
+            }
+          ],
+          "name": "ultimatefoods:andes"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "ultimatefoods:blocks/comida_colocada"
+}

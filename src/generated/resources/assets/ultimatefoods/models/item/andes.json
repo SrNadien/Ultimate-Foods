@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "ultimatefoods:item/argentina/andes"
-  }
+  "parent": "ultimatefoods:block/argentina/comida/andes"
 }
