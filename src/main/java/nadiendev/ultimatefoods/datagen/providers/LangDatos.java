@@ -793,6 +793,8 @@ public final class LangDatos {
         ES.put("easter_egg.ultimatefoods.messi", "\u00a1Gracias, Messi! \u00a1Campe\u00f3n del mundo!");
         EN.put("block.ultimatefoods.comida_colocada", "Placed Food");
         EN.put("block.ultimatefoods.mate_puesto", "Placed Mate");
+        EN.put("config.jade.plugin_ultimatefoods.cacerola", "Essen pot status");
+        EN.put("config.jade.plugin_ultimatefoods", "Ultimate Foods");
         EN.put("jei.ultimatefoods.cacerola.tiempo", "%s s");
         EN.put("jei.ultimatefoods.cacerola.calor", "Over a heat source");
         EN.put("tooltip.ultimatefoods.birra", "A cold one!");
@@ -808,6 +810,8 @@ public final class LangDatos {
         EN.put("message.ultimatefoods.comida_colocada.llena", "You are not hungry.");
         ES.put("block.ultimatefoods.comida_colocada", "Comida colocada");
         ES.put("block.ultimatefoods.mate_puesto", "Mate puesto");
+        ES.put("config.jade.plugin_ultimatefoods.cacerola", "Estado de la Cacerola Essen");
+        ES.put("config.jade.plugin_ultimatefoods", "Ultimate Foods");
         ES.put("jei.ultimatefoods.cacerola.tiempo", "%s s");
         ES.put("jei.ultimatefoods.cacerola.calor", "Sobre una fuente de calor");
         ES.put("tooltip.ultimatefoods.birra", "¡Una birra!");
