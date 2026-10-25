@@ -121,6 +121,7 @@ public final class LangDatos {
         EN.put("sound_event.ultimatefoods.galaxysound", "Galactic Sound");
         EN.put("sound_event.ultimatefoods.luzverdeluzrojamakdonald", "Red Light Green Light");
         EN.put("sound_event.ultimatefoods.me_compre_una_cajita_feliz", "I Bought a Happy Meal");
+        EN.put("sound_event.ultimatefoods.vendo_carros", "Trader: Cars for Sale");
         EN.put("sound_event.ultimatefoods.outrosong", "Outro Song");
         EN.put("sound_event.ultimatefoods.peo", "Fart Sound");
         EN.put("sound_event.ultimatefoods.quemacizo", "Monster Sound");
@@ -299,7 +300,7 @@ public final class LangDatos {
         EN.put("item.ultimatefoods.unobtainium_hammer", "Unobtainium Hammer");
         EN.put("item.ultimatefoods.compressed_unobtainium_hammer", "Compressed Unobtainium Hammer");
         EN.put("tooltip.ultimatefoods.quantity", "%s Blocks");
-        EN.put("itemGroup.ultimatefoods.argentina_delight", "Argentina Delight");
+        EN.put("itemGroup.ultimatefoods.argentina_delight", "Artinna Re Fisura");
         EN.put("block.ultimatefoods.azucarera", "Azucarera");
         EN.put("block.ultimatefoods.yerba_mate_leaves", "Yerba Mate Leaves");
         EN.put("block.ultimatefoods.yerba_mate_log", "Yerba Mate Log");
@@ -504,6 +505,7 @@ public final class LangDatos {
         ES.put("sound_event.ultimatefoods.galaxysound", "Sonido Gal\u00e1ctico");
         ES.put("sound_event.ultimatefoods.luzverdeluzrojamakdonald", "Luz Roja Luz Verde");
         ES.put("sound_event.ultimatefoods.me_compre_una_cajita_feliz", "Me Compr\u00e9 una Cajita Feliz");
+        ES.put("sound_event.ultimatefoods.vendo_carros", "Comerciante: Vendo carros y camionetas");
         ES.put("sound_event.ultimatefoods.outrosong", "Canci\u00f3n de Cierre");
         ES.put("sound_event.ultimatefoods.peo", "Sonido de Pedo");
         ES.put("sound_event.ultimatefoods.quemacizo", "Sonido de Monster");
@@ -682,7 +684,7 @@ public final class LangDatos {
         ES.put("item.ultimatefoods.unobtainium_hammer", "Martillo de Unobtainium");
         ES.put("item.ultimatefoods.compressed_unobtainium_hammer", "Martillo Comprimido de Unobtainium");
         ES.put("tooltip.ultimatefoods.quantity", "%s bloques");
-        ES.put("itemGroup.ultimatefoods.argentina_delight", "Argentina Delight");
+        ES.put("itemGroup.ultimatefoods.argentina_delight", "Artinna Re Fisura");
         ES.put("block.ultimatefoods.azucarera", "Azucarera");
         ES.put("block.ultimatefoods.yerba_mate_leaves", "Hojas de yerba mate");
         ES.put("block.ultimatefoods.yerba_mate_log", "Tronco de yerba mate");
@@ -781,6 +783,12 @@ public final class LangDatos {
         ES.put("message.ultimatefoods.parrilla.llena", "La parrilla est\u00e1 llena.");
         ES.put("message.ultimatefoods.parrilla.lluvia", "Con la lluvia no se puede prender.");
         ES.put("message.ultimatefoods.parrilla.sin_combustible", "La parrilla no tiene combustible.");
+        EN.put("block.ultimatefoods.la_copa", "The Cup");
+        EN.put("tooltip.ultimatefoods.la_copa", "In honor of Lionel Andr\u00e9s Messi");
+        EN.put("easter_egg.ultimatefoods.messi", "\u00a1Gracias, Messi! \u00a1Campe\u00f3n del mundo!");
+        ES.put("block.ultimatefoods.la_copa", "La Copa");
+        ES.put("tooltip.ultimatefoods.la_copa", "En honor a Lionel Andr\u00e9s Messi");
+        ES.put("easter_egg.ultimatefoods.messi", "\u00a1Gracias, Messi! \u00a1Campe\u00f3n del mundo!");
     }
 
     private LangDatos() {

@@ -1,6 +1,7 @@
 package nadiendev.ultimatefoods.argentina;
 
 import nadiendev.ultimatefoods.argentina.comida.ComidaModule;
+import nadiendev.ultimatefoods.argentina.homenaje.HomenajeModule;
 import nadiendev.ultimatefoods.argentina.mate.MateModule;
 import nadiendev.ultimatefoods.datagen.providers.LangDatos;
 import nadiendev.ultimatefoods.datagen.providers.ModLanguageProvider;
@@ -28,6 +29,7 @@ public final class ArgentinaData {
     public static void gather(GatherDataEvent event) {
         MateModule.gatherData(event);
         ComidaModule.gatherData(event);
+        HomenajeModule.gatherData(event);
 
         DataGenerator generator = event.getGenerator();
         PackOutput output = generator.getPackOutput();

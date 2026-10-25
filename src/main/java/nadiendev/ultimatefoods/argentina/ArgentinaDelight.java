@@ -1,6 +1,7 @@
 package nadiendev.ultimatefoods.argentina;
 
 import nadiendev.ultimatefoods.argentina.comida.ComidaModule;
+import nadiendev.ultimatefoods.argentina.homenaje.HomenajeModule;
 import nadiendev.ultimatefoods.argentina.mate.MateModule;
 import net.neoforged.bus.api.IEventBus;
 
@@ -17,6 +18,7 @@ public final class ArgentinaDelight {
     public static void register(IEventBus modEventBus) {
         MateModule.register(modEventBus);
         ComidaModule.register(modEventBus);
+        HomenajeModule.register(modEventBus);
         ArgentinaTab.register(modEventBus);
     }
 }

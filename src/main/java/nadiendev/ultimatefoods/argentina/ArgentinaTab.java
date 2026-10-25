@@ -2,6 +2,7 @@ package nadiendev.ultimatefoods.argentina;
 
 import nadiendev.ultimatefoods.UltimateFoodsCore;
 import nadiendev.ultimatefoods.argentina.comida.ComidaModule;
+import nadiendev.ultimatefoods.argentina.homenaje.HomenajeModule;
 import nadiendev.ultimatefoods.argentina.mate.MateModule;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -24,6 +25,7 @@ public final class ArgentinaTab {
                     .displayItems((parameters, output) -> {
                         MateModule.displayItems(output);
                         ComidaModule.displayItems(output);
+                        HomenajeModule.displayItems(output);
                     })
                     .build()
     );

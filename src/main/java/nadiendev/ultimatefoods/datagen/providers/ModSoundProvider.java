@@ -23,6 +23,7 @@ public class ModSoundProvider extends SoundDefinitionsProvider {
         addSound(SonidosReproducibles.POOP_EAT, "peo");
         addSound(SonidosReproducibles.RICKROLL, "rickroll");
         addSound(SonidosReproducibles.ERA_PAL_NENE, "me_compre_una_cajita_feliz");
+        addSound(SonidosReproducibles.VENDO_CARROS, "vendo_carros");
     }
 
     private void addSound(net.neoforged.neoforge.registries.DeferredHolder<SoundEvent, SoundEvent> soundEvent, String soundName) {
