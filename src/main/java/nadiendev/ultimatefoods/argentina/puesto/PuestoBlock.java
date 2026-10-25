@@ -215,7 +215,9 @@ public class PuestoBlock extends BaseEntityBlock {
         // La bombilla se clava aparte, a un mate que ya tiene yerba
         if (held.is(MateItems.BOMBILLA.get()) && sirve && !state.getValue(BOMBILLA)) {
             if (!level.isClientSide) {
-                level.setBlock(pos, state.setValue(BOMBILLA, true), 3);
+                // La bombilla queda inclinada hacia donde mira quien la clava, no hacia donde se puso el mate.
+                level.setBlock(pos, state.setValue(BOMBILLA, true)
+                        .setValue(FACING, player.getDirection().getCounterClockWise()), 3);
                 if (!player.hasInfiniteMaterials()) {
                     held.shrink(1);
                 }
