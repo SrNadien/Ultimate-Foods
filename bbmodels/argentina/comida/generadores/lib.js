@@ -103,7 +103,11 @@ class ModelBuilder {
     for (const n of names) {
       const r = this.regions[n];
       if (x + r.w > this.size) { x = 0; y += rowH; rowH = 0; }
-      if (y + r.h > this.sizeH) throw new Error('atlas lleno en ' + n);
+      if (y + r.h > this.sizeH) {
+        // no entra: se agranda el atlas (cuadrado) y se vuelve a empaquetar
+        if (this.size >= 256) throw new Error('atlas lleno en ' + n);
+        this.size *= 2; this.sizeH = this.size; return this.pack();
+      }
       r.x = x; r.y = y; x += r.w; rowH = Math.max(rowH, r.h);
     }
   }
@@ -296,7 +300,7 @@ function oct(m, cx, cz, y1, y2, w, cut, faces, name, d = w) {
 // Escalones de un disco "redondo" de ancho w (x) y fondo d (z): lista de [medio ancho, medio fondo].
 function discSteps(w, d, n = 3) {
   const q = v => Math.round(v * 2) / 2;
-  const fr = { 2: [[0.72, 1], [1, 0.72]], 3: [[0.5, 1], [0.84, 0.84], [1, 0.5]], 4: [[0.4, 1], [0.72, 0.92], [0.92, 0.72], [1, 0.4]] }[n];
+  const fr = { 2: [[0.72, 1], [1, 0.72]], 3: [[0.5, 1], [0.84, 0.84], [1, 0.5]], 4: [[0.4, 1], [0.72, 0.92], [0.92, 0.72], [1, 0.4]], oct: [[0.42, 1], [0.72, 0.72], [1, 0.42]] }[n];
   return fr.map(([a, b]) => [q(a * w / 2), q(b * d / 2)]);
 }
 // Disco escalonado sin caras superpuestas (una franja por escalon, simetrica). faces.up/down se proyectan.
@@ -326,6 +330,24 @@ function discMask(w, d, n = 3) {
     return 6;
   };
 }
+// Forma libre hecha de rectangulos [x1,z1,x2,z2] (sin superponerse): cubos con la cara de arriba proyectada sobre `frame`
+function slab(m, rects, y1, y2, faces, name, frame) {
+  frame = frame || [Math.min(...rects.map(r => r[0])), Math.min(...rects.map(r => r[1])), Math.max(...rects.map(r => r[2])), Math.max(...rects.map(r => r[3]))];
+  const F = { ...faces };
+  if (F.ends !== undefined) { if (F.up === undefined) F.up = F.ends; if (F.down === undefined) F.down = F.ends; delete F.ends; }
+  for (const k of ['up', 'down']) if (typeof F[k] === 'string') F[k] = { r: F[k], frame };
+  rects.forEach((r, i) => m.cube([r[0], y1, r[1]], [r[2], y2, r[3]], F, null, name + (i ? '_' + i : '')));
+  return frame;
+}
+function rectsMask(rects, frame) {
+  frame = frame || [Math.min(...rects.map(r => r[0])), Math.min(...rects.map(r => r[1])), Math.max(...rects.map(r => r[2])), Math.max(...rects.map(r => r[3]))];
+  return (lx, ly, W, H) => {
+    const inside = (ix, iy) => { if (ix < 0 || iy < 0 || ix >= W || iy >= H) return false; const px = frame[0] + (ix + 0.5) / W * (frame[2] - frame[0]), pz = frame[1] + (iy + 0.5) / H * (frame[3] - frame[1]); return rects.some(r => px >= r[0] && px <= r[2] && pz >= r[1] && pz <= r[3]); };
+    if (!inside(lx, ly)) return -1;
+    for (let k = 1; k < 6; k++) if (!inside(lx + k, ly) || !inside(lx - k, ly) || !inside(lx, ly + k) || !inside(lx, ly - k)) return k - 1;
+    return 6;
+  };
+}
 // regiones de loza para platos (aro claro, fondo, canto)
 // plato redondo: regiones de loza (canto, fondo, cara de arriba con ala) y cubos. La comida se apoya en y = 1.
 function regionesPlato(m, { pre = 'plato', w = 14, d = w, base = '#f4f2ec', borde = '#d6d0c4', brillo = '#ffffff', sombra = '#b8b2a6', filete = null, dens = 2 } = {}) {
@@ -335,9 +357,10 @@ function regionesPlato(m, { pre = 'plato', w = 14, d = w, base = '#f4f2ec', bord
   m.region(pre + '_aro', w * dens, d * dens, (x, y, W, H) => {
     const e = mask(x, y, W, H); if (e < 0) return null;
     if (e === 0) return mix(base, brillo, 0.7);
-    if (filete && e === 2) return filete;
-    if (e === 3) return borde;
-    return rnd(x, y, 8) > 0.96 ? borde : base;
+    if (e === 1) return mix(base, borde, 0.5);
+    if (filete && e === 2) return mix(base, filete, 0.75);
+    if (e === 3) return mix(base, borde, 0.6);
+    return rnd(x, y, 8) > 0.96 ? mix(base, borde, 0.5) : base;
   });
 }
 function plato(m, { cx = 8, cz = 8, w = 14, d = w, pre = 'plato' } = {}) {
@@ -345,5 +368,21 @@ function plato(m, { cx = 8, cz = 8, w = 14, d = w, pre = 'plato' } = {}) {
   disc(m, cx, cz, 0.5, 1, w, d, { sides: pre + '_lado', up: pre + '_aro', down: pre + '_fondo' }, pre, 3);
   return 1;
 }
+// Aro octogonal (paredes de bowl, vaso, copa): 4 placas rectas + 4 placas giradas 45 grados.
+// R = apotema exterior, t = espesor. faces: {out, in, top, bottom} (regiones) o un objeto de caras tipo cube.
+function octRing(m, cx, cz, y1, y2, R, t, faces, name) {
+  const L = 2 * R * Math.tan(Math.PI / 8) + t * 0.42;
+  const F = typeof faces === 'string' ? { all: faces } : faces;
+  const side = (outDir) => { const o = { ...F }; if (F.out !== undefined) { const inn = { north: 'south', south: 'north', east: 'west', west: 'east' }[outDir]; o[outDir] = F.out; o[inn] = F.in !== undefined ? F.in : F.out; const perp = ['north', 'south'].includes(outDir) ? ['east', 'west'] : ['north', 'south']; for (const p of perp) o[p] = F.edge !== undefined ? F.edge : F.out; delete o.out; delete o.in; delete o.edge; } if (F.top !== undefined) { o.up = F.top; delete o.top; } if (F.bottom !== undefined) { o.down = F.bottom; delete o.bottom; } return o; };
+  m.cube([cx - L / 2, y1, cz - R], [cx + L / 2, y2, cz - R + t], side('north'), null, name + '_n');
+  m.cube([cx - L / 2, y1, cz + R - t], [cx + L / 2, y2, cz + R], side('south'), null, name + '_s');
+  m.cube([cx - R, y1, cz - L / 2], [cx - R + t, y2, cz + L / 2], side('west'), null, name + '_o');
+  m.cube([cx + R - t, y1, cz - L / 2], [cx + R, y2, cz + L / 2], side('east'), null, name + '_e');
+  const dd = (R - t / 2) / Math.SQRT2;
+  for (const [sx, sz, ang, out, nm] of [[1, -1, -45, 'north', 'ne'], [-1, -1, 45, 'north', 'no'], [1, 1, 45, 'south', 'se'], [-1, 1, -45, 'south', 'so']]) {
+    const px = cx + sx * dd, pz = cz + sz * dd;
+    m.cube([px - L / 2, y1, pz - t / 2], [px + L / 2, y2, pz + t / 2], side(out), { angle: ang, axis: 'y', origin: [px, y1, pz] }, name + '_' + nm);
+  }
+}
 
-module.exports = { ROOT, ASSETS, BB_DIR, Canvas, Img, ModelBuilder, hex, mix, shade, rnd, pick, blob, ramp, rotPoint, bounds, autoDisplay, slot, save, oct, disc, discSteps, discMask, plato, regionesPlato, encodePNG, decodePNG, stringify };
+module.exports = { ROOT, ASSETS, BB_DIR, Canvas, Img, ModelBuilder, hex, mix, shade, rnd, pick, blob, ramp, rotPoint, bounds, autoDisplay, slot, save, oct, disc, discSteps, discMask, slab, rectsMask, plato, regionesPlato, octRing, encodePNG, decodePNG, stringify };
