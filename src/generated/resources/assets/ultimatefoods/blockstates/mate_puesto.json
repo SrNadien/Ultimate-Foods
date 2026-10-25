@@ -1,0 +1,154 @@
+{
+  "variants": {
+    "facing=east,puesto=mate": {
+      "model": "ultimatefoods:item/argentina/mate",
+      "y": 90
+    },
+    "facing=east,puesto=mate_amargo": {
+      "model": "ultimatefoods:item/argentina/mate_amargo",
+      "y": 90
+    },
+    "facing=east,puesto=mate_con_yerba": {
+      "model": "ultimatefoods:item/argentina/mate_con_yerba",
+      "y": 90
+    },
+    "facing=east,puesto=mate_con_yuyos": {
+      "model": "ultimatefoods:item/argentina/mate_con_yuyos",
+      "y": 90
+    },
+    "facing=east,puesto=mate_de_leche": {
+      "model": "ultimatefoods:item/argentina/mate_de_leche",
+      "y": 90
+    },
+    "facing=east,puesto=mate_dulce": {
+      "model": "ultimatefoods:item/argentina/mate_dulce",
+      "y": 90
+    },
+    "facing=east,puesto=mate_lavado": {
+      "model": "ultimatefoods:item/argentina/mate_lavado",
+      "y": 90
+    },
+    "facing=east,puesto=pava": {
+      "model": "ultimatefoods:item/argentina/pava",
+      "y": 90
+    },
+    "facing=east,puesto=pava_caliente": {
+      "model": "ultimatefoods:item/argentina/pava_caliente",
+      "y": 90
+    },
+    "facing=east,puesto=pava_con_agua": {
+      "model": "ultimatefoods:item/argentina/pava_con_agua",
+      "y": 90
+    },
+    "facing=north,puesto=mate": {
+      "model": "ultimatefoods:item/argentina/mate"
+    },
+    "facing=north,puesto=mate_amargo": {
+      "model": "ultimatefoods:item/argentina/mate_amargo"
+    },
+    "facing=north,puesto=mate_con_yerba": {
+      "model": "ultimatefoods:item/argentina/mate_con_yerba"
+    },
+    "facing=north,puesto=mate_con_yuyos": {
+      "model": "ultimatefoods:item/argentina/mate_con_yuyos"
+    },
+    "facing=north,puesto=mate_de_leche": {
+      "model": "ultimatefoods:item/argentina/mate_de_leche"
+    },
+    "facing=north,puesto=mate_dulce": {
+      "model": "ultimatefoods:item/argentina/mate_dulce"
+    },
+    "facing=north,puesto=mate_lavado": {
+      "model": "ultimatefoods:item/argentina/mate_lavado"
+    },
+    "facing=north,puesto=pava": {
+      "model": "ultimatefoods:item/argentina/pava"
+    },
+    "facing=north,puesto=pava_caliente": {
+      "model": "ultimatefoods:item/argentina/pava_caliente"
+    },
+    "facing=north,puesto=pava_con_agua": {
+      "model": "ultimatefoods:item/argentina/pava_con_agua"
+    },
+    "facing=south,puesto=mate": {
+      "model": "ultimatefoods:item/argentina/mate",
+      "y": 180
+    },
+    "facing=south,puesto=mate_amargo": {
+      "model": "ultimatefoods:item/argentina/mate_amargo",
+      "y": 180
+    },
+    "facing=south,puesto=mate_con_yerba": {
+      "model": "ultimatefoods:item/argentina/mate_con_yerba",
+      "y": 180
+    },
+    "facing=south,puesto=mate_con_yuyos": {
+      "model": "ultimatefoods:item/argentina/mate_con_yuyos",
+      "y": 180
+    },
+    "facing=south,puesto=mate_de_leche": {
+      "model": "ultimatefoods:item/argentina/mate_de_leche",
+      "y": 180
+    },
+    "facing=south,puesto=mate_dulce": {
+      "model": "ultimatefoods:item/argentina/mate_dulce",
+      "y": 180
+    },
+    "facing=south,puesto=mate_lavado": {
+      "model": "ultimatefoods:item/argentina/mate_lavado",
+      "y": 180
+    },
+    "facing=south,puesto=pava": {
+      "model": "ultimatefoods:item/argentina/pava",
+      "y": 180
+    },
+    "facing=south,puesto=pava_caliente": {
+      "model": "ultimatefoods:item/argentina/pava_caliente",
+      "y": 180
+    },
+    "facing=south,puesto=pava_con_agua": {
+      "model": "ultimatefoods:item/argentina/pava_con_agua",
+      "y": 180
+    },
+    "facing=west,puesto=mate": {
+      "model": "ultimatefoods:item/argentina/mate",
+      "y": 270
+    },
+    "facing=west,puesto=mate_amargo": {
+      "model": "ultimatefoods:item/argentina/mate_amargo",
+      "y": 270
+    },
+    "facing=west,puesto=mate_con_yerba": {
+      "model": "ultimatefoods:item/argentina/mate_con_yerba",
+      "y": 270
+    },
+    "facing=west,puesto=mate_con_yuyos": {
+      "model": "ultimatefoods:item/argentina/mate_con_yuyos",
+      "y": 270
+    },
+    "facing=west,puesto=mate_de_leche": {
+      "model": "ultimatefoods:item/argentina/mate_de_leche",
+      "y": 270
+    },
+    "facing=west,puesto=mate_dulce": {
+      "model": "ultimatefoods:item/argentina/mate_dulce",
+      "y": 270
+    },
+    "facing=west,puesto=mate_lavado": {
+      "model": "ultimatefoods:item/argentina/mate_lavado",
+      "y": 270
+    },
+    "facing=west,puesto=pava": {
+      "model": "ultimatefoods:item/argentina/pava",
+      "y": 270
+    },
+    "facing=west,puesto=pava_caliente": {
+      "model": "ultimatefoods:item/argentina/pava_caliente",
+      "y": 270
+    },
+    "facing=west,puesto=pava_con_agua": {
+      "model": "ultimatefoods:item/argentina/pava_con_agua",
+      "y": 270
+    }
+  }
+}

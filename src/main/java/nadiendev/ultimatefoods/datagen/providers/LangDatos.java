@@ -790,9 +790,11 @@ public final class LangDatos {
         ES.put("tooltip.ultimatefoods.la_copa", "En honor a Lionel Andr\u00e9s Messi");
         ES.put("easter_egg.ultimatefoods.messi", "\u00a1Gracias, Messi! \u00a1Campe\u00f3n del mundo!");
         EN.put("block.ultimatefoods.comida_colocada", "Placed Food");
+        EN.put("block.ultimatefoods.mate_puesto", "Placed Mate");
         EN.put("tooltip.ultimatefoods.colocable", "Shift + right click to place");
         EN.put("message.ultimatefoods.comida_colocada.llena", "You are not hungry.");
         ES.put("block.ultimatefoods.comida_colocada", "Comida colocada");
+        ES.put("block.ultimatefoods.mate_puesto", "Mate puesto");
         ES.put("tooltip.ultimatefoods.colocable", "Shift + click derecho para colocar");
         ES.put("message.ultimatefoods.comida_colocada.llena", "No ten\u00e9s hambre.");
     }
