@@ -568,16 +568,16 @@
     },
     "firstperson_righthand": {
       "rotation": [0, 45, 0],
-      "translation": [0, 4.97, 0],
-      "scale": [0.404, 0.404, 0.404]
+      "translation": [0, 5.73, 0],
+      "scale": [0.354, 0.354, 0.354]
     },
     "firstperson_lefthand": {
       "rotation": [0, 225, 0],
-      "translation": [0, 4.97, 0],
-      "scale": [0.404, 0.404, 0.404]
+      "translation": [0, 5.73, 0],
+      "scale": [0.354, 0.354, 0.354]
     },
     "head": {
-      "translation": [0, 16.83, 0],
+      "translation": [0, 12.89, 0],
       "scale": [0.786, 0.786, 0.786]
     }
   }

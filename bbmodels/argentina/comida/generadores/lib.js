@@ -222,6 +222,8 @@ function slot(b, rotation, fit, offset = [0, 0, 0], opts = {}) {
   s = +s.toFixed(3);
   const c = [0, 1, 2].map(i => (lo[i] + hi[i]) / 2 * s);
   const t = [0, 1, 2].map(i => +Math.max(-80, Math.min(80, offset[i] - (opts.keepZ && i === 2 ? 0 : c[i]))).toFixed(2));
+  // apoyar la base del modelo a una altura dada (cabeza)
+  if (opts.bottomAt !== undefined) t[1] = +(opts.bottomAt - lo[1] * s).toFixed(2);
   const o = {};
   if (rotation.some(v => v)) o.rotation = rotation;
   o.translation = t; o.scale = [s, s, s];
@@ -231,14 +233,14 @@ function slot(b, rotation, fit, offset = [0, 0, 0], opts = {}) {
 function autoDisplay(b, kind = 'plato', over = {}) {
   const d = {};
   if (kind === 'alto') {
-    d.gui = slot(b, [15, 225, 0], 15.2, [0, 0, 0]);
+    d.gui = slot(b, [15, 225, 0], 14.5, [0, 0, 0]);
     d.ground = slot(b, [0, 0, 0], 7, [0, 4, 0]);
     d.fixed = slot(b, [0, 180, 0], 14, [0, 0, 0]);
     d.thirdperson_righthand = slot(b, [0, 0, 0], 7, [0, 3.5, 1]);
     d.thirdperson_lefthand = slot(b, [0, 0, 0], 7, [0, 3.5, 1]);
     d.firstperson_righthand = slot(b, [0, -20, 0], 8, [1, 3.5, 0]);
     d.firstperson_lefthand = slot(b, [0, 160, 0], 8, [1, 3.5, 0]);
-    d.head = slot(b, [0, 0, 0], 10, [0, 13, 0]);
+    d.head = slot(b, [0, 0, 0], 10, [0, 0, 0], { bottomAt: 6.6 });
   } else {
     const big = kind === 'bloque';
     d.gui = slot(b, [30, 225, 0], big ? 14.5 : 15.5, [0, 0, 0], { maxScale: 1.6 });
@@ -246,9 +248,9 @@ function autoDisplay(b, kind = 'plato', over = {}) {
     d.fixed = slot(b, [-90, 0, 0], 13, [0, 0, -0.5], { keepZ: true });
     d.thirdperson_righthand = slot(b, [75, 45, 0], 7, [0, 2.5, 0]);
     d.thirdperson_lefthand = slot(b, [75, 45, 0], 7, [0, 2.5, 0]);
-    d.firstperson_righthand = slot(b, [0, 45, 0], 8, [0, 3, 0]);
-    d.firstperson_lefthand = slot(b, [0, 225, 0], 8, [0, 3, 0]);
-    d.head = slot(b, [0, 0, 0], 11, [0, 13, 0]);
+    d.firstperson_righthand = slot(b, [0, 45, 0], 7, [0, 4, 0]);
+    d.firstperson_lefthand = slot(b, [0, 225, 0], 7, [0, 4, 0]);
+    d.head = slot(b, [0, 0, 0], 11, [0, 0, 0], { bottomAt: 6.6 });
   }
   for (const [k, v] of Object.entries(over)) d[k] = { ...d[k], ...v };
   return d;
