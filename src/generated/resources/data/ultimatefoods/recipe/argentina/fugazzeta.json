@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "tag": "c:foods/dough"
+    },
+    "O": {
+      "tag": "c:crops/onion"
+    },
+    "Q": {
+      "item": "ultimatefoods:queso"
+    }
+  },
+  "pattern": [
+    "OOO",
+    "QDQ"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatefoods:fugazzeta"
+  }
+}
