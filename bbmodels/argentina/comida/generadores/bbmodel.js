@@ -26,7 +26,9 @@ function toBB(id, model, texFiles) {
     };
   });
   const elements = model.elements.map((e, i) => {
+    // Blockbench guarda las 6 caras de cada cubo; las que no se exportan van con texture null
     const faces = {};
+    for (const d of ['north', 'east', 'south', 'west', 'up', 'down']) if (!e.faces[d]) faces[d] = { uv: [0, 0, 0, 0], texture: null };
     for (const [d, f] of Object.entries(e.faces)) {
       const o = { uv: [f.uv[0] * tw / 16, f.uv[1] * th / 16, f.uv[2] * tw / 16, f.uv[3] * th / 16].map(v => +v.toFixed(4)), texture: texKeys.indexOf(f.texture.slice(1)) };
       if (f.rotation) o.rotation = f.rotation;

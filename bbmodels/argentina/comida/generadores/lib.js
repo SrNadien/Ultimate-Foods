@@ -218,7 +218,8 @@ function slot(b, rotation, fit, offset = [0, 0, 0], opts = {}) {
   for (const x of [b.min[0], b.max[0]]) for (const y of [b.min[1], b.max[1]]) for (const z of [b.min[2], b.max[2]]) pts.push(rotXYZ([x - 8, y - 8, z - 8], rotation));
   const lo = [0, 1, 2].map(i => Math.min(...pts.map(p => p[i]))), hi = [0, 1, 2].map(i => Math.max(...pts.map(p => p[i])));
   const ext = Math.max(hi[0] - lo[0], hi[1] - lo[1]);
-  let s = fit / ext; if (opts.maxScale) s = Math.min(s, opts.maxScale);
+  let s = fit / ext;
+  if (opts.byDim) s = fit / Math.max(...[0, 1, 2].map(i => b.max[i] - b.min[i])); if (opts.maxScale) s = Math.min(s, opts.maxScale);
   s = +s.toFixed(3);
   const c = [0, 1, 2].map(i => (lo[i] + hi[i]) / 2 * s);
   const t = [0, 1, 2].map(i => +Math.max(-80, Math.min(80, offset[i] - (opts.keepZ && i === 2 ? 0 : c[i]))).toFixed(2));
@@ -236,10 +237,10 @@ function autoDisplay(b, kind = 'plato', over = {}) {
     d.gui = slot(b, [15, 225, 0], 14.5, [0, 0, 0]);
     d.ground = slot(b, [0, 0, 0], 7, [0, 4, 0]);
     d.fixed = slot(b, [0, 180, 0], 14, [0, 0, 0]);
-    d.thirdperson_righthand = slot(b, [0, 0, 0], 7, [0, 3.5, 1]);
-    d.thirdperson_lefthand = slot(b, [0, 0, 0], 7, [0, 3.5, 1]);
-    d.firstperson_righthand = slot(b, [0, -20, 0], 8, [1, 3.5, 0]);
-    d.firstperson_lefthand = slot(b, [0, 160, 0], 8, [1, 3.5, 0]);
+    d.thirdperson_righthand = slot(b, [75, 45, 0], 7, [0, 2.5, 2], { byDim: true });
+    d.thirdperson_lefthand = slot(b, [75, 45, 0], 7, [0, 2.5, 2], { byDim: true });
+    d.firstperson_righthand = slot(b, [0, 160, 0], 7, [1, 5, 0], { byDim: true });
+    d.firstperson_lefthand = slot(b, [0, -20, 0], 7, [1, 5, 0], { byDim: true });
     d.head = slot(b, [0, 0, 0], 10, [0, 0, 0], { bottomAt: 6.6 });
   } else {
     const big = kind === 'bloque';
