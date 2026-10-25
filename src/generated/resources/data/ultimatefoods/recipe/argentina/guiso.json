@@ -29,6 +29,9 @@
         },
         {
           "tag": "c:foods/pasta"
+        },
+        {
+          "tag": "c:foods/dough"
         }
       ]
     }

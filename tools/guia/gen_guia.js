@@ -127,8 +127,8 @@ const ENTRADAS = [
     t('Se apoya sobre una fuente de calor (fogata, horno o parrilla prendidos), se le tiran los ingredientes, se espera y se sirve con un cuenco (3 tablones en V).' + BR + 'Mano vacia: devuelve el ultimo ingrediente.',
       'Set it on a heat source (lit campfire, furnace or grill), toss in the ingredients, wait and serve with a bowl.' + BR + 'Empty hand: returns the last ingredient.'),
     craft('cacerola_essen'),
-    t('Guiso: papa, zanahoria, tomate, cebolla, carne vacuna cruda y arroz o fideos (6 ingredientes, 45 segundos al fuego). Panza llena, Comodidad y un toque de Regeneracion.' + BR + 'Locro: zapallo, trigo, papa, cebolla, chorizo y carne. Panza llena, Nutricion y Resistencia.',
-      'Guiso stew: potato, carrot, tomato, onion, raw beef and rice or pasta (6 ingredients, 45 seconds on the fire). Full Belly, Comfort and a touch of Regeneration.' + BR + 'Locro: pumpkin, wheat, potato, onion, chorizo and beef. Full Belly, Nourishment and Resistance.'),
+    t('Guiso: papa, zanahoria, tomate, cebolla, carne vacuna cruda y arroz, fideos o masa (6 ingredientes, 45 segundos al fuego). Panza llena, Comodidad y un toque de Regeneracion.' + BR + 'Locro: zapallo, trigo, papa, cebolla, chorizo y carne. Panza llena, Nutricion y Resistencia.',
+      'Guiso stew: potato, carrot, tomato, onion, raw beef and rice, pasta or dough (6 ingredients, 45 seconds on the fire). Full Belly, Comfort and a touch of Regeneration.' + BR + 'Locro: pumpkin, wheat, potato, onion, chorizo and beef. Full Belly, Nourishment and Resistance.'),
   ]],
   ['comidas', 'milanesas', ['Milanesas', 'Milanesas'], 'milanesa_de_carne', 0, [
     t('Pan rallado + carne (o pollo) = milanesa cruda; se cocina como cualquier carne.' + BR + 'De carne: Fuerza. De pollo: Velocidad.' + BR + 'Sanguche de milanesa: milanesa, pan, tomate y verdura. Fuerza, Resistencia y Panza llena.',

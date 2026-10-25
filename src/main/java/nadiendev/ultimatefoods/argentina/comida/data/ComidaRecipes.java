@@ -81,7 +81,8 @@ public class ComidaRecipes extends RecipeProvider {
                 .requires(tag("c:crops/tomato"))
                 .requires(ONION)
                 .requires(tag("c:foods/raw_beef"))
-                .requires(CompoundIngredient.of(Ingredient.of(tag("c:crops/rice")), Ingredient.of(tag("c:foods/pasta"))))
+                .requires(CompoundIngredient.of(Ingredient.of(tag("c:crops/rice")), Ingredient.of(tag("c:foods/pasta")),
+                        Ingredient.of(tag("c:foods/dough"))))
                 .cookingTime(900)
                 .save(output, rl("guiso"));
 
