@@ -1,7 +1,8 @@
 // Libreria minima: PNG RGBA, lienzo con pintores, empaquetado de regiones y modelos Java de vanilla.
 const fs = require('fs'), path = require('path'), zlib = require('zlib');
 
-const REPO = 'E:/modsmios/UltimateFoodsMod/.claude/worktrees/agent-a2b36bc8db13b9653/src/main/resources/assets/ultimatefoods';
+// La raiz de los assets sale de la ubicacion de este archivo (antes apuntaba al worktree del agente que lo escribio).
+const REPO = process.env.UF_ASSETS || path.resolve(__dirname, '..', '..', '..', 'src/main/resources/assets/ultimatefoods');
 
 // ---------- PNG ----------
 const CRC = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();

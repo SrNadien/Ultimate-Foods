@@ -186,8 +186,8 @@ const ENTRADAS = [
       'The wandering trader stops muttering and shouts its sales pitch: "We buy old cars and trucks for scrap".' + BR + 'It lasts about 13 seconds; no other one starts over it. All its other sounds (buying, refusing, drinking the potion) stay as usual.'),
   ]],
   ['secretos', 'el_sol', ['Easter egg: el sol', 'Easter egg: the sun'], 'minecraft:clock', 0, [
-    t('Mira el cielo de dia: el sol de Minecraft es un Sol de Mayo, con rayos rectos y ondulados y una cara sonriente en el centro.' + BR + 'Es un cambio de textura, asi que no hace falta nada para verlo: sale solo.',
-      'Look at the sky by day: Minecraft\'s sun is a Sun of May, with straight and wavy rays and a smiling face in the middle.' + BR + 'It is a texture change, so nothing is needed to see it: it just shows up.'),
+    t('Mira el cielo de dia: el sol de Minecraft es un Sol de Mayo, con rayos rectos y ondulados, y una cara muy conocida en el centro.' + BR + 'Es un cambio de textura, asi que no hace falta nada para verlo: sale solo.',
+      'Look at the sky by day: Minecraft\'s sun is a Sun of May, with straight and wavy rays and a very familiar face in the middle.' + BR + 'It is a texture change, so nothing is needed to see it: it just shows up.'),
   ]],
 ];
 
@@ -205,12 +205,13 @@ escribir(path.join(DATA, 'book.json'), {
   use_resource_pack: true,
   creative_tab: 'ultimatefoods:argentina_delight_tab',
   show_progress: false,
-  book_texture: 'patchouli:textures/gui/book_green.png',
-  model: 'patchouli:book_green',
-  text_color: '2A1F10',
-  header_color: '1B4A2A',
-  nameplate_color: 'F2C230',
-  link_color: '1E5FA8',
+  // modelo 3D y GUI propios (bbmodels/argentina/generadores/gen_libro.js y tools/guia/gen_gui.js)
+  book_texture: 'ultimatefoods:textures/gui/guia_libro.png',
+  model: 'ultimatefoods:guia_argentina',
+  text_color: '1B2A35',
+  header_color: '0B5F86',
+  nameplate_color: 'FFFFFF',
+  link_color: '0B5F86',
   link_hover_color: '8800EE',
 });
 
