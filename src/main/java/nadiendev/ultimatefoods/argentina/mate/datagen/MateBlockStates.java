@@ -30,6 +30,9 @@ public class MateBlockStates extends BlockStateProvider {
                 tex("yerba_mate_log"), tex("yerba_mate_log_top"));
         axisBlock(MateBlocks.YERBA_MATE_LOG.get(), vertical, horizontal);
 
+        simpleBlock(MateBlocks.YERBA_MATE_PLANKS.get(),
+                models().cubeAll("block/argentina/yerba_mate_planks", tex("yerba_mate_planks")));
+
         simpleBlock(MateBlocks.YERBA_MATE_LEAVES.get(),
                 models().cubeAll("block/argentina/yerba_mate_leaves", tex("yerba_mate_leaves")).renderType("cutout_mipped"));
 

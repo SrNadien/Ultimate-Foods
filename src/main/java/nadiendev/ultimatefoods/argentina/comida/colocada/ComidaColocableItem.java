@@ -49,6 +49,9 @@ public class ComidaColocableItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
+        if (comida.esCerveza()) {
+            tooltip.add(Component.translatable("tooltip.ultimatefoods.birra").withStyle(ChatFormatting.RED, ChatFormatting.BOLD));
+        }
         tooltip.add(Component.translatable("tooltip.ultimatefoods.colocable").withStyle(ChatFormatting.GRAY));
     }
 

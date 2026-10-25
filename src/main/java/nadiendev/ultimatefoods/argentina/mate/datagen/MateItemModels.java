@@ -39,6 +39,7 @@ public class MateItemModels extends ItemModelProvider {
         }
 
         getBuilder("yerba_mate_sapling").parent(generated).texture("layer0", modLoc("block/argentina/yerba_mate_sapling"));
+        getBuilder("yerba_mate_planks").parent(new ModelFile.UncheckedModelFile(modLoc("block/argentina/yerba_mate_planks")));
         getBuilder("yerba_mate_log").parent(new ModelFile.UncheckedModelFile(modLoc("block/argentina/yerba_mate_log")));
         getBuilder("yerba_mate_leaves").parent(new ModelFile.UncheckedModelFile(modLoc("block/argentina/yerba_mate_leaves")));
 

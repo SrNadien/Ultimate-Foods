@@ -63,6 +63,7 @@ public final class MateModule {
     /** Orden de la pestaña: yerba y arbol, yerbera, mate y pava en sus estados, bombilla y yuyos. */
     public static void displayItems(CreativeModeTab.Output output) {
         output.accept(MateItems.YERBA_MATE_LOG.get());
+        output.accept(MateItems.YERBA_MATE_PLANKS.get());
         output.accept(MateItems.YERBA_MATE_LEAVES.get());
         output.accept(MateItems.YERBA_MATE_SAPLING.get());
         output.accept(MateItems.YERBA_MATE_LEAF.get());

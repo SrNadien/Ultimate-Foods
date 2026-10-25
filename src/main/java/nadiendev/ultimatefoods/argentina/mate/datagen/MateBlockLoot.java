@@ -38,6 +38,7 @@ public class MateBlockLoot extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(MateBlocks.YERBA_MATE_LOG.get());
+        dropSelf(MateBlocks.YERBA_MATE_PLANKS.get());
         dropSelf(MateBlocks.YERBA_MATE_SAPLING.get());
 
         // Hojas: con tijeras o toque de seda, el bloque; sino, a veces el brote, palitos

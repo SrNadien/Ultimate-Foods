@@ -20,6 +20,7 @@ public final class MateItems {
 
     // ---- arbol y yerba ----
     public static final DeferredItem<BlockItem> YERBA_MATE_LOG = ITEMS.registerSimpleBlockItem(MateBlocks.YERBA_MATE_LOG);
+    public static final DeferredItem<BlockItem> YERBA_MATE_PLANKS = ITEMS.registerSimpleBlockItem(MateBlocks.YERBA_MATE_PLANKS);
     public static final DeferredItem<BlockItem> YERBA_MATE_LEAVES = ITEMS.registerSimpleBlockItem(MateBlocks.YERBA_MATE_LEAVES);
     public static final DeferredItem<BlockItem> YERBA_MATE_SAPLING = ITEMS.registerSimpleBlockItem(MateBlocks.YERBA_MATE_SAPLING);
 

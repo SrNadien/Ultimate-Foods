@@ -138,7 +138,7 @@ public class MateRecipes extends RecipeProvider {
         sabor(out, "mate_de_leche", MateSabor.LECHE, Items.MILK_BUCKET);
 
         // ---- madera ----
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Items.OAK_PLANKS, 4)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, MateItems.YERBA_MATE_PLANKS.get(), 4)
                 .requires(MateItems.YERBA_MATE_LOG.get())
                 .unlockedBy("has_yerba_mate_log", has(MateItems.YERBA_MATE_LOG.get()))
                 .save(out, rl("yerba_mate_planks"));

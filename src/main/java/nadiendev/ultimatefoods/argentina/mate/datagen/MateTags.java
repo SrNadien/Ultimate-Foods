@@ -36,6 +36,8 @@ public final class MateTags {
             tag(BlockTags.LOGS_THAT_BURN).add(log);
             tag(BlockTags.MINEABLE_WITH_AXE).add(log);
             tag(BlockTags.LEAVES).add(MateBlocks.YERBA_MATE_LEAVES.get());
+            tag(BlockTags.PLANKS).add(MateBlocks.YERBA_MATE_PLANKS.get());
+            tag(BlockTags.MINEABLE_WITH_AXE).add(MateBlocks.YERBA_MATE_PLANKS.get());
             tag(BlockTags.MINEABLE_WITH_HOE).add(MateBlocks.YERBA_MATE_LEAVES.get());
             tag(BlockTags.SAPLINGS).add(MateBlocks.YERBA_MATE_SAPLING.get());
         }
@@ -67,6 +69,7 @@ public final class MateTags {
             tag(ItemTags.LOGS).add(MateItems.YERBA_MATE_LOG.get());
             tag(ItemTags.LOGS_THAT_BURN).add(MateItems.YERBA_MATE_LOG.get());
             tag(ItemTags.LEAVES).add(MateItems.YERBA_MATE_LEAVES.get());
+            tag(ItemTags.PLANKS).add(MateItems.YERBA_MATE_PLANKS.get());
             tag(ItemTags.SAPLINGS).add(MateItems.YERBA_MATE_SAPLING.get());
         }
     }

@@ -304,6 +304,7 @@ public final class LangDatos {
         EN.put("block.ultimatefoods.azucarera", "Azucarera");
         EN.put("block.ultimatefoods.yerba_mate_leaves", "Yerba Mate Leaves");
         EN.put("block.ultimatefoods.yerba_mate_log", "Yerba Mate Log");
+        EN.put("block.ultimatefoods.yerba_mate_planks", "Yerba Mate Planks");
         EN.put("block.ultimatefoods.yerba_mate_sapling", "Yerba Mate Sapling");
         EN.put("block.ultimatefoods.yerbera", "Yerbera");
         EN.put("effect.ultimatefoods.bonanza", "Prosperity");
@@ -357,7 +358,7 @@ public final class LangDatos {
         EN.put("effect.ultimatefoods.argentina.fuego_de_parrilla", "Grill Fire");
         EN.put("effect.ultimatefoods.argentina.panza_llena", "Full Belly");
         EN.put("item.ultimatefoods.alfajor", "Alfajor");
-        EN.put("item.ultimatefoods.andes", "Andes");
+        EN.put("item.ultimatefoods.andes", "Andes Beer");
         EN.put("item.ultimatefoods.asado", "Asado");
         EN.put("item.ultimatefoods.asado_crudo", "Raw Asado");
         EN.put("item.ultimatefoods.cebolla_crispy", "Crispy Onion");
@@ -387,10 +388,10 @@ public final class LangDatos {
         EN.put("item.ultimatefoods.pitusas", "Pitusas");
         EN.put("item.ultimatefoods.provoleta", "Provoleta");
         EN.put("item.ultimatefoods.queso", "Cheese");
-        EN.put("item.ultimatefoods.quilmes", "Quilmes");
+        EN.put("item.ultimatefoods.quilmes", "Quilmes Beer");
         EN.put("item.ultimatefoods.salsa_barbacoa", "BBQ Sauce");
         EN.put("item.ultimatefoods.sanguche_de_milanesa", "Milanesa Sandwich");
-        EN.put("item.ultimatefoods.stella_artois", "Stella Artois");
+        EN.put("item.ultimatefoods.stella_artois", "Stella Artois Beer");
         EN.put("item.ultimatefoods.tortafrita", "Tortafrita");
         EN.put("message.ultimatefoods.cacerola.agregado", "Added %s (%s/%s)");
         EN.put("message.ultimatefoods.cacerola.llena", "The pot cannot take more ingredients.");
@@ -688,6 +689,7 @@ public final class LangDatos {
         ES.put("block.ultimatefoods.azucarera", "Azucarera");
         ES.put("block.ultimatefoods.yerba_mate_leaves", "Hojas de yerba mate");
         ES.put("block.ultimatefoods.yerba_mate_log", "Tronco de yerba mate");
+        ES.put("block.ultimatefoods.yerba_mate_planks", "Tablón de yerba mate");
         ES.put("block.ultimatefoods.yerba_mate_sapling", "Brote de yerba mate");
         ES.put("block.ultimatefoods.yerbera", "Yerbera");
         ES.put("effect.ultimatefoods.bonanza", "Bonanza");
@@ -741,7 +743,7 @@ public final class LangDatos {
         ES.put("effect.ultimatefoods.argentina.fuego_de_parrilla", "Fuego de parrilla");
         ES.put("effect.ultimatefoods.argentina.panza_llena", "Panza llena");
         ES.put("item.ultimatefoods.alfajor", "Alfajor");
-        ES.put("item.ultimatefoods.andes", "Andes");
+        ES.put("item.ultimatefoods.andes", "Cerveza Andes");
         ES.put("item.ultimatefoods.asado", "Asado");
         ES.put("item.ultimatefoods.asado_crudo", "Asado crudo");
         ES.put("item.ultimatefoods.cebolla_crispy", "Cebolla crispy");
@@ -771,10 +773,10 @@ public final class LangDatos {
         ES.put("item.ultimatefoods.pitusas", "Pitusas");
         ES.put("item.ultimatefoods.provoleta", "Provoleta");
         ES.put("item.ultimatefoods.queso", "Queso");
-        ES.put("item.ultimatefoods.quilmes", "Quilmes");
+        ES.put("item.ultimatefoods.quilmes", "Cerveza Quilmes");
         ES.put("item.ultimatefoods.salsa_barbacoa", "Salsa barbacoa");
         ES.put("item.ultimatefoods.sanguche_de_milanesa", "S\u00e1nguche de milanesa");
-        ES.put("item.ultimatefoods.stella_artois", "Stella Artois");
+        ES.put("item.ultimatefoods.stella_artois", "Cerveza Stella Artois");
         ES.put("item.ultimatefoods.tortafrita", "Tortafrita");
         ES.put("message.ultimatefoods.cacerola.agregado", "Agregaste %s (%s/%s)");
         ES.put("message.ultimatefoods.cacerola.llena", "La cacerola no admite m\u00e1s ingredientes.");
@@ -791,6 +793,7 @@ public final class LangDatos {
         ES.put("easter_egg.ultimatefoods.messi", "\u00a1Gracias, Messi! \u00a1Campe\u00f3n del mundo!");
         EN.put("block.ultimatefoods.comida_colocada", "Placed Food");
         EN.put("block.ultimatefoods.mate_puesto", "Placed Mate");
+        EN.put("tooltip.ultimatefoods.birra", "A cold one!");
         EN.put("message.ultimatefoods.cacerola.estado.vacia", "The pot is empty.");
         EN.put("message.ultimatefoods.cacerola.estado.incompleta", "%s/%s ingredients: they do not make a recipe yet.");
         EN.put("message.ultimatefoods.cacerola.estado.sin_fuego", "Ready to cook %s, but there is no fire (%s %%).");
@@ -803,6 +806,7 @@ public final class LangDatos {
         EN.put("message.ultimatefoods.comida_colocada.llena", "You are not hungry.");
         ES.put("block.ultimatefoods.comida_colocada", "Comida colocada");
         ES.put("block.ultimatefoods.mate_puesto", "Mate puesto");
+        ES.put("tooltip.ultimatefoods.birra", "¡Una birra!");
         ES.put("message.ultimatefoods.cacerola.estado.vacia", "La cacerola est\u00e1 vac\u00eda.");
         ES.put("message.ultimatefoods.cacerola.estado.incompleta", "%s/%s ingredientes: todav\u00eda no forman ninguna receta.");
         ES.put("message.ultimatefoods.cacerola.estado.sin_fuego", "Lista para cocinar %s, pero falta fuego (%s %%).");

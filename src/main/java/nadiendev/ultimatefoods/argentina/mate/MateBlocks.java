@@ -27,6 +27,14 @@ public final class MateBlocks {
                     .sound(SoundType.WOOD)
                     .ignitedByLava());
 
+    public static final DeferredBlock<Block> YERBA_MATE_PLANKS = BLOCKS.registerBlock("yerba_mate_planks",
+            Block::new,
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_LIGHT_GREEN)
+                    .strength(2.0F, 3.0F)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava());
+
     public static final DeferredBlock<YerbaLeavesBlock> YERBA_MATE_LEAVES = BLOCKS.registerBlock("yerba_mate_leaves",
             YerbaLeavesBlock::new,
             BlockBehaviour.Properties.of()

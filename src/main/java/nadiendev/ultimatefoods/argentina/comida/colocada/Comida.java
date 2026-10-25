@@ -100,6 +100,11 @@ public enum Comida implements StringRepresentable {
     }
 
     /** Bocados en los que se come estando colocada: el asado se va sacando por partes, el resto es de un solo bocado. */
+    /** Las tres cervezas (el fernet no lo es): llevan el tooltip rojo en negrita. */
+    public boolean esCerveza() {
+        return this == QUILMES || this == STELLA_ARTOIS || this == ANDES;
+    }
+
     public int bocados() {
         return this == ASADO ? 4 : 1;
     }
