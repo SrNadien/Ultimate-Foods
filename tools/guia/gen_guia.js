@@ -145,8 +145,8 @@ const ENTRADAS = [
     craft('fugazzeta'),
   ]],
   ['comidas', 'dulces', ['Dulces y panaderia', 'Sweets and bakery'], 'alfajor', 0, [
-    t('Dulce de leche: leche y azucar en la olla.' + BR + 'Alfajor: Dulzura. Medialuna, panqueque con dulce de leche, flan y torta frita.' + BR + 'Pitusas y pepas: las galletitas de la merienda.',
-      'Dulce de leche: milk and sugar in the pot.' + BR + 'Alfajor: Sugar Rush. Medialuna, dulce de leche pancake, flan and fried cake.' + BR + 'Pitusas and pepas: the afternoon cookies.'),
+    t('Dulce de leche: leche y azucar en la olla.' + BR + 'Flan con dulce de leche: leche, huevo, azucar y dulce de leche en la olla (salen 2).' + BR + 'Alfajor: Dulzura. Medialuna, panqueque y torta frita.' + BR + 'Pitusas y pepas: las galletitas de la merienda.',
+      'Dulce de leche: milk and sugar in the pot.' + BR + 'Dulce de leche flan: milk, egg, sugar and dulce de leche in the pot (makes 2).' + BR + 'Alfajor: Sugar Rush. Medialuna, pancake and fried cake.' + BR + 'Pitusas and pepas: the afternoon cookies.'),
     craft('alfajor'),
     craft('pitusas'),
     craft('pepas'),
@@ -157,8 +157,12 @@ const ENTRADAS = [
     craft('mega_dibu'),
   ]],
   ['comidas', 'bebidas', ['Bebidas', 'Drinks'], 'fernet_branca', 0, [
-    t('Fernet Branca, Quilmes, Stella Artois y Andes. Dan efectos buenos (Resistencia, Buena onda, Salto) y se pagan con Curda y un poco de confusion.' + BR + 'Devuelven la botella de vidrio. Se pueden dejar apoyadas en una mesa.',
-      'Fernet Branca, Quilmes, Stella Artois and Andes. They give good effects (Resistance, Good Vibes, Jump) and cost you Tipsy and a little nausea.' + BR + 'They return the glass bottle. They can be set down on a table.'),
+    t('Fernet Branca, Quilmes, Stella Artois y Andes. Dan efectos buenos (Resistencia, Buena onda, Salto) y se pagan con Curda y un poco de confusion.' + BR + 'Se craftean con una botella de vidrio, devuelven la botella y se pueden dejar apoyadas en una mesa.',
+      'Fernet Branca, Quilmes, Stella Artois and Andes. They give good effects (Resistance, Good Vibes, Jump) and cost you Tipsy and a little nausea.' + BR + 'They are crafted with a glass bottle, return the bottle and can be set down on a table.'),
+    craft('quilmes'),
+    craft('stella_artois'),
+    craft('andes'),
+    craft('fernet_branca'),
   ]],
 
   // ------------------------------------------------------------------ secretos

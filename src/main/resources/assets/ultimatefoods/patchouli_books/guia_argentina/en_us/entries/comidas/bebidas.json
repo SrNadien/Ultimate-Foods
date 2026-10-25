@@ -6,7 +6,23 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Fernet Branca, Quilmes, Stella Artois and Andes. They give good effects (Resistance, Good Vibes, Jump) and cost you Tipsy and a little nausea.$(br2)They return the glass bottle. They can be set down on a table."
+      "text": "Fernet Branca, Quilmes, Stella Artois and Andes. They give good effects (Resistance, Good Vibes, Jump) and cost you Tipsy and a little nausea.$(br2)They are crafted with a glass bottle, return the bottle and can be set down on a table."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/quilmes"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/stella_artois"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/andes"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:argentina/fernet_branca"
     }
   ]
 }
