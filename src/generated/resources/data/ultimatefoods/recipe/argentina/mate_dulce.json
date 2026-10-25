@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ultimatefoods:mate_con_yerba"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "components": {
+      "ultimatefoods:sabor": "dulce"
+    },
+    "count": 1,
+    "id": "ultimatefoods:mate_con_yerba"
+  }
+}

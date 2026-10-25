@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ultimatefoods:block/argentina/yerba_mate_log_top",
+    "side": "ultimatefoods:block/argentina/yerba_mate_log"
+  }
+}

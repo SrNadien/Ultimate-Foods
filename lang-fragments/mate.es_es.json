@@ -1,0 +1,48 @@
+{
+  "block.ultimatefoods.yerba_mate_log": "Tronco de yerba mate",
+  "block.ultimatefoods.yerba_mate_leaves": "Hojas de yerba mate",
+  "block.ultimatefoods.yerba_mate_sapling": "Brote de yerba mate",
+  "block.ultimatefoods.yerbera": "Yerbera",
+  "item.ultimatefoods.yerba_mate_leaf": "Hoja de yerba mate",
+  "item.ultimatefoods.yerba_mate_leaf_dried": "Hoja de yerba mate seca",
+  "item.ultimatefoods.yerba_mate": "Yerba mate",
+  "item.ultimatefoods.yerba_verdeflor": "Yerba Verdeflor",
+  "item.ultimatefoods.mate": "Mate",
+  "item.ultimatefoods.mate_con_yerba": "Mate con yerba",
+  "item.ultimatefoods.mate_amargo": "Mate amargo",
+  "item.ultimatefoods.mate_dulce": "Mate dulce",
+  "item.ultimatefoods.mate_de_leche": "Mate de leche",
+  "item.ultimatefoods.mate_con_yuyos": "Mate con yuyos",
+  "item.ultimatefoods.mate_lavado": "Mate lavado",
+  "item.ultimatefoods.pava": "Pava",
+  "item.ultimatefoods.pava_con_agua": "Pava con agua",
+  "item.ultimatefoods.pava_caliente": "Pava caliente",
+  "item.ultimatefoods.bombilla": "Bombilla",
+  "item.ultimatefoods.yuyos": "Yuyos",
+
+  "effect.ultimatefoods.tranquilidad": "Tranquilidad",
+  "effect.ultimatefoods.mandale_mecha": "Mandale mecha",
+  "effect.ultimatefoods.desarrollo": "Desarrollo",
+  "effect.ultimatefoods.bonanza": "Bonanza",
+
+  "entity.minecraft.villager.ultimatefoods.yerbatero": "Yerbatero",
+
+  "mate.ultimatefoods.sabor.amargo": "Amargo",
+  "mate.ultimatefoods.sabor.dulce": "Dulce",
+  "mate.ultimatefoods.sabor.leche": "De leche",
+  "mate.ultimatefoods.sabor.yuyos": "Con yuyos",
+
+  "tooltip.ultimatefoods.mate.sabor": "Sabor: %s",
+  "tooltip.ultimatefoods.mate.cebadas": "Cebadas usadas: %s/%s",
+  "tooltip.ultimatefoods.mate.cebar": "Con una pava caliente en la otra mano, click derecho para cebarlo (hace falta una bombilla).",
+  "tooltip.ultimatefoods.mate.sorbos": "Sorbos que quedan: %s",
+  "tooltip.ultimatefoods.mate.pasar": "Click derecho sobre otro jugador o un aldeano para pasarle el mate.",
+  "tooltip.ultimatefoods.pava.calentar": "Click derecho a una fogata o un horno encendido para calentar el agua.",
+  "tooltip.ultimatefoods.pava.cebadas": "Agua caliente: %s/%s",
+  "tooltip.ultimatefoods.pava.cebar": "Con un mate con yerba en la otra mano, click derecho para cebarlo.",
+
+  "message.ultimatefoods.mate.sin_bombilla": "Te falta la bombilla en el inventario.",
+  "message.ultimatefoods.yerbera.llena": "La yerbera está llena.",
+  "message.ultimatefoods.yerbera.vacia": "La yerbera está vacía.",
+  "message.ultimatefoods.yerbera.porciones": "Yerba: %s/%s porciones"
+}
