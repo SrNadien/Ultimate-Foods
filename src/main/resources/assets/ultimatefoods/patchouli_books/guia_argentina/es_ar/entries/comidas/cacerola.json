@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Se apoya sobre una fuente de calor (fogata, horno o parrilla prendidos), se le tiran los ingredientes, se espera y se sirve con un bowl.$(br2)Mano vacia: devuelve el ultimo ingrediente."
+      "text": "Se apoya sobre una fuente de calor (fogata, horno o parrilla prendidos), se le tiran los ingredientes, se espera y se sirve con un cuenco (3 tablones en V).$(br2)Mano vacia: devuelve el ultimo ingrediente."
     },
     {
       "type": "patchouli:crafting",
@@ -14,7 +14,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Guiso: papa, zanahoria, tomate, cebolla y carne vacuna cruda. Panza llena, Comodidad y un toque de Regeneracion.$(br2)Locro: zapallo, trigo, papa, cebolla, chorizo y carne. Panza llena, Nutricion y Resistencia."
+      "text": "Guiso: papa, zanahoria, tomate, cebolla, carne vacuna cruda y arroz o fideos (6 ingredientes, 45 segundos al fuego). Panza llena, Comodidad y un toque de Regeneracion.$(br2)Locro: zapallo, trigo, papa, cebolla, chorizo y carne. Panza llena, Nutricion y Resistencia."
     }
   ]
 }

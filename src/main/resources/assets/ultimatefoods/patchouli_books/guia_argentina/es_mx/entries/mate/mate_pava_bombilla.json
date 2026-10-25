@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "El mate se hace con un bowl y cuero. La bombilla, con tres pepitas de hierro. La pava, con hierro y un palo."
+      "text": "El mate se hace con un cuenco y cuero. La bombilla, con tres pepitas de hierro. La pava, con hierro y un palo."
     },
     {
       "type": "patchouli:crafting",

@@ -64,7 +64,7 @@ const ENTRADAS = [
     craft('azucarera'),
   ]],
   ['mate', 'mate_pava_bombilla', ['Mate, pava y bombilla', 'Mate, kettle and bombilla'], 'pava', 0, [
-    t('El mate se hace con un bowl y cuero. La bombilla, con tres pepitas de hierro. La pava, con hierro y un palo.',
+    t('El mate se hace con un cuenco y cuero. La bombilla, con tres pepitas de hierro. La pava, con hierro y un palo.',
       'The mate is made from a bowl and leather. The bombilla, from three iron nuggets. The kettle, from iron and a stick.'),
     craft('mate'),
     craft('bombilla'),
@@ -124,11 +124,11 @@ const ENTRADAS = [
     craft('choripan'),
   ]],
   ['comidas', 'cacerola', ['La Cacerola Essen', 'The Essen pot'], 'cacerola_essen', 0, [
-    t('Se apoya sobre una fuente de calor (fogata, horno o parrilla prendidos), se le tiran los ingredientes, se espera y se sirve con un bowl.' + BR + 'Mano vacia: devuelve el ultimo ingrediente.',
+    t('Se apoya sobre una fuente de calor (fogata, horno o parrilla prendidos), se le tiran los ingredientes, se espera y se sirve con un cuenco (3 tablones en V).' + BR + 'Mano vacia: devuelve el ultimo ingrediente.',
       'Set it on a heat source (lit campfire, furnace or grill), toss in the ingredients, wait and serve with a bowl.' + BR + 'Empty hand: returns the last ingredient.'),
     craft('cacerola_essen'),
-    t('Guiso: papa, zanahoria, tomate, cebolla y carne vacuna cruda. Panza llena, Comodidad y un toque de Regeneracion.' + BR + 'Locro: zapallo, trigo, papa, cebolla, chorizo y carne. Panza llena, Nutricion y Resistencia.',
-      'Guiso stew: potato, carrot, tomato, onion and raw beef. Full Belly, Comfort and a touch of Regeneration.' + BR + 'Locro: pumpkin, wheat, potato, onion, chorizo and beef. Full Belly, Nourishment and Resistance.'),
+    t('Guiso: papa, zanahoria, tomate, cebolla, carne vacuna cruda y arroz o fideos (6 ingredientes, 45 segundos al fuego). Panza llena, Comodidad y un toque de Regeneracion.' + BR + 'Locro: zapallo, trigo, papa, cebolla, chorizo y carne. Panza llena, Nutricion y Resistencia.',
+      'Guiso stew: potato, carrot, tomato, onion, raw beef and rice or pasta (6 ingredients, 45 seconds on the fire). Full Belly, Comfort and a touch of Regeneration.' + BR + 'Locro: pumpkin, wheat, potato, onion, chorizo and beef. Full Belly, Nourishment and Resistance.'),
   ]],
   ['comidas', 'milanesas', ['Milanesas', 'Milanesas'], 'milanesa_de_carne', 0, [
     t('Pan rallado + carne (o pollo) = milanesa cruda; se cocina como cualquier carne.' + BR + 'De carne: Fuerza. De pollo: Velocidad.' + BR + 'Sanguche de milanesa: milanesa, pan, tomate y verdura. Fuerza, Resistencia y Panza llena.',
