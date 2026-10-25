@@ -1,0 +1,32 @@
+{
+  "type": "ultimatefoods:cacerola",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "cookingtime": 1200,
+  "ingredients": [
+    {
+      "item": "farmersdelight:pumpkin_slice"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "tag": "c:crops/potato"
+    },
+    {
+      "tag": "c:crops/onion"
+    },
+    {
+      "item": "ultimatefoods:chorizo"
+    },
+    {
+      "tag": "c:foods/raw_beef"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "ultimatefoods:locro"
+  }
+}
