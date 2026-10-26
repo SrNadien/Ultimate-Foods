@@ -1,5 +1,22 @@
 # Changelog
 
+## 2.0.13 — 2026-10-25 — Minecraft 26.1.2
+
+First release of the mate, grill and table content for 26.1.2, together with the split that took the equipment and the utility items out of this mod (see 2.0.10 below). Everything lives in the new **"Artinna Re Fisura"** creative tab.
+
+### ✨ Added
+- **Mate**: yerba mate tree (leaves, sapling, log and green planks), dried and ground yerba, Verdeflor packages, the yerbera and the sugar pouch (they store portions), the mate in six states, the kettle, the bombilla and yuyos. Brew it, drink it and pass it to players and villagers. Four flavors with their own effects: Tranquility, Out of my way!, Development and Prosperity.
+- **Placeable mates**: mates, kettles, yerba packages and bombillas can be set down with Shift + right click; fill, flavor and brew a set-down mate, stick the bombilla in separately and unwash a washed mate with a brush.
+- **The yerbatero**: a villager profession with the yerbera as job site; its trades are now data (`trade_set/yerbatero`).
+- **36 foods and drinks** with new effects (Full Belly, Grill Fire, Sugar Rush, Tipsy, Good Vibes, Overstuffed and Penalty Saver), the **grill** and the **Essen pot** (own recipe type, open lid, cooking state on click and in Jade, JEI category).
+- **Placeable foods**: every food has a 3D model and can be set down with Shift + right click and eaten from the table; the asado is eaten in four bites.
+- **Guide book** *Recetas De La Buela* (needs Patchouli, optional): custom 3D item and GUI, one sheet per item and block, an Ultimate Foods section and an explanation of every easter egg.
+- **La Copa**, a golden trophy in honor of Lionel Andres Messi, and easter eggs: rename a villager "Messi", rename a pig "carpincho", the wandering trader's sales pitch and a new face on the sun.
+
+### ⚔️ Changed
+- Patchouli joins JEI and Jade as an optional integration.
+- Requires NeoForge `26.1.2.100` and Java 25.
+
 ## [2.0.10] — 2026-10-10 — Minecraft 26.1.2
 
 Ultimate Foods is now only the foods and drinks. The equipment and materials moved to **UltimateArmoury: Tools And Weapons**, and the utility items and music discs moved to **Ultimate Tweaks**.

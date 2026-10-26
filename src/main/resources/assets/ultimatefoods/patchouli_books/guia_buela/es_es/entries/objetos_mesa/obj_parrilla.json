@@ -1,0 +1,17 @@
+{
+  "name": "Parrilla",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:parrilla",
+  "sortnum": 86,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:parrilla",
+      "text": "La parrilla: combustible, yesquero o carga de fuego, y cocina 6 cosas a la vez. Quema si caminas encima prendida."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/parrilla"
+    }
+  ]
+}

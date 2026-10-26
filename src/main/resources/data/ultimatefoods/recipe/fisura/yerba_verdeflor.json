@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ultimatefoods:yerba_mate",
+    "ultimatefoods:yerba_mate",
+    "ultimatefoods:yerba_mate",
+    "ultimatefoods:yerba_mate",
+    "minecraft:paper"
+  ],
+  "result": {
+    "id": "ultimatefoods:yerba_verdeflor"
+  }
+}

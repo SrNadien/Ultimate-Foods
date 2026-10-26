@@ -1,0 +1,13 @@
+{
+  "name": "Quince Paste",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:dulce_de_membrillo",
+  "sortnum": 56,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:dulce_de_membrillo",
+      "text": "Quince jelly: 2 apples and 2 sugar in the pot. For the pepas."
+    }
+  ]
+}

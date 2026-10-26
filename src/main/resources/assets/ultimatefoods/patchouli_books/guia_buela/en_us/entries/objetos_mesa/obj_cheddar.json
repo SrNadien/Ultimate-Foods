@@ -1,0 +1,13 @@
+{
+  "name": "Cheddar",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:cheddar",
+  "sortnum": 53,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:cheddar",
+      "text": "Cheddar: cheese cut with a knife. Makes 3."
+    }
+  ]
+}

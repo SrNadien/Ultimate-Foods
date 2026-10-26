@@ -1,0 +1,13 @@
+{
+  "name": "Yerba Mate Log",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_mate_log",
+  "sortnum": 27,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_mate_log",
+      "text": "Trunk of the yerba mate tree, from chopping it. One makes 4 yerba planks."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "The Cup",
+  "category": "ultimatefoods:secretos",
+  "icon": "ultimatefoods:la_copa",
+  "sortnum": 22,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A golden trophy for decoration, in honor of Lionel Andres Messi. Six gold ingots in a cup shape."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:la_copa"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Pava caliente",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:pava_caliente",
+  "sortnum": 46,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:pava_caliente",
+      "text": "Pava con agua caliente, justo para el mate: rinde 8 cebadas y despues vuelve a ser una pava vacia."
+    }
+  ]
+}

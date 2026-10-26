@@ -1,0 +1,17 @@
+{
+  "name": "La Copa",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:la_copa",
+  "sortnum": 89,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:la_copa",
+      "text": "La Copa, trofeo dorado en honor a Lionel Andres Messi. 6 lingotes de oro en forma de copa, o la vende el aldeano que se llama Messi."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:la_copa"
+    }
+  ]
+}

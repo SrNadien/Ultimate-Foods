@@ -1,0 +1,16 @@
+{
+  "name": "Choripan y provoleta",
+  "category": "ultimatefoods:comidas",
+  "icon": "ultimatefoods:choripan",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Choripan: chorizo asado, pan y tomate. Fuego de parrilla y Absorcion.$(br2)Provoleta: queso a la parrilla. Fuego de parrilla y Resistencia."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/choripan"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Yerbera",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerbera",
+  "sortnum": 35,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerbera",
+      "text": "Stores up to 64 portions of yerba and is the yerbatero's job site. Right click with an empty mate to get it back filled. Keeps its contents when broken."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/yerbera"
+    }
+  ]
+}

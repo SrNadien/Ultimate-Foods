@@ -24,6 +24,8 @@ public class SonidosReproducibles {
 
     public static final DeferredHolder<SoundEvent, SoundEvent> ERA_PAL_NENE = registerSound("me_compre_una_cajita_feliz");
 
+    public static final DeferredHolder<SoundEvent, SoundEvent> VENDO_CARROS = registerSound("vendo_carros");
+
     private static DeferredHolder<SoundEvent, SoundEvent> registerSound(String name) {
         Identifier id = Identifier.fromNamespaceAndPath(UltimateFoodsCore.MOD_ID, name);
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(id));

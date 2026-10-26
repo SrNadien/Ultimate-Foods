@@ -1,0 +1,13 @@
+{
+  "name": "Mate lavado",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:mate_lavado",
+  "sortnum": 43,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:mate_lavado",
+      "text": "Mate lavado: la yerba dio todo lo que tenia. Todavia se puede cebar una vez mas, o deslavar con un pincel para dejarlo vacio."
+    }
+  ]
+}

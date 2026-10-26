@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 300,
+  "experience": 0.5,
+  "ingredients": [
+    {
+      "neoforge:ingredient_type": "neoforge:compound",
+      "children": [
+        "#c:drinks/milk",
+        "minecraft:milk_bucket"
+      ]
+    },
+    "#c:eggs",
+    "minecraft:sugar",
+    "ultimatefoods:dulce_de_leche"
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 2,
+    "id": "ultimatefoods:flan_con_dulce_de_leche"
+  }
+}

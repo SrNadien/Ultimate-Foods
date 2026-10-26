@@ -1,0 +1,17 @@
+{
+  "name": "Cerveza Quilmes",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:quilmes",
+  "sortnum": 83,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:quilmes",
+      "text": "Cerveza Quilmes: Buena onda (2 min) y Curda. Una birra. Devuelve la botella."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/quilmes"
+    }
+  ]
+}

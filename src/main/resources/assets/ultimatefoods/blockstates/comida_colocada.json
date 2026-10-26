@@ -1,0 +1,1444 @@
+{
+  "variants": {
+    "bocados=0,comida=alfajor,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor",
+      "y": 90
+    },
+    "bocados=0,comida=alfajor,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor"
+    },
+    "bocados=0,comida=alfajor,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor",
+      "y": 180
+    },
+    "bocados=0,comida=alfajor,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor",
+      "y": 270
+    },
+    "bocados=0,comida=andes,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/andes",
+      "y": 90
+    },
+    "bocados=0,comida=andes,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/andes"
+    },
+    "bocados=0,comida=andes,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/andes",
+      "y": 180
+    },
+    "bocados=0,comida=andes,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/andes",
+      "y": 270
+    },
+    "bocados=0,comida=asado,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/asado",
+      "y": 90
+    },
+    "bocados=0,comida=asado,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/asado"
+    },
+    "bocados=0,comida=asado,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/asado",
+      "y": 180
+    },
+    "bocados=0,comida=asado,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/asado",
+      "y": 270
+    },
+    "bocados=0,comida=choripan,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/choripan",
+      "y": 90
+    },
+    "bocados=0,comida=choripan,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/choripan"
+    },
+    "bocados=0,comida=choripan,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/choripan",
+      "y": 180
+    },
+    "bocados=0,comida=choripan,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/choripan",
+      "y": 270
+    },
+    "bocados=0,comida=chorizo_asado,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado",
+      "y": 90
+    },
+    "bocados=0,comida=chorizo_asado,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado"
+    },
+    "bocados=0,comida=chorizo_asado,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado",
+      "y": 180
+    },
+    "bocados=0,comida=chorizo_asado,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado",
+      "y": 270
+    },
+    "bocados=0,comida=empanada,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/empanada",
+      "y": 90
+    },
+    "bocados=0,comida=empanada,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/empanada"
+    },
+    "bocados=0,comida=empanada,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/empanada",
+      "y": 180
+    },
+    "bocados=0,comida=empanada,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/empanada",
+      "y": 270
+    },
+    "bocados=0,comida=fernet_branca,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca",
+      "y": 90
+    },
+    "bocados=0,comida=fernet_branca,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca"
+    },
+    "bocados=0,comida=fernet_branca,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca",
+      "y": 180
+    },
+    "bocados=0,comida=fernet_branca,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca",
+      "y": 270
+    },
+    "bocados=0,comida=flan_con_dulce_de_leche,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche",
+      "y": 90
+    },
+    "bocados=0,comida=flan_con_dulce_de_leche,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche"
+    },
+    "bocados=0,comida=flan_con_dulce_de_leche,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche",
+      "y": 180
+    },
+    "bocados=0,comida=flan_con_dulce_de_leche,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche",
+      "y": 270
+    },
+    "bocados=0,comida=fugazzeta,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta",
+      "y": 90
+    },
+    "bocados=0,comida=fugazzeta,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta"
+    },
+    "bocados=0,comida=fugazzeta,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta",
+      "y": 180
+    },
+    "bocados=0,comida=fugazzeta,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta",
+      "y": 270
+    },
+    "bocados=0,comida=guiso,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/guiso",
+      "y": 90
+    },
+    "bocados=0,comida=guiso,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/guiso"
+    },
+    "bocados=0,comida=guiso,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/guiso",
+      "y": 180
+    },
+    "bocados=0,comida=guiso,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/guiso",
+      "y": 270
+    },
+    "bocados=0,comida=locro,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/locro",
+      "y": 90
+    },
+    "bocados=0,comida=locro,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/locro"
+    },
+    "bocados=0,comida=locro,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/locro",
+      "y": 180
+    },
+    "bocados=0,comida=locro,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/locro",
+      "y": 270
+    },
+    "bocados=0,comida=medialuna,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna",
+      "y": 90
+    },
+    "bocados=0,comida=medialuna,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna"
+    },
+    "bocados=0,comida=medialuna,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna",
+      "y": 180
+    },
+    "bocados=0,comida=medialuna,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna",
+      "y": 270
+    },
+    "bocados=0,comida=mega_dibu,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu",
+      "y": 90
+    },
+    "bocados=0,comida=mega_dibu,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu"
+    },
+    "bocados=0,comida=mega_dibu,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu",
+      "y": 180
+    },
+    "bocados=0,comida=mega_dibu,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu",
+      "y": 270
+    },
+    "bocados=0,comida=milanesa_de_carne,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne",
+      "y": 90
+    },
+    "bocados=0,comida=milanesa_de_carne,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne"
+    },
+    "bocados=0,comida=milanesa_de_carne,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne",
+      "y": 180
+    },
+    "bocados=0,comida=milanesa_de_carne,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne",
+      "y": 270
+    },
+    "bocados=0,comida=milanesa_de_pollo,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo",
+      "y": 90
+    },
+    "bocados=0,comida=milanesa_de_pollo,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo"
+    },
+    "bocados=0,comida=milanesa_de_pollo,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo",
+      "y": 180
+    },
+    "bocados=0,comida=milanesa_de_pollo,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo",
+      "y": 270
+    },
+    "bocados=0,comida=noquis,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/noquis",
+      "y": 90
+    },
+    "bocados=0,comida=noquis,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/noquis"
+    },
+    "bocados=0,comida=noquis,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/noquis",
+      "y": 180
+    },
+    "bocados=0,comida=noquis,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/noquis",
+      "y": 270
+    },
+    "bocados=0,comida=panqueque_con_dulce_de_leche,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche",
+      "y": 90
+    },
+    "bocados=0,comida=panqueque_con_dulce_de_leche,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche"
+    },
+    "bocados=0,comida=panqueque_con_dulce_de_leche,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche",
+      "y": 180
+    },
+    "bocados=0,comida=panqueque_con_dulce_de_leche,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche",
+      "y": 270
+    },
+    "bocados=0,comida=pepas,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/pepas",
+      "y": 90
+    },
+    "bocados=0,comida=pepas,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/pepas"
+    },
+    "bocados=0,comida=pepas,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/pepas",
+      "y": 180
+    },
+    "bocados=0,comida=pepas,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/pepas",
+      "y": 270
+    },
+    "bocados=0,comida=pitusas,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas",
+      "y": 90
+    },
+    "bocados=0,comida=pitusas,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas"
+    },
+    "bocados=0,comida=pitusas,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas",
+      "y": 180
+    },
+    "bocados=0,comida=pitusas,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas",
+      "y": 270
+    },
+    "bocados=0,comida=provoleta,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta",
+      "y": 90
+    },
+    "bocados=0,comida=provoleta,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta"
+    },
+    "bocados=0,comida=provoleta,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta",
+      "y": 180
+    },
+    "bocados=0,comida=provoleta,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta",
+      "y": 270
+    },
+    "bocados=0,comida=quilmes,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes",
+      "y": 90
+    },
+    "bocados=0,comida=quilmes,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes"
+    },
+    "bocados=0,comida=quilmes,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes",
+      "y": 180
+    },
+    "bocados=0,comida=quilmes,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes",
+      "y": 270
+    },
+    "bocados=0,comida=sanguche_de_milanesa,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa",
+      "y": 90
+    },
+    "bocados=0,comida=sanguche_de_milanesa,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa"
+    },
+    "bocados=0,comida=sanguche_de_milanesa,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa",
+      "y": 180
+    },
+    "bocados=0,comida=sanguche_de_milanesa,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa",
+      "y": 270
+    },
+    "bocados=0,comida=stella_artois,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois",
+      "y": 90
+    },
+    "bocados=0,comida=stella_artois,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois"
+    },
+    "bocados=0,comida=stella_artois,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois",
+      "y": 180
+    },
+    "bocados=0,comida=stella_artois,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois",
+      "y": 270
+    },
+    "bocados=0,comida=tortafrita,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita",
+      "y": 90
+    },
+    "bocados=0,comida=tortafrita,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita"
+    },
+    "bocados=0,comida=tortafrita,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita",
+      "y": 180
+    },
+    "bocados=0,comida=tortafrita,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita",
+      "y": 270
+    },
+    "bocados=1,comida=alfajor,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor",
+      "y": 90
+    },
+    "bocados=1,comida=alfajor,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor"
+    },
+    "bocados=1,comida=alfajor,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor",
+      "y": 180
+    },
+    "bocados=1,comida=alfajor,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor",
+      "y": 270
+    },
+    "bocados=1,comida=andes,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/andes",
+      "y": 90
+    },
+    "bocados=1,comida=andes,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/andes"
+    },
+    "bocados=1,comida=andes,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/andes",
+      "y": 180
+    },
+    "bocados=1,comida=andes,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/andes",
+      "y": 270
+    },
+    "bocados=1,comida=asado,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/asado_b1",
+      "y": 90
+    },
+    "bocados=1,comida=asado,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/asado_b1"
+    },
+    "bocados=1,comida=asado,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/asado_b1",
+      "y": 180
+    },
+    "bocados=1,comida=asado,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/asado_b1",
+      "y": 270
+    },
+    "bocados=1,comida=choripan,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/choripan",
+      "y": 90
+    },
+    "bocados=1,comida=choripan,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/choripan"
+    },
+    "bocados=1,comida=choripan,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/choripan",
+      "y": 180
+    },
+    "bocados=1,comida=choripan,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/choripan",
+      "y": 270
+    },
+    "bocados=1,comida=chorizo_asado,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado",
+      "y": 90
+    },
+    "bocados=1,comida=chorizo_asado,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado"
+    },
+    "bocados=1,comida=chorizo_asado,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado",
+      "y": 180
+    },
+    "bocados=1,comida=chorizo_asado,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado",
+      "y": 270
+    },
+    "bocados=1,comida=empanada,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/empanada",
+      "y": 90
+    },
+    "bocados=1,comida=empanada,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/empanada"
+    },
+    "bocados=1,comida=empanada,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/empanada",
+      "y": 180
+    },
+    "bocados=1,comida=empanada,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/empanada",
+      "y": 270
+    },
+    "bocados=1,comida=fernet_branca,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca",
+      "y": 90
+    },
+    "bocados=1,comida=fernet_branca,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca"
+    },
+    "bocados=1,comida=fernet_branca,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca",
+      "y": 180
+    },
+    "bocados=1,comida=fernet_branca,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca",
+      "y": 270
+    },
+    "bocados=1,comida=flan_con_dulce_de_leche,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche",
+      "y": 90
+    },
+    "bocados=1,comida=flan_con_dulce_de_leche,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche"
+    },
+    "bocados=1,comida=flan_con_dulce_de_leche,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche",
+      "y": 180
+    },
+    "bocados=1,comida=flan_con_dulce_de_leche,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche",
+      "y": 270
+    },
+    "bocados=1,comida=fugazzeta,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta",
+      "y": 90
+    },
+    "bocados=1,comida=fugazzeta,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta"
+    },
+    "bocados=1,comida=fugazzeta,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta",
+      "y": 180
+    },
+    "bocados=1,comida=fugazzeta,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta",
+      "y": 270
+    },
+    "bocados=1,comida=guiso,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/guiso",
+      "y": 90
+    },
+    "bocados=1,comida=guiso,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/guiso"
+    },
+    "bocados=1,comida=guiso,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/guiso",
+      "y": 180
+    },
+    "bocados=1,comida=guiso,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/guiso",
+      "y": 270
+    },
+    "bocados=1,comida=locro,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/locro",
+      "y": 90
+    },
+    "bocados=1,comida=locro,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/locro"
+    },
+    "bocados=1,comida=locro,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/locro",
+      "y": 180
+    },
+    "bocados=1,comida=locro,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/locro",
+      "y": 270
+    },
+    "bocados=1,comida=medialuna,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna",
+      "y": 90
+    },
+    "bocados=1,comida=medialuna,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna"
+    },
+    "bocados=1,comida=medialuna,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna",
+      "y": 180
+    },
+    "bocados=1,comida=medialuna,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna",
+      "y": 270
+    },
+    "bocados=1,comida=mega_dibu,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu",
+      "y": 90
+    },
+    "bocados=1,comida=mega_dibu,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu"
+    },
+    "bocados=1,comida=mega_dibu,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu",
+      "y": 180
+    },
+    "bocados=1,comida=mega_dibu,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu",
+      "y": 270
+    },
+    "bocados=1,comida=milanesa_de_carne,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne",
+      "y": 90
+    },
+    "bocados=1,comida=milanesa_de_carne,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne"
+    },
+    "bocados=1,comida=milanesa_de_carne,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne",
+      "y": 180
+    },
+    "bocados=1,comida=milanesa_de_carne,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne",
+      "y": 270
+    },
+    "bocados=1,comida=milanesa_de_pollo,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo",
+      "y": 90
+    },
+    "bocados=1,comida=milanesa_de_pollo,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo"
+    },
+    "bocados=1,comida=milanesa_de_pollo,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo",
+      "y": 180
+    },
+    "bocados=1,comida=milanesa_de_pollo,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo",
+      "y": 270
+    },
+    "bocados=1,comida=noquis,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/noquis",
+      "y": 90
+    },
+    "bocados=1,comida=noquis,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/noquis"
+    },
+    "bocados=1,comida=noquis,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/noquis",
+      "y": 180
+    },
+    "bocados=1,comida=noquis,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/noquis",
+      "y": 270
+    },
+    "bocados=1,comida=panqueque_con_dulce_de_leche,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche",
+      "y": 90
+    },
+    "bocados=1,comida=panqueque_con_dulce_de_leche,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche"
+    },
+    "bocados=1,comida=panqueque_con_dulce_de_leche,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche",
+      "y": 180
+    },
+    "bocados=1,comida=panqueque_con_dulce_de_leche,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche",
+      "y": 270
+    },
+    "bocados=1,comida=pepas,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/pepas",
+      "y": 90
+    },
+    "bocados=1,comida=pepas,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/pepas"
+    },
+    "bocados=1,comida=pepas,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/pepas",
+      "y": 180
+    },
+    "bocados=1,comida=pepas,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/pepas",
+      "y": 270
+    },
+    "bocados=1,comida=pitusas,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas",
+      "y": 90
+    },
+    "bocados=1,comida=pitusas,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas"
+    },
+    "bocados=1,comida=pitusas,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas",
+      "y": 180
+    },
+    "bocados=1,comida=pitusas,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas",
+      "y": 270
+    },
+    "bocados=1,comida=provoleta,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta",
+      "y": 90
+    },
+    "bocados=1,comida=provoleta,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta"
+    },
+    "bocados=1,comida=provoleta,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta",
+      "y": 180
+    },
+    "bocados=1,comida=provoleta,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta",
+      "y": 270
+    },
+    "bocados=1,comida=quilmes,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes",
+      "y": 90
+    },
+    "bocados=1,comida=quilmes,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes"
+    },
+    "bocados=1,comida=quilmes,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes",
+      "y": 180
+    },
+    "bocados=1,comida=quilmes,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes",
+      "y": 270
+    },
+    "bocados=1,comida=sanguche_de_milanesa,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa",
+      "y": 90
+    },
+    "bocados=1,comida=sanguche_de_milanesa,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa"
+    },
+    "bocados=1,comida=sanguche_de_milanesa,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa",
+      "y": 180
+    },
+    "bocados=1,comida=sanguche_de_milanesa,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa",
+      "y": 270
+    },
+    "bocados=1,comida=stella_artois,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois",
+      "y": 90
+    },
+    "bocados=1,comida=stella_artois,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois"
+    },
+    "bocados=1,comida=stella_artois,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois",
+      "y": 180
+    },
+    "bocados=1,comida=stella_artois,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois",
+      "y": 270
+    },
+    "bocados=1,comida=tortafrita,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita",
+      "y": 90
+    },
+    "bocados=1,comida=tortafrita,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita"
+    },
+    "bocados=1,comida=tortafrita,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita",
+      "y": 180
+    },
+    "bocados=1,comida=tortafrita,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita",
+      "y": 270
+    },
+    "bocados=2,comida=alfajor,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor",
+      "y": 90
+    },
+    "bocados=2,comida=alfajor,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor"
+    },
+    "bocados=2,comida=alfajor,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor",
+      "y": 180
+    },
+    "bocados=2,comida=alfajor,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor",
+      "y": 270
+    },
+    "bocados=2,comida=andes,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/andes",
+      "y": 90
+    },
+    "bocados=2,comida=andes,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/andes"
+    },
+    "bocados=2,comida=andes,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/andes",
+      "y": 180
+    },
+    "bocados=2,comida=andes,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/andes",
+      "y": 270
+    },
+    "bocados=2,comida=asado,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/asado_b2",
+      "y": 90
+    },
+    "bocados=2,comida=asado,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/asado_b2"
+    },
+    "bocados=2,comida=asado,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/asado_b2",
+      "y": 180
+    },
+    "bocados=2,comida=asado,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/asado_b2",
+      "y": 270
+    },
+    "bocados=2,comida=choripan,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/choripan",
+      "y": 90
+    },
+    "bocados=2,comida=choripan,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/choripan"
+    },
+    "bocados=2,comida=choripan,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/choripan",
+      "y": 180
+    },
+    "bocados=2,comida=choripan,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/choripan",
+      "y": 270
+    },
+    "bocados=2,comida=chorizo_asado,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado",
+      "y": 90
+    },
+    "bocados=2,comida=chorizo_asado,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado"
+    },
+    "bocados=2,comida=chorizo_asado,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado",
+      "y": 180
+    },
+    "bocados=2,comida=chorizo_asado,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado",
+      "y": 270
+    },
+    "bocados=2,comida=empanada,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/empanada",
+      "y": 90
+    },
+    "bocados=2,comida=empanada,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/empanada"
+    },
+    "bocados=2,comida=empanada,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/empanada",
+      "y": 180
+    },
+    "bocados=2,comida=empanada,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/empanada",
+      "y": 270
+    },
+    "bocados=2,comida=fernet_branca,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca",
+      "y": 90
+    },
+    "bocados=2,comida=fernet_branca,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca"
+    },
+    "bocados=2,comida=fernet_branca,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca",
+      "y": 180
+    },
+    "bocados=2,comida=fernet_branca,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca",
+      "y": 270
+    },
+    "bocados=2,comida=flan_con_dulce_de_leche,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche",
+      "y": 90
+    },
+    "bocados=2,comida=flan_con_dulce_de_leche,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche"
+    },
+    "bocados=2,comida=flan_con_dulce_de_leche,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche",
+      "y": 180
+    },
+    "bocados=2,comida=flan_con_dulce_de_leche,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche",
+      "y": 270
+    },
+    "bocados=2,comida=fugazzeta,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta",
+      "y": 90
+    },
+    "bocados=2,comida=fugazzeta,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta"
+    },
+    "bocados=2,comida=fugazzeta,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta",
+      "y": 180
+    },
+    "bocados=2,comida=fugazzeta,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta",
+      "y": 270
+    },
+    "bocados=2,comida=guiso,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/guiso",
+      "y": 90
+    },
+    "bocados=2,comida=guiso,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/guiso"
+    },
+    "bocados=2,comida=guiso,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/guiso",
+      "y": 180
+    },
+    "bocados=2,comida=guiso,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/guiso",
+      "y": 270
+    },
+    "bocados=2,comida=locro,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/locro",
+      "y": 90
+    },
+    "bocados=2,comida=locro,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/locro"
+    },
+    "bocados=2,comida=locro,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/locro",
+      "y": 180
+    },
+    "bocados=2,comida=locro,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/locro",
+      "y": 270
+    },
+    "bocados=2,comida=medialuna,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna",
+      "y": 90
+    },
+    "bocados=2,comida=medialuna,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna"
+    },
+    "bocados=2,comida=medialuna,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna",
+      "y": 180
+    },
+    "bocados=2,comida=medialuna,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna",
+      "y": 270
+    },
+    "bocados=2,comida=mega_dibu,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu",
+      "y": 90
+    },
+    "bocados=2,comida=mega_dibu,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu"
+    },
+    "bocados=2,comida=mega_dibu,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu",
+      "y": 180
+    },
+    "bocados=2,comida=mega_dibu,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu",
+      "y": 270
+    },
+    "bocados=2,comida=milanesa_de_carne,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne",
+      "y": 90
+    },
+    "bocados=2,comida=milanesa_de_carne,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne"
+    },
+    "bocados=2,comida=milanesa_de_carne,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne",
+      "y": 180
+    },
+    "bocados=2,comida=milanesa_de_carne,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne",
+      "y": 270
+    },
+    "bocados=2,comida=milanesa_de_pollo,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo",
+      "y": 90
+    },
+    "bocados=2,comida=milanesa_de_pollo,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo"
+    },
+    "bocados=2,comida=milanesa_de_pollo,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo",
+      "y": 180
+    },
+    "bocados=2,comida=milanesa_de_pollo,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo",
+      "y": 270
+    },
+    "bocados=2,comida=noquis,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/noquis",
+      "y": 90
+    },
+    "bocados=2,comida=noquis,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/noquis"
+    },
+    "bocados=2,comida=noquis,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/noquis",
+      "y": 180
+    },
+    "bocados=2,comida=noquis,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/noquis",
+      "y": 270
+    },
+    "bocados=2,comida=panqueque_con_dulce_de_leche,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche",
+      "y": 90
+    },
+    "bocados=2,comida=panqueque_con_dulce_de_leche,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche"
+    },
+    "bocados=2,comida=panqueque_con_dulce_de_leche,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche",
+      "y": 180
+    },
+    "bocados=2,comida=panqueque_con_dulce_de_leche,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche",
+      "y": 270
+    },
+    "bocados=2,comida=pepas,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/pepas",
+      "y": 90
+    },
+    "bocados=2,comida=pepas,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/pepas"
+    },
+    "bocados=2,comida=pepas,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/pepas",
+      "y": 180
+    },
+    "bocados=2,comida=pepas,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/pepas",
+      "y": 270
+    },
+    "bocados=2,comida=pitusas,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas",
+      "y": 90
+    },
+    "bocados=2,comida=pitusas,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas"
+    },
+    "bocados=2,comida=pitusas,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas",
+      "y": 180
+    },
+    "bocados=2,comida=pitusas,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas",
+      "y": 270
+    },
+    "bocados=2,comida=provoleta,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta",
+      "y": 90
+    },
+    "bocados=2,comida=provoleta,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta"
+    },
+    "bocados=2,comida=provoleta,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta",
+      "y": 180
+    },
+    "bocados=2,comida=provoleta,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta",
+      "y": 270
+    },
+    "bocados=2,comida=quilmes,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes",
+      "y": 90
+    },
+    "bocados=2,comida=quilmes,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes"
+    },
+    "bocados=2,comida=quilmes,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes",
+      "y": 180
+    },
+    "bocados=2,comida=quilmes,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes",
+      "y": 270
+    },
+    "bocados=2,comida=sanguche_de_milanesa,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa",
+      "y": 90
+    },
+    "bocados=2,comida=sanguche_de_milanesa,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa"
+    },
+    "bocados=2,comida=sanguche_de_milanesa,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa",
+      "y": 180
+    },
+    "bocados=2,comida=sanguche_de_milanesa,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa",
+      "y": 270
+    },
+    "bocados=2,comida=stella_artois,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois",
+      "y": 90
+    },
+    "bocados=2,comida=stella_artois,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois"
+    },
+    "bocados=2,comida=stella_artois,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois",
+      "y": 180
+    },
+    "bocados=2,comida=stella_artois,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois",
+      "y": 270
+    },
+    "bocados=2,comida=tortafrita,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita",
+      "y": 90
+    },
+    "bocados=2,comida=tortafrita,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita"
+    },
+    "bocados=2,comida=tortafrita,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita",
+      "y": 180
+    },
+    "bocados=2,comida=tortafrita,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita",
+      "y": 270
+    },
+    "bocados=3,comida=alfajor,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor",
+      "y": 90
+    },
+    "bocados=3,comida=alfajor,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor"
+    },
+    "bocados=3,comida=alfajor,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor",
+      "y": 180
+    },
+    "bocados=3,comida=alfajor,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/alfajor",
+      "y": 270
+    },
+    "bocados=3,comida=andes,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/andes",
+      "y": 90
+    },
+    "bocados=3,comida=andes,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/andes"
+    },
+    "bocados=3,comida=andes,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/andes",
+      "y": 180
+    },
+    "bocados=3,comida=andes,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/andes",
+      "y": 270
+    },
+    "bocados=3,comida=asado,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/asado_b3",
+      "y": 90
+    },
+    "bocados=3,comida=asado,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/asado_b3"
+    },
+    "bocados=3,comida=asado,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/asado_b3",
+      "y": 180
+    },
+    "bocados=3,comida=asado,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/asado_b3",
+      "y": 270
+    },
+    "bocados=3,comida=choripan,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/choripan",
+      "y": 90
+    },
+    "bocados=3,comida=choripan,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/choripan"
+    },
+    "bocados=3,comida=choripan,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/choripan",
+      "y": 180
+    },
+    "bocados=3,comida=choripan,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/choripan",
+      "y": 270
+    },
+    "bocados=3,comida=chorizo_asado,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado",
+      "y": 90
+    },
+    "bocados=3,comida=chorizo_asado,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado"
+    },
+    "bocados=3,comida=chorizo_asado,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado",
+      "y": 180
+    },
+    "bocados=3,comida=chorizo_asado,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/chorizo_asado",
+      "y": 270
+    },
+    "bocados=3,comida=empanada,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/empanada",
+      "y": 90
+    },
+    "bocados=3,comida=empanada,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/empanada"
+    },
+    "bocados=3,comida=empanada,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/empanada",
+      "y": 180
+    },
+    "bocados=3,comida=empanada,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/empanada",
+      "y": 270
+    },
+    "bocados=3,comida=fernet_branca,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca",
+      "y": 90
+    },
+    "bocados=3,comida=fernet_branca,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca"
+    },
+    "bocados=3,comida=fernet_branca,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca",
+      "y": 180
+    },
+    "bocados=3,comida=fernet_branca,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/fernet_branca",
+      "y": 270
+    },
+    "bocados=3,comida=flan_con_dulce_de_leche,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche",
+      "y": 90
+    },
+    "bocados=3,comida=flan_con_dulce_de_leche,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche"
+    },
+    "bocados=3,comida=flan_con_dulce_de_leche,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche",
+      "y": 180
+    },
+    "bocados=3,comida=flan_con_dulce_de_leche,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/flan_con_dulce_de_leche",
+      "y": 270
+    },
+    "bocados=3,comida=fugazzeta,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta",
+      "y": 90
+    },
+    "bocados=3,comida=fugazzeta,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta"
+    },
+    "bocados=3,comida=fugazzeta,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta",
+      "y": 180
+    },
+    "bocados=3,comida=fugazzeta,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/fugazzeta",
+      "y": 270
+    },
+    "bocados=3,comida=guiso,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/guiso",
+      "y": 90
+    },
+    "bocados=3,comida=guiso,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/guiso"
+    },
+    "bocados=3,comida=guiso,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/guiso",
+      "y": 180
+    },
+    "bocados=3,comida=guiso,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/guiso",
+      "y": 270
+    },
+    "bocados=3,comida=locro,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/locro",
+      "y": 90
+    },
+    "bocados=3,comida=locro,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/locro"
+    },
+    "bocados=3,comida=locro,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/locro",
+      "y": 180
+    },
+    "bocados=3,comida=locro,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/locro",
+      "y": 270
+    },
+    "bocados=3,comida=medialuna,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna",
+      "y": 90
+    },
+    "bocados=3,comida=medialuna,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna"
+    },
+    "bocados=3,comida=medialuna,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna",
+      "y": 180
+    },
+    "bocados=3,comida=medialuna,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/medialuna",
+      "y": 270
+    },
+    "bocados=3,comida=mega_dibu,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu",
+      "y": 90
+    },
+    "bocados=3,comida=mega_dibu,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu"
+    },
+    "bocados=3,comida=mega_dibu,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu",
+      "y": 180
+    },
+    "bocados=3,comida=mega_dibu,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/mega_dibu",
+      "y": 270
+    },
+    "bocados=3,comida=milanesa_de_carne,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne",
+      "y": 90
+    },
+    "bocados=3,comida=milanesa_de_carne,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne"
+    },
+    "bocados=3,comida=milanesa_de_carne,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne",
+      "y": 180
+    },
+    "bocados=3,comida=milanesa_de_carne,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_carne",
+      "y": 270
+    },
+    "bocados=3,comida=milanesa_de_pollo,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo",
+      "y": 90
+    },
+    "bocados=3,comida=milanesa_de_pollo,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo"
+    },
+    "bocados=3,comida=milanesa_de_pollo,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo",
+      "y": 180
+    },
+    "bocados=3,comida=milanesa_de_pollo,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/milanesa_de_pollo",
+      "y": 270
+    },
+    "bocados=3,comida=noquis,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/noquis",
+      "y": 90
+    },
+    "bocados=3,comida=noquis,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/noquis"
+    },
+    "bocados=3,comida=noquis,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/noquis",
+      "y": 180
+    },
+    "bocados=3,comida=noquis,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/noquis",
+      "y": 270
+    },
+    "bocados=3,comida=panqueque_con_dulce_de_leche,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche",
+      "y": 90
+    },
+    "bocados=3,comida=panqueque_con_dulce_de_leche,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche"
+    },
+    "bocados=3,comida=panqueque_con_dulce_de_leche,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche",
+      "y": 180
+    },
+    "bocados=3,comida=panqueque_con_dulce_de_leche,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/panqueque_con_dulce_de_leche",
+      "y": 270
+    },
+    "bocados=3,comida=pepas,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/pepas",
+      "y": 90
+    },
+    "bocados=3,comida=pepas,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/pepas"
+    },
+    "bocados=3,comida=pepas,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/pepas",
+      "y": 180
+    },
+    "bocados=3,comida=pepas,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/pepas",
+      "y": 270
+    },
+    "bocados=3,comida=pitusas,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas",
+      "y": 90
+    },
+    "bocados=3,comida=pitusas,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas"
+    },
+    "bocados=3,comida=pitusas,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas",
+      "y": 180
+    },
+    "bocados=3,comida=pitusas,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/pitusas",
+      "y": 270
+    },
+    "bocados=3,comida=provoleta,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta",
+      "y": 90
+    },
+    "bocados=3,comida=provoleta,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta"
+    },
+    "bocados=3,comida=provoleta,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta",
+      "y": 180
+    },
+    "bocados=3,comida=provoleta,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/provoleta",
+      "y": 270
+    },
+    "bocados=3,comida=quilmes,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes",
+      "y": 90
+    },
+    "bocados=3,comida=quilmes,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes"
+    },
+    "bocados=3,comida=quilmes,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes",
+      "y": 180
+    },
+    "bocados=3,comida=quilmes,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/quilmes",
+      "y": 270
+    },
+    "bocados=3,comida=sanguche_de_milanesa,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa",
+      "y": 90
+    },
+    "bocados=3,comida=sanguche_de_milanesa,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa"
+    },
+    "bocados=3,comida=sanguche_de_milanesa,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa",
+      "y": 180
+    },
+    "bocados=3,comida=sanguche_de_milanesa,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/sanguche_de_milanesa",
+      "y": 270
+    },
+    "bocados=3,comida=stella_artois,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois",
+      "y": 90
+    },
+    "bocados=3,comida=stella_artois,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois"
+    },
+    "bocados=3,comida=stella_artois,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois",
+      "y": 180
+    },
+    "bocados=3,comida=stella_artois,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/stella_artois",
+      "y": 270
+    },
+    "bocados=3,comida=tortafrita,facing=east": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita",
+      "y": 90
+    },
+    "bocados=3,comida=tortafrita,facing=north": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita"
+    },
+    "bocados=3,comida=tortafrita,facing=south": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita",
+      "y": 180
+    },
+    "bocados=3,comida=tortafrita,facing=west": {
+      "model": "ultimatefoods:block/fisura/comida/tortafrita",
+      "y": 270
+    }
+  }
+}

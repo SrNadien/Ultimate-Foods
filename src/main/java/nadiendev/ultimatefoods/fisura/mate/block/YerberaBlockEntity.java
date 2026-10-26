@@ -1,0 +1,77 @@
+package nadiendev.ultimatefoods.fisura.mate.block;
+
+import nadiendev.ultimatefoods.fisura.mate.MateBlockEntities;
+import nadiendev.ultimatefoods.fisura.mate.MateComponents;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.core.component.DataComponentGetter;
+import net.minecraft.core.component.DataComponentMap;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.storage.ValueInput;
+import net.minecraft.world.level.storage.ValueOutput;
+
+/** Guarda las porciones de yerba que le quedan a la yerbera. */
+public class YerberaBlockEntity extends BlockEntity {
+
+    private static final String TAG_PORCIONES = "porciones";
+
+    private int porciones;
+
+    public YerberaBlockEntity(BlockPos pos, BlockState state) {
+        super(MateBlockEntities.YERBERA.get(), pos, state);
+    }
+
+    public int getPorciones() {
+        return porciones;
+    }
+
+    public void setPorciones(int valor) {
+        this.porciones = Math.max(0, Math.min(valor, YerberaBlock.MAX_PORCIONES));
+        setChanged();
+    }
+
+    @Override
+    protected void saveAdditional(ValueOutput output) {
+        super.saveAdditional(output);
+        output.putInt(TAG_PORCIONES, porciones);
+    }
+
+    @Override
+    protected void loadAdditional(ValueInput input) {
+        super.loadAdditional(input);
+        porciones = Math.max(0, Math.min(input.getIntOr(TAG_PORCIONES, 0), YerberaBlock.MAX_PORCIONES));
+    }
+
+    // Al romper la yerbera, la yerba viaja en el item; al ponerla, vuelve.
+    @Override
+    protected void applyImplicitComponents(DataComponentGetter input) {
+        super.applyImplicitComponents(input);
+        porciones = Math.max(0, Math.min(input.getOrDefault(MateComponents.PORCIONES.get(), 0), YerberaBlock.MAX_PORCIONES));
+    }
+
+    @Override
+    protected void collectImplicitComponents(DataComponentMap.Builder builder) {
+        super.collectImplicitComponents(builder);
+        builder.set(MateComponents.PORCIONES.get(), porciones);
+    }
+
+    @Override
+    public void removeComponentsFromTag(ValueOutput output) {
+        output.discard(TAG_PORCIONES);
+    }
+
+    @Override
+    public CompoundTag getUpdateTag(HolderLookup.Provider registries) {
+        return saveWithoutMetadata(registries);
+    }
+
+    @Override
+    public Packet<ClientGamePacketListener> getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
+    }
+}

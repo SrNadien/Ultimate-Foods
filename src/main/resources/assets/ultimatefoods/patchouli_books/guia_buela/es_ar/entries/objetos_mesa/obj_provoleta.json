@@ -1,0 +1,13 @@
+{
+  "name": "Provoleta",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:provoleta",
+  "sortnum": 65,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:provoleta",
+      "text": "Provoleta: 7 de hambre, Fuego de parrilla (40 s) y Resistencia (1 min)."
+    }
+  ]
+}

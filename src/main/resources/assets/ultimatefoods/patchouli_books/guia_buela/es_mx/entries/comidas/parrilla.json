@@ -1,0 +1,16 @@
+{
+  "name": "La parrilla",
+  "category": "ultimatefoods:comidas",
+  "icon": "ultimatefoods:parrilla",
+  "sortnum": 13,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Se le pone combustible, se enciende con yesquero o carga de fuego y cocina seis cosas a la vez, como una fogata.$(br2)Ojo: caminar encima prendida quema."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/parrilla"
+    }
+  ]
+}

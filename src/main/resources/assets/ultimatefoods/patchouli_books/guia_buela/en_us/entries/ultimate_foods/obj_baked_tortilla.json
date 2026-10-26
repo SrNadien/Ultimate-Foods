@@ -1,0 +1,17 @@
+{
+  "name": "Raw Tortilla",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:baked_tortilla",
+  "sortnum": 97,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:baked_tortilla",
+      "text": "Raw tortilla: wheat and bread. Smelt it to get a cooked Tortilla."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:tortilla_cruda"
+    }
+  ]
+}

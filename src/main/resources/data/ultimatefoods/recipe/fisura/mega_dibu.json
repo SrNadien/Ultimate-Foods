@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bread",
+    "farmersdelight:beef_patty",
+    "farmersdelight:beef_patty",
+    "ultimatefoods:cheddar",
+    "ultimatefoods:cheddar",
+    "farmersdelight:cooked_bacon",
+    "farmersdelight:cooked_bacon",
+    "ultimatefoods:cebolla_crispy",
+    "ultimatefoods:salsa_barbacoa"
+  ],
+  "result": {
+    "id": "ultimatefoods:mega_dibu"
+  }
+}

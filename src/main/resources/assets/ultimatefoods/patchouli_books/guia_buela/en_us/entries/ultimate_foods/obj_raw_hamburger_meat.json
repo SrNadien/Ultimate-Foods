@@ -1,0 +1,17 @@
+{
+  "name": "Raw Hamburger Meat",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:raw_hamburger_meat",
+  "sortnum": 101,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:raw_hamburger_meat",
+      "text": "Raw burger patty: made with a Farmer's Delight knife, mutton, pork and beef. Smelt it to cook it."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:patty_raw_recipe"
+    }
+  ]
+}

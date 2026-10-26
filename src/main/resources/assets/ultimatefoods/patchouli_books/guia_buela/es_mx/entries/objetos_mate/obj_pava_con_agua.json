@@ -1,0 +1,13 @@
+{
+  "name": "Pava con agua",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:pava_con_agua",
+  "sortnum": 45,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:pava_con_agua",
+      "text": "Pava con agua fria. Click derecho a una fogata, un horno o un fuego encendido: se calienta."
+    }
+  ]
+}

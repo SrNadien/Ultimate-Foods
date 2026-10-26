@@ -1,0 +1,17 @@
+{
+  "name": "Bebida Energética Super",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:super_energy_drink",
+  "sortnum": 92,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:super_energy_drink",
+      "text": "Bebida energetica Super: 4 de hambre y 15 s de ocho efectos al maximo: Vision nocturna, Salto, Respiracion acuatica, Fuerza, Velocidad, Invisibilidad, Regeneracion y Prisa. Se craftea con un Monster."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:super_energy_drink_recipe"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#c:foods/dough",
+    "minecraft:beef",
+    "#c:crops/onion",
+    "#c:eggs"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ultimatefoods:empanada_cruda"
+  }
+}

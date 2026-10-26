@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "abierta=false,facing=east": {
+      "model": "ultimatefoods:block/fisura/cacerola_essen",
+      "y": 90
+    },
+    "abierta=false,facing=north": {
+      "model": "ultimatefoods:block/fisura/cacerola_essen"
+    },
+    "abierta=false,facing=south": {
+      "model": "ultimatefoods:block/fisura/cacerola_essen",
+      "y": 180
+    },
+    "abierta=false,facing=west": {
+      "model": "ultimatefoods:block/fisura/cacerola_essen",
+      "y": 270
+    },
+    "abierta=true,facing=east": {
+      "model": "ultimatefoods:block/fisura/cacerola_essen_abierta",
+      "y": 90
+    },
+    "abierta=true,facing=north": {
+      "model": "ultimatefoods:block/fisura/cacerola_essen_abierta"
+    },
+    "abierta=true,facing=south": {
+      "model": "ultimatefoods:block/fisura/cacerola_essen_abierta",
+      "y": 180
+    },
+    "abierta=true,facing=west": {
+      "model": "ultimatefoods:block/fisura/cacerola_essen_abierta",
+      "y": 270
+    }
+  }
+}

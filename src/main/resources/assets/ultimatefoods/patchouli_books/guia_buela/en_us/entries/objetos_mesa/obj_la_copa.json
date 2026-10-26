@@ -1,0 +1,17 @@
+{
+  "name": "The Cup",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:la_copa",
+  "sortnum": 89,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:la_copa",
+      "text": "The Cup, a golden trophy in honor of Lionel Andres Messi. 6 gold ingots in a cup shape, or sold by the villager named Messi."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:la_copa"
+    }
+  ]
+}

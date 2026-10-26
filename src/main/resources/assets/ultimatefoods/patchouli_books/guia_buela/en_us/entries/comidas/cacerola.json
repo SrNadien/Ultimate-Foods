@@ -1,0 +1,20 @@
+{
+  "name": "The Essen pot",
+  "category": "ultimatefoods:comidas",
+  "icon": "ultimatefoods:cacerola_essen",
+  "sortnum": 16,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Set it on a heat source (lit campfire, furnace or grill), toss in the ingredients, wait and serve with a bowl.$(br2)Empty hand: returns the last ingredient."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/cacerola_essen"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Guiso stew: potato, carrot, tomato, onion, raw beef and rice, pasta or dough (6 ingredients, 45 seconds on the fire). Full Belly, Comfort and a touch of Regeneration.$(br2)Locro: pumpkin, wheat, potato, onion, chorizo and beef. Full Belly, Nourishment and Resistance."
+    }
+  ]
+}

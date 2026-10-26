@@ -1,0 +1,131 @@
+{
+  "parent": "ultimatefoods:block/fisura/la_copa",
+  "display": {
+    "gui": {
+      "rotation": [
+        15,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        0.37,
+        0.1
+      ],
+      "scale": [
+        0.767,
+        0.767,
+        0.767
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        4.23,
+        0
+      ],
+      "scale": [
+        0.467,
+        0.467,
+        0.467
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0.47,
+        0
+      ],
+      "scale": [
+        0.933,
+        0.933,
+        0.933
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.56,
+        2.23
+      ],
+      "scale": [
+        0.467,
+        0.467,
+        0.467
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.56,
+        2.23
+      ],
+      "scale": [
+        0.467,
+        0.467,
+        0.467
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        160,
+        0
+      ],
+      "translation": [
+        1,
+        5.23,
+        0
+      ],
+      "scale": [
+        0.467,
+        0.467,
+        0.467
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        -20,
+        0
+      ],
+      "translation": [
+        1,
+        5.23,
+        0
+      ],
+      "scale": [
+        0.467,
+        0.467,
+        0.467
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        11.94,
+        0
+      ],
+      "scale": [
+        0.667,
+        0.667,
+        0.667
+      ]
+    }
+  }
+}

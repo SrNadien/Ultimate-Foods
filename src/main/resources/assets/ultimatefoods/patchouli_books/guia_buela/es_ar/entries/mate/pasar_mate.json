@@ -1,0 +1,12 @@
+{
+  "name": "Pasar el mate",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:mate_amargo",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Click derecho con un mate cebado sobre otro jugador o un aldeano: le pasas el mate y le toca el efecto."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Easter egg: Messi",
+  "category": "ultimatefoods:secretos",
+  "icon": "minecraft:name_tag",
+  "sortnum": 23,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ponele una etiqueta con el nombre \"Messi\" a un aldeano (tambien valen \"Lionel Messi\", \"Lionel Andres Messi\", \"Leo Messi\" y \"La Pulga\", con o sin mayusculas y tildes).$(br2)El aldeano se transforma en un homenaje: salen fuegos artificiales, suenan festejos y un mensaje de campeon del mundo."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Desde ese momento el aldeano te vende La Copa por 32 esmeraldas (una sola vez por aldeano).$(br2)La Copa tambien se puede craftear con oro, pero asi tiene su historia."
+    }
+  ]
+}

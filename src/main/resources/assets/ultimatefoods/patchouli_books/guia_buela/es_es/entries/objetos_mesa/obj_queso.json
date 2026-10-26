@@ -1,0 +1,13 @@
+{
+  "name": "Queso",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:queso",
+  "sortnum": 52,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:queso",
+      "text": "Queso: 2 leches y harina de hueso en la olla de Farmer's Delight. Da 2 quesos."
+    }
+  ]
+}

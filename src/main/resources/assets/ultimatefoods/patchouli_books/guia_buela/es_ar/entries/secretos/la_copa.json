@@ -1,0 +1,16 @@
+{
+  "name": "La Copa",
+  "category": "ultimatefoods:secretos",
+  "icon": "ultimatefoods:la_copa",
+  "sortnum": 22,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Un trofeo dorado para decorar, en honor a Lionel Andres Messi. Seis lingotes de oro con forma de copa."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:la_copa"
+    }
+  ]
+}

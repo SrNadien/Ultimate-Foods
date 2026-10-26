@@ -1,0 +1,20 @@
+{
+  "name": "The mate on the table",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:mate",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Mates, kettles, yerba packages and bombillas are set down with Shift + right click and lean toward where you look.$(br2)Right click with an empty hand to pick it up (the bombilla comes out separately)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Serve it right there:$(br2)Yerbera or loose yerba on an empty mate: fills it.$(br2)Sugar, milk bucket or yuyos: flavor it, before brewing.$(br2)Bombilla: it is stuck in separately and does not come out by itself.$(br2)Hot kettle: brews it (the bombilla must be in)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Unwashing: use a Brush on a washed mate to clear out the used yerba; it ends up empty and the bombilla returns to your inventory. The brush loses 1 durability."
+    }
+  ]
+}

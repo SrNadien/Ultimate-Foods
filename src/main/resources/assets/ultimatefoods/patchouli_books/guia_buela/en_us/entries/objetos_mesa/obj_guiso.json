@@ -1,0 +1,13 @@
+{
+  "name": "Guiso",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:guiso",
+  "sortnum": 69,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:guiso",
+      "text": "Guiso stew: 12 hunger, Full Belly (3 min), Comfort (2 min) and a touch of Regeneration. Cooked in the Essen pot and served with a bowl."
+    }
+  ]
+}

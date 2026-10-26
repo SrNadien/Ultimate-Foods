@@ -1,0 +1,12 @@
+{
+  "name": "Easter egg: el comerciante",
+  "category": "ultimatefoods:secretos",
+  "icon": "minecraft:wandering_trader_spawn_egg",
+  "sortnum": 25,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "El comerciante errante deja de murmurar y lanza su pregon: \"Compramos carros y camionetas viejas para desarmar\".$(br2)El pregon dura unos 13 segundos; mientras suena no empieza otro encima. Todos sus otros sonidos (comprar, rechazar, tomar la pocion) quedan como siempre."
+    }
+  ]
+}

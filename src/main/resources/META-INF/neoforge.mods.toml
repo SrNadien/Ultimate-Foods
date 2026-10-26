@@ -33,6 +33,13 @@ ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
+modId = "patchouli"
+type = "optional"
+versionRange = "[0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
 modId = "jade"
 type = "optional"
 versionRange = "${jade_version}"

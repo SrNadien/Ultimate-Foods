@@ -1,0 +1,13 @@
+{
+  "name": "Dulce de Leche",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:dulce_de_leche",
+  "sortnum": 55,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:dulce_de_leche",
+      "text": "Dulce de leche: milk and sugar in a Farmer's Delight pot. Makes 2 and gives a little Sugar Rush when eaten."
+    }
+  ]
+}

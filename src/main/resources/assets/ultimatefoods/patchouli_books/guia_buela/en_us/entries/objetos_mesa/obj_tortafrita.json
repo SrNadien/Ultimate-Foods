@@ -1,0 +1,17 @@
+{
+  "name": "Tortafrita",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:tortafrita",
+  "sortnum": 76,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:tortafrita",
+      "text": "Fried cake: 5 hunger and Comfort (1.5 min)."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/tortafrita"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Asado and chorizo",
+  "category": "ultimatefoods:comidas",
+  "icon": "ultimatefoods:asado",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Raw asado and chorizo cook on the grill, a campfire, a furnace or a smoker.$(br2)Asado: 10 hunger, Grill Fire (2 min) and Nourishment.$(br2)Grilled chorizo: 6 hunger and Grill Fire."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/asado_crudo"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/chorizo"
+    }
+  ]
+}

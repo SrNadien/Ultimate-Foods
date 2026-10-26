@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#c:foods/dough",
+    "minecraft:sugar",
+    "#c:eggs",
+    "ultimatefoods:dulce_de_membrillo"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ultimatefoods:pepas"
+  }
+}

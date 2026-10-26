@@ -1,0 +1,13 @@
+{
+  "name": "Ñoquis",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:noquis",
+  "sortnum": 71,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:noquis",
+      "text": "Noquis: 9 hunger, Luck (5 min) and Full Belly (1 min). Potato, dough and tomato in a Farmer's Delight pot."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Flan con dulce de leche",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:flan_con_dulce_de_leche",
+  "sortnum": 75,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:flan_con_dulce_de_leche",
+      "text": "Flan con dulce de leche: 8 de hambre, Dulzura (1,5 min) y Absorcion II (1,5 min). En la olla: leche, huevo, azucar y dulce de leche."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Easter egg: el carpincho",
+  "category": "ultimatefoods:secretos",
+  "icon": "minecraft:pig_spawn_egg",
+  "sortnum": 24,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ponele una etiqueta con el nombre \"carpincho\" a un cerdo (con o sin mayusculas ni tildes).$(br2)El cerdo cambia de piel y pasa a ser un carpincho marron y gordito. Es solo la apariencia: sigue siendo un cerdo.$(br2)Si le sacas el nombre, vuelve a ser cerdo."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Breadcrumbs",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:pan_rallado",
+  "sortnum": 50,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:pan_rallado",
+      "text": "Bread crumbs: bread cut with a Farmer's Delight knife. For milanesas."
+    }
+  ]
+}

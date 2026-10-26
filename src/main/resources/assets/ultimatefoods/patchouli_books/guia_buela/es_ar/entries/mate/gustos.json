@@ -1,0 +1,28 @@
+{
+  "name": "Los gustos",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:mate_dulce",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Mate amargo: Tranquilidad. Las criaturas hostiles cercanas se ponen lentas.$(br2)Mate dulce: Mandale mecha. Mucha velocidad, empujas a lo que esta cerca y al terminar quedas un rato lento."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Mate de leche: Desarrollo. Las crias cercanas crecen al instante.$(br2)Mate con yuyos: Bonanza. Suerte extra, algo de experiencia cada tanto y 50 % mas de experiencia por lo que matas."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/mate_dulce"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/mate_de_leche"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/mate_con_yuyos"
+    }
+  ]
+}

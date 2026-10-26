@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ultimatefoods:yerba_mate_leaf_dried",
+    "ultimatefoods:yerba_mate_leaf_dried",
+    "ultimatefoods:yerba_mate_leaf_dried"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ultimatefoods:yerba_mate"
+  }
+}

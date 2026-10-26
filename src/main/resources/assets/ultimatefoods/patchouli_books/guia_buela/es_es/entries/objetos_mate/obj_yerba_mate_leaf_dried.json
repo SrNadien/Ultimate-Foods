@@ -1,0 +1,13 @@
+{
+  "name": "Hoja de yerba mate seca",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_mate_leaf_dried",
+  "sortnum": 32,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_mate_leaf_dried",
+      "text": "Hoja seca: la hoja de yerba cocinada en una fogata, un horno o un ahumador. Con 3 se muele para hacer yerba."
+    }
+  ]
+}

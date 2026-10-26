@@ -1,0 +1,16 @@
+{
+  "name": "Easter egg: Messi",
+  "category": "ultimatefoods:secretos",
+  "icon": "minecraft:name_tag",
+  "sortnum": 23,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Rename a villager with a name tag to \"Messi\" (\"Lionel Messi\", \"Lionel Andres Messi\", \"Leo Messi\" and \"La Pulga\" also work, in any case and with or without accents).$(br2)The villager becomes a tribute: fireworks, cheering sounds and a world champion message."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "From then on that villager sells you The Cup for 32 emeralds (once per villager).$(br2)The Cup can also be crafted from gold, but this way it has its story."
+    }
+  ]
+}

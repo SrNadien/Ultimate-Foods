@@ -1,0 +1,17 @@
+{
+  "name": "Monster",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:monster",
+  "sortnum": 90,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:monster",
+      "text": "Monster: 6 hunger and 20 s of seven effects: Speed II, Fire Resistance III, Absorption III, Nausea III, Invisibility III, Regeneration III and Instant Health III. It plays the \"quemacizo\" sound."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:monster_recipe"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Super Poop",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:superpoop",
+  "sortnum": 95,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:superpoop",
+      "text": "Super Poop: 40 hunger, 10 minutes of Speed XI and Health Boost XI. Crafted with a Poop."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:superpoop_recipe"
+    }
+  ]
+}

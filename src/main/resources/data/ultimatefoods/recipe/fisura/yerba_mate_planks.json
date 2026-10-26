@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "ultimatefoods:yerba_mate_log"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ultimatefoods:yerba_mate_planks"
+  }
+}

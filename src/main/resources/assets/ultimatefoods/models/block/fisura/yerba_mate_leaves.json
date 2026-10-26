@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ultimatefoods:block/fisura/yerba_mate_leaves"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "values": {
+    "ultimatefoods:yerba_mate_leaves": {
+      "chance": 0.3
+    },
+    "ultimatefoods:yerba_mate_sapling": {
+      "chance": 0.3
+    },
+    "ultimatefoods:yerba_mate_leaf": {
+      "chance": 0.3
+    },
+    "ultimatefoods:yerba_mate_leaf_dried": {
+      "chance": 0.2
+    },
+    "ultimatefoods:yuyos": {
+      "chance": 0.3
+    }
+  }
+}

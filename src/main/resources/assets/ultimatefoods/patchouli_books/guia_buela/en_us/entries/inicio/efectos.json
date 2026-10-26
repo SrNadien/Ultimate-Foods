@@ -1,0 +1,16 @@
+{
+  "name": "Food effects",
+  "category": "ultimatefoods:inicio",
+  "icon": "ultimatefoods:mega_dibu",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Full Belly: more max health, but slower.$(br2)Grill Fire: you hit harder and are harder to push.$(br2)Sugar Rush: faster walking and attacks.$(br2)Good Vibes: luck."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Tipsy: slower walking and attacks (drinks leave it).$(br2)Overstuffed: slow and weak (you ate too much).$(br2)Penalty Saver: more reach and softer falls.$(br2)Mate effects are in the \"The mate\" chapter."
+    }
+  ]
+}

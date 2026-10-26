@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_milanesa_cruda": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatefoods:milanesa_cruda"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ultimatefoods:fisura/milanesa_de_carne_ahumador"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_milanesa_cruda"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ultimatefoods:fisura/milanesa_de_carne_ahumador"
+    ]
+  }
+}

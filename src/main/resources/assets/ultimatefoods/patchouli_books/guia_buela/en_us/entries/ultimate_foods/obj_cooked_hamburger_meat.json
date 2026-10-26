@@ -1,0 +1,13 @@
+{
+  "name": "Cooked Hamburger Meat",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:cooked_hamburger_meat",
+  "sortnum": 102,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:cooked_hamburger_meat",
+      "text": "Cooked burger patty: 6 hunger. For the burger."
+    }
+  ]
+}

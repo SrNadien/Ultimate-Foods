@@ -1,0 +1,13 @@
+{
+  "name": "Mate puesto",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:mate",
+  "sortnum": 49,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:mate",
+      "text": "No tiene item propio: es lo que queda cuando apoyas un mate, la pava, un paquete de yerba o una bombilla con Shift + click derecho. Se llama como el item que apoyaste."
+    }
+  ]
+}

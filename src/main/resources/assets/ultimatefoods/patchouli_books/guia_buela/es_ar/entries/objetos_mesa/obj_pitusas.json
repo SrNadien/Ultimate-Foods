@@ -1,0 +1,17 @@
+{
+  "name": "Pitusas",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:pitusas",
+  "sortnum": 78,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:pitusas",
+      "text": "Pitusas: las galletitas de la merienda. 3 de hambre, se comen rapido, Dulzura (30 s)."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/pitusas"
+    }
+  ]
+}

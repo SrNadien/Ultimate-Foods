@@ -1,0 +1,12 @@
+{
+  "name": "Heating the water",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:pava_caliente",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "1. Right click water (or a cauldron) with the empty kettle: it fills.$(br2)2. Right click a lit campfire, furnace or fire with the full kettle: it gets hot, just right for mate.$(br2)A hot kettle serves 8 brews."
+    }
+  ]
+}

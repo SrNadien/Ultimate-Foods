@@ -1,6 +1,7 @@
 package nadiendev.ultimatefoods;
 
 import com.mojang.logging.LogUtils;
+import nadiendev.ultimatefoods.fisura.Fisura;
 import nadiendev.ultimatefoods.datagen.DataGenerators;
 import nadiendev.ultimatefoods.registry.CreativeTab;
 import nadiendev.ultimatefoods.registry.EffectsAdds;
@@ -24,6 +25,7 @@ public class UltimateFoodsCore {
         ItemsAdds.register(modEventBus);
 
         CreativeTab.register(modEventBus);
+        Fisura.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(DataGenerators::gatherClientData);

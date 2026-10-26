@@ -1,0 +1,12 @@
+{
+  "name": "Calentar el agua",
+  "category": "ultimatefoods:mate",
+  "icon": "ultimatefoods:pava_caliente",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "1. Click derecho a una fuente de agua (o un caldero) con la pava vacia: se llena.$(br2)2. Click derecho a una fogata, un horno o un fuego encendido con la pava con agua: queda caliente, justo para el mate.$(br2)Una pava caliente rinde 8 cebadas."
+    }
+  ]
+}

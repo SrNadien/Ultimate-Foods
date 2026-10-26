@@ -1,0 +1,17 @@
+{
+  "name": "Milanesa de carne cruda",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:milanesa_cruda",
+  "sortnum": 59,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:milanesa_cruda",
+      "text": "Milanesa cruda de carne: pan rallado + carne. Se cocina como cualquier carne."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/milanesa_cruda"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Caca",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:poop",
+  "sortnum": 94,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:poop",
+      "text": "Caca: 1 de hambre y 5 minutos del efecto \"Que guarro\". Mejor no."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:poop_recipe"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Tortilla Cocinada",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:tortilla",
+  "sortnum": 98,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:tortilla",
+      "text": "Tortilla cocinada: la tortilla cruda al horno. 20 de hambre. Sirve para hacer tacos."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Panqueque con dulce de leche",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:panqueque_con_dulce_de_leche",
+  "sortnum": 74,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:panqueque_con_dulce_de_leche",
+      "text": "Panqueque con dulce de leche: 8 de hambre, Dulzura (2 min) y Regeneracion."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/panqueque_con_dulce_de_leche"
+    }
+  ]
+}

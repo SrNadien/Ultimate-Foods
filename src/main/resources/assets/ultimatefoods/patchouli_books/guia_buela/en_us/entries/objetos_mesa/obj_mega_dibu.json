@@ -1,0 +1,17 @@
+{
+  "name": "Mega Dibu",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:mega_dibu",
+  "sortnum": 81,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:mega_dibu",
+      "text": "The Mega Dibu: 20 hunger, Absorption III, Strength II, Resistance II, Regeneration II, Penalty Saver and Full Belly II... and 4 minutes of Overstuffed."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/mega_dibu"
+    }
+  ]
+}

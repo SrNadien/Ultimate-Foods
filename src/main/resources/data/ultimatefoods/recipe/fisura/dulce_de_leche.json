@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 400,
+  "experience": 0.5,
+  "ingredients": [
+    {
+      "neoforge:ingredient_type": "neoforge:compound",
+      "children": [
+        "#c:drinks/milk",
+        "minecraft:milk_bucket"
+      ]
+    },
+    "minecraft:sugar",
+    "minecraft:sugar"
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 2,
+    "id": "ultimatefoods:dulce_de_leche"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Milk Mate",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:mate_de_leche",
+  "sortnum": 41,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:mate_de_leche",
+      "text": "Brewed milk mate: Development (30 s), nearby babies grow up instantly."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/mate_de_leche"
+    }
+  ]
+}

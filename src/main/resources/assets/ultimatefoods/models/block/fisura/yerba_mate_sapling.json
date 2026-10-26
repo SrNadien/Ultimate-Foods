@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "ultimatefoods:block/fisura/yerba_mate_sapling"
+  }
+}

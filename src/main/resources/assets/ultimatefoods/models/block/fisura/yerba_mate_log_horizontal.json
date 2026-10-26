@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "ultimatefoods:block/fisura/yerba_mate_log_top",
+    "side": "ultimatefoods:block/fisura/yerba_mate_log"
+  }
+}

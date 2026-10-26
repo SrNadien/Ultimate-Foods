@@ -1,0 +1,13 @@
+{
+  "name": "Hojas de yerba mate",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_mate_leaves",
+  "sortnum": 29,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_mate_leaves",
+      "text": "Hojas del arbol de yerba mate. Sueltan hojas de yerba (mas con Fortuna) y a veces un brote. Con tijeras o Toque de seda te llevas el bloque."
+    }
+  ]
+}

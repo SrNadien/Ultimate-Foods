@@ -1,0 +1,12 @@
+{
+  "gives": {
+    "id": "ultimatefoods:pava"
+  },
+  "max_uses": 6,
+  "reputation_discount": 0.05,
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 6
+  },
+  "xp": 5
+}

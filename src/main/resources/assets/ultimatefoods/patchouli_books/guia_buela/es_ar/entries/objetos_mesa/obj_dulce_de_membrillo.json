@@ -1,0 +1,13 @@
+{
+  "name": "Dulce de membrillo",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:dulce_de_membrillo",
+  "sortnum": 56,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:dulce_de_membrillo",
+      "text": "Dulce de membrillo: 2 manzanas y 2 azucares en la olla. Para las pepas."
+    }
+  ]
+}

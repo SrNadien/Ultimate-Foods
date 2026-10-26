@@ -1,0 +1,17 @@
+{
+  "name": "Cajita Feliz",
+  "category": "ultimatefoods:ultimate_foods",
+  "icon": "ultimatefoods:cajita_feliz",
+  "sortnum": 91,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:cajita_feliz",
+      "text": "Cajita Feliz: 8 de hambre, Invisibilidad II (20 s) y Velocidad III (40 s). Suena \"Me compre una cajita feliz\"."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:cajita_feliz_recipe"
+    }
+  ]
+}

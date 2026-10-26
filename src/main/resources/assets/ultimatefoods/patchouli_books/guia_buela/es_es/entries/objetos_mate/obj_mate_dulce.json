@@ -1,0 +1,17 @@
+{
+  "name": "Mate dulce",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:mate_dulce",
+  "sortnum": 40,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:mate_dulce",
+      "text": "Mate dulce cebado: efecto Mandale mecha (30 s), mucha velocidad y empujas a lo que esta cerca; despues, un rato de lentitud."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/mate_dulce"
+    }
+  ]
+}

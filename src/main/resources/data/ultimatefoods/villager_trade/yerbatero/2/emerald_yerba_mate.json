@@ -1,0 +1,13 @@
+{
+  "gives": {
+    "id": "ultimatefoods:yerba_mate",
+    "count": 6
+  },
+  "max_uses": 12,
+  "reputation_discount": 0.05,
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 2
+  },
+  "xp": 5
+}

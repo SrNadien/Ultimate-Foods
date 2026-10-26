@@ -1,0 +1,13 @@
+{
+  "name": "Milanesa de carne",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:milanesa_de_carne",
+  "sortnum": 66,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:milanesa_de_carne",
+      "text": "Milanesa de carne: 9 de hambre y Fuerza (1 min)."
+    }
+  ]
+}

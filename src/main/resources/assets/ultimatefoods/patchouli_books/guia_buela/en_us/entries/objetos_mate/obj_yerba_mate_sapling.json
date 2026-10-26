@@ -1,0 +1,13 @@
+{
+  "name": "Yerba Mate Sapling",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:yerba_mate_sapling",
+  "sortnum": 30,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:yerba_mate_sapling",
+      "text": "Sapling of the yerba mate tree. Leaves sometimes drop it and the yerbatero sells it. Plant it and it grows."
+    }
+  ]
+}

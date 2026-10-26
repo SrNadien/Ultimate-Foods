@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_asado_crudo": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ultimatefoods:asado_crudo"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ultimatefoods:fisura/asado_horno"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_asado_crudo"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ultimatefoods:fisura/asado_horno"
+    ]
+  }
+}

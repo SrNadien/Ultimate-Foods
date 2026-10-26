@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "ultimatefoods:milanesa_de_carne",
+      "ultimatefoods:milanesa_de_pollo"
+    ],
+    "minecraft:bread",
+    "#c:crops/tomato",
+    "#c:foods/leafy_green"
+  ],
+  "result": {
+    "id": "ultimatefoods:sanguche_de_milanesa"
+  }
+}

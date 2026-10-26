@@ -1,0 +1,12 @@
+{
+  "name": "Easter egg: the capybara",
+  "category": "ultimatefoods:secretos",
+  "icon": "minecraft:pig_spawn_egg",
+  "sortnum": 24,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Rename a pig to \"carpincho\" with a name tag (any case, with or without accents).$(br2)The pig changes skin into a chubby brown capybara. It is only looks: it is still a pig.$(br2)Remove the name and it is a pig again."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ultimatefoods:mate_con_yerba",
+    "minecraft:milk_bucket"
+  ],
+  "result": {
+    "components": {
+      "ultimatefoods:sabor": "leche"
+    },
+    "id": "ultimatefoods:mate_con_yerba"
+  }
+}

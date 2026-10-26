@@ -1,0 +1,13 @@
+{
+  "name": "Placed Mate",
+  "category": "ultimatefoods:objetos_mate",
+  "icon": "ultimatefoods:mate",
+  "sortnum": 49,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:mate",
+      "text": "It has no item of its own: it is what remains when you set down a mate, the kettle, a yerba package or a bombilla with Shift + right click. It is named after the item you set down."
+    }
+  ]
+}

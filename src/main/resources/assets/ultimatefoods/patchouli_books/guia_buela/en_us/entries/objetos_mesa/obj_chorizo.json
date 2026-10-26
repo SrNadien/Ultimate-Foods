@@ -1,0 +1,17 @@
+{
+  "name": "Chorizo",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:chorizo",
+  "sortnum": 58,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:chorizo",
+      "text": "Raw chorizo: cook it into grilled chorizo, or use it in the locro."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "ultimatefoods:fisura/chorizo"
+    }
+  ]
+}

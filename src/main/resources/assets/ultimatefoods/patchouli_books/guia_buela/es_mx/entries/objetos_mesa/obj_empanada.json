@@ -1,0 +1,13 @@
+{
+  "name": "Empanada",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:empanada",
+  "sortnum": 77,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:empanada",
+      "text": "Empanada: 7 de hambre y Buena onda (1,5 min)."
+    }
+  ]
+}

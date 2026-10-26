@@ -1,0 +1,13 @@
+{
+  "name": "Comida colocada",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:asado",
+  "sortnum": 88,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:asado",
+      "text": "No tiene item propio: es lo que queda al apoyar una comida con Shift + click derecho. Click derecho la come; Shift + click con las manos vacias la levanta. Se llama como la comida."
+    }
+  ]
+}

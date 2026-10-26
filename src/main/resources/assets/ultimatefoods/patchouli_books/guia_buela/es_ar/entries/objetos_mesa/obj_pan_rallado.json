@@ -1,0 +1,13 @@
+{
+  "name": "Pan rallado",
+  "category": "ultimatefoods:objetos_mesa",
+  "icon": "ultimatefoods:pan_rallado",
+  "sortnum": 50,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ultimatefoods:pan_rallado",
+      "text": "Pan rallado: pan cortado con un cuchillo de Farmer's Delight. Para las milanesas."
+    }
+  ]
+}

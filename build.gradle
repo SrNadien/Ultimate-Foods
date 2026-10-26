@@ -132,6 +132,9 @@ dependencies {
     compileOnly "squeek.appleskin:appleskin-neoforge:mc${mc}-${appleskin_version}:api"
     runtimeOnly "squeek.appleskin:appleskin-neoforge:mc${mc}-${appleskin_version}"
 
+    // Patchouli (opcional): solo para probar el libro guia, el codigo no lo usa
+    runtimeOnly "vazkii.patchouli:patchouli-neoforge:${patchouli_version}"
+
     //Farmer's Delight (requerido; el port solo existe en GitHub Releases)
     runtimeOnly "farmersdelight-port:${farmersdelight_file}:${farmersdelight_tag}"
 
